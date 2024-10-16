@@ -1,3 +1,5 @@
+#include "Modules/ModuleManager.h"
+
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
@@ -6,12 +8,12 @@
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 
 // Required for ensuring the node is supported by all languages in engine. Must be unique per MetaSound.
-#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_SampleAndHoldNode"
+#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_SahNode"
 
 namespace Metasound
 {
     // Vertex Names - define your node's inputs and outputs here
-    namespace SampleAndHoldNodeNames
+    namespace SahNodeNames
     {
         METASOUND_PARAM(InputSignal, "Signal", "The input signal to sample.");
         METASOUND_PARAM(InputTrigger, "Trigger", "The trigger signal.");
@@ -21,11 +23,11 @@ namespace Metasound
     }
 
     // Operator Class - defines the way your node is described, created and executed
-    class FSampleAndHoldOperator : public TExecutableOperator<FSampleAndHoldOperator>
+    class FSahOperator : public TExecutableOperator<FSahOperator>
     {
     public:
         // Constructor
-        FSampleAndHoldOperator(
+        FSahOperator(
             const FAudioBufferReadRef& InSignal,
             const FAudioBufferReadRef& InTrigger,
             const FFloatReadRef& InThreshold)
@@ -41,7 +43,7 @@ namespace Metasound
         // Helper function for constructing vertex interface
         static const FVertexInterface& DeclareVertexInterface()
         {
-            using namespace SampleAndHoldNodeNames;
+            using namespace SahNodeNames;
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
@@ -69,8 +71,8 @@ namespace Metasound
                     FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant }, 
                     1, // Major Version
                     0, // Minor Version
-                    METASOUND_LOCTEXT("SampleAndHoldNodeDisplayName", "Sample and Hold"),
-                    METASOUND_LOCTEXT("SampleAndHoldNodeDesc", "Samples an input signal when a trigger crosses a threshold and holds it until the next trigger."),
+                    METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
+                    METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
                     PluginAuthor,
                     PluginNodeMissingPrompt,
                     NodeInterface,
@@ -89,7 +91,7 @@ namespace Metasound
         // Allows MetaSound graph to interact with your node's inputs
         virtual FDataReferenceCollection GetInputs() const override
         {
-            using namespace SampleAndHoldNodeNames;
+            using namespace SahNodeNames;
 
             FDataReferenceCollection InputDataReferences;
 
@@ -103,7 +105,7 @@ namespace Metasound
         // Allows MetaSound graph to interact with your node's outputs
         virtual FDataReferenceCollection GetOutputs() const override
         {
-            using namespace SampleAndHoldNodeNames;
+            using namespace SahNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
 
@@ -115,7 +117,7 @@ namespace Metasound
         // Used to instantiate a new runtime instance of your node
         static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
         {
-            using namespace SampleAndHoldNodeNames;
+            using namespace SahNodeNames;
 
             const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
@@ -124,7 +126,7 @@ namespace Metasound
             TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
             TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputThreshold), InParams.OperatorSettings);
 
-            return MakeUnique<FSampleAndHoldOperator>(InputSignal, InputTrigger, InputThreshold);
+            return MakeUnique<FSahOperator>(InputSignal, InputTrigger, InputThreshold);
         }
 
         // Primary node functionality
@@ -173,17 +175,20 @@ namespace Metasound
     };
 
     // Node Class - Inheriting from FNodeFacade is recommended for nodes that have a static FVertexInterface
-    class FSampleAndHoldNode : public FNodeFacade
+    class FSahNode : public FNodeFacade
     {
     public:
-        FSampleAndHoldNode(const FNodeInitData& InitData)
-            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FSampleAndHoldOperator>())
+        FSahNode(const FNodeInitData& InitData)
+            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FSahOperator>())
         {
         }
     };
 
     // Register node
-    METASOUND_REGISTER_NODE(FSampleAndHoldNode);
+    METASOUND_REGISTER_NODE(FSahNode);
 }
 
+IMPLEMENT_MODULE(FDefaultModuleImpl, MetasoundBranches)
+
 #undef LOCTEXT_NAMESPACE
+
