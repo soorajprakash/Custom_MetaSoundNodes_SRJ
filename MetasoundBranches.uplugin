@@ -3,7 +3,7 @@
     "version": 1,
     "VersionName": "1.0",
     "FriendlyName": "MetasoundBranches",
-    "Description": "Additional audio-rate objects for Metasound in UE5.",
+    "Description": "Additional synthesis-related objects for Metasound in UE5.",
     "Category": "Audio",
     "CreatedBy": "Charles Matthews",
     "CreatedByURL": "https://github.com/matthewscharles/",

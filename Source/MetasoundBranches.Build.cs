@@ -8,7 +8,7 @@ public class MetasoundBranches : ModuleRules
         
         PublicIncludePaths.AddRange(
             new string[] {
-                //"MetasoundBranches/Public"
+                "MetasoundBranches/Public"
             }
         );
 

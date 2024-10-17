@@ -1,4 +1,4 @@
 # metasound-plugins
-Some custom nodes for UE5 Metasound
+Custom nodes for UE5 Metasound
 
-- sample and hold: standard sample and hold with audio rate trigger.
+- sah: standard sample and hold with audio rate trigger.
