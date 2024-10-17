@@ -9,7 +9,7 @@ void FMetasoundBranchesModule::StartupModule()
 {
 
     UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started..."));
-    FMetasoundFrontendRegistryContainer::Get().RegisterNode<MetasoundBranches::MetasoundSahNode>();
+    FMetasoundFrontendRegistryContainer::Get()->RegisterNode<MetasoundSahNode>();
     
     // Initialization
 }
@@ -18,7 +18,7 @@ void FMetasoundBranchesModule::ShutdownModule()
 {
 
     UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module shutting down..."));
-    FMetasoundFrontendRegistryContainer::Get().UnregisterNode<MetasoundBranches::MetasoundSahNode>();
+    FMetasoundFrontendRegistryContainer::Get()->UnregisterNode<MetasoundSahNode>();
 
     // Cleanup
 }
