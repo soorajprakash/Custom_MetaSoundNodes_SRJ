@@ -1,4 +1,4 @@
-#include "MetasoundSahNode.h"
+#include "MetasoundBranches/Public/MetasoundSahNode.h"
 #include "Modules/ModuleManager.h"
 
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
@@ -77,7 +77,7 @@ namespace Metasound
                     PluginAuthor,
                     PluginNodeMissingPrompt,
                     NodeInterface,
-                    { }, // Category Hierarchy 
+                    { "Custom", "Branches" }, // Category Hierarchy 
                     { }, // Keywords for searching
                     FNodeDisplayStyle{}
                 };
