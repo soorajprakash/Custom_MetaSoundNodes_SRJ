@@ -67,20 +67,33 @@ namespace Metasound
                 {
                     FVertexInterface NodeInterface = DeclareVertexInterface();
 
-                    FNodeClassMetadata Metadata
-                    {
-                        FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant },
-                        1, // Major Version
-                        0, // Minor Version
-                        METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
-                        METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
-                        PluginAuthor,
-                        PluginNodeMissingPrompt,
-                        NodeInterface,
-                        METASOUND_LOCTEXT("Custom","Branches"), // Category Hierarchy 
-                        { }, // Keywords for searching
-                        FNodeDisplayStyle{}
-                    };
+                    FNodeClassMetadata Metadata;
+                    //{
+                    //    FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant },
+                    //    1, // Major Version
+                    //    0, // Minor Version
+                    //    METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
+                    //    METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
+                    //    PluginAuthor,
+                    //    PluginNodeMissingPrompt,
+                    //    NodeInterface,
+                    //    {
+                    //                            METASOUND_LOCTEXT("Custom","Branches"), // Category Hierarchy 
+                    //    }
+                    //    {}, // Keywords for searching
+                    //    FNodeDisplayStyle{}
+                    //};
+
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Sample and Hold"), StandardNodes::AudioVariant };
+                    Metadata.MajorVersion = 1;
+                    Metadata.MinorVersion = 0;
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH");
+                    Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger.");
+                    Metadata.Author = PluginAuthor;
+                    Metadata.PromptIfMissing = PluginNodeMissingPrompt;
+                    Metadata.DefaultInterface = DeclareVertexInterface();
+                    Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
+                    Metadata.Keywords = TArray<FText>(); // Keywords for searching
 
                     return Metadata;
                 };
