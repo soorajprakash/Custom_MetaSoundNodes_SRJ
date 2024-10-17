@@ -1,3 +1,4 @@
+#include "MetasoundSahNode.h"
 #include "Modules/ModuleManager.h"
 
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
