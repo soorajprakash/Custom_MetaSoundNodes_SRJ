@@ -64,26 +64,26 @@ namespace Metasound
         static const FNodeClassMetadata& GetNodeInfo()
         {
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
-            {
-                FVertexInterface NodeInterface = DeclareVertexInterface();
-
-                FNodeClassMetadata Metadata
                 {
-                    FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant }, 
-                    1, // Major Version
-                    0, // Minor Version
-                    METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
-                    METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
-                    PluginAuthor,
-                    PluginNodeMissingPrompt,
-                    NodeInterface,
-                    { "Custom", "Branches" }, // Category Hierarchy 
-                    { }, // Keywords for searching
-                    FNodeDisplayStyle{}
-                };
+                    FVertexInterface NodeInterface = DeclareVertexInterface();
 
-                return Metadata;
-            };
+                    FNodeClassMetadata Metadata
+                    {
+                        FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant },
+                        1, // Major Version
+                        0, // Minor Version
+                        METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
+                        METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
+                        PluginAuthor,
+                        PluginNodeMissingPrompt,
+                        NodeInterface,
+                        METASOUND_LOCTEXT("Custom","Branches"), // Category Hierarchy 
+                        { }, // Keywords for searching
+                        FNodeDisplayStyle{}
+                    };
+
+                    return Metadata;
+                };
 
             static const FNodeClassMetadata Metadata = CreateNodeClassMetadata();
             return Metadata;
