@@ -188,7 +188,7 @@ namespace Metasound
     METASOUND_REGISTER_NODE(FSahNode);
 }
 
-IMPLEMENT_MODULE(FDefaultModuleImpl, MetasoundBranches)
+//IMPLEMENT_MODULE(FDefaultModuleImpl, MetasoundBranches)
 
 #undef LOCTEXT_NAMESPACE
 
