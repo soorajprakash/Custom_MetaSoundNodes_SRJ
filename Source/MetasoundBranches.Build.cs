@@ -23,7 +23,9 @@ public class MetasoundBranches : ModuleRules
             {
                 "Core",
                 "MetasoundEngine",
-                "MetasoundStandardNodes"
+                "MetasoundStandardNodes",
+                "MetasoundFrontend", 
+                "MetasoundGraphCore"
             }
         );
 
