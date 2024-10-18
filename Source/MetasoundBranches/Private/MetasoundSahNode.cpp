@@ -5,14 +5,14 @@
 #include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
-#include "Modules/ModuleManager.h"
+#include "Modules/ModuleManager.h"           // ModuleManager (is this still necessary?)
 
 // Required for ensuring the node is supported by all languages in engine. Must be unique per MetaSound.
 #define LOCTEXT_NAMESPACE "MetasoundStandardNodes_SahNode"
 
 namespace Metasound
 {
-    // Vertex Names - define your node's inputs and outputs here
+    // Vertex Names - define the node's inputs and outputs here
     namespace SahNodeNames
     {
         METASOUND_PARAM(InputSignal, "Signal", "Input signal to sample.");
@@ -22,7 +22,7 @@ namespace Metasound
         METASOUND_PARAM(OutputSignal, "Output", "Sampled output signal.");
     }
 
-    // Operator Class - defines the way your node is described, created and executed
+    // Operator Class - defines the way the node is described, created and executed
     class FSahOperator : public TExecutableOperator<FSahOperator>
     {
     public:
@@ -59,7 +59,7 @@ namespace Metasound
             return Interface;
         }
 
-        // Retrieves necessary metadata about your node
+        // Retrieves necessary metadata about the node
         static const FNodeClassMetadata& GetNodeInfo()
         {
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
@@ -86,7 +86,7 @@ namespace Metasound
             return Metadata;
         }
 
-        // Allows MetaSound graph to interact with your node's inputs
+        // Allows MetaSound graph to interact with the node's inputs
         virtual FDataReferenceCollection GetInputs() const override
         {
             using namespace SahNodeNames;
@@ -100,7 +100,7 @@ namespace Metasound
             return InputDataReferences;
         }
 
-        // Allows MetaSound graph to interact with your node's outputs
+        // Allows MetaSound graph to interact with the node's outputs
         virtual FDataReferenceCollection GetOutputs() const override
         {
             using namespace SahNodeNames;
@@ -112,7 +112,7 @@ namespace Metasound
             return OutputDataReferences;
         }
 
-        // Used to instantiate a new runtime instance of your node
+        // Used to instantiate a new runtime instance of the node
         static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
         {
             using namespace SahNodeNames;

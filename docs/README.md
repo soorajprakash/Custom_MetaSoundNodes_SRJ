@@ -28,18 +28,22 @@ A purely audio-rate version seemed like a good starting point for my first custo
 I used Anna Lantz's tutorial [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) as a starting point.
 According to the tutorial, this can live in a single .cpp file, but I found that I needed to include a header during troubleshooting (the issue might have been in the build process).
 
+The tutorial breaks everything down nicely, so I won't duplicate it here. 
 Most of the .cpp file is occupied by setting up the node and its pins (inlets/outlets), and registering the node. 
-The implementation of the sample and hold process itself is quite straightforward, as long as you don't mind pointers.
+The implementation of the sample and hold process itself is quite straightforward, as long as you don't mind pointers (which are pretty much everywhere in this context anyway).
 
-In the following code snippets, we can think of the constructor and execute function as "setup" and "loop" respectively.
+In the following code snippets, we could think of the operator class constructor and execute function as "setup" and "loop" respectively.
 
 #### Constructor
-```cpp
- FSahOperator(
+```C++
+// Formatting modified to help separate the parameters and initialisation list
+
+FSahOperator(
     // Arguments
     const FAudioBufferReadRef& InSignal,
     const FAudioBufferReadRef& InTrigger,
-    const FFloatReadRef& InThreshold)
+    const FFloatReadRef& InThreshold
+    )
 
     :
     
@@ -55,12 +59,12 @@ In the following code snippets, we can think of the constructor and execute func
     }
 ```
 
-The constructor takes three arguments: pointers to the buffers for input signal, the trigger signal, and the threshold. 
+The constructor has three parameters: pointers to the buffers for input signal, the trigger signal, and the threshold. 
 Member variables are then set in an initialization list, so the body of the constructor is empty in this case.
 `SampledValue` and `PreviousTriggerValue` are just regular float variables.
 
 #### Execute
-```cpp
+```C++
 void Execute()
     {
         int32 NumFrames = InputSignal->Num();
@@ -91,16 +95,16 @@ void Execute()
     }
 ```
 
-The `Execute` function processes an audio buffer/block of samples.
+Although we're working on individual samples, we have to work on them in chunks. The `Execute` function processes an audio buffer/block of samples.
 The block is broken down into "frames" -- each of which represents a sample point when information is read from each of the input buffers/inlets[^1].
 
-So within our loop of the `Execute` function, we need to loop through each of these frames, checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+Within our loop of the `Execute` function, we need to loop through each of these frames: checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 #### Misc Notes
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
 - PascalCase
-- prefixing type names e.g. `F` for structs containing floats
+- prefixing type names e.g. `F` to indicate class definitions for structs containing floats
 - header files start with `#pragma once`
 
 ### Bonus: Pure Data Implementation
@@ -126,6 +130,9 @@ Other key variables would be `SampledValue` and `previousTriggerValue`.
 `[expr~]` does not allow setting variables directly within the expression, and we can't create a feedback loop even if the values don't go through the same path.  
 Instead, we need to send the information out through the patch, which we do through delay lines with time set to 0 (`[delwrite~]` and `[delread~]`).
 The expr~ object is used to detect when the trigger signal crosses the threshold, and then the value of the input signal is sampled and held until the next trigger event.
+
+## Further references
+- [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
 
 [^1]: Not to be confused with video frames, etc.
 [^2]: We can actually use `[fexpr~]` instead: `fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold, $x1[0], $y[0]);` (I've included this as [Pd implementation 2](./Sah_audiorate_fexpr.pd))...but this point, we're not really patching any more.  Besides, the above example highlights similar feedback-related barriers that we might encounter if we were to try to recreate this using Metasound abstractions.
