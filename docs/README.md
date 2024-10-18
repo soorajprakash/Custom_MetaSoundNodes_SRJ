@@ -56,7 +56,7 @@ The implementation of the sample and hold itself is quite straightforward.
 
 Our constructor takes three arguments: the input signal, the trigger signal, and the threshold.  These are pointers to the data in the input buffers.
 The colon after the arguments signifies the start of an initialization list, which is used to set member variables -- in other languages we'd most likely do that in the body of the constructor.
-SampledValue and PreviousTriggerValue are just regular float variables.
+`SampledValue` and `PreviousTriggerValue` are just regular float variables.
 
 #### Execute ("loop"):
 ```cpp
@@ -90,10 +90,10 @@ void Execute()
         }
 ```
 
-The Execute function processes an audio buffer/block of samples.
+The `Execute` function processes an audio buffer/block of samples.
 Each block is broken down into "frames" -- each of which represents a sample point when we can take information from each of the input buffers represented by the inlets.
-So within our loop of the Execute function, we need to loop in turn through each frame, checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
-SignalData and TriggerData point to arrays of floats, as returned by FAudioBufferReadRef.
+So within our loop of the `Execute` function, we need to loop in turn through each frame, checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+`SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 
 ### Pure Data Implementation
