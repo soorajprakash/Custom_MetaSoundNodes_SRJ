@@ -29,7 +29,6 @@ As far as I know, `[expr~]` does not allow setting variables directly within the
 Instead, we need to send the information out through the patch, which we do through delay lines with time set to 0 (`[delwrite~]` and `[delread~]`).
 The expr~ object is used to detect when the trigger signal crosses the threshold, and then the value of the input signal is sampled and held until the next trigger event.
 
----
 [^1]: We may be able to get around this by using [fexpr~] instead...
 
 
