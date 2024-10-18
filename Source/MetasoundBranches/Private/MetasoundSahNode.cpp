@@ -16,11 +16,11 @@ namespace Metasound
     // Vertex Names - define your node's inputs and outputs here
     namespace SahNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Signal", "The input signal to sample.");
-        METASOUND_PARAM(InputTrigger, "Trigger", "The trigger signal.");
-        METASOUND_PARAM(InputThreshold, "Threshold", "Threshold for the trigger.");
+        METASOUND_PARAM(InputSignal, "Signal", "Input signal to sample.");
+        METASOUND_PARAM(InputTrigger, "Trigger", "Trigger signal.");
+        METASOUND_PARAM(InputThreshold, "Threshold", "Threshold for trigger.");
 
-        METASOUND_PARAM(OutputSignal, "Output", "The sampled output signal.");
+        METASOUND_PARAM(OutputSignal, "Output", "Sampled output signal.");
     }
 
     // Operator Class - defines the way your node is described, created and executed
@@ -68,21 +68,6 @@ namespace Metasound
                     FVertexInterface NodeInterface = DeclareVertexInterface();
 
                     FNodeClassMetadata Metadata;
-                    //{
-                    //    FNodeClassName { StandardNodes::Namespace, "Sample and Hold", StandardNodes::AudioVariant },
-                    //    1, // Major Version
-                    //    0, // Minor Version
-                    //    METASOUND_LOCTEXT("SahNodeDisplayName", "SaH"),
-                    //    METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger."),
-                    //    PluginAuthor,
-                    //    PluginNodeMissingPrompt,
-                    //    NodeInterface,
-                    //    {
-                    //                            METASOUND_LOCTEXT("Custom","Branches"), // Category Hierarchy 
-                    //    }
-                    //    {}, // Keywords for searching
-                    //    FNodeDisplayStyle{}
-                    //};
 
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("Sample and Hold"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
@@ -202,7 +187,4 @@ namespace Metasound
     METASOUND_REGISTER_NODE(FSahNode);
 }
 
-//IMPLEMENT_MODULE(FDefaultModuleImpl, MetasoundBranches)
-
 #undef LOCTEXT_NAMESPACE
-

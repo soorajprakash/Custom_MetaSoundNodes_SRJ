@@ -10,8 +10,8 @@
     "DocsURL": "https://github.com/matthewscharles/metasound-plugins",
     "MarketplaceURL": "",
     "CanContainContent": true,
-    "IsBetaVersion": true,
-    "IsExperimentalVersion": true,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": false,
     "Installed": false,
     "SupportedTargetPlatforms": [
         "Win64"
