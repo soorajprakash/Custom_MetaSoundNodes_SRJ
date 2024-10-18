@@ -1,15 +1,19 @@
 # Documentation
-As a starting point for the documentation, I'm throwing together some of my notes on the custom nodes and the thought processes behind them.
+As a starting point for the documentation, I'm throwing together some of my notes on the custom nodes.  I'll try to break a few ideas down along the way, partly to consolidate my own learning.
+
+This was my first attempt at writing a plugin for Unreal Engine, and with hindsight I would have tried something a bit simpler to start with.
+In particular, I still need to work out how best to approach the header files.
+
+If you're browsing the source code and see some odd choices, please let me know!
 
 ## Audio Rate Sample and Hold
 
 ### Function
 The output signal is held at the last value of the input signal when the trigger signal crosses a threshold.
 
-The sample and hold function in Metasynth takes an audio rate signal as input, and a trigger signal as float.
+The existing sample and hold function in Metasynth takes an audio rate signal as input, and a trigger signal as float.
 
 A purely audio-rate version seemed like a good starting point for my first custom node in Metasynth, since it's one of my go-to building blocks in other environments such as Pd.
-The threshold control remains a float, as it's rare that we'd be setting this all that frequently.
 
 ### Inputs
 - **Signal**: Audio rate signal to be sampled.
@@ -22,7 +26,10 @@ The threshold control remains a float, as it's rare that we'd be setting this al
 ### C++ Implementation
 
 I used Anna Lantz's tutorial [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) as a starting point.
-This can live in a single file, but I found I needed to include a header while I was troubleshooting.
+According to the tutorial, this can live in a single .cpp file, but I found I needed to include a header while I was troubleshooting.
+The source follows [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4), notably:
+- PascalCase
+- prefixing type names e.g. `F` for structs containing floats.
 
 Most of the .cpp file is occupied by setting up the node and its pins (inlets/outlets), and registering the node. 
 The implementation of the sample and hold itself is quite straightforward.
@@ -33,15 +40,23 @@ The implementation of the sample and hold itself is quite straightforward.
             const FAudioBufferReadRef& InSignal,
             const FAudioBufferReadRef& InTrigger,
             const FFloatReadRef& InThreshold)
-            : InputSignal(InSignal)
-            , InputTrigger(InTrigger)
-            , InputThreshold(InThreshold)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
-            , SampledValue(0.0f)
-            , PreviousTriggerValue(0.0f)
+
+            :
+            
+            InputSignal(InSignal),
+            InputTrigger(InTrigger),
+            InputThreshold(InThreshold),
+            OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num())),
+            SampledValue(0.0f),
+            PreviousTriggerValue(0.0f)
         {
+            // nothing to do here...
         }
 ```
+
+Our constructor takes three arguments: the input signal, the trigger signal, and the threshold.  These are pointers to the data in the input buffers.
+The colon after the arguments signifies the start of an initialization list, which is used to set member variables -- in other languages we'd most likely do that in the body of the constructor.
+SampledValue and PreviousTriggerValue are just regular float variables.
 
 #### Execute ("loop"):
 ```cpp
@@ -75,10 +90,17 @@ void Execute()
         }
 ```
 
+The Execute function processes an audio buffer/block of samples.
+Each block is broken down into "frames" -- each of which represents a sample point when we can take information from each of the input buffers represented by the inlets.
+So within our loop of the Execute function, we need to loop in turn through each frame, checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+SignalData and TriggerData point to arrays of floats, as returned by FAudioBufferReadRef.
+
+
 ### Pure Data Implementation
-Pure Data already has a sample and hold object [samphold~], which accepts audio rate signals through both inlets.
 While drafting this documentation, I thought that a Pure Data signal flow might help illustrate the process for people less familiar with DSP code. 
 However, since the idea is to stay in audio rate, we don't exactly end up with a typical Pd patch -- in fact, if anything, this probably helps illustrate how C++ can be a lot easier to deal with in some cases.
+
+Pure Data already has a sample and hold object [samphold~], which accepts audio rate signals through both inlets, but here's how we could recreate it:
 
 ![Pure Data version of the sample and hold object](./SaH_audiorate_Pd.png)
 - [Pure Data abstraction](./SaH_audiorate.pd)
@@ -98,4 +120,4 @@ Other key variables would be `SampledValue` and `previousTriggerValue`.
 Instead, we need to send the information out through the patch, which we do through delay lines with time set to 0 (`[delwrite~]` and `[delread~]`).
 The expr~ object is used to detect when the trigger signal crosses the threshold, and then the value of the input signal is sampled and held until the next trigger event.
 
-[^1]: We can actually use `[fexpr~]` instead: `fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold, $x1[0], $y[0]);` ([Pd implementation 2](./Sah_audiorate_fexpr.pd). At this point, we're not really patching any more.  Besides, the above example highlights similar feedback-related barriers that we might encounter in pure Metasound vs. coding in C++.
+[^1]: We can actually use `[fexpr~]` instead: `fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold, $x1[0], $y[0]);` ([Pd implementation 2](./Sah_audiorate_fexpr.pd))...but this point, we're not really patching any more.  Besides, the above example highlights similar feedback-related barriers that we might encounter in pure Metasound vs. coding in C++.
