@@ -1,0 +1,18 @@
+#N canvas 2123 155 1399 455 12;
+#X obj 32 19 inlet~ signal;
+#X obj 532 21 inlet~ trigger;
+#X obj 30 81 outlet~;
+#X obj 849 0 inlet threshold;
+#X obj 31 48 fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold \, $x1[0] \, $y[0]) \;, f 72;
+#X obj 849 106 v threshold;
+#X obj 849 72 \$1;
+#X obj 971 0 loadbang;
+#X obj 971 24 delay 10;
+#X text 1032 25 take a moment to allow the parent to set value;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 3 0 6 0;
+#X connect 4 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 6 0;
