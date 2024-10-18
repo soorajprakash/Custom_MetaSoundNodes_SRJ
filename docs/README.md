@@ -13,9 +13,9 @@ Pure Data already has a sample and hold object [samphold~], which accepts audio 
 I thought this might help illustrate the process for people less familiar with DSP code. 
 However, since the idea is to stay in audio rate, we don't exactly end up with a typical Pd patch.
 
-![Pure Data version of the sample and hold object](./docs/SaH_audiorate_Pd.png)
-- [Pure Data abstraction](./docs/SaH_audiorate.pd)
-- [Example patch](./docs/SaH_audiorate_example.pd)]
+![Pure Data version of the sample and hold object](./SaH_audiorate_Pd.png)
+- [Pure Data abstraction](./SaH_audiorate.pd)
+- [Example patch](./SaH_audiorate_example.pd)
 
 Unlike other environments like Max, there's no built-in object for `[>~]` (a "greater than" comparison) in Pd. 
 Instead, we can use the `[expr~]` object, which evaluates of a C-like expression.
