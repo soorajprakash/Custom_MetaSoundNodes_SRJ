@@ -107,11 +107,11 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Sample and Hold"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("SaH Bank"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH Bank");
-                    Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Bank of 4 sample and hold modules.");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahBankNodeDisplayName", "SaH Bank");
+                    Metadata.Description = METASOUND_LOCTEXT("SahBankNodeDesc", "Bank of 4 sample and hold modules.");
                     Metadata.Author = PluginAuthor;
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
