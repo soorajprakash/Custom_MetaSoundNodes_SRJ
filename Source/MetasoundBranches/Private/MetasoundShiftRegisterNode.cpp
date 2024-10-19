@@ -1,4 +1,4 @@
-#include "MetasoundShiftRegisterNode.h"
+#include "MetasoundBranches/Public/MetasoundShiftRegisterNode.h"
 #include "MetasoundExecutableOperator.h"
 #include "MetasoundPrimitives.h"
 #include "MetasoundNodeRegistrationMacro.h"
@@ -84,12 +84,12 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("ShiftRegisterDisplayName", "Shift Register");
-                Metadata.Description = METASOUND_LOCTEXT("ShiftRegisterDesc", "Shift the input signal across 8 inputs on trigger.");
+                Metadata.Description = METASOUND_LOCTEXT("ShiftRegisterDesc", "Shift the input signal across 8 inputs upon trigger.");
                 Metadata.Author = PluginAuthor;
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
-                Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Registers") };
-                Metadata.Keywords = { METASOUND_LOCTEXT("Shift"), METASOUND_LOCTEXT("Register"), METASOUND_LOCTEXT("Delay") };
+                Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
+                Metadata.Keywords = TArray<FText>(); // Keywords for searching
 
                 return Metadata;
             };
@@ -191,12 +191,12 @@ namespace Metasound
         FAudioBufferReadRef InputTrigger;
         FFloatReadRef InputThreshold;
 
-        // Outputs
-        TArray<FAudioBufferWriteRef> OutputSignals;
-
         // Internal variables
         TArray<float> SampledValues;
         float PreviousTriggerValue;
+
+        // Outputs
+        TArray<FAudioBufferWriteRef> OutputSignals;
     };
 
     class FShiftRegisterNode : public FNodeFacade
