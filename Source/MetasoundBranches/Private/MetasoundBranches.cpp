@@ -7,7 +7,7 @@
 void FMetasoundBranchesModule::StartupModule()
 {
 
-    UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started..."));
+    UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started (bank version)..."));
     // Initialization
 }
 
