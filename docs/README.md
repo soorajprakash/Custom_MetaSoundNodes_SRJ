@@ -140,7 +140,6 @@ The expr~ object is used to detect when the trigger signal crosses the threshold
 ---
 
 ## References
-- [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
 - [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart)
 - [Sample and Hold on SweetWater inSync](https://www.sweetwater.com/insync/a-simple-guide-to-modulation-sample-and-hold/)
 
