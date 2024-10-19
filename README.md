@@ -5,9 +5,11 @@ This repo contains some custom nodes for UE5 Metasound, which I hope to eventual
 - [Initial notes](./docs/README.md): information on the first custom node and development process.
 
 ## MetasoundBranches
-There is currently one test node available in the MetasoundBranches plugin:
+There is currently one test node available in the MetasoundBranches plugin, with several more in development:
 
 - `SaH`: an alternative sample and hold unit with an audio-rate trigger.
+
+This appears in a "Branches" subfolder within Metasound Functions.
 
 ![Signal flow showing a sample and hold node connected to two sources at audio rate](./docs/SaH_demo.png)
 
