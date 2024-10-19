@@ -25,10 +25,10 @@ namespace Metasound
         METASOUND_PARAM(InputTrigger4, "Trigger 4", "Trigger signal 4.");
         METASOUND_PARAM(InputThreshold, "Threshold", "Threshold for triggers.");
 
-        METASOUND_PARAM(OutputSignal1, "Output", "Sampled output signal.");
-        METASOUND_PARAM(OutputSignal2, "Output", "Sampled output signal.");
-        METASOUND_PARAM(OutputSignal3, "Output", "Sampled output signal.");
-        METASOUND_PARAM(OutputSignal4, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal1, "Output 1", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal2, "Output 2", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal3, "Output 3", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal4, "Output 4", "Sampled output signal.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
