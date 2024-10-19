@@ -16,12 +16,18 @@ The existing sample and hold function in Metasound takes an audio rate signal as
 A purely audio-rate version seemed like a good starting point for my first custom node in Metasound, since it's one of my go-to building blocks in other environments such as Pd.
 
 ### Inputs
-- **Signal**: Audio rate signal to be sampled.
-- **Trigger**: Audio rate signal that triggers the sample and hold.
-- **Threshold**: Float value that determines when the trigger signal is considered "on".
+
+| Name       | Description                                             | Type |
+|------------|---------------------------------------------------------|------|
+| Signal     | Audio rate signal to be sampled.                        | Audio Buffer |
+| Trigger    | Audio rate signal that triggers the sample and hold.    | Audio Buffer |
+| Threshold  | Float value that determines when the trigger signal is considered "on". | Float |
 
 ### Outputs
-- **Output**: The sampled signal.
+
+| Name    | Description                          | Type |
+|---------|--------------------------------------|------|
+| Output  | The resulting sampled signal.        | Audio Buffer |
 
 ### C++ Implementation (Custom Metasound Node)
 
@@ -103,9 +109,9 @@ Within our loop of the `Execute` function, we need to loop through each of these
 
 #### Misc Notes
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
-- PascalCase
+- use PascalCase throughout
 - prefixing type names e.g. `F` to indicate class definitions for structs containing floats
-- header files start with `#pragma once`
+- header files start with `#pragma once` (only include the header once in a compilation)
 
 ### Bonus: Pure Data Implementation
 While drafting this documentation, I thought that a Pure Data signal flow might help illustrate the process for people less familiar with DSP code. 
@@ -131,8 +137,14 @@ Other key variables would be `SampledValue` and `previousTriggerValue`.
 Instead, we need to send the information out through the patch, which we do through delay lines with time set to 0 (`[delwrite~]` and `[delread~]`).
 The expr~ object is used to detect when the trigger signal crosses the threshold, and then the value of the input signal is sampled and held until the next trigger event.
 
-## Further references
+---
+
+## References
 - [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
+- [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart)
+- [Sample and Hold on SweetWater inSync](https://www.sweetwater.com/insync/a-simple-guide-to-modulation-sample-and-hold/)
+
+---
 
 [^1]: Not to be confused with video frames, etc.
 [^2]: We can actually use `[fexpr~]` instead: `fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold, $x1[0], $y[0]);` (I've included this as [Pd implementation 2](./Sah_audiorate_fexpr.pd))...but this point, we're not really patching any more.  Besides, the above example highlights similar feedback-related barriers that we might encounter if we were to try to recreate this using Metasound abstractions.
