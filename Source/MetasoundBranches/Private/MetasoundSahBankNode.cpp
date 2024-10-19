@@ -25,7 +25,10 @@ namespace Metasound
         METASOUND_PARAM(InputTrigger4, "Trigger 4", "Trigger signal 4.");
         METASOUND_PARAM(InputThreshold, "Threshold", "Threshold for triggers.");
 
-        METASOUND_PARAM(OutputSignal, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal1, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal2, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal3, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal4, "Output", "Sampled output signal.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
@@ -44,18 +47,18 @@ namespace Metasound
             const FAudioBufferReadRef& InTrigger4,
             const FFloatReadRef& InThreshold)
             : InputSignal1(InSignal1)
-            , InputTrigger1(InTrigger)
+            , InputTrigger1(InTrigger1)
             , InputSignal2(InSignal2)
-            , InputTrigger2(InTrigger)
+            , InputTrigger2(InTrigger2)
             , InputSignal3(InSignal3)
-            , InputTrigger3(InTrigger)
+            , InputTrigger3(InTrigger3)
             , InputSignal4(InSignal4)
-            , InputTrigger4(InTrigger)
+            , InputTrigger4(InTrigger4)
             , InputThreshold(InThreshold)
-            , OutputSignal1(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
-            , OutputSignal2(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
-            , OutputSignal3(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
-            , OutputSignal4(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
+            , OutputSignal1(FAudioBufferWriteRef::CreateNew(InSignal1->Num()))
+            , OutputSignal2(FAudioBufferWriteRef::CreateNew(InSignal2->Num()))
+            , OutputSignal3(FAudioBufferWriteRef::CreateNew(InSignal3->Num()))
+            , OutputSignal4(FAudioBufferWriteRef::CreateNew(InSignal4->Num()))
             , SampledValue1(0.0f)
             , SampledValue2(0.0f)
             , SampledValue3(0.0f)
@@ -131,12 +134,12 @@ namespace Metasound
 
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal1), InputSignal1);
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger1), InputTrigger1);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal1), InputSignal2);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger1), InputTrigger2);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal1), InputSignal3);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger1), InputTrigger3);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal1), InputSignal4);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger1), InputTrigger4);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal2), InputSignal2);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger2), InputTrigger2);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal3), InputSignal3);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger3), InputTrigger3);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal4), InputSignal4);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger4), InputTrigger4);
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputThreshold), InputThreshold);
 
             return InputDataReferences;
@@ -165,14 +168,14 @@ namespace Metasound
             const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal1), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger1), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal2), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger2), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal3), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger3), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal4), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger4), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal1), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputTrigger1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger1), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal2 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal2), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputTrigger2 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger2), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal3 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal3), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputTrigger3 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger3), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal4 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal4), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputTrigger4 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger4), InParams.OperatorSettings);
             TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputThreshold), InParams.OperatorSettings);
 
             return MakeUnique<FSahBankOperator>(
@@ -191,23 +194,24 @@ namespace Metasound
         // Primary node functionality
         void Execute()
         {
-            int32 NumFrames = InputSignal->Num();
-
-            const float* SignalData1 = InputSignal->GetData();
-            const float* TriggerData1 = InputTrigger->GetData();
-            float* OutputData1 = OutputSignal->GetData();
+            // Should be arbitrary which signal I get this from...
+            int32 NumFrames = InputSignal1->Num();
+           
+            const float* SignalData1 = InputSignal1->GetData();
+            const float* TriggerData1 = InputTrigger1->GetData();
+            float* OutputData1 = OutputSignal1->GetData();
             
-            const float* SignalData2 = InputSignal->GetData();
-            const float* TriggerData2 = InputTrigger->GetData();
-            float* OutputData2 = OutputSignal->GetData();
+            const float* SignalData2 = InputSignal2->GetData();
+            const float* TriggerData2 = InputTrigger2->GetData();
+            float* OutputData2 = OutputSignal2->GetData();
             
-            const float* SignalData3 = InputSignal->GetData();
-            const float* TriggerData3 = InputTrigger->GetData();
-            float* OutputData3 = OutputSignal->GetData();
+            const float* SignalData3 = InputSignal3->GetData();
+            const float* TriggerData3 = InputTrigger3->GetData();
+            float* OutputData3 = OutputSignal3->GetData();
             
-            const float* SignalData4 = InputSignal->GetData();
-            const float* TriggerData4 = InputTrigger->GetData();
-            float* OutputData4 = OutputSignal->GetData();
+            const float* SignalData4 = InputSignal4->GetData();
+            const float* TriggerData4 = InputTrigger4->GetData();
+            float* OutputData4 = OutputSignal4->GetData();
 
             float Threshold = *InputThreshold;
 
