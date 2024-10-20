@@ -26,6 +26,8 @@ Upon installing the plugin, these items will appear in a *Branches* subfolder wi
 ```
 
 Please see [Learning / Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
+
 ---
+
 ## Links
 - [Metasounds Tutorial videos](https://dev.epicgames.com/community/learning/recommended-community-tutorial/Kw7l/unreal-engine-metasounds)
