@@ -1,18 +1,11 @@
-// Name: MetasoundSlewNode
-// Inlets: signal, rise time, fall time (audio, float, float)
-// Outlets: signal (audio)
-
-// Work with seconds/milliseconds instead of samples
-// If so, need to get sample rate
-// Set defaults for rise and fall times (0)
-
-// SlewNode.cpp
-
-#include "Metasound/Metasound.h"
-#include "Metasound/Nodes/MetasoundNodeRegistrationMacro.h"
-#include "Metasound/MetasoundStandardNodesNames.h"
-#include "Metasound/MetasoundFacade.h"
-#include "Metasound/MetasoundParamHelper.h"
+#include "MetasoundBranches/Public/MetasoundSlewNode.h"
+#include "MetasoundExecutableOperator.h"     // TExecutableOperator class
+#include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
+#include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
+#include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
+#include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
+#include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
+#include "AudioDevice.h"
 
 #define LOCTEXT_NAMESPACE "MetasoundSlewNode"
 
@@ -35,8 +28,8 @@ namespace Metasound
         // Constructor
         FSlewOperator(
             const FAudioBufferReadRef& InSignal,
-            const TDataReadReference<float>& InRiseTime,
-            const TDataReadReference<float>& InFallTime,
+            const FFloatReadRef& InRiseTime,
+            const FFloatReadRef& InFallTime,
             int32 InSampleRate)
             : InputSignal(InSignal)
             , InputRiseTime(InRiseTime)
@@ -75,8 +68,8 @@ namespace Metasound
                 Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew"), StandardNodes::AudioVariant };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew Rate Limiter");
-                Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Applies slew rate limiting to an input audio signal with separate rise and fall times.");
+                Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew");
+                Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Applies slew limiting to an input audio signal, with separate rise and fall times.");
                 Metadata.Author = PluginAuthor;
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
@@ -141,27 +134,36 @@ namespace Metasound
                 InParams.OperatorSettings
             );
 
-            // Retrieve sample rate from the environment
-            int32 SampleRate = InParams.GetSampleRate();
+            int32 SampleRate = 44100; // Default sample rate
+
+            // Retrieve the sample rate from the engine's audio device
+            // (unsure about GEngine, this seems to be old)
+            
+           /* if (GEngine)
+            {
+                if (FAudioDevice* AudioDevice = GEngine->GetMainAudioDevice())
+                {
+                    SampleRate = AudioDevice->GetSampleRate();
+                }
+            }*/
 
             return MakeUnique<FSlewOperator>(InputSignal, InputRiseTime, InputFallTime, SampleRate);
         }
 
-        // Processing Logic
-        virtual void Execute() override
+        // Primary node functionality
+        virtual void Execute()
         {
             int32 NumFrames = InputSignal->Num();
 
             const float* SignalData = InputSignal->GetData();
-            const float* RiseTimeData = InputRiseTime->GetData();
-            const float* FallTimeData = InputFallTime->GetData();
             float* OutputDataPtr = OutputSignal->GetData();
+
+            float RiseTime = *InputRiseTime;
+            float FallTime = *InputFallTime;
 
             for (int32 i = 0; i < NumFrames; ++i)
             {
                 float SignalSample = SignalData[i];
-                float RiseTime = RiseTimeData[i];
-                float FallTime = FallTimeData[i];
 
                 // Calculate alpha values based on rise and fall times
                 // ? does UE/Metasound allow restricting the lower bound of float inputs to 0 ?
@@ -197,8 +199,8 @@ namespace Metasound
     private:
         // Input References
         FAudioBufferReadRef InputSignal;
-        TDataReadReference<float> InputRiseTime;
-        TDataReadReference<float> InputFallTime;
+        FFloatReadRef InputRiseTime;
+        FFloatReadRef InputFallTime;
 
         // Output Reference
         FAudioBufferWriteRef OutputSignal;
