@@ -20,12 +20,23 @@ Mapping out a plugin template...these notes are mostly for my own reference, for
 
 Items in *italics* must use the namespace described in the vertex names.
 
+## Checklists
+### Add an input
+- [ ] Add a new `METASOUND_PARAM` to vertex names in the node's namespace
+- [ ] Add a reference to the input buffer to operator parameters (constructor)
+- [ ] Initialise a corresponding variable
+- [ ] Add the new input (TInputDataVertexModel) to DeclareVertexInterface
+- [ ] Add DataReference to GetInputs
+- [ ] Add GetDataReadReferenceOrConstructWithVertexDefault to CreateOperator
+- [ ] Add the input as an argument to MakeUnique<*node*Operator>
+- [ ] Add private variable for the input
+
 ## Misc Notes
 - [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
-  - Add()
-  - SetNum() 
-  - Num() 
-  - get length
+ - Add()
+ - SetNum() 
+ - Num() 
+ - get length
 
 ---
 
