@@ -17,6 +17,7 @@ namespace Metasound
     namespace DustNodeNames
     {
         METASOUND_PARAM(InputDensity, "Density", "Density control signal (bi-polar).");
+		METASOUND_PARAM(InputDensityOffset, "Density Offset", "Density control offset.");
     
         METASOUND_PARAM(OutputImpulse, "Output", "Impulse output signal.");
     }
@@ -27,8 +28,10 @@ namespace Metasound
     public:
         // Constructor
         FDustOperator(
-            const FAudioBufferReadRef& InDensity)
+            const FAudioBufferReadRef& InDensity,
+            const FFloatReadRef& InDensityOffset)
             : InputDensity(InDensity)
+            , InputDensityOffset(InDensityOffset)
             , OutputImpulse(FAudioBufferWriteRef::CreateNew(InDensity->Num()))
             , RNGStream(InitialSeed()) // Initialize with a seed
         {
@@ -42,6 +45,7 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity))
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset))
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputImpulse))
@@ -86,6 +90,7 @@ namespace Metasound
             FDataReferenceCollection InputDataReferences;
 
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensity), InputDensity);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensityOffset), InputDensityOffset);
 
             return InputDataReferences;
         }
@@ -111,6 +116,7 @@ namespace Metasound
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FAudioBuffer> InputDensity = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensity), InParams.OperatorSettings);
+            TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputDensityOffset, METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
 
             return MakeUnique<FDustOperator>(InputDensity);
         }
@@ -121,6 +127,7 @@ namespace Metasound
             int32 NumFrames = InputDensity->Num();
 
             const float* DensityData = InputDensity->GetData();
+			const float InputDensityOffsetValue = InputDensityOffset->Get();
             float* OutputDataPtr = OutputImpulse->GetData();
 
             for (int32 i = 0; i < NumFrames; ++i)
@@ -128,6 +135,7 @@ namespace Metasound
                 // Calculate threshold based on density
                 float Density = DensityData[i];
                 float AbsDensity = FMath::Abs(Density);
+				AbsDensity += InputDensityOffsetValue;
                 float Threshold = 1.0f - AbsDensity * 0.0009f; // 1.0 - |density| * 0.0009
 
                 // Generate random number between 0 and 1 using FRandomStream
@@ -149,6 +157,7 @@ namespace Metasound
 
         // Inputs
         FAudioBufferReadRef InputDensity;
+		FFloatReadRef InputDensityOffset;
 
         // Outputs
         FAudioBufferWriteRef OutputImpulse;
