@@ -34,7 +34,6 @@ A purely audio-rate version seemed like a good starting point for my first custo
 I used Anna Lantz's tutorial [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) as a starting point.
 According to the tutorial, this can live in a single .cpp file, but I found that I needed to include a header during troubleshooting (the issue might have been in the build process).
 
-The tutorial breaks everything down nicely, so I won't duplicate it here. 
 Most of the .cpp file is occupied by setting up the node and its pins (inlets/outlets), and registering the node. 
 The implementation of the sample and hold process itself is quite straightforward, as long as you don't mind pointers (which are pretty much everywhere in this context anyway).
 
@@ -101,10 +100,11 @@ void Execute()
     }
 ```
 
-Although we're dealing with individual samples, they come in and out of the `Execute function` as audio buffers. 
-The block is broken down into "frames", each of which represents a sample point when information is read from each of the input buffers.[^1]
+Although we're dealing with individual samples, they come in and out of the `Execute` function as audio buffers, also known as blocks. Depending on the buffer size of the host, the size of this block might range from 32 to 2048 samples (this is the same buffer size we typically modify in audio software to balance latency and performance).
 
-We therefore need to loop through these frames during each cycle of the `Execute` function: checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+A block is broken down into "frames", each of which represents a sample point when information is read from each of the input buffers.[^1]
+
+To process the signal, we therefore need to loop through these frames during each cycle of the `Execute` function: checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
 
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
@@ -118,4 +118,4 @@ I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/doc
 
 ---
 
-[^1]: Not to be confused with video frames, etc.
+[^1]: Not to be confused with video frames, etc. although the concept is similar.
