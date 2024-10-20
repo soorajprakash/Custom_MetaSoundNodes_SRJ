@@ -5,7 +5,7 @@ This repo contains some custom nodes for UE5 Metasounds, which I hope to eventua
 - [Initial notes](./docs/README.md): information on the first custom node and development process.
 
 ## MetasoundBranches
-There are currently two test nodes available in the MetasoundBranches plugin, with several more in development:
+There are currently three test nodes available in the MetasoundBranches plugin, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
