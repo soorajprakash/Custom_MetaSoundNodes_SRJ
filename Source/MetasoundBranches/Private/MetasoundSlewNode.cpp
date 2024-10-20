@@ -5,23 +5,22 @@
 #include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
-#include "AudioDevice.h"
 
 #define LOCTEXT_NAMESPACE "MetasoundSlewNode"
 
 namespace Metasound
 {
-    // Define unique namespace and node name
+    // Vertex Names - define the node's inputs and outputs here
     namespace SlewNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Signal", "Input audio signal to be slew rate limited.");
-        METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds for slew rate limiting.");
-        METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds for slew rate limiting.");
+        METASOUND_PARAM(InputSignal, "Signal", "Audio signal to smooth.");
+        METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
+        METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
         METASOUND_PARAM(OutputSignal, "Output", "Slew rate limited output signal.");
     }
 
-    // Operator Class - Implements the node's processing logic
+    // Operator Class - defines the way the node is described, created and executed
     class FSlewOperator : public TExecutableOperator<FSlewOperator>
     {
     public:
@@ -40,7 +39,7 @@ namespace Metasound
         {
         }
 
-        // Vertex Interface Declaration
+        // Helper function for constructing vertex interface
         static const FVertexInterface& DeclareVertexInterface()
         {
             using namespace SlewNodeNames;
@@ -69,7 +68,7 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew");
-                Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Applies slew limiting to an input audio signal, with separate rise and fall times.");
+                Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Smooth the rise and fall times of an incoming signal.");
                 Metadata.Author = PluginAuthor;
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
@@ -136,17 +135,6 @@ namespace Metasound
 
             int32 SampleRate = 44100; // Default sample rate
 
-            // Retrieve the sample rate from the engine's audio device
-            // (unsure about GEngine, this seems to be old)
-            
-           /* if (GEngine)
-            {
-                if (FAudioDevice* AudioDevice = GEngine->GetMainAudioDevice())
-                {
-                    SampleRate = AudioDevice->GetSampleRate();
-                }
-            }*/
-
             return MakeUnique<FSlewOperator>(InputSignal, InputRiseTime, InputFallTime, SampleRate);
         }
 
@@ -166,8 +154,7 @@ namespace Metasound
                 float SignalSample = SignalData[i];
 
                 // Calculate alpha values based on rise and fall times
-                // ? does UE/Metasound allow restricting the lower bound of float inputs to 0 ?
-                // (For now, if time is greater than 0, calculate alpha value, else set to 0)
+                // Restrict lower bound to 0
                 // Alpha = exp(-1 / (time * sample rate))
                 
                 float RiseAlpha = (RiseTime > 0.0f) ? FMath::Exp(-1.0f / (RiseTime * SampleRate)) : 0.0f;
@@ -177,17 +164,14 @@ namespace Metasound
 
                 if (SignalSample > PreviousOutputSample)
                 {
-                    // Rising edge
                     OutputSample = RiseAlpha * PreviousOutputSample + (1.0f - RiseAlpha) * SignalSample;
                 }
                 else if (SignalSample < PreviousOutputSample)
                 {
-                    // Falling edge
                     OutputSample = FallAlpha * PreviousOutputSample + (1.0f - FallAlpha) * SignalSample;
                 }
                 else
                 {
-                    // No change
                     OutputSample = SignalSample;
                 }
 
