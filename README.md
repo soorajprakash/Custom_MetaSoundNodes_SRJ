@@ -1,21 +1,26 @@
-# Metasound-Plugins 
-This repo contains some custom nodes for UE5 Metasounds, which I hope to eventually release as a plugin (working title "Branches").
+# MetaSound-Plugins 
+This repo contains some custom nodes for UE5 MetaSounds, which I hope to eventually release as a plugin (working title: "Branches").
 
 ## Documentation
+Development notes:
 - [Initial notes](./docs/README.md): information on the first custom node and development process.
+- [Quick reference](./docs/quick_reference.md): my cheatsheet for creating and troubleshooting custom nodes. 
+
+The nodes available so far should be familiar to most audio folk, but please get in touch if you'd like to know more.
 
 ## MetasoundBranches
-There are currently three test nodes available in the MetasoundBranches plugin, with several more in development:
+There are currently four nodes available in the *MetaSoundBranches* plugin, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
 | `Dust`    | A randomly timed impulse generator with an audio-rate density control.|
 | `SaH`     | An alternative sample and hold unit with an audio-rate trigger. |
 | `SaH Bank`| A bank of four identical sample and hold units.              |
+| `Slew`    | A slew limiter to smooth out the rise and fall times of an audio signal. |
 
-Upon installing the plugin, these items will appear in a *Branches* subfolder within the Metasound *Functions* category.
+Upon installing the plugin, these items will appear in *Branches* within the Metasound *Functions* category.
 
-![Signal flow showing a sample and hold node connected to two sources at audio rate](./docs/SaH_demo.png)
+![Signal flow in a MetaSound Source showing a sample and hold node connected to two audio sources, controlling the volume of a white noise generator.](./docs/SaH_demo.png)
 
 ## Installation
 - Clone the repository into the Unreal Engine project's `Plugins` directory.
