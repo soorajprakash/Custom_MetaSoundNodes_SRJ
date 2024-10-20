@@ -5,7 +5,6 @@
 #include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
-#include "Modules/ModuleManager.h"           // ModuleManager (is this still necessary?)
 #include "Math/UnrealMathUtility.h"          // For FMath functions
 #include "Misc/DateTime.h"                   // For FDateTime::UtcNow()
 
@@ -17,9 +16,9 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace DustNodeNames
     {
-        METASOUND_PARAM(InputDensity, "Density", "Density control signal. Range -1 (threshold 0.9991) to 1 (threshold 0.9991), 0 (threshold 1).");
+        METASOUND_PARAM(InputDensity, "Density", "Density control signal (bi-polar).");
     
-        METASOUND_PARAM(OutputImpulse, "Output", "Impulse output signal. Outputs 1.0 when random number exceeds threshold, else 0.0.");
+        METASOUND_PARAM(OutputImpulse, "Output", "Impulse output signal.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
@@ -65,7 +64,7 @@ namespace Metasound
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("DustNodeDisplayName", "Dust");
-                    Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generates random impulse events based on an audio density control signal.");
+                    Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generates randomly timed impulse events based on an audio density control signal.");
                     Metadata.Author = PluginAuthor;
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
