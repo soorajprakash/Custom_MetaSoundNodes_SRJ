@@ -38,14 +38,12 @@ The tutorial breaks everything down nicely, so I won't duplicate it here.
 Most of the .cpp file is occupied by setting up the node and its pins (inlets/outlets), and registering the node. 
 The implementation of the sample and hold process itself is quite straightforward, as long as you don't mind pointers (which are pretty much everywhere in this context anyway).
 
-In the following code snippets, we could think of the operator class constructor and execute function as "setup" and "loop" respectively.
+In the following code snippets, we could think of the constructor and execute function as "setup" and "loop" respectively.
 
 #### Constructor
 ```C++
-// Formatting modified to help separate the parameters and initialisation list
-
 FSahOperator(
-    // Arguments
+    // Parameters
     const FAudioBufferReadRef& InSignal,
     const FAudioBufferReadRef& InTrigger,
     const FFloatReadRef& InThreshold
@@ -64,9 +62,11 @@ FSahOperator(
         // Nothing to do here...
     }
 ```
+After the usual parameter list, we also have an initialisation list which takes care of setting the member variables. In this case, this handles everything we'd otherwise do in the constructor body in other langauges.
+
+I've modified the formatting in the above example for anyone less familiar with C++ (the convention is to put the commas at the start of the line, in line with the colon, which took me a while to get used to having started in Java).   
 
 The constructor has three parameters: pointers to the buffers for input signal, the trigger signal, and the threshold. 
-Member variables are then set in an initialization list, so the body of the constructor is empty in this case.
 `SampledValue` and `PreviousTriggerValue` are just regular float variables.
 
 #### Execute
@@ -101,49 +101,21 @@ void Execute()
     }
 ```
 
-Although we're working on individual samples, we have to work on them in chunks. The `Execute` function processes an audio buffer/block of samples.
-The block is broken down into "frames" -- each of which represents a sample point when information is read from each of the input buffers/inlets[^1].
+Although we're dealing with individual samples, they come in and out of the `Execute function` as audio buffers. 
+The block is broken down into "frames", each of which represents a sample point when information is read from each of the input buffers.[^1]
 
-Within our loop of the `Execute` function, we need to loop through each of these frames: checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+We therefore need to loop through these frames during each cycle of the `Execute` function: checking the trigger signal against the threshold, and writing the corresponding entry in the output buffer accordingly.
+
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 #### Misc Notes
+Some supplementary notes on implementing the sample and hold node in Pd can be found [here](./SaH_Pd.md).
+
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
 - use PascalCase throughout
 - prefixing type names e.g. `F` to indicate class definitions for structs containing floats
 - header files start with `#pragma once` (only include the header once in a compilation)
 
-### Bonus: Pure Data Implementation
-While drafting this documentation, I thought that a Pure Data signal flow might help illustrate the process for people less familiar with DSP code. 
-However, keeping everything in audio rate complicates matters, so we don't exactly end up with a typical Pd patch. In fact, if anything, this probably helps illustrate how C++ makes more sense than visual patching at this lower level of abstraction.
-
-Pure Data already has a sample and hold object `[samphold~]`, which accepts audio rate signals through both inlets, but here's a version that adds a bonus inlet for the threshold:
-
-![Pure Data version of the sample and hold object](./SaH_audiorate_Pd.png)
-- [Pure Data abstraction](./SaH_audiorate.pd)
-- [Example patch](./SaH_audiorate_example.pd)
-
-Unlike other environments like Max, there's no built-in object for `[>~]` (a "greater than" comparison) in Pd. 
-Instead, I tend to use the `[expr~]` object, which evaluates a C-like expression.[^2]
-
-Inputs are defined within the expression as `$v1`, `$v2`, etc.
-An `if` statement is formatted as follows: if(condition, outputIfTrue, outputIfFalse).
-Multiple outputs can be defined by adding another expression after a semicolon (in this case, simply duplicating the input trigger value).
-
-We can use a variable (represented by `[value]` or `[v]`) for `InputThreshold`. 
-`InputTrigger` is represented by `$v1`, and `InputSignal` is `$v2`.
-Other key variables would be `SampledValue` and `previousTriggerValue`. 
-`[expr~]` does not allow setting variables directly within the expression, and we can't create a feedback loop even if the values don't go through the same path.  
-Instead, we need to send the information out through the patch, which we do through delay lines with time set to 0 (`[delwrite~]` and `[delread~]`).
-The expr~ object is used to detect when the trigger signal crosses the threshold, and then the value of the input signal is sampled and held until the next trigger event.
-
----
-
-## References
-- [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart)
-- [Sample and Hold on SweetWater inSync](https://www.sweetwater.com/insync/a-simple-guide-to-modulation-sample-and-hold/)
-
 ---
 
 [^1]: Not to be confused with video frames, etc.
-[^2]: We can actually use `[fexpr~]` instead: `fexpr~ if($x2[-1] < threshold && $x2[0] >= threshold, $x1[0], $y[0]);` (I've included this as [Pd implementation 2](./Sah_audiorate_fexpr.pd))...but this point, we're not really patching any more.  Besides, the above example highlights similar feedback-related barriers that we might encounter if we were to try to recreate this using Metasound abstractions.
