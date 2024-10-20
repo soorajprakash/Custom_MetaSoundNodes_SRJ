@@ -1,21 +1,24 @@
 # Quick Reference for Plugin Development
-Mapping out a plugin template...these are mostly notes for my own reference for now.
+Mapping out a plugin template...these notes are mostly for my own reference, for the time being.
 
 ## Overview
 - Vertex names (`METASOUND_PARAM`)
 - Operator class (inherit from `TExecutableOperator`)
-  - *Public*
+  - **Public**
     - Constructor
-    - Execute (`void`)
     - GetNodeInfo (`FNodeClassMetadata`)
-    - DeclareVertexInterface (`FVertexInterface`)
-    - GetInputs (`FDataReferenceCollection`)
-    - GetOutputs (`FDataReferenceCollection`)
-    - CreateOperator (`TUniquePtr<IOperator>`)
-  - *Private*
+    - *DeclareVertexInterface* (`FVertexInterface`)
+    - *GetInputs* (`FDataReferenceCollection`)
+    - *GetOutputs* (`FDataReferenceCollection`)
+    - *CreateOperator* (`TUniquePtr<IOperator>`)
+    - Execute (`void`)
+  - **Private**
     - Inputs
     - Outputs
-- Class definition (inherit from `FNodeFacade`)
+    - Internal variables
+- Node Class (inherit from `FNodeFacade`)
+
+Items in *italics* must use the namespace described in the vertex names.
 
 ## Checklists
 ### Add an input
@@ -29,13 +32,15 @@ Mapping out a plugin template...these are mostly notes for my own reference for 
 
 ## Misc Notes
 - [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
-  - Add()
-  - SetNum() 
-  - Num() 
-  - get length
-- METASOUND_PARAM: METASOUND_PARAM(NAME, NAME_TEXT, TOOLTIP_TEXT)
+ - Add()
+ - SetNum() 
+ - Num() 
+ - get length
+
 ---
 
 ## References
 
 - [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart)
+- [Factory method pattern (Wikipedia)](https://en.wikipedia.org/wiki/Factory_method_pattern)
+- [Epic Games Coding Standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4)
