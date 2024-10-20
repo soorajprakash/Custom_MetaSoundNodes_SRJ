@@ -44,7 +44,7 @@ namespace Metasound
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity))
+                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity)),
                     TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset))
                 ),
                 FOutputVertexInterface(
@@ -116,9 +116,9 @@ namespace Metasound
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FAudioBuffer> InputDensity = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensity), InParams.OperatorSettings);
-            TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputDensityOffset, METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
+            TDataReadReference<float> InputDensityOffset = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
 
-            return MakeUnique<FDustOperator>(InputDensity);
+            return MakeUnique<FDustOperator>(InputDensity, InputDensityOffset);
         }
 
         // Primary node functionality
@@ -127,7 +127,7 @@ namespace Metasound
             int32 NumFrames = InputDensity->Num();
 
             const float* DensityData = InputDensity->GetData();
-			const float InputDensityOffsetValue = InputDensityOffset->Get();
+			const float InputDensityOffsetValue = *InputDensityOffset;
             float* OutputDataPtr = OutputImpulse->GetData();
 
             for (int32 i = 0; i < NumFrames; ++i)

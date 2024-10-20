@@ -28,6 +28,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add the new input (TInputDataVertexModel) to DeclareVertexInterface
 - [ ] Add DataReference to GetInputs
 - [ ] Add GetDataReadReferenceOrConstructWithVertexDefault to CreateOperator
+- [ ] Add the input as an argument to MakeUnique<*node*Operator>
 - [ ] Add private variable for the input
 
 ## Misc Notes
