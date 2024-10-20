@@ -6,7 +6,7 @@ In particular, I still need to work out how best to approach the header files --
 
 If you're browsing the source code and see some odd choices, please let me know!
 
-## Audio Rate Sample and Hold
+## SaH: Audio Rate Sample and Hold
 
 ### Function
 The output signal is held at the last value of the input signal when the trigger signal crosses a threshold.
