@@ -126,7 +126,7 @@ namespace Metasound
             return MakeUnique<FEdgeOperator>(InputSignal, InputDebounce, SampleRate, InParams.OperatorSettings);
         }
         
-        virtual void Reset(const IOperator::FResetParams& InParams) override
+        virtual void Reset(const IOperator::FResetParams& InParams)
         {
             // Reset triggers
             OutputTriggerRise->Reset();
