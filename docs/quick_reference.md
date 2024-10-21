@@ -31,12 +31,19 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add the input as an argument to MakeUnique<*node*Operator>
 - [ ] Add private variable for the input
 
+### Namespaces
+- Check that the namespace where the vertex names are defined is used in the following locations:
+  - [ ] DeclareVertexInterface
+  - [ ] GetInputs
+  - [ ] GetOutputs
+  - [ ] CreateOperator
+
 ## Misc Notes
 - [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
- - Add()
- - SetNum() 
- - Num() 
- - get length
+  - Add()
+  - SetNum() 
+  - Num() 
+  - get length
 
 ---
 
