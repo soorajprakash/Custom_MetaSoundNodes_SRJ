@@ -16,8 +16,8 @@ namespace Metasound
         METASOUND_PARAM(InputSignal, "Signal", "Input signal to monitor for edge detection.");
         METASOUND_PARAM(InputDebounce, "Debounce", "Debounce time in seconds to prevent rapid triggering.");
 
-        METASOUND_PARAM(OutputTriggerRise, "TriggerRise", "Trigger on rise.");
-        METASOUND_PARAM(OutputTriggerFall, "TriggerFall", "Trigger on fall.");
+        METASOUND_PARAM(OutputTriggerRise, "Rise", "Trigger on rise.");
+        METASOUND_PARAM(OutputTriggerFall, "Fall", "Trigger on fall.");
     }
 
     class FEdgeOperator : public TExecutableOperator<FEdgeOperator>
@@ -125,6 +125,26 @@ namespace Metasound
 
             return MakeUnique<FEdgeOperator>(InputSignal, InputDebounce, SampleRate, InParams.OperatorSettings);
         }
+        
+        virtual void Reset(const IOperator::FResetParams& InParams) override
+        {
+            // Reset triggers
+            OutputTriggerRise->Reset();
+            OutputTriggerFall->Reset();
+
+            // Initialize PreviousSignalValue to the first sample of the incoming signal to prevent false triggers
+            if (InputSignal->Num() > 0)
+            {
+                PreviousSignalValue = InputSignal->GetData()[0];
+            }
+            else
+            {
+                PreviousSignalValue = 0.0f;
+            }
+
+            // Reset debounce counter
+            DebounceCounter = 0;
+        }
 
         void Execute()
         {
@@ -136,10 +156,15 @@ namespace Metasound
             FTriggerWriteRef TriggerRise = OutputTriggerRise;
             FTriggerWriteRef TriggerFall = OutputTriggerFall;
 
-            // Convert debounce time from seconds to samples
-            if (DebounceSamples == 0)
+            // Recalculate debounce samples if debounce time or sample rate has changed
+            static float LastDebounceTime = -1.0f;
+            static float LastSampleRate = -1.0f;
+
+            if (LastDebounceTime != *InputDebounce || LastSampleRate != SampleRate)
             {
-                DebounceSamples = FMath::RoundToInt(*InputDebounce * SampleRate);
+                DebounceSamples = FMath::RoundToInt(FMath::Clamp(*InputDebounce, 0.001f, 5.0f) * SampleRate);
+                LastDebounceTime = *InputDebounce;
+                LastSampleRate = SampleRate;
             }
 
             for (int32 i = 0; i < NumFrames; ++i)
