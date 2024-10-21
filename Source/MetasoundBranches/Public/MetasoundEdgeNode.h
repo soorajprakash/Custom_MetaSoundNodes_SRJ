@@ -8,6 +8,6 @@ namespace MetasoundBranches
     class FMetasoundEdgeNode : public Metasound::FNode
     {
     public:
-        FMetasoundDustNode();
+        FMetasoundEdgeNode();
     };
 }
