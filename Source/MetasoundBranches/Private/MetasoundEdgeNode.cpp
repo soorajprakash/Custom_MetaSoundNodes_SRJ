@@ -5,7 +5,7 @@
 #include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
-#include "MetasoundTrigger.h"
+#include "MetasoundTrigger.h"                // For FTriggerWriteRef and FTrigger
 
 #define LOCTEXT_NAMESPACE "MetasoundStandardNodes_Edge"
 
@@ -27,11 +27,12 @@ namespace Metasound
         FEdgeOperator(
             const FAudioBufferReadRef& InSignal,
             const FFloatReadRef& InDebounce,
-            float InSampleRate)
+            float InSampleRate,
+            const FOperatorSettings& InSettings)
             : InputSignal(InSignal)
             , InputDebounce(InDebounce)
-            , OutputTriggerRise(WriteRefInit<bool>(false))
-            , OutputTriggerFall(WriteRefInit<bool>(false))
+            , OutputTriggerRise(FTriggerWriteRef::CreateNew(InSettings))
+            , OutputTriggerFall(FTriggerWriteRef::CreateNew(InSettings))
             , PreviousSignalValue(0.0f)
             , DebounceSamples(0)
             , DebounceCounter(0)
@@ -49,8 +50,8 @@ namespace Metasound
                     TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDebounce))
                 ),
                 FOutputVertexInterface(
-                    TOutputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTriggerRise)),
-                    TOutputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTriggerFall))
+                    TOutputDataVertexModel<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTriggerRise)),
+                    TOutputDataVertexModel<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTriggerFall))
                 )
             );
 
@@ -122,15 +123,18 @@ namespace Metasound
 
             float SampleRate = InParams.OperatorSettings.GetSampleRate();
 
-            return MakeUnique<FEdgeOperator>(InputSignal, InputDebounce, SampleRate);
+            return MakeUnique<FEdgeOperator>(InputSignal, InputDebounce, SampleRate, InParams.OperatorSettings);
         }
 
         void Execute()
         {
+            // Get number of frames
             int32 NumFrames = InputSignal->Num();
             const float* SignalData = InputSignal->GetData();
-            bool* TriggerRiseData = OutputTriggerRise.Get();
-            bool* TriggerFallData = OutputTriggerFall.Get();
+
+            // Trigger outputs
+            FTriggerWriteRef TriggerRise = OutputTriggerRise;
+            FTriggerWriteRef TriggerFall = OutputTriggerFall;
 
             // Convert debounce time from seconds to samples
             if (DebounceSamples == 0)
@@ -141,15 +145,13 @@ namespace Metasound
             for (int32 i = 0; i < NumFrames; ++i)
             {
                 float CurrentSignal = SignalData[i];
-                TriggerRiseData[i] = false;
-                TriggerFallData[i] = false;
 
                 // Detect rising edge
                 if (PreviousSignalValue < CurrentSignal)
                 {
                     if (DebounceCounter <= 0)
                     {
-                        TriggerRiseData[i] = true;
+                        TriggerRise->TriggerFrame(i);
                         DebounceCounter = DebounceSamples;
                     }
                 }
@@ -158,7 +160,7 @@ namespace Metasound
                 {
                     if (DebounceCounter <= 0)
                     {
-                        TriggerFallData[i] = true;
+                        TriggerFall->TriggerFrame(i);
                         DebounceCounter = DebounceSamples;
                     }
                 }
@@ -180,14 +182,14 @@ namespace Metasound
         FFloatReadRef InputDebounce;
 
         // Outputs
-        FBoolWriteRef OutputTriggerRise;
-        FBoolWriteRef OutputTriggerFall;
+        FTriggerWriteRef OutputTriggerRise;
+        FTriggerWriteRef OutputTriggerFall;
 
         // Internal variables
         float PreviousSignalValue;
         int32 DebounceSamples;
         int32 DebounceCounter;
-        float SampleRate; // New member variable for sample rate
+        float SampleRate;
     };
 
     class FEdgeNode : public FNodeFacade
