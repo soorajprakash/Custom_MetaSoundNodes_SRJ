@@ -6,8 +6,8 @@ However, keeping everything in audio rate complicates matters, so we don't exact
 Pure Data already has a sample and hold object `[samphold~]`, which accepts audio rate signals through both inlets, but here's a version that adds a bonus inlet for the threshold:
 
 ![Pure Data version of the sample and hold object](./SaH_audiorate_Pd.png)
-- [Pure Data abstraction](./Pd_implementations/SaH_audiorate.pd)
-- [Example patch](./Pd_implementations/SaH_audiorate_example.pd)
+- [Pure Data abstraction](./SaH_audiorate.pd)
+- [Example patch](./SaH_audiorate_example.pd)
 
 Unlike other environments like Max, there's no built-in audio-rate object for `[>~]` (a "greater than" comparison) in Pd. 
 Instead, I tend to use the `[expr~]` object, which evaluates a C-like expression.[^1]
