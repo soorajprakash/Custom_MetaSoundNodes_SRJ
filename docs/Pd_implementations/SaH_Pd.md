@@ -9,7 +9,7 @@ Pure Data already has a sample and hold object `[samphold~]`, which accepts audi
 - [Pure Data abstraction](./SaH_audiorate.pd)
 - [Example patch](./SaH_audiorate_example.pd)
 
-Unlike other environments like Max, there's no built-in audio-rate object for `[>~]` (a "greater than" comparison) in Pd. 
+Unlike other environments like Max, Pd doesn't have a built-in audio-rate object for `[>~]` (a "greater than" comparison). 
 Instead, I tend to use the `[expr~]` object, which evaluates a C-like expression.[^1]
 
 Inputs are defined within the expression as `$v1`, `$v2`, etc.
