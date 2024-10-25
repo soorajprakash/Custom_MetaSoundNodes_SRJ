@@ -11,6 +11,8 @@ If you're browsing the source code and see some odd choices, please let me know!
 ### Function
 The output signal is held at the last value of the input signal when the trigger signal crosses a threshold.
 
+![Signal flow of a sample and hold module](./SaH_flow.png)
+
 The existing sample and hold function in Metasound takes an audio rate signal as input, and a trigger signal as float.
 
 A purely audio-rate version seemed like a good starting point for my first custom node in Metasound, since it's one of my go-to building blocks in other environments such as Pd.
@@ -118,4 +120,4 @@ I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/doc
 
 ---
 
-[^1]: Not to be confused with video frames, etc. although the concept is similar.
+[^1]: Not to be confused with video frames elsewhere within the engine.

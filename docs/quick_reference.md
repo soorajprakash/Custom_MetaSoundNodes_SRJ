@@ -43,7 +43,7 @@ Check that the namespace where the vertex names are defined is used in the follo
   - Add()
   - SetNum() 
   - Num() 
-  - get length...
+
 
 ---
 

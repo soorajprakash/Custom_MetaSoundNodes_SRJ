@@ -9,7 +9,7 @@ Development notes:
 The nodes available so far should be familiar to most audio folk, but please get in touch if you'd like to know more.
 
 ## MetasoundBranches
-There are currently four nodes available in the *MetaSoundBranches* plugin, with several more in development:
+There are currently four nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
