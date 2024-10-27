@@ -8,6 +8,6 @@ namespace MetasoundBranches
     class FMetasoundPhaseDispersionNode : public Metasound::FNode
     {
     public:
-        FMetasoundSahNode();
+        FMetasoundPhaseDispersionNode();
     };
 }
