@@ -126,7 +126,7 @@ namespace Metasound
             {
                 DelayBuffer.SetNumZeroed(MaxDelaySamples);
                 WriteIndex = 0;
-                Feedback = 0.5f;
+                Feedback = 0;
                 DelaySamples = MaxDelaySamples / 2;
             }
 
