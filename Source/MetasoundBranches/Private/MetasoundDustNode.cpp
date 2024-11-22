@@ -29,6 +29,7 @@ namespace Metasound
     public:
         // Constructor
         FDustOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InDensity,
             const FFloatReadRef& InDensityOffset,
             const FBoolReadRef& InEnabled,
@@ -37,7 +38,7 @@ namespace Metasound
             , InputDensityOffset(InDensityOffset)
             , InputEnabled(InEnabled)
             , InputBiPolar(InBiPolar)
-            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InDensity->Num()))
+            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InSettings))
             , RNGStream(InitialSeed())
             , SignalIsPositive(true)
         {
@@ -127,7 +128,7 @@ namespace Metasound
             TDataReadReference<bool> InputEnabled = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputEnabled), InParams.OperatorSettings);
             TDataReadReference<bool> InputBiPolar = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputBiPolar), InParams.OperatorSettings);
 
-            return MakeUnique<FDustOperator>(InputDensity, InputDensityOffset, InputEnabled, InputBiPolar);
+            return MakeUnique<FDustOperator>(InParams.OperatorSettings, InputDensity, InputDensityOffset, InputEnabled, InputBiPolar);
         }
 
         // Primary node functionality
