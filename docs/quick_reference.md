@@ -52,4 +52,4 @@ Check that the namespace defined alongside the vertex names is used in the follo
 - [Factory method pattern (Wikipedia)](https://en.wikipedia.org/wiki/Factory_method_pattern)
 - [Epic Games Coding Standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4)
 
-[^1] This determines the order in which they appear on the onscreen node.
+[^1]: This determines the order in which they appear on the onscreen node.
