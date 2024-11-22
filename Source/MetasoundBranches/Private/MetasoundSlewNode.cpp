@@ -26,6 +26,7 @@ namespace Metasound
     public:
         // Constructor
         FSlewOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InSignal,
             const FFloatReadRef& InRiseTime,
             const FFloatReadRef& InFallTime,
@@ -135,7 +136,7 @@ namespace Metasound
 
             int32 SampleRate = 44100; // Default sample rate
 
-            return MakeUnique<FSlewOperator>(InputSignal, InputRiseTime, InputFallTime, SampleRate);
+            return MakeUnique<FSlewOperator>(InParams.OperatorSettings, InputSignal, InputRiseTime, InputFallTime, SampleRate);
         }
 
         // Primary node functionality

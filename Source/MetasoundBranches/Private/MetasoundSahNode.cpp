@@ -23,6 +23,7 @@ namespace Metasound
     {
     public:
         FSahOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InSignal,
             const FAudioBufferReadRef& InTrigger,
             const FFloatReadRef& InThreshold)
@@ -114,7 +115,7 @@ namespace Metasound
             TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
             TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputThreshold), InParams.OperatorSettings);
 
-            return MakeUnique<FSahOperator>(InputSignal, InputTrigger, InputThreshold);
+            return MakeUnique<FSahOperator>(InParams.OperatorSettings, InputSignal, InputTrigger, InputThreshold);
         }
 
         void Execute()
