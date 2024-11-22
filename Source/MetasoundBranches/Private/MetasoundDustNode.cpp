@@ -16,10 +16,11 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace DustNodeNames
     {
-        METASOUND_PARAM(InputDensity, "Density", "Density control signal (bi-polar).");
-		METASOUND_PARAM(InputDensityOffset, "Density Offset", "Density control offset.");
-    
-        METASOUND_PARAM(OutputImpulse, "Output", "Impulse output signal.");
+        METASOUND_PARAM(InputDensity, "Density", "Input density control signal.");
+        METASOUND_PARAM(InputDensityOffset, "Density Offset", "Offset added to the absolute value of the density input.");
+        METASOUND_PARAM(InputEnabled, "Enabled", "Enable or disable the dust node.");
+        METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
+        METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
@@ -28,12 +29,17 @@ namespace Metasound
     public:
         // Constructor
         FDustOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InDensity,
-            const FFloatReadRef& InDensityOffset)
+            const FFloatReadRef& InDensityOffset,
+            const FBoolReadRef& InEnabled,
+            const FBoolReadRef& InBiPolar)
             : InputDensity(InDensity)
             , InputDensityOffset(InDensityOffset)
-            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InDensity->Num()))
-            , RNGStream(InitialSeed()) // Initialize with a seed
+            , InputEnabled(InEnabled)
+            , InputBiPolar(InBiPolar)
+            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InSettings))
+            , RNGStream(InitialSeed())
             , SignalIsPositive(true)
         {
         }
@@ -46,7 +52,9 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset))
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset), 0.0f),
+                    TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputEnabled), true),
+                    TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputBiPolar), true)
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputImpulse))
@@ -87,13 +95,12 @@ namespace Metasound
         virtual FDataReferenceCollection GetInputs() const override
         {
             using namespace DustNodeNames;
-
-            FDataReferenceCollection InputDataReferences;
-
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensity), InputDensity);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensityOffset), InputDensityOffset);
-
-            return InputDataReferences;
+            FDataReferenceCollection Inputs;
+            Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensity), InputDensity);
+            Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputDensityOffset), InputDensityOffset);
+            Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputEnabled), InputEnabled);
+            Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputBiPolar), InputBiPolar);
+            return Inputs;
         }
 
         // Allows MetaSound graph to interact with the node's outputs
@@ -118,48 +125,64 @@ namespace Metasound
 
             TDataReadReference<FAudioBuffer> InputDensity = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensity), InParams.OperatorSettings);
             TDataReadReference<float> InputDensityOffset = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
+            TDataReadReference<bool> InputEnabled = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputEnabled), InParams.OperatorSettings);
+            TDataReadReference<bool> InputBiPolar = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputBiPolar), InParams.OperatorSettings);
 
-            return MakeUnique<FDustOperator>(InputDensity, InputDensityOffset);
+            return MakeUnique<FDustOperator>(InputDensity, InputDensityOffset, InputEnabled, InputBiPolar);
         }
 
         // Primary node functionality
         void Execute()
         {
-            int32 NumFrames = InputDensity->Num();
+        const float* DensityData = InputDensity->GetData();
+        float* OutputDataPtr = OutputImpulse->GetData();
+        int32 NumFrames = InputDensity->Num();
+        float InputDensityOffsetValue = *InputDensityOffset;
+        bool bEnabled = *InputEnabled;
+        bool bBiPolar = *InputBiPolar;
 
-            const float* DensityData = InputDensity->GetData();
-			const float InputDensityOffsetValue = *InputDensityOffset;
-            float* OutputDataPtr = OutputImpulse->GetData();
-
-            for (int32 i = 0; i < NumFrames; ++i)
+        for (int32 i = 0; i < NumFrames; ++i)
+        {
+            if (bEnabled)
             {
-                // Calculate threshold based on density
                 float Density = DensityData[i];
-                float AbsDensity = FMath::Abs(Density);
-				AbsDensity += InputDensityOffsetValue;
-                float Threshold = 1.0f - AbsDensity * 0.0009f; // 1.0 - |density| * 0.0009
+                float AbsDensity = FMath::Abs(Density) + InputDensityOffsetValue;
+                float Threshold = 1.0f - AbsDensity * 0.0009f;
 
                 // Generate random number between 0 and 1 using FRandomStream
                 float RandomValue = RNGStream.GetFraction();
 
-                // Compare to threshold
                 if (RandomValue > Threshold)
                 {
-                    OutputDataPtr[i] = SignalIsPositive ? 1.0f : -1.0f; // Impulse
-                    SignalIsPositive = !SignalIsPositive; // Toggle polarity
+                    if (bBiPolar)
+                    {
+                        OutputDataPtr[i] = SignalIsPositive ? 1.0f : -1.0f;
+                        SignalIsPositive = !SignalIsPositive; // Toggle polarity
+                    }
+                    else
+                    {
+                        OutputDataPtr[i] = 1.0f; // Unipolar impulse
+                    }
                 }
                 else
                 {
                     OutputDataPtr[i] = 0.0f;
                 }
             }
+            else
+            {
+                OutputDataPtr[i] = 0.0f; // Output zero when disabled
+            }
         }
+    }
 
     private:
 
         // Inputs
         FAudioBufferReadRef InputDensity;
 		FFloatReadRef InputDensityOffset;
+        FBoolReadRef InputEnabled;
+        FBoolReadRef InputBiPolar;
 
         // Outputs
         FAudioBufferWriteRef OutputImpulse;
