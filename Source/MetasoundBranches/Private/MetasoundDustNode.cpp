@@ -16,8 +16,8 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace DustNodeNames
     {
-        METASOUND_PARAM(InputDensity, "Density", "Input density control signal.");
-        METASOUND_PARAM(InputDensityOffset, "Density Offset", "Offset added to the absolute value of the density input.");
+        METASOUND_PARAM(InputDensity, "Modulation", "Input density control signal.");
+        METASOUND_PARAM(InputDensityOffset, "Density", "Probability of impulse generation.");
         METASOUND_PARAM(InputEnabled, "Enabled", "Enable or disable the dust node.");
         METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
         METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
@@ -50,10 +50,10 @@ namespace Metasound
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset), 0.0f),
                     TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputEnabled), true),
-                    TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputBiPolar), true)
+                    TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputBiPolar), true),
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset), 0.0f),
+                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity))
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputImpulse))
