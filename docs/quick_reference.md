@@ -1,5 +1,5 @@
 # Quick Reference for Plugin Development
-Mapping out a plugin template...these notes are mostly for my own reference, for the time being.
+These notes are the starting point for mapping out a plugin template.
 
 ## Overview
 - Vertex names (`METASOUND_PARAM`)
@@ -31,7 +31,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add the input as an argument to MakeUnique<*node*Operator>
 - [ ] Add private variable for the input
 
-### Namespaces
+### Verify namespaces
 Check that the namespace defined alongside the vertex names is used in the following locations:
 - [ ] DeclareVertexInterface
 - [ ] GetInputs
