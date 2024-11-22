@@ -29,7 +29,6 @@ namespace Metasound
     public:
         // Constructor
         FDustOperator(
-            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InDensity,
             const FFloatReadRef& InDensityOffset,
             const FBoolReadRef& InEnabled,
@@ -38,7 +37,7 @@ namespace Metasound
             , InputDensityOffset(InDensityOffset)
             , InputEnabled(InEnabled)
             , InputBiPolar(InBiPolar)
-            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InSettings))
+            , OutputImpulse(FAudioBufferWriteRef::CreateNew(InDensity->Num()))
             , RNGStream(InitialSeed())
             , SignalIsPositive(true)
         {
