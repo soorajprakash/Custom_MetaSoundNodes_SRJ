@@ -1,8 +1,5 @@
 # Documentation
-As a starting point for the documentation, I'm throwing together some of my notes on the custom nodes.  I'll try to break a few ideas down along the way, partly to consolidate my own learning.
-
-This was my first attempt at writing a plugin for Unreal Engine, and with hindsight I would have tried a more generic model to start with.
-In particular, I still need to work out how best to approach the header files -- this got mixed up with troubleshooting the build process.
+As a starting point for the documentation, I'm throwing together some of my notes on the custom nodes.
 
 If you're browsing the source code and see some odd choices, please let me know!
 
@@ -53,19 +50,17 @@ FSahOperator(
     :
     
     // Initialisation list
-    InputSignal(InSignal),
-    InputTrigger(InTrigger),
-    InputThreshold(InThreshold),
-    OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num())),
-    SampledValue(0.0f),
-    PreviousTriggerValue(0.0f)
+    , InputSignal(InSignal)
+    , InputTrigger(InTrigger)
+    , InputThreshold(InThreshold)
+    , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
+    , SampledValue(0.0f)
+    , PreviousTriggerValue(0.0f)
     {
         // Nothing to do here...
     }
 ```
-After the usual parameter list, we also have an initialisation list which takes care of setting the member variables. In this case, this handles everything we'd otherwise do in the constructor body in other langauges.
-
-I've modified the formatting in the above example for anyone less familiar with C++ (the convention is to put the commas at the start of the line, in line with the colon, which took me a while to get used to having started in Java).   
+After the usual parameter list, we also have an initialisation list which takes care of setting the member variables. This handles everything we'd otherwise do in the constructor body in other languages.  The convention for initialisation lists is to put the commas at the start of the line, in line with the colon.
 
 The constructor has three parameters: pointers to the buffers for input signal, the trigger signal, and the threshold. 
 `SampledValue` and `PreviousTriggerValue` are just regular float variables.
@@ -111,7 +106,7 @@ To process the signal, we therefore need to loop through these frames during eac
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 #### Misc Notes
-Some supplementary notes on implementing the sample and hold node in Pd can be found [here](./SaH_Pd.md).
+Some supplementary notes on implementing the sample and hold node in Pd can be found [here](./Pd_implementations/SaH_Pd.md).
 
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
 - use PascalCase throughout
