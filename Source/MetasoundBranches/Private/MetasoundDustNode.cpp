@@ -34,6 +34,7 @@ namespace Metasound
             , InputDensityOffset(InDensityOffset)
             , OutputImpulse(FAudioBufferWriteRef::CreateNew(InDensity->Num()))
             , RNGStream(InitialSeed()) // Initialize with a seed
+            , SignalIsPositive(true)
         {
         }
 
@@ -144,7 +145,8 @@ namespace Metasound
                 // Compare to threshold
                 if (RandomValue > Threshold)
                 {
-                    OutputDataPtr[i] = 1.0f; // Impulse
+                    OutputDataPtr[i] = SignalIsPositive ? 1.0f : -1.0f; // Impulse
+                    SignalIsPositive = !SignalIsPositive; // Toggle polarity
                 }
                 else
                 {
@@ -164,6 +166,9 @@ namespace Metasound
 
         // Random number generator
         FRandomStream RNGStream;
+        
+        // Toggle flag for polarity
+        bool SignalIsPositive;
 
         // Generate an initial seed for FRandomStream
         static int32 InitialSeed()
