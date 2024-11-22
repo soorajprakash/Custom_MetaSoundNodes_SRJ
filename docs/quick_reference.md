@@ -32,7 +32,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add private variable for the input
 
 ### Verify namespaces
-Check that the namespace defined alongside the vertex names is used in the following locations:
+Check that the correct namespace (as defined alongside the vertex names) is used in the following locations:
 - [ ] DeclareVertexInterface
 - [ ] GetInputs
 - [ ] GetOutputs
