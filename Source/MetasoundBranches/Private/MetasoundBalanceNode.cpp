@@ -13,12 +13,12 @@ namespace Metasound
 {
     namespace BalanceNodeNames
     {
-        METASOUND_PARAM(InputLeftSignal, "Left Signal", "Left channel.");
-        METASOUND_PARAM(InputRightSignal, "Right Signal", "Right channel.");
+        METASOUND_PARAM(InputLeftSignal, "In L", "Left channel.");
+        METASOUND_PARAM(InputRightSignal, "In R", "Right channel.");
         METASOUND_PARAM(InputBalance, "Balance", "Balance control ranging from -1.0 (full left) to 1.0 (full right).");
 
-        METASOUND_PARAM(OutputLeftSignal, "Left Output", "Left channel of the adjusted stereo output signal.");
-        METASOUND_PARAM(OutputRightSignal, "Right Output", "Right channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");
     }
 
     class FBalanceOperator : public TExecutableOperator<FBalanceOperator>
@@ -67,7 +67,7 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("Balance"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("BalanceNodeDisplayName", "Balance Control");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("BalanceNodeDisplayName", "Balance");
                     Metadata.Description = METASOUND_LOCTEXT("BalanceNodeDesc", "Adjusts the balance of a stereo signal.");
                     Metadata.Author = PluginAuthor;
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;

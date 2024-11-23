@@ -12,12 +12,12 @@ namespace Metasound
 {
     namespace WidthNodeNames
     {
-        METASOUND_PARAM(InputLeftSignal, "Left Signal", "Left channel.");
-        METASOUND_PARAM(InputRightSignal, "Right Signal", "Right channel.");
+        METASOUND_PARAM(InputLeftSignal, "In L", "Left channel.");
+        METASOUND_PARAM(InputRightSignal, "In R", "Right channel.");
         METASOUND_PARAM(InputWidth, "Width", "Stereo width factor ranging from 0 to 200% .");
 
-        METASOUND_PARAM(OutputLeftSignal, "Left Output", "Left channel of the adjusted stereo output signal.");
-        METASOUND_PARAM(OutputRightSignal, "Right Output", "Right channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");
     }
 
     class FWidthOperator : public TExecutableOperator<FWidthOperator>
@@ -44,7 +44,7 @@ namespace Metasound
                 FInputVertexInterface(
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputLeftSignal)),
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRightSignal)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputWidth), 1.0f) // Default width is 100%
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputWidth), 1.0f)
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputLeftSignal)),
@@ -66,7 +66,7 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("Width"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Stereo Width");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Width");
                     Metadata.Description = METASOUND_LOCTEXT("WidthNodeDesc", "Adjusts the stereo width of a signal.");
                     Metadata.Author = PluginAuthor;
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
@@ -136,15 +136,11 @@ namespace Metasound
                 float Left = LeftData[i];
                 float Right = RightData[i];
 
-                // Calculate mid and side components
                 float Mid = 0.5f * (Left + Right);
-                // This should be equivalent to Left + -Right
                 float Side = 0.5f * (Left - Right);
 
-                // Adjust the side component
                 Side *= WidthFactor;
 
-                // Reconstruct left and right signals
                 OutputLeftData[i] = Mid + Side;
                 OutputRightData[i] = Mid - Side;
             }
