@@ -12,3 +12,5 @@
 | 11/22  | - Update documentation<br>- Test alternating polarity on Dust node, merge with main.<br>- Add width node. |
 | 11/23  | - Add balance node<br>- Match existing conventions. |
 | 11/24  | - Merge width and balance with main. |
+| 11/25  | - Create first draft of a Wave Reader node (sample-by-sample from an audio input). |
+| 11/26  | - Add stereo crossfade node. |
