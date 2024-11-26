@@ -7,11 +7,12 @@ Development notes:
 - [Quick reference](./docs/quick_reference.md): for creating and troubleshooting custom nodes. 
 
 ## MetaSoundBranches
-There are currently four nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently seven nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
 | `Balance`    | A balance control (stereo pan).|
+| `Crossfade (stereo)`    | A crossfader for stereo signals.|
 | `Dust`    | A randomly timed impulse generator with an audio-rate density control.|
 | `SaH`     | An alternative sample and hold unit with an audio-rate trigger. |
 | `SaH Bank`| A bank of four identical sample and hold units.              |
