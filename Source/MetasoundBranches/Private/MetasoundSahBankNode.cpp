@@ -5,7 +5,6 @@
 #include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
-#include "Modules/ModuleManager.h"           // ModuleManager (is this still necessary?)
 
 // Required for ensuring the node is supported by all languages in engine. Must be unique per MetaSound.
 #define LOCTEXT_NAMESPACE "MetasoundStandardNodes_SahBankNode"
@@ -37,6 +36,7 @@ namespace Metasound
     public:
         // Constructor
         FSahBankOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InSignal1,
             const FAudioBufferReadRef& InTrigger1,
             const FAudioBufferReadRef& InSignal2,
@@ -55,10 +55,10 @@ namespace Metasound
             , InputSignal4(InSignal4)
             , InputTrigger4(InTrigger4)
             , InputThreshold(InThreshold)
-            , OutputSignal1(FAudioBufferWriteRef::CreateNew(InSignal1->Num()))
-            , OutputSignal2(FAudioBufferWriteRef::CreateNew(InSignal2->Num()))
-            , OutputSignal3(FAudioBufferWriteRef::CreateNew(InSignal3->Num()))
-            , OutputSignal4(FAudioBufferWriteRef::CreateNew(InSignal4->Num()))
+            , OutputSignal1(FAudioBufferWriteRef::CreateNew(InSettings))
+            , OutputSignal2(FAudioBufferWriteRef::CreateNew(InSettings))
+            , OutputSignal3(FAudioBufferWriteRef::CreateNew(InSettings))
+            , OutputSignal4(FAudioBufferWriteRef::CreateNew(InSettings))
             , SampledValue1(0.0f)
             , SampledValue2(0.0f)
             , SampledValue3(0.0f)
@@ -111,7 +111,7 @@ namespace Metasound
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("SahBankNodeDisplayName", "SaH Bank");
-                    Metadata.Description = METASOUND_LOCTEXT("SahBankNodeDesc", "Bank of 4 sample and hold modules.");
+                    Metadata.Description = METASOUND_LOCTEXT("SahBankNodeDesc", "Bank of four sample and hold modules.");
                     Metadata.Author = PluginAuthor;
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
@@ -179,6 +179,7 @@ namespace Metasound
             TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputThreshold), InParams.OperatorSettings);
 
             return MakeUnique<FSahBankOperator>(
+                InParams.OperatorSettings,
                 InputSignal1, 
                 InputTrigger1, 
                 InputSignal2, 
@@ -194,7 +195,6 @@ namespace Metasound
         // Primary node functionality
         void Execute()
         {
-            // Should be arbitrary which signal I get this from...
             int32 NumFrames = InputSignal1->Num();
            
             const float* SignalData1 = InputSignal1->GetData();
