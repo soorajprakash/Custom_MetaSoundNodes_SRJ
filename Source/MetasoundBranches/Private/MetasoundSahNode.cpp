@@ -65,7 +65,7 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("SaH"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "Sample And Hold (audio trigger)");
                     Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;

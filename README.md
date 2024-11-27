@@ -13,8 +13,8 @@ There are currently seven nodes available in the *MetaSoundBranches* plugin for 
 |-----------|--------------------------------------------------------------|
 | `Crossfade (stereo)`    | A crossfader for stereo signals.|
 | `Dust`    | A randomly timed impulse generator with an audio-rate density control.|
-| `SaH`     | An alternative sample and hold unit with an audio-rate trigger. |
-| `SaH Bank`| A bank of four identical sample and hold units.              |
+| `Sample And Hold (audio trigger)`     | An alternative sample and hold unit with an audio-rate trigger. |
+| `Sample and Hold Bank`| A bank of four identical sample and hold units.              |
 | `Shift register`| An eight stage shift register for floats. |
 | `Slew`    | A slew limiter to smooth out the rise and fall times of an audio signal. |
 | `Width`    | Stereo width adjustment through mid-side processing. |

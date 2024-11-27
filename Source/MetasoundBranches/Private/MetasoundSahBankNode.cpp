@@ -110,7 +110,7 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("SaH Bank"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("SahBankNodeDisplayName", "SaH Bank");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahBankNodeDisplayName", "Sample And Hold Bank");
                     Metadata.Description = METASOUND_LOCTEXT("SahBankNodeDesc", "Bank of four sample and hold modules.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
