@@ -146,10 +146,13 @@ namespace Metasound
 
             float CrossfadeFactor = FMath::Clamp(*InputCrossfade, 0.0f, 1.0f);
 
+            float Gain1 = FMath::Cos(CrossfadeFactor * HALF_PI); // HALF_PI = PI / 2
+            float Gain2 = FMath::Sin(CrossfadeFactor * HALF_PI);
+
             for (int32 i = 0; i < NumFrames; ++i)
             {
-                OutputLeftData[i] = (1.0f - CrossfadeFactor) * LeftData1[i] + CrossfadeFactor * LeftData2[i];
-                OutputRightData[i] = (1.0f - CrossfadeFactor) * RightData1[i] + CrossfadeFactor * RightData2[i];
+                OutputLeftData[i] = Gain1 * LeftData1[i] + Gain2 * LeftData2[i];
+                OutputRightData[i] = Gain1 * RightData1[i] + Gain2 * RightData2[i];
             }
         }
 
