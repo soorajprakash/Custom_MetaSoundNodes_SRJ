@@ -76,7 +76,7 @@ namespace Metasound
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("CrossfadeStereoNodeDisplayName", "Stereo Crossfade");
                     Metadata.Description = METASOUND_LOCTEXT("CrossfadeStereoNodeDesc", "Crossfades between two stereo signals.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };

@@ -67,7 +67,7 @@ namespace Metasound
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH");
                     Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };

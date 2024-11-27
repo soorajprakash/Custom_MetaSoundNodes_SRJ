@@ -90,7 +90,7 @@ namespace Metasound
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ShiftRegisterNodeDisplayName", "Shift Register");
                     Metadata.Description = METASOUND_LOCTEXT("ShiftRegisterNodeDesc", "Shift register node with eight stages.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = NodeInterface;
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };

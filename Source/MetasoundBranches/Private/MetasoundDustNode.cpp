@@ -78,7 +78,7 @@ namespace Metasound
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("DustNodeDisplayName", "Dust");
                     Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generates randomly timed impulse events based on an audio density control signal.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
