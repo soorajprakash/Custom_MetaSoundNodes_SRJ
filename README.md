@@ -11,7 +11,6 @@ There are currently seven nodes available in the *MetaSoundBranches* plugin for 
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
-| `Balance`    | A balance control (stereo pan).|
 | `Crossfade (stereo)`    | A crossfader for stereo signals.|
 | `Dust`    | A randomly timed impulse generator with an audio-rate density control.|
 | `SaH`     | An alternative sample and hold unit with an audio-rate trigger. |
