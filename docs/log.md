@@ -14,4 +14,4 @@
 | 11/24  | - Merge width and balance with main. |
 | 11/25  | - Create first draft of a Wave Reader node (sample-by-sample from an audio input). |
 | 11/26  | - Add stereo crossfade node. |
-| 11/27  | - Convert stereo crossfade to equal power, merge with main.<br>- Remove balance node (already available in spatialisation->stereo pan). Code: [e48d011](https://github.com/matthewscharles/metasound-plugins/commit/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d) : [MetasoundBalanceNode.cpp](https://github.com/matthewscharles/metasound-plugins/blob/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d/Source/MetasoundBranches/Private/MetasoundBalanceNode.cpp).|
+| 11/27  | - Convert stereo crossfade to equal power, merge with main.<br>- Remove balance node (already available in spatialisation->stereo pan). Code: [e48d011](https://github.com/matthewscharles/metasound-plugins/commit/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d) : [MetasoundBalanceNode.cpp](https://github.com/matthewscharles/metasound-plugins/blob/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d/Source/MetasoundBranches/Private/MetasoundBalanceNode.cpp).<br>- Add bool To audio node.|
