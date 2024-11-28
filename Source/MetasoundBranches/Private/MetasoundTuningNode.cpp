@@ -13,7 +13,6 @@ namespace Metasound
     namespace TuningNodeNames
     {
         METASOUND_PARAM(InputMIDINoteNumber, "MIDI Note Number", "Input MIDI note number (integer).");
-        METASOUND_PARAM(InputFineTune, "Fine Tune", "Fine tuning adjustment (float).");
         METASOUND_PARAM(InputTuningCents0, "+/- Cents C", "Tuning adjustment for note 0 in cents.");
         METASOUND_PARAM(InputTuningCents1, "+/- Cents C♯ / D♭", "Tuning adjustment for note 1 in cents.");
         METASOUND_PARAM(InputTuningCents2, "+/- Cents D", "Tuning adjustment for note 2 in cents.");
@@ -35,7 +34,6 @@ namespace Metasound
         FTuningNodeOperator(
             const FOperatorSettings& InSettings,
             const FInt32ReadRef& InMIDINoteNumber,
-            const FFloatReadRef& InFineTune,
             const FFloatReadRef& InTuningCents0,
             const FFloatReadRef& InTuningCents1,
             const FFloatReadRef& InTuningCents2,
@@ -49,7 +47,6 @@ namespace Metasound
             const FFloatReadRef& InTuningCents10,
             const FFloatReadRef& InTuningCents11)
             : MIDINoteNumber(InMIDINoteNumber)
-            , FineTune(InFineTune)
             , TuningCents0(InTuningCents0)
             , TuningCents1(InTuningCents1)
             , TuningCents2(InTuningCents2)
@@ -73,7 +70,6 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputMIDINoteNumber)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFineTune)),
                     TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputTuningCents0)),
                     TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputTuningCents1)),
                     TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputTuningCents2)),
@@ -128,7 +124,6 @@ namespace Metasound
             FDataReferenceCollection InputDataReferences;
 
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputMIDINoteNumber), MIDINoteNumber);
-            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputFineTune), FineTune);
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTuningCents0), TuningCents0);
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTuningCents1), TuningCents1);
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTuningCents2), TuningCents2);
@@ -164,7 +159,6 @@ namespace Metasound
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<int32> MIDINoteNumber = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputMIDINoteNumber), InParams.OperatorSettings);
-            TDataReadReference<float> FineTune = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputFineTune), InParams.OperatorSettings);
 
             TDataReadReference<float> TuningCents0 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents0), InParams.OperatorSettings);
             TDataReadReference<float> TuningCents1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents1), InParams.OperatorSettings);
@@ -182,7 +176,6 @@ namespace Metasound
             return MakeUnique<FTuningNodeOperator>(
                 InParams.OperatorSettings,
                 MIDINoteNumber,
-                FineTune,
                 TuningCents0,
                 TuningCents1,
                 TuningCents2,
@@ -201,42 +194,32 @@ namespace Metasound
         void Execute()
         {
             int32 midiNote = *MIDINoteNumber;
-            float fineTune = *FineTune;
-            float noteWithFineTune = midiNote + fineTune;
-
             int32 noteInOctave = midiNote % 12;
 
-            float tuningAdjustmentCents = 0.0f;
+            float tuningCentsArray[12] = {
+                *TuningCents0,
+                *TuningCents1,
+                *TuningCents2,
+                *TuningCents3,
+                *TuningCents4,
+                *TuningCents5,
+                *TuningCents6,
+                *TuningCents7,
+                *TuningCents8,
+                *TuningCents9,
+                *TuningCents10,
+                *TuningCents11
+            };
 
-            switch (noteInOctave)
-            {
-                case 0: tuningAdjustmentCents = *TuningCents0; break;
-                case 1: tuningAdjustmentCents = *TuningCents1; break;
-                case 2: tuningAdjustmentCents = *TuningCents2; break;
-                case 3: tuningAdjustmentCents = *TuningCents3; break;
-                case 4: tuningAdjustmentCents = *TuningCents4; break;
-                case 5: tuningAdjustmentCents = *TuningCents5; break;
-                case 6: tuningAdjustmentCents = *TuningCents6; break;
-                case 7: tuningAdjustmentCents = *TuningCents7; break;
-                case 8: tuningAdjustmentCents = *TuningCents8; break;
-                case 9: tuningAdjustmentCents = *TuningCents9; break;
-                case 10: tuningAdjustmentCents = *TuningCents10; break;
-                case 11: tuningAdjustmentCents = *TuningCents11; break;
-                default: break;
-            }
-
-            // Testing: calculate the base frequency without the tuning adjustment
-            float baseFrequency = 440.0f * powf(2.0f, (noteWithFineTune - 69.0f) / 12.0f);
-
-            // Apply the tuning adjustment to the frequency directly
-            float frequency = baseFrequency * powf(2.0f, tuningAdjustmentCents / 1200.0f);
-
+            float tuningAdjustmentCents = tuningCentsArray[noteInOctave];
+            float tuningAdjustmentSemitones = tuningAdjustmentCents / 100.0f;
+            float adjustedNote = midiNote + tuningAdjustmentSemitones;
+            float frequency = 440.0f * powf(2.0f, (adjustedNote - 69.0f) / 12.0f);
             *OutputFrequency = frequency;
         }
 
     private:
         FInt32ReadRef MIDINoteNumber;
-        FFloatReadRef FineTune;
         FFloatReadRef TuningCents0;
         FFloatReadRef TuningCents1;
         FFloatReadRef TuningCents2;
