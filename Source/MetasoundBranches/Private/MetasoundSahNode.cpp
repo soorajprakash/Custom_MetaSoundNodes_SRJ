@@ -30,7 +30,7 @@ namespace Metasound
             : InputSignal(InSignal)
             , InputTrigger(InTrigger)
             , InputThreshold(InThreshold)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
+            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSettings))
             , SampledValue(0.0f)
             , PreviousTriggerValue(0.0f)
         {

@@ -34,7 +34,7 @@ namespace Metasound
             : InputSignal(InSignal)
             , InputRiseTime(InRiseTime)
             , InputFallTime(InFallTime)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InputSignal->Num()))
+            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSettings))
             , PreviousOutputSample(0.0f)
             , SampleRate(InSampleRate)
         {
