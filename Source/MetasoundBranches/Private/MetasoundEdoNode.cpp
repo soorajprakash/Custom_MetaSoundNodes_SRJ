@@ -12,7 +12,7 @@ namespace Metasound
 {
     namespace EdoNodeNames
     {
-        METASOUND_PARAM(InputNoteNumber, "Note Number", "Input MIDI note number (float).");
+        METASOUND_PARAM(InputNoteNumber, "Note Number", "Input MIDI note number (integer).");
         METASOUND_PARAM(InputReferenceFrequency, "Reference Frequency", "Reference frequency (float).");
         METASOUND_PARAM(InputReferenceMIDINote, "Reference MIDI Note", "Reference MIDI note (integer).");
         METASOUND_PARAM(InputDivisions, "Divisions", "Number of divisions of the octave (integer).");
@@ -24,7 +24,7 @@ namespace Metasound
     public:
         FEdoNodeOperator(
             const FOperatorSettings& InSettings,
-            const FFloatReadRef& InNoteNumber,
+            const FInt32ReadRef& InNoteNumber,
             const FFloatReadRef& InReferenceFrequency,
             const FInt32ReadRef& InReferenceMIDINote,
             const FInt32ReadRef& InDivisions)
@@ -42,10 +42,10 @@ namespace Metasound
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputNoteNumber)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceFrequency)),
-                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceMIDINote)),
-                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDivisions))
+                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputNoteNumber)),
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceFrequency), 440.0f),
+                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceMIDINote), 69),
+                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDivisions), 12)
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputFrequency))
@@ -113,7 +113,7 @@ namespace Metasound
             const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<float> NoteNumber = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputNoteNumber), InParams.OperatorSettings);
+            TDataReadReference<int32> NoteNumber = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputNoteNumber), InParams.OperatorSettings);
             TDataReadReference<float> ReferenceFrequency = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputReferenceFrequency), InParams.OperatorSettings);
             TDataReadReference<int32> ReferenceMIDINote = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputReferenceMIDINote), InParams.OperatorSettings);
             TDataReadReference<int32> Divisions = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputDivisions), InParams.OperatorSettings);
@@ -129,7 +129,7 @@ namespace Metasound
 
         void Execute()
         {
-            float noteNumber = *NoteNumber;
+            int32 noteNumber = *NoteNumber;
             float refFreq = *ReferenceFrequency;
             int32 refMIDINote = *ReferenceMIDINote;
             int32 divisions = *Divisions;
@@ -139,14 +139,14 @@ namespace Metasound
                 divisions = 1;
             }
 
-            float exponent = (noteNumber - refMIDINote) / divisions;
+            float exponent = static_cast<float>(noteNumber - refMIDINote) / static_cast<float>(divisions);
             float frequency = refFreq * powf(2.0f, exponent);
 
             *OutputFrequency = frequency;
         }
 
     private:
-        FFloatReadRef NoteNumber;
+        FInt32ReadRef NoteNumber;
         FFloatReadRef ReferenceFrequency;
         FInt32ReadRef ReferenceMIDINote;
         FInt32ReadRef Divisions;
