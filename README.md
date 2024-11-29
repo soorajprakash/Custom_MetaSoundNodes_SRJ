@@ -7,13 +7,14 @@ Development notes:
 - [Quick reference](./docs/quick_reference.md): for creating and troubleshooting custom nodes. 
 
 ## MetaSoundBranches
-There are currently eight nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently nine nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
 | `Bool To Audio`    | Convert boolean to an audio signal with option rise and fall times.|
 | `Crossfade (stereo)`    | A crossfader for stereo signals.|
 | `Dust`    | A randomly timed impulse generator with density control and audio-rate modulation.|
+| `EDO`    | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input.  Set a reference frequency and reference MIDI note (defaults to A440).|
 | `Sample And Hold (audio trigger)`     | An alternative sample and hold unit with an audio-rate trigger. |
 | `Sample and Hold Bank`| A bank of four identical sample and hold units with audio-rate triggers.              |
 | `Shift register`| An eight stage shift register for floats. |
