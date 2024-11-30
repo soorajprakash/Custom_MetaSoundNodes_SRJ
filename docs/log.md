@@ -17,3 +17,4 @@
 | 11/27  | - Convert stereo crossfade to equal power, merge with main.<br>- Remove balance node (already available in spatialisation->stereo pan). Code: [e48d011](https://github.com/matthewscharles/metasound-plugins/commit/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d) : [MetasoundBalanceNode.cpp](https://github.com/matthewscharles/metasound-plugins/blob/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d/Source/MetasoundBranches/Private/MetasoundBalanceNode.cpp).<br>- Add bool To audio node.<br>- Create first draft of EDO node.|
 | 11/28  | - Create first draft of tuning node.  Note: I think these two latest nodes will run on the audio thread unless we include a trigger control.  |
 | 11/29  | - Test EDO, switch input from float to integer, merge into main.  |
+| 11/30  | - Create click node, test, merge into main.  |
