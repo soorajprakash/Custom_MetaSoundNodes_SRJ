@@ -68,7 +68,7 @@ namespace Metasound
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ClickNodeDisplayName", "Click");
-                    Metadata.Description = METASOUND_LOCTEXT("ClickNodeDesc", "Generates a single sample impulse when triggered.");
+                    Metadata.Description = METASOUND_LOCTEXT("ClickNodeDesc", "Generates a single-sample impulse when triggered.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
