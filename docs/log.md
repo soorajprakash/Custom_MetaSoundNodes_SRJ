@@ -18,3 +18,4 @@
 | 11/28  | - Create first draft of tuning node.  Note: I think these two latest nodes will run on the audio thread unless we include a trigger control.  |
 | 11/29  | - Test EDO, switch input from float to integer, merge into main.  |
 | 11/30  | - Create click node, test, merge into main.  |
+| 12/01  | - Merge tuning into main.<br>- Update documentation, shift order of readme.  |

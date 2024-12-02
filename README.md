@@ -1,13 +1,8 @@
 # MetaSound-Plugins 
-This repository contains a collection of custom nodes for UE5 MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
+This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
 
-## Documentation
-Development notes:
-- [Initial notes](./docs/README.md): information on the first custom node and development process.
-- [Quick reference](./docs/quick_reference.md): for creating and troubleshooting custom nodes. 
-
-## MetaSoundBranches
-There are currently ten nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+## Branches
+There are currently eleven nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
@@ -20,6 +15,7 @@ There are currently ten nodes available in the *MetaSoundBranches* plugin for te
 | `Sample and Hold Bank`| A bank of four identical sample and hold units with audio-rate triggers.              |
 | `Shift register`| An eight-stage shift register for floats. |
 | `Slew`    | A slew limiter to smooth out the rise and fall times of an audio signal. |
+| `Tuning`    | Quantize a float value to a custom 12-note tuning, with adjustment per-note. |
 | `Width`    | Stereo width adjustment (0-200%), using mid-side processing. |
 
 Upon installing the plugin, these items will appear in *Branches* within the Metasound *Functions* category.
@@ -41,6 +37,11 @@ sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-p
 ```
 
 Please see [Learning / Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
+
+## Documentation
+Development notes:
+- [Initial notes](./docs/README.md): information on the first custom node and development process.
+- [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
 
 ---
 
