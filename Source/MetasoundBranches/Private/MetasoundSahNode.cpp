@@ -23,13 +23,14 @@ namespace Metasound
     {
     public:
         FSahOperator(
+            const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InSignal,
             const FAudioBufferReadRef& InTrigger,
             const FFloatReadRef& InThreshold)
             : InputSignal(InSignal)
             , InputTrigger(InTrigger)
             , InputThreshold(InThreshold)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
+            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSettings))
             , SampledValue(0.0f)
             , PreviousTriggerValue(0.0f)
         {
@@ -64,9 +65,9 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("SaH"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "Sample And Hold (audio trigger)");
                     Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
@@ -114,7 +115,7 @@ namespace Metasound
             TDataReadReference<FAudioBuffer> InputTrigger = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
             TDataReadReference<float> InputThreshold = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputThreshold), InParams.OperatorSettings);
 
-            return MakeUnique<FSahOperator>(InputSignal, InputTrigger, InputThreshold);
+            return MakeUnique<FSahOperator>(InParams.OperatorSettings, InputSignal, InputTrigger, InputThreshold);
         }
 
         void Execute()
