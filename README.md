@@ -6,10 +6,10 @@ There are currently eleven nodes available in the *MetaSoundBranches* plugin for
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
-| `Bool To Audio`    | Convert boolean to an audio signal with option rise and fall times.|
+| `Bool To Audio`    | Convert a boolean value to an audio signal, with optional rise and fall times.|
 | `Crossfade (stereo)`    | A crossfader for stereo signals.|
-| `Click`    | Trigger an impulse (unipolar or alternating polarity).|
-| `Dust`    | A randomly timed impulse generator with density control and audio-rate modulation.|
+| `Click`    | Trigger an impulse (unipolar or alternating polarity per impulse).|
+| `Dust`    | A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.|
 | `EDO`    | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input.  Set a reference frequency and reference MIDI note (defaults to A440).|
 | `Sample And Hold (audio trigger)`     | An alternative sample and hold unit with an audio-rate trigger. |
 | `Sample and Hold Bank`| A bank of four identical sample and hold units with audio-rate triggers.              |
@@ -18,20 +18,21 @@ There are currently eleven nodes available in the *MetaSoundBranches* plugin for
 | `Tuning`    | Quantize a float value to a custom 12-note tuning, with adjustment per-note. |
 | `Width`    | Stereo width adjustment (0-200%), using mid-side processing. |
 
-Upon installing the plugin, these items will appear in *Branches* within the Metasound *Functions* category.
+Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 
+![Screenshot of a selection of custom nodes in Metasound, as listed in the table above](./docs/nodes.png)
 ![Signal flow in a MetaSound Source showing a sample and hold node connected to two audio sources, controlling the volume of a white noise generator.](./docs/SaH_demo.png)
 
 ## Installation
 - Clone the repository into your chosen Unreal Engine project's `Plugins` directory.
 - Build the project using the [Unreal Automation Tool](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-automation-tool-for-unreal-engine):
 ### Windows
-- Navigate to the `Engine\Build\BatchFiles\` folder, and run: 
+- In PowerShell, navigate to the `Engine\Build\BatchFiles\` folder, and run: 
 ```PowerShell
 .\RunUAT.bat BuildPlugin -plugin="<path to your project>\Plugins\metasound-plugins\MetasoundBranches.uplugin" -package="<path to your project>\Plugins\metasound-plugins\MetasoundBranches.uplugin"
 ```
 ### Mac
-- Navigate to the `Engine/Build/BatchFiles/` folder, and run: 
+- In terminal, navigate to the `Engine/Build/BatchFiles/` folder, and run: 
 ```Bash
 sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-plugins/MetasoundBranches.uplugin" -package="<path to your project>/Plugins/metasound-plugins/MetasoundBranches.uplugin"
 ```

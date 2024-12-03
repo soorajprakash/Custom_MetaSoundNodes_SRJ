@@ -19,3 +19,4 @@
 | 11/29  | - Test EDO, switch input from float to integer, merge into main.  |
 | 11/30  | - Create click node, test, merge into main.  |
 | 12/01  | - Merge tuning into main.<br>- Update documentation, shift order of readme.  |
+| 12/02  | - Test build process and all nodes on UE5.5 Windows and Mac.<br>- Clean up comments and update documentation.  |

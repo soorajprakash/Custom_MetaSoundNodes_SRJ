@@ -14,7 +14,7 @@ namespace Metasound
     {
         METASOUND_PARAM(InputLeftSignal, "In L", "Left channel.");
         METASOUND_PARAM(InputRightSignal, "In R", "Right channel.");
-        METASOUND_PARAM(InputWidth, "Width", "Stereo width factor ranging from 0 to 200% .");
+        METASOUND_PARAM(InputWidth, "Width", "Stereo width factor ranging from 0 to 200% (0 - 2).");
 
         METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
         METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");

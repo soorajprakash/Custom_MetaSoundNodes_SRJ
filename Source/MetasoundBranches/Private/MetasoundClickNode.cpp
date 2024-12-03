@@ -146,11 +146,11 @@ namespace Metasound
                         if (*InputBiPolar)
                         {
                             OutputDataPtr[TriggerFrame] = SignalIsPositive ? 1.0f : -1.0f;
-                            SignalIsPositive = !SignalIsPositive; // Toggle polarity for next impulse
+                            SignalIsPositive = !SignalIsPositive;
                         }
                         else
                         {
-                            OutputDataPtr[TriggerFrame] = 1.0f; // Unipolar impulse
+                            OutputDataPtr[TriggerFrame] = 1.0f;
                         }
                     }
                 }

@@ -149,7 +149,6 @@ namespace Metasound
                 float AbsDensity = FMath::Abs(Density) + InputDensityOffsetValue;
                 float Threshold = 1.0f - AbsDensity * 0.0009f;
 
-                // Generate random number between 0 and 1 using FRandomStream
                 float RandomValue = RNGStream.GetFraction();
 
                 if (RandomValue > Threshold)
@@ -157,11 +156,11 @@ namespace Metasound
                     if (bBiPolar)
                     {
                         OutputDataPtr[i] = SignalIsPositive ? 1.0f : -1.0f;
-                        SignalIsPositive = !SignalIsPositive; // Toggle polarity
+                        SignalIsPositive = !SignalIsPositive; 
                     }
                     else
                     {
-                        OutputDataPtr[i] = 1.0f; // Unipolar impulse
+                        OutputDataPtr[i] = 1.0f;
                     }
                 }
                 else
