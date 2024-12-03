@@ -35,6 +35,22 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add a pre-trigger lambda function
 - [ ] Add an on-trigger lambda function
 
+```C++
+InputTrigger->ExecuteBlock(
+// Pre-trigger
+  [](int32 StartFrame, int32 EndFrame)
+  {
+      
+  },
+
+  // On-trigger
+  [&](int32 StartFrame, int32 EndFrame)
+  {
+      
+  }
+)
+```
+
 ### Verify namespaces
 Check that the correct namespace (as defined alongside the vertex names) is used in the following locations:
 - [ ] `DeclareVertexInterface`
