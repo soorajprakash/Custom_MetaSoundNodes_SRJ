@@ -181,50 +181,48 @@ namespace Metasound
                 // On-trigger lambda
                 [&](int32 StartFrame, int32 EndFrame)
                 {
-                    // Increment counter and wrap around every 8 counts
                     Counter = (Counter + 1) % 8;
 
-                    // Directly handle each output based on the counter value
                     switch (Counter)
                     {
                         case 0:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Only division 1
+                            OutputTrigger1->TriggerFrame(StartFrame);  
                             break;
 
                         case 1:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1 and 2
+                            OutputTrigger1->TriggerFrame(StartFrame);  
                             OutputTrigger2->TriggerFrame(StartFrame);
                             break;
 
                         case 2:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1 and 3
+                            OutputTrigger1->TriggerFrame(StartFrame); 
                             OutputTrigger3->TriggerFrame(StartFrame);
                             break;
 
                         case 3:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1, 2, and 4
+                            OutputTrigger1->TriggerFrame(StartFrame);  
                             OutputTrigger2->TriggerFrame(StartFrame);
                             OutputTrigger4->TriggerFrame(StartFrame);
                             break;
 
                         case 4:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1 and 5
+                            OutputTrigger1->TriggerFrame(StartFrame);  
                             OutputTrigger5->TriggerFrame(StartFrame);
                             break;
 
                         case 5:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1, 3, and 6
+                            OutputTrigger1->TriggerFrame(StartFrame);  
                             OutputTrigger3->TriggerFrame(StartFrame);
                             OutputTrigger6->TriggerFrame(StartFrame);
                             break;
 
                         case 6:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1 and 7
+                            OutputTrigger1->TriggerFrame(StartFrame);
                             OutputTrigger7->TriggerFrame(StartFrame);
                             break;
 
                         case 7:
-                            OutputTrigger1->TriggerFrame(StartFrame);  // Division 1, 2, 4, and 8
+                            OutputTrigger1->TriggerFrame(StartFrame);
                             OutputTrigger2->TriggerFrame(StartFrame);
                             OutputTrigger4->TriggerFrame(StartFrame);
                             OutputTrigger8->TriggerFrame(StartFrame);
