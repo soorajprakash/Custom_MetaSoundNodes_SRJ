@@ -109,25 +109,32 @@ namespace Metasound
             const float* InputData = InputSignal->GetData();
             float* OutputData = OutputSignal->GetData();
 
-            // Copy input to output to start processing
-            FMemory::Memcpy(OutputData, InputData, NumFrames * sizeof(float));
+            // Temporary buffer to hold intermediate results
+            TArray<float> TempBuffer;
+            TempBuffer.SetNumZeroed(NumFrames);
 
-            for (int32 i = 0; i < 10; ++i)
+            // Initial copy of input to temp buffer
+            FMemory::Memcpy(TempBuffer.GetData(), InputData, NumFrames * sizeof(float));
+
+            // Process through each allpass filter in sequence
+            for (int32 i = 0; i < AllPassFilters.Num(); ++i)
             {
-                AllPassFilters[i].ProcessBuffer(OutputData, NumFrames);
+                AllPassFilters[i].ProcessBuffer(TempBuffer.GetData(), NumFrames);
             }
+
+            // Copy the final output from temp buffer to output buffer
+            FMemory::Memcpy(OutputData, TempBuffer.GetData(), NumFrames * sizeof(float));
         }
 
     private:
         class FAllPassFilter
         {
         public:
-            void Init()
+            void Init(float InFeedback = 0.5f)
             {
-                DelayBuffer.SetNumZeroed(MaxDelaySamples);
+                DelayBuffer.SetNumZeroed(2); // For D = 1
                 WriteIndex = 0;
-                Feedback = 0;
-                DelaySamples = MaxDelaySamples / 2;
+                Feedback = InFeedback;
             }
 
             void ProcessBuffer(float* InOutBuffer, int32 NumSamples)
@@ -137,22 +144,21 @@ namespace Metasound
                     float InSample = InOutBuffer[i];
                     float DelayedSample = DelayBuffer[WriteIndex];
 
+                    // Allpass difference equation
                     float OutSample = -Feedback * InSample + DelayedSample;
                     DelayBuffer[WriteIndex] = InSample + Feedback * OutSample;
 
                     InOutBuffer[i] = OutSample;
 
-                    WriteIndex = (WriteIndex + 1) % MaxDelaySamples;
+                    // Update write index for D = 1
+                    WriteIndex = (WriteIndex + 1) % 2;
                 }
             }
 
         private:
             TArray<float> DelayBuffer;
             int32 WriteIndex;
-            int32 DelaySamples;
             float Feedback;
-
-            static const int32 MaxDelaySamples = 1024; // Adjust as needed
         };
 
         // Inputs
