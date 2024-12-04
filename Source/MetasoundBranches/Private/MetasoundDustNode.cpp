@@ -16,9 +16,9 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace DustNodeNames
     {
-        METASOUND_PARAM(InputDensity, "Modulation", "Input density control signal.");
+        METASOUND_PARAM(InputDensity, "Modulation", "Density control signal.");
         METASOUND_PARAM(InputDensityOffset, "Density", "Probability of impulse generation.");
-        METASOUND_PARAM(InputEnabled, "Enabled", "Enable or disable the dust node.");
+        METASOUND_PARAM(InputEnabled, "Enabled", "Enable or disable generation.");
         METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
         METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
     }
@@ -77,7 +77,8 @@ namespace Metasound
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("DustNodeDisplayName", "Dust");
-                    Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generates randomly timed impulse events based on an audio density control signal.");
+<<<<<<< Updated upstream
+                    Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generates randomly timed impulses with audio-rate modulation.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
