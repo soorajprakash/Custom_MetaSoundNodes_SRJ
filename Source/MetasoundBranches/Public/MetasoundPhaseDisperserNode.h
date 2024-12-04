@@ -5,9 +5,9 @@
 
 namespace MetasoundBranches
 {
-    class FMetasoundPhaseDispersionNode : public Metasound::FNode
+    class FMetasoundPhaseDisperserNode : public Metasound::FNode
     {
     public:
-        FMetasoundPhaseDispersionNode();
+        FMetasoundPhaseDisperserNode();
     };
 }

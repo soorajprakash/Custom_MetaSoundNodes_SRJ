@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundPhaseDispersionNode.h"
+#include "MetasoundBranches/Public/MetasoundPhaseDisperserNode.h"
 #include "MetasoundExecutableOperator.h"
 #include "MetasoundPrimitives.h"
 #include "MetasoundNodeRegistrationMacro.h"
@@ -7,11 +7,11 @@
 #include "MetasoundParamHelper.h"
 #include "Math/UnrealMathUtility.h"
 
-#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_PhaseDispersionNode"
+#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_PhaseDisperserNode"
 
 namespace Metasound
 {
-    namespace PhaseDispersionNodeNames
+    namespace PhaseDisperserNodeNames
     {
         METASOUND_PARAM(InputSignal, "Signal", "Input audio signal.");
         METASOUND_PARAM(OutputSignal, "Output", "Phase-dispersed output signal.");
@@ -19,13 +19,13 @@ namespace Metasound
         METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-128).");
     }
 
-    class FPhaseDispersionOperator : public TExecutableOperator<FPhaseDispersionOperator>
+    class FPhaseDisperserOperator : public TExecutableOperator<FPhaseDisperserOperator>
     {
     public:
         // Maximum number of allowed allpass filters
         static constexpr int32 MaxAllowedFilters = 128;
 
-        FPhaseDispersionOperator(const FAudioBufferReadRef& InSignal, const TDataReadReference<int32>& InNumFilters)
+        FPhaseDisperserOperator(const FAudioBufferReadRef& InSignal, const TDataReadReference<int32>& InNumFilters)
             : InputSignal(InSignal)
             , NumFilters(InNumFilters)
             , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
@@ -39,7 +39,7 @@ namespace Metasound
 
         static const FVertexInterface& DeclareVertexInterface()
         {
-            using namespace PhaseDispersionNodeNames;
+            using namespace PhaseDisperserNodeNames;
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
@@ -61,11 +61,11 @@ namespace Metasound
                 FVertexInterface NodeInterface = DeclareVertexInterface();
 
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("PhaseDispersion"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { StandardNodes::Namespace, TEXT("PhaseDisperser"), StandardNodes::AudioVariant };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDispersionNodeDisplayName", "Phase Dispersion");
-                Metadata.Description = METASOUND_LOCTEXT("PhaseDispersionNodeDesc", "Applies a specified number of allpass filters to the incoming signal.");
+                Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDisperserNodeDisplayName", "Phase Disperser");
+                Metadata.Description = METASOUND_LOCTEXT("PhaseDisperserNodeDesc", "Applies phase dispersion through a chain of allpass filters.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
@@ -81,7 +81,7 @@ namespace Metasound
 
         virtual FDataReferenceCollection GetInputs() const override
         {
-            using namespace PhaseDispersionNodeNames;
+            using namespace PhaseDisperserNodeNames;
 
             FDataReferenceCollection InputDataReferences;
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal), InputSignal);
@@ -92,7 +92,7 @@ namespace Metasound
 
         virtual FDataReferenceCollection GetOutputs() const override
         {
-            using namespace PhaseDispersionNodeNames;
+            using namespace PhaseDisperserNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputSignal), OutputSignal);
@@ -102,7 +102,7 @@ namespace Metasound
 
         static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
         {
-            using namespace PhaseDispersionNodeNames;
+            using namespace PhaseDisperserNodeNames;
 
             const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
@@ -115,7 +115,7 @@ namespace Metasound
 
             int32 ClampedNumFilters = FMath::Clamp(*NumFiltersRef, 1, MaxAllowedFilters);
           
-            return MakeUnique<FPhaseDispersionOperator>(InputSignal, NumFiltersRef);
+            return MakeUnique<FPhaseDisperserOperator>(InputSignal, NumFiltersRef);
         }
 
         void Execute()
@@ -187,16 +187,16 @@ namespace Metasound
         TArray<FAllPassFilter> AllPassFilters;
     };
 
-    class FPhaseDispersionNode : public FNodeFacade
+    class FPhaseDisperserNode : public FNodeFacade
     {
     public:
-        FPhaseDispersionNode(const FNodeInitData& InitData)
-            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FPhaseDispersionOperator>())
+        FPhaseDisperserNode(const FNodeInitData& InitData)
+            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FPhaseDisperserOperator>())
         {
         }
     };
 
-    METASOUND_REGISTER_NODE(FPhaseDispersionNode);
+    METASOUND_REGISTER_NODE(FPhaseDisperserNode);
 }
 
 #undef LOCTEXT_NAMESPACE
