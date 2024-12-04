@@ -212,6 +212,7 @@ namespace Metasound
 
                         case 5:
                             OutputTrigger1->TriggerFrame(StartFrame);  
+                            OutputTrigger2->TriggerFrame(StartFrame);
                             OutputTrigger3->TriggerFrame(StartFrame);
                             OutputTrigger6->TriggerFrame(StartFrame);
                             break;
