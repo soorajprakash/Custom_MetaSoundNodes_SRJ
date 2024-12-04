@@ -5,6 +5,7 @@
 #include "MetasoundStandardNodesNames.h"
 #include "MetasoundFacade.h"
 #include "MetasoundParamHelper.h"
+#include "Math/UnrealMathUtility.h"
 
 #define LOCTEXT_NAMESPACE "MetasoundStandardNodes_PhaseDispersionNode"
 
@@ -14,17 +15,23 @@ namespace Metasound
     {
         METASOUND_PARAM(InputSignal, "Signal", "Input audio signal.");
         METASOUND_PARAM(OutputSignal, "Output", "Phase-dispersed output signal.");
+
+        METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-128).");
     }
 
     class FPhaseDispersionOperator : public TExecutableOperator<FPhaseDispersionOperator>
     {
     public:
-        FPhaseDispersionOperator(const FAudioBufferReadRef& InSignal)
+        // Maximum number of allowed allpass filters
+        static constexpr int32 MaxAllowedFilters = 128;
+
+        FPhaseDispersionOperator(const FAudioBufferReadRef& InSignal, const TDataReadReference<int32>& InNumFilters)
             : InputSignal(InSignal)
+            , NumFilters(InNumFilters)
             , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
         {
-            AllPassFilters.SetNum(10);
-            for (int32 i = 0; i < 10; ++i)
+            AllPassFilters.SetNum(MaxAllowedFilters);
+            for (int32 i = 0; i < MaxAllowedFilters; ++i)
             {
                 AllPassFilters[i].Init();
             }
@@ -36,7 +43,8 @@ namespace Metasound
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal))
+                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal)),
+                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(NumFilters)) 
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal))
@@ -57,7 +65,7 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDispersionNodeDisplayName", "Phase Dispersion");
-                Metadata.Description = METASOUND_LOCTEXT("PhaseDispersionNodeDesc", "Applies ten allpass filters to the incoming signal.");
+                Metadata.Description = METASOUND_LOCTEXT("PhaseDispersionNodeDesc", "Applies a specified number of allpass filters to the incoming signal.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
@@ -77,6 +85,7 @@ namespace Metasound
 
             FDataReferenceCollection InputDataReferences;
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal), InputSignal);
+            InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(NumFilters), NumFilters);
 
             return InputDataReferences;
         }
@@ -98,9 +107,15 @@ namespace Metasound
             const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
+                InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
 
-            return MakeUnique<FPhaseDispersionOperator>(InputSignal);
+            TDataReadReference<int32> NumFiltersRef = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(
+                InputInterface, METASOUND_GET_PARAM_NAME(NumFilters), InParams.OperatorSettings);
+
+            int32 ClampedNumFilters = FMath::Clamp(*NumFiltersRef, 1, MaxAllowedFilters);
+          
+            return MakeUnique<FPhaseDispersionOperator>(InputSignal, NumFiltersRef);
         }
 
         void Execute()
@@ -116,13 +131,13 @@ namespace Metasound
             // Initial copy of input to temp buffer
             FMemory::Memcpy(TempBuffer.GetData(), InputData, NumFrames * sizeof(float));
 
-            // Process through each allpass filter in sequence
-            for (int32 i = 0; i < AllPassFilters.Num(); ++i)
+            int32 CurrentNumFilters = FMath::Clamp(*NumFilters, 1, MaxAllowedFilters);
+
+            for (int32 i = 0; i < CurrentNumFilters; ++i)
             {
                 AllPassFilters[i].ProcessBuffer(TempBuffer.GetData(), NumFrames);
             }
 
-            // Copy the final output from temp buffer to output buffer
             FMemory::Memcpy(OutputData, TempBuffer.GetData(), NumFrames * sizeof(float));
         }
 
@@ -144,7 +159,7 @@ namespace Metasound
                     float InSample = InOutBuffer[i];
                     float DelayedSample = DelayBuffer[WriteIndex];
 
-                    // Allpass difference equation
+                    // Allpass difference equation: y[n] = -a * x[n] + x[n-D] + a * y[n-D]
                     float OutSample = -Feedback * InSample + DelayedSample;
                     DelayBuffer[WriteIndex] = InSample + Feedback * OutSample;
 
@@ -163,6 +178,7 @@ namespace Metasound
 
         // Inputs
         FAudioBufferReadRef InputSignal;
+        FInt32ReadRef NumFilters;
 
         // Outputs
         FAudioBufferWriteRef OutputSignal;
