@@ -20,4 +20,4 @@
 | 11/30  | - Create click node, test, merge into main.  |
 | 12/01  | - Merge tuning into main.<br>- Update documentation, shift order of readme.  |
 | 12/02  | - Test build process and all nodes on UE5.5 Windows and Mac.<br>- Clean up comments and update documentation.  |
-| 12/03  | - Add clock divider node and Metasound patch example.  |
+| 12/03  | - Add clock divider node and Metasound patch example.<br>- Finish phase disperser and merge into main.  |

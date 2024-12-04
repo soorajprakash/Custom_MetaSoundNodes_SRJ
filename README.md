@@ -2,7 +2,7 @@
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
 
 ## Branches
-There are currently twelve nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently thirteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node      | Description                                                  |
 |-----------|--------------------------------------------------------------|
@@ -12,8 +12,9 @@ There are currently twelve nodes available in the *MetaSoundBranches* plugin for
 | `Click`    | Trigger an impulse (unipolar or alternating polarity per impulse).|
 | `Dust`    | A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.|
 | `EDO`    | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input.  Set a reference frequency and reference MIDI note (defaults to A440).|
+| `Phase Disperser`     | A chain of allpass filters to soften transients and add that classic laser/slinky-style effect. |
 | `Sample And Hold (audio trigger)`     | An alternative sample and hold unit with an audio-rate trigger. |
-| `Sample and Hold Bank`| A bank of four identical sample and hold units with audio-rate triggers.              |
+| `Sample and Hold Bank (audio trigger)`| A bank of four identical sample and hold units with audio-rate triggers.              |
 | `Shift Register`| An eight-stage shift register for floats. |
 | `Slew`    | A slew limiter to smooth out the rise and fall times of an audio signal. |
 | `Tuning`    | Quantize a float value to a custom 12-note tuning, with adjustment per-note. |
