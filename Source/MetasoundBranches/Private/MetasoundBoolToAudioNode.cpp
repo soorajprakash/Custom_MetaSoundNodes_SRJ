@@ -24,8 +24,8 @@ namespace Metasound
         FBoolToAudioOperator(
             const FOperatorSettings& InSettings,
             const FBoolReadRef& InBool,
-            const FFloatReadRef& InRiseTime,
-            const FFloatReadRef& InFallTime)
+            const FTimeReadRef& InRiseTime,
+            const FTimeReadRef& InFallTime)
             : InputBool(InBool)
             , InputRiseTime(InRiseTime)
             , InputFallTime(InFallTime)
@@ -42,8 +42,8 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputBool)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRiseTime)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFallTime))
+                    TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRiseTime)),
+                    TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFallTime))
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal))
@@ -111,13 +111,13 @@ namespace Metasound
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<float> InputRiseTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
+            TDataReadReference<FTime> InputRiseTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<float> InputFallTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
+            TDataReadReference<FTime> InputFallTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
@@ -133,11 +133,11 @@ namespace Metasound
 
             float TargetValue = *InputBool ? 1.0f : 0.0f;
 
-            float RiseTime = *InputRiseTime;
-            float FallTime = *InputFallTime;
+            float RiseTimeSeconds = InputRiseTime->GetSeconds();
+            float FallTimeSeconds = InputFallTime->GetSeconds();
 
-            float RiseAlpha = (RiseTime > 0.0f) ? FMath::Exp(-1.0f / (RiseTime * SampleRate)) : 0.0f;
-            float FallAlpha = (FallTime > 0.0f) ? FMath::Exp(-1.0f / (FallTime * SampleRate)) : 0.0f;
+            float RiseAlpha = (RiseTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (RiseTimeSeconds * SampleRate)) : 0.0f;
+            float FallAlpha = (FallTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (FallTimeSeconds * SampleRate)) : 0.0f;
 
             for (int32 i = 0; i < NumFrames; ++i)
             {
@@ -163,8 +163,8 @@ namespace Metasound
 
     private:
         FBoolReadRef InputBool;
-        FFloatReadRef InputRiseTime;
-        FFloatReadRef InputFallTime;
+        FTimeReadRef InputRiseTime;
+        FTimeReadRef InputFallTime;
         FAudioBufferWriteRef OutputSignal;
         float PreviousOutputSample;
         float SampleRate;

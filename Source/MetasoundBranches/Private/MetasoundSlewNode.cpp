@@ -1,10 +1,10 @@
 #include "MetasoundBranches/Public/MetasoundSlewNode.h"
-#include "MetasoundExecutableOperator.h"     // TExecutableOperator class
-#include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
-#include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
-#include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
-#include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
-#include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
+#include "MetasoundExecutableOperator.h"
+#include "MetasoundPrimitives.h"
+#include "MetasoundNodeRegistrationMacro.h"
+#include "MetasoundStandardNodesNames.h"
+#include "MetasoundFacade.h"
+#include "MetasoundParamHelper.h"
 
 #define LOCTEXT_NAMESPACE "MetasoundSlewNode"
 
@@ -20,7 +20,7 @@ namespace Metasound
         METASOUND_PARAM(OutputSignal, "Output", "Slew rate limited output signal.");
     }
 
-    // Operator Class - defines the way the node is described, created and executed
+    // Operator Class - defines the way the node is described, created, and executed
     class FSlewOperator : public TExecutableOperator<FSlewOperator>
     {
     public:
@@ -28,8 +28,8 @@ namespace Metasound
         FSlewOperator(
             const FOperatorSettings& InSettings,
             const FAudioBufferReadRef& InSignal,
-            const FFloatReadRef& InRiseTime,
-            const FFloatReadRef& InFallTime,
+            const FTimeReadRef& InRiseTime,
+            const FTimeReadRef& InFallTime,
             int32 InSampleRate)
             : InputSignal(InSignal)
             , InputRiseTime(InRiseTime)
@@ -48,8 +48,8 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRiseTime)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFallTime))
+                    TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRiseTime)),
+                    TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFallTime))
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal))
@@ -122,19 +122,19 @@ namespace Metasound
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<float> InputRiseTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
+            TDataReadReference<FTime> InputRiseTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<float> InputFallTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
+            TDataReadReference<FTime> InputFallTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
             );
 
-            int32 SampleRate = 44100; // Default sample rate
+            int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 
             return MakeUnique<FSlewOperator>(InParams.OperatorSettings, InputSignal, InputRiseTime, InputFallTime, SampleRate);
         }
@@ -147,20 +147,17 @@ namespace Metasound
             const float* SignalData = InputSignal->GetData();
             float* OutputDataPtr = OutputSignal->GetData();
 
-            float RiseTime = *InputRiseTime;
-            float FallTime = *InputFallTime;
+            float RiseTimeSeconds = InputRiseTime->GetSeconds();
+            float FallTimeSeconds = InputFallTime->GetSeconds();
+
+            // Calculate alpha values based on rise and fall times
+            // Alpha = exp(-1 / (time * sample rate))
+            float RiseAlpha = (RiseTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (RiseTimeSeconds * SampleRate)) : 0.0f;
+            float FallAlpha = (FallTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (FallTimeSeconds * SampleRate)) : 0.0f;
 
             for (int32 i = 0; i < NumFrames; ++i)
             {
                 float SignalSample = SignalData[i];
-
-                // Calculate alpha values based on rise and fall times
-                // Restrict lower bound to 0
-                // Alpha = exp(-1 / (time * sample rate))
-                
-                float RiseAlpha = (RiseTime > 0.0f) ? FMath::Exp(-1.0f / (RiseTime * SampleRate)) : 0.0f;
-                float FallAlpha = (FallTime > 0.0f) ? FMath::Exp(-1.0f / (FallTime * SampleRate)) : 0.0f;
-
                 float OutputSample = PreviousOutputSample;
 
                 if (SignalSample > PreviousOutputSample)
@@ -184,8 +181,8 @@ namespace Metasound
     private:
         // Input References
         FAudioBufferReadRef InputSignal;
-        FFloatReadRef InputRiseTime;
-        FFloatReadRef InputFallTime;
+        FTimeReadRef InputRiseTime;
+        FTimeReadRef InputFallTime;
 
         // Output Reference
         FAudioBufferWriteRef OutputSignal;
