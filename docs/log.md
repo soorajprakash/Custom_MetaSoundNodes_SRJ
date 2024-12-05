@@ -21,4 +21,4 @@
 | 12/01  | - Merge tuning into main.<br>- Update documentation, shift order of readme.  |
 | 12/02  | - Test build process and all nodes on UE5.5 Windows and Mac.<br>- Clean up comments and update documentation.  |
 | 12/03  | - Add clock divider node and Metasound patch example.<br>- Finish phase disperser and merge into main.  |
-| 12/04  | - Attempt to update code to new API (replace old branch, not much luck yet).<br>-Add categories to readme.  |
+| 12/04  | - Attempt to update code to new API (replace old branch, not much luck yet).<br>-Add categories to readme.<br>-Remove Sample and Hold bank from collection.  |

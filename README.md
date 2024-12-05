@@ -2,7 +2,7 @@
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
 
 ## Branches
-There are currently thirteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently twelve nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node                                | Description                                                                                                         | Category              |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------|
@@ -14,7 +14,6 @@ There are currently thirteen nodes available in the *MetaSoundBranches* plugin f
 | `EDO`                               | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440). | Tuning  |
 | `Phase Disperser`                   | A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.                      | Filters               |
 | `Sample And Hold (audio trigger)`   | An alternative sample and hold unit with an audio-rate trigger.                                                     | Filters |
-| `Sample and Hold Bank (audio trigger)` | A bank of four identical sample and hold units with audio-rate triggers.                                            | Filters  |
 | `Shift Register`                    | An eight-stage shift register for floats.                                                                           | Modulation  |
 | `Slew`                              | A slew limiter to smooth out the rise and fall times of an audio signal.                                             | Envelopes     |
 | `Tuning`                            | Quantize a float value to a custom 12-note tuning, with adjustment per-note.                                         | Tuning   |
@@ -28,6 +27,7 @@ Upon installing the plugin, these items will appear in the sub-category `Branche
 ## Installation
 - Clone the repository into your chosen Unreal Engine project's `Plugins` directory.
 - Build the project using the [Unreal Automation Tool](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-automation-tool-for-unreal-engine):
+
 ### Windows
 - In PowerShell, navigate to the `Engine\Build\BatchFiles\` folder, and run: 
 ```PowerShell
