@@ -52,7 +52,7 @@ namespace Metasound
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRightSignal1)),
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputLeftSignal2)),
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRightSignal2)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputCrossfade), 0.0f)
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputCrossfade), 0.5f)
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputLeftSignal)),
@@ -71,7 +71,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("CrossfadeStereo"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Crossfade"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("CrossfadeStereoNodeDisplayName", "Stereo Crossfade");
