@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1331.375 1358.5 438.625 175.375" width="438.625" height="175.375">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-1112.0625 1533.375) rotate(-90) scale(174.375)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_630">
+        <path d="M -1315.875 1359 L -908.25 1359 C -899.9657 1359 -893.25 1365.7157 -893.25 1374 L -893.25 1518.375 C -893.25 1526.6593 -899.9657 1533.375 -908.25 1533.375 L -1315.875 1533.375 C -1324.1593 1533.375 -1330.875 1526.6593 -1330.875 1518.375 L -1330.875 1374 C -1330.875 1365.7157 -1324.1593 1359 -1315.875 1359 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M -1315.875 1359 L -908.25 1359 C -899.9657 1359 -893.25 1365.7157 -893.25 1374 L -893.25 1518.375 C -893.25 1526.6593 -899.9657 1533.375 -908.25 1533.375 L -1315.875 1533.375 C -1324.1593 1533.375 -1330.875 1526.6593 -1330.875 1518.375 L -1330.875 1374 C -1330.875 1365.7157 -1324.1593 1359 -1315.875 1359 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_629">
+        <text transform="translate(-1150.3887 1373)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Click</tspan>
+        </text>
+      </g>
+      <g id="Group_623">
+        <title>Audio</title>
+        <g id="Graphic_625">
+          <circle cx="-933.1875" cy="1443.25" r="11.8125188752161" fill="black"/>
+          <circle cx="-933.1875" cy="1443.25" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_624">
+          <path d="M -918.4017 1436.625 L -911.6517 1443.25 L -918.4017 1449.875 Z" fill="#ce78ca"/>
+          <path d="M -918.4017 1436.625 L -911.6517 1443.25 L -918.4017 1449.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_622">
+        <text transform="translate(-1120 1429.25)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
+        </text>
+      </g>
+      <g id="Graphic_621">
+        <text transform="translate(-1265.125 1429.25)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+        </text>
+      </g>
+      <g id="Group_617">
+        <title>Bool</title>
+        <g id="Graphic_619">
+          <circle cx="-1296.0977" cy="1490.1875" r="11.8125188752161" fill="black"/>
+          <circle cx="-1296.0977" cy="1490.1875" r="11.8125188752161" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_618">
+          <path d="M -1281.3119 1483.5625 L -1274.5619 1490.1875 L -1281.3119 1496.8125 Z" fill="#900002"/>
+          <path d="M -1281.3119 1483.5625 L -1274.5619 1490.1875 L -1281.3119 1496.8125 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_616">
+        <text transform="translate(-1265.7852 1476.1875)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_615">
+        <path d="M -1165.7499 1473.3125 L -1143.9999 1473.3125 C -1140.6862 1473.3125 -1137.9999 1475.9988 -1137.9999 1479.3125 L -1137.9999 1501.0625 C -1137.9999 1504.3762 -1140.6862 1507.0625 -1143.9999 1507.0625 L -1165.7499 1507.0625 C -1169.0636 1507.0625 -1171.7499 1504.3762 -1171.7499 1501.0625 L -1171.7499 1479.3125 C -1171.7499 1475.9988 -1169.0636 1473.3125 -1165.7499 1473.3125 Z" fill="black"/>
+        <path d="M -1165.7499 1473.3125 L -1143.9999 1473.3125 C -1140.6862 1473.3125 -1137.9999 1475.9988 -1137.9999 1479.3125 L -1137.9999 1501.0625 C -1137.9999 1504.3762 -1140.6862 1507.0625 -1143.9999 1507.0625 L -1165.7499 1507.0625 C -1169.0636 1507.0625 -1171.7499 1504.3762 -1171.7499 1501.0625 L -1171.7499 1479.3125 C -1171.7499 1475.9988 -1169.0636 1473.3125 -1165.7499 1473.3125 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_634">
+        <title>Trigger</title>
+        <g id="Graphic_636">
+          <circle cx="-1295.1735" cy="1443.9375" r="11.8125188752161" fill="black"/>
+          <circle cx="-1295.1735" cy="1443.9375" r="11.8125188752161" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_635">
+          <path d="M -1283.361 1455.3397 C -1281.2743 1456.4075 -1278.952 1455.391 -1277.3138 1452.2902 C -1274.8767 1447.6771 -1274.8767 1440.1979 -1277.3138 1435.5848 C -1278.952 1432.484 -1281.2743 1431.4675 -1283.361 1432.5353 C -1282.3433 1433.056 -1281.3816 1434.0725 -1280.5827 1435.5848 C -1278.1456 1440.1979 -1278.1456 1447.6771 -1280.5827 1452.2902 C -1281.3816 1453.8025 -1282.3433 1454.819 -1283.361 1455.3398 Z" fill="white"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
