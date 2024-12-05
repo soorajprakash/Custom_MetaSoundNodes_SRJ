@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-408.875 540.625 438.625 296.625" width="438.625" height="296.625">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-189.5625 836.75) rotate(-90) scale(295.625)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_261">
+        <path d="M -393.375 541.125 L 14.25 541.125 C 22.53427 541.125 29.25 547.8407 29.25 556.125 L 29.25 821.75 C 29.25 830.0343 22.53427 836.75 14.25 836.75 L -393.375 836.75 C -401.65927 836.75 -408.375 830.0343 -408.375 821.75 L -408.375 556.125 C -408.375 547.8407 -401.65927 541.125 -393.375 541.125 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M -393.375 541.125 L 14.25 541.125 C 22.53427 541.125 29.25 547.8407 29.25 556.125 L 29.25 821.75 C 29.25 830.0343 22.53427 836.75 14.25 836.75 L -393.375 836.75 C -401.65927 836.75 -408.375 830.0343 -408.375 821.75 L -408.375 556.125 C -408.375 547.8407 -401.65927 541.125 -393.375 541.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_262">
+        <text transform="translate(-230.125 555.125)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">EDO</tspan>
+        </text>
+      </g>
+      <g id="Graphic_269">
+        <text transform="translate(-144.60156 611.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Frequency</tspan>
+        </text>
+      </g>
+      <g id="Graphic_270">
+        <text transform="translate(-339.25 611.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Note Number</tspan>
+        </text>
+      </g>
+      <g id="Group_277">
+        <title>Float</title>
+        <g id="Graphic_279">
+          <circle cx="-373.59766" cy="672.3125" r="11.8125188752161" fill="black"/>
+          <circle cx="-373.59766" cy="672.3125" r="11.8125188752161" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_278">
+          <path d="M -358.81187 665.6875 L -352.06187 672.3125 L -358.81187 678.9375 Z" fill="#9df945"/>
+          <path d="M -358.81187 665.6875 L -352.06187 672.3125 L -358.81187 678.9375 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_280">
+        <text transform="translate(-339.25 658.3125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reference Frequency</tspan>
+        </text>
+      </g>
+      <g id="Graphic_281">
+        <path d="M -333.71484 689.625 L -265.6953 689.625 C -264.03846 689.625 -262.6953 690.96815 -262.6953 692.625 L -262.6953 720.375 C -262.6953 722.03185 -264.03846 723.375 -265.6953 723.375 L -333.71484 723.375 C -335.3717 723.375 -336.71484 722.03185 -336.71484 720.375 L -336.71484 692.625 C -336.71484 690.96815 -335.3717 689.625 -333.71484 689.625 Z" fill="black"/>
+        <path d="M -333.71484 689.625 L -265.6953 689.625 C -264.03846 689.625 -262.6953 690.96815 -262.6953 692.625 L -262.6953 720.375 C -262.6953 722.03185 -264.03846 723.375 -265.6953 723.375 L -333.71484 723.375 C -335.3717 723.375 -336.71484 722.03185 -336.71484 720.375 L -336.71484 692.625 C -336.71484 690.96815 -335.3717 689.625 -333.71484 689.625 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-331.71484 692.5)" fill="#bfbebf">
+          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.8984375" y="22" xml:space="preserve">440.0</tspan>
+        </text>
+      </g>
+      <g id="Group_295">
+        <title>Float</title>
+        <g id="Graphic_297">
+          <circle cx="-10.6875" cy="625.375" r="11.8125188752161" fill="black"/>
+          <circle cx="-10.6875" cy="625.375" r="11.8125188752161" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_296">
+          <path d="M 4.0982824 618.75 L 10.848282 625.375 L 4.0982824 632 Z" fill="#9df945"/>
+          <path d="M 4.0982824 618.75 L 10.848282 625.375 L 4.0982824 632 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_302">
+        <title>Int32</title>
+        <g id="Graphic_304">
+          <circle cx="-373.59766" cy="625.375" r="11.8125188752161" fill="black"/>
+          <circle cx="-373.59766" cy="625.375" r="11.8125188752161" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_303">
+          <path d="M -358.81187 618.75 L -352.06187 625.375 L -358.81187 632 Z" fill="#00d199"/>
+          <path d="M -358.81187 618.75 L -352.06187 625.375 L -358.81187 632 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_323">
+        <text transform="translate(-339.25 740.75)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reference MIDI Note</tspan>
+        </text>
+      </g>
+      <g id="Group_320">
+        <title>Int32</title>
+        <g id="Graphic_322">
+          <circle cx="-373.59766" cy="754.75" r="11.8125188752161" fill="black"/>
+          <circle cx="-373.59766" cy="754.75" r="11.8125188752161" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_321">
+          <path d="M -358.81187 748.125 L -352.06187 754.75 L -358.81187 761.375 Z" fill="#00d199"/>
+          <path d="M -358.81187 748.125 L -352.06187 754.75 L -358.81187 761.375 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_319">
+        <text transform="translate(-339.25 791.625)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Divisions</tspan>
+        </text>
+      </g>
+      <g id="Group_316">
+        <title>Int32</title>
+        <g id="Graphic_318">
+          <circle cx="-373.59766" cy="805.625" r="11.8125188752161" fill="black"/>
+          <circle cx="-373.59766" cy="805.625" r="11.8125188752161" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_317">
+          <path d="M -358.81187 799 L -352.06187 805.625 L -358.81187 812.25 Z" fill="#00d199"/>
+          <path d="M -358.81187 799 L -352.06187 805.625 L -358.81187 812.25 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_315">
+        <path d="M -233.1289 788.75 L -200.3788 788.75 C -198.72194 788.75 -197.3788 790.09315 -197.3788 791.75 L -197.3788 819.5 C -197.3788 821.1569 -198.72194 822.5 -200.3788 822.5 L -233.1289 822.5 C -234.78576 822.5 -236.1289 821.1569 -236.1289 819.5 L -236.1289 791.75 C -236.1289 790.09315 -234.78576 788.75 -233.1289 788.75 Z" fill="black"/>
+        <path d="M -233.1289 788.75 L -200.3788 788.75 C -198.72194 788.75 -197.3788 790.09315 -197.3788 791.75 L -197.3788 819.5 C -197.3788 821.1569 -198.72194 822.5 -200.3788 822.5 L -233.1289 822.5 C -234.78576 822.5 -236.1289 821.1569 -236.1289 819.5 L -236.1289 791.75 C -236.1289 790.09315 -234.78576 788.75 -233.1289 788.75 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-231.1289 791.625)" fill="#bfbebf">
+          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x=".8984938" y="22" xml:space="preserve">12</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
