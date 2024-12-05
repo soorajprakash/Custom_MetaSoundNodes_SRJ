@@ -13,11 +13,11 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace SlewFloatNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Signal", "Float signal to smooth.");
+        METASOUND_PARAM(InputSignal, "In", "Float to smooth.");
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
-        METASOUND_PARAM(OutputSignal, "Output", "Slew rate limited output signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited  float.");
     }
 
     // Operator Class - defines the way the node is described, created, and executed
@@ -69,7 +69,7 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("SlewFloatDisplayName", "Slew (float)");
-                Metadata.Description = METASOUND_LOCTEXT("SlewFloatDesc", "Smooth the rise and fall times of an incoming float signal.");
+                Metadata.Description = METASOUND_LOCTEXT("SlewFloatDesc", "Smooth the rise and fall times of an incoming float value.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();

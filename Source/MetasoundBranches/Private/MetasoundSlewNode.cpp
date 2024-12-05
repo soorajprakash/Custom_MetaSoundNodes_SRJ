@@ -13,11 +13,11 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace SlewNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Signal", "Audio signal to smooth.");
+        METASOUND_PARAM(InputSignal, "In", "Audio signal to smooth.");
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
-        METASOUND_PARAM(OutputSignal, "Output", "Slew rate limited output signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited output signal.");
     }
 
     // Operator Class - defines the way the node is described, created, and executed
@@ -65,10 +65,10 @@ namespace Metasound
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
             {
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew (audio)"), StandardNodes::AudioVariant };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew");
+                Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew (audio)");
                 Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Smooth the rise and fall times of an incoming signal.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
