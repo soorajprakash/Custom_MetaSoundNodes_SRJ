@@ -13,8 +13,8 @@ namespace Metasound
 {
     namespace PhaseDisperserNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Input Audio", "Incoming audio.");
-        METASOUND_PARAM(OutputSignal, "Output Audio", "Phase-dispersed audio.");
+        METASOUND_PARAM(InputSignal, "In", "Incoming audio.");
+        METASOUND_PARAM(OutputSignal, "Out", "Phase-dispersed audio.");
 
         METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-128).");
     }
