@@ -12,7 +12,7 @@ namespace Metasound
 {
     namespace ShiftRegisterNodeNames
     {
-        METASOUND_PARAM(InputSignal, "Signal", "Input float to the shift register.");
+        METASOUND_PARAM(InputSignal, "In", "Input float to the shift register.");
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger.");
 
         METASOUND_PARAM(OutputSignal1, "Stage 1", "Shifted output at stage 1.");
