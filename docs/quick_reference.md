@@ -58,6 +58,13 @@ Check that the correct namespace (as defined alongside the vertex names) is used
 - [ ] `GetOutputs`
 - [ ] `CreateOperator`
 
+## Misc information
+### Get sample rate
+```CPP
+int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
+```
+
+
 ---
 
 ## References
