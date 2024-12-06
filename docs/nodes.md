@@ -3,11 +3,11 @@
 ## Bool To Audio
 ### Inputs
 
-| Name      | Description                              | Type    |
-|-----------|------------------------------------------|---------|
-| Value     | Boolean input to convert to audio.       | Bool    |
-| Rise Time | Rise time in seconds.                    | Time    |
-| Fall Time | Fall time in seconds.                    | Time    |
+| Name      | Description                              | Type         |
+|-----------|------------------------------------------|--------------|
+| Value     | Boolean input to convert to audio.       | Bool         |
+| Rise Time | Rise time in seconds.                    | Time         |
+| Fall Time | Fall time in seconds.                    | Time         |
 
 ### Outputs
 
@@ -32,23 +32,23 @@
 ## Clock Divider
 ### Inputs
 
-| Name    | Description                              | Type    |
-|---------|------------------------------------------|---------|
-| Trigger | Input trigger to the clock divider.      | Trigger |
-| Reset   | Reset the clock divider.                 | Trigger |
+| Name          | Description                         | Type    |
+|---------------|-------------------------------------|---------|
+| Trigger       | Input trigger to the clock divider. | Trigger |
+| Reset         | Reset the clock divider.            | Trigger |
 
 ### Outputs
 
-| Name          | Description                          | Type    |
-|---------------|--------------------------------------|---------|
-| OutputTrigger1 | Output trigger for division 1.       | Trigger |
-| OutputTrigger2 | Output trigger for division 2.       | Trigger |
-| OutputTrigger3 | Output trigger for division 3.       | Trigger |
-| OutputTrigger4 | Output trigger for division 4.       | Trigger |
-| OutputTrigger5 | Output trigger for division 5.       | Trigger |
-| OutputTrigger6 | Output trigger for division 6.       | Trigger |
-| OutputTrigger7 | Output trigger for division 7.       | Trigger |
-| OutputTrigger8 | Output trigger for division 8.       | Trigger |
+| Name           | Description                          | Type    |
+|----------------|--------------------------------------|---------|
+| 1 | Output trigger for division 1.       | Trigger |
+| 2 | Output trigger for division 2.       | Trigger |
+| 3 | Output trigger for division 3.       | Trigger |
+| 4 | Output trigger for division 4.       | Trigger |
+| 5 | Output trigger for division 5.       | Trigger |
+| 6 | Output trigger for division 6.       | Trigger |
+| 7 | Output trigger for division 7.       | Trigger |
+| 8 | Output trigger for division 8.       | Trigger |
 
 ## Dust
 ### Inputs
