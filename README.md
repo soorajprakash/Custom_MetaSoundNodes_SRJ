@@ -18,8 +18,8 @@ There are currently fourteen nodes available in the *MetaSoundBranches* plugin f
 | `Slew (float)`                      | Filters               | A slew limiter to smooth out the rise and fall times of an audio signal.                                             |
 | `Stereo Crossfade`                  | Envelopes             | A crossfader for stereo signals.                                                                                    |
 | `Stereo Inverter`                   | Spatialization        | Invert and/or swap stereo channels.                                                                                 |
+| `Stereo Width`                             | Spatialization        | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | `Tuning`                            | Tuning                | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
-| `Width`                             | Spatialization        | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 

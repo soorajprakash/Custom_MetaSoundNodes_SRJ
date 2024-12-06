@@ -5,9 +5,9 @@
 
 namespace MetasoundBranches
 {
-    class FMetasoundWidthNode : public Metasound::FNode
+    class FMetasoundStereoWidthNode : public Metasound::FNode
     {
     public:
-        FMetasoundWidthNode();
+        FMetasoundStereoWidthNode();
     };
 }

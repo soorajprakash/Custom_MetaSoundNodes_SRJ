@@ -18,10 +18,10 @@
         <path d="M 91.5 1153.125 L 499.125 1153.125 C 507.4093 1153.125 514.125 1159.8407 514.125 1168.125 L 514.125 1374.375 C 514.125 1382.6593 507.4093 1389.375 499.125 1389.375 L 91.5 1389.375 C 83.21573 1389.375 76.5 1382.6593 76.5 1374.375 L 76.5 1168.125 C 76.5 1159.8407 83.21573 1153.125 91.5 1153.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_437">
-        <text transform="translate(256.9453 1167.125)" fill="#a9ec9f">
+        <text transform="translate(218.90625 1167.125)" fill="#a9ec9f">
           <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
           <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Width</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Width</tspan>
         </text>
       </g>
       <g id="Group_438">

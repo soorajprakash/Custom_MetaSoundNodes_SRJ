@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundWidthNode.h"
+#include "MetasoundBranches/Public/MetasoundStereoWidthNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
@@ -6,7 +6,7 @@
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 
-#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_WidthNode"
+#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_StereoWidthNode"
 
 namespace Metasound
 {
@@ -63,10 +63,10 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Width"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Width"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Width");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Stereo Width");
                     Metadata.Description = METASOUND_LOCTEXT("WidthNodeDesc", "Adjusts the stereo width of a signal.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
