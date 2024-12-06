@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundWidthNode.h"
+#include "MetasoundBranches/Public/MetasoundStereoWidthNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
