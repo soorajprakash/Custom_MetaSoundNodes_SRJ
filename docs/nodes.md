@@ -161,24 +161,6 @@
 |------|----------------------------|-------|
 | Out  | Slew rate limited float.   | Float |
 
-## Stereo Inverter
-### Inputs
-
-| Name         | Description                              | Type         |
-|--------------|------------------------------------------|--------------|
-| In L         | Left channel audio input.                | Audio Buffer |
-| In R         | Right channel audio input.               | Audio Buffer |
-| Invert L     | Invert the polarity of the left channel. | Bool         |
-| Invert R     | Invert the polarity of the right channel.| Bool         |
-| Swap L/R     | Swap the left and right channels.        | Bool         |
-
-### Outputs
-
-| Name  | Description                | Type         |
-|-------|----------------------------|--------------|
-| Out L | Left output channel.       | Audio Buffer |
-| Out R | Right output channel.      | Audio Buffer |
-
 ## Stereo Crossfade
 ### Inputs
 
@@ -197,6 +179,40 @@
 | Out L | Left channel of the output signal.   | Audio Buffer |
 | Out R | Right channel of the output signal.  | Audio Buffer |
 
+## Stereo Inverter
+### Inputs
+
+| Name         | Description                              | Type         |
+|--------------|------------------------------------------|--------------|
+| In L         | Left channel audio input.                | Audio Buffer |
+| In R         | Right channel audio input.               | Audio Buffer |
+| Invert L     | Invert the polarity of the left channel. | Bool         |
+| Invert R     | Invert the polarity of the right channel.| Bool         |
+| Swap L/R     | Swap the left and right channels.        | Bool         |
+
+### Outputs
+
+| Name  | Description                | Type         |
+|-------|----------------------------|--------------|
+| Out L | Left output channel.       | Audio Buffer |
+| Out R | Right output channel.      | Audio Buffer |
+
+
+## Stereo Width
+### Inputs
+
+| Name   | Description                                              | Type         |
+|--------|----------------------------------------------------------|--------------|
+| In L   | Left channel.                                            | Audio Buffer |
+| In R   | Right channel.                                           | Audio Buffer |
+| Width  | Stereo width factor ranging from 0 to 200% (0 - 2).      | Float        |
+
+### Outputs
+
+| Name  | Description                                              | Type         |
+|-------|----------------------------------------------------------|--------------|
+| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
 
 ## Tuning
 ### Inputs
@@ -223,18 +239,3 @@
 |-----------|----------------------------|-------|
 | Frequency | Output frequency (float).  | Float |
 
-## Width
-### Inputs
-
-| Name   | Description                                              | Type         |
-|--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
-| Width  | Stereo width factor ranging from 0 to 200% (0 - 2).      | Float        |
-
-### Outputs
-
-| Name  | Description                                              | Type         |
-|-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
