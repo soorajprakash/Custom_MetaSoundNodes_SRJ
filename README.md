@@ -27,7 +27,11 @@ Upon installing the plugin, these items will appear in the sub-category `Branche
 
 ## Installation
 
-## Building from source
+### Downloadable binaries
+- Download for Windows and Mac here: [0.1.0-alpha](https://github.com/matthewscharles/metasound-plugins/releases/tag/0.1.0)
+- Extract the contents of the zip file into the plugins folder of your project or engine as preferred.
+
+### Building from source
 - Clone the repository into your chosen Unreal Engine project's `Plugins` directory.
 - Build the project using the [Unreal Automation Tool](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-automation-tool-for-unreal-engine):
 
@@ -46,6 +50,7 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 
 ## Documentation
 Development notes:
+- [List of nodes and inputs/outputs](./docs/nodes.md)
 - [Initial notes](./docs/README.md): information on the first custom node and development process.
 - [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
 
