@@ -1,6 +1,8 @@
 # MetaSound-Plugins 
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
 
+![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/_nodes.svg)
+
 ## Branches
 There are currently fourteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
@@ -22,9 +24,6 @@ There are currently fourteen nodes available in the *MetaSoundBranches* plugin f
 | `Tuning`                            | Tuning                | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
 
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
-
-![Screenshot of a selection of custom nodes in Metasound, as listed in the table above](./docs/nodes.png)
-![Signal flow in a MetaSound Source showing a sample and hold node connected to two audio sources, controlling the volume of a white noise generator.](./docs/SaH_demo.png)
 
 ## Installation
 - Clone the repository into your chosen Unreal Engine project's `Plugins` directory.
