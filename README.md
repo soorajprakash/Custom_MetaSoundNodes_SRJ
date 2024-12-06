@@ -1,7 +1,7 @@
 # MetaSound-Plugins 
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
 
-![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/_Nodes.svg)
+![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/_nodes.svg)
 
 ## Branches
 There are currently fourteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
