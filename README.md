@@ -8,7 +8,6 @@ There are currently thirteen nodes available in the *MetaSoundBranches* plugin f
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------|
 | `Bool To Audio`                     | Convert a boolean value to an audio signal, with optional rise and fall times.                                      | Conversions     |
 | `Clock Divider`                     | Divide a trigger into eight density levels.                                                                         | Triggers      |
-| `Crossfade (stereo)`                | A crossfader for stereo signals.                                                                                    | Envelopes        |
 | `Click`                             | Trigger a one-sample impulse (unipolar or alternating polarity per impulse).                                                  | Generators      |
 | `Dust`                              | A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation. | Generators           |
 | `EDO`                               | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440). | Tuning  |
@@ -17,6 +16,8 @@ There are currently thirteen nodes available in the *MetaSoundBranches* plugin f
 | `Shift Register`                    | An eight-stage shift register for floats.                                                                           | Modulation  |
 | `Slew (audio)`                              | A slew limiter to smooth out the rise and fall times of an audio signal.                                             | Filters     |
 | `Slew (float)`                              | A slew limiter to smooth out the rise and fall times of an audio signal.                                             | Filters     |
+| `Stereo Crossfade`                | A crossfader for stereo signals.                                                                                    | Envelopes        |
+| `Stereo Inverter`                | Invert and/or swap stereo channels.                                                                                     | Spatialization        |
 | `Tuning`                            | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                                         | Tuning   |
 | `Width`                             | Stereo width adjustment (0-200%), using mid-side processing.                                                        | Spatialization        |
 
