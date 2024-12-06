@@ -18,10 +18,10 @@
         <path d="M -792.375 1618 L -384.75 1618 C -376.46573 1618 -369.75 1624.7157 -369.75 1633 L -369.75 1814.25 C -369.75 1822.5343 -376.46573 1829.25 -384.75 1829.25 L -792.375 1829.25 C -800.6593 1829.25 -807.375 1822.5343 -807.375 1814.25 L -807.375 1633 C -807.375 1624.7157 -800.6593 1618 -792.375 1618 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_638">
-        <text transform="translate(-728.66016 1633.375)" fill="#a9ec9f">
+        <text transform="translate(-767.18555 1633.375)" fill="#a9ec9f">
           <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
           <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Sample and Hold (audio)</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Sample and Hold (audio trigger)</tspan>
         </text>
       </g>
       <g id="Group_644">

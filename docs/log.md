@@ -22,4 +22,4 @@
 | 12/02  | - Test build process and all nodes on UE5.5 Windows and Mac.<br>- Clean up comments and update documentation.  |
 | 12/03  | - Add clock divider node and Metasound patch example.<br>- Finish phase disperser and merge into main.  |
 | 12/04  | - Attempt to update code to new API (replace old branch, not much luck yet).<br>-Add categories to readme.<br>-Remove Sample and Hold bank from collection.  |
-| 12/05  | - Modify Slew and Bool To Audio to use time values.<br>- Add float version of slew node.  |
+| 12/05  | - Modify Slew and Bool To Audio to use time values.<br>- Add float version of slew node.<br>- Add SVGs for documentation.  |
