@@ -1,9 +1,9 @@
 # Documentation
-As a starting point for the documentation, I'm throwing together some of my notes on the custom nodes.
+This document uses the sample and hold node to illustrate some of the development process.
 
-If you're browsing the source code and see some odd choices, please let me know!
+## Sample and Hold (audio trigger)
 
-## SaH: Audio Rate Sample and Hold
+![Sample and hold node](./svg/SampleAndHoldAudio.svg)
 
 ### Function
 The output signal is held at the last value of the input signal when the trigger signal crosses a threshold.
