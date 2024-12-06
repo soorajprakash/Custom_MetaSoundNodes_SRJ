@@ -1,4 +1,3 @@
-@ -0,0 +1,191 @@
 #include "MetasoundBranches/Public/MetasoundStereoInverterNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
