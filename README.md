@@ -1,5 +1,5 @@
 # MetaSound-Plugins 
-This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, which I am working toward releasing as a plugin (working title: "Branches").
+This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, to be released as the *Branches* plugin.
 
 ![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/_nodes.svg)
 
@@ -26,21 +26,23 @@ There are currently fourteen nodes available in the *MetaSoundBranches* plugin f
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 
 ## Installation
+
+## Building from source
 - Clone the repository into your chosen Unreal Engine project's `Plugins` directory.
 - Build the project using the [Unreal Automation Tool](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-automation-tool-for-unreal-engine):
 
-### Windows
+#### Windows
 - In PowerShell, navigate to the `Engine\Build\BatchFiles\` folder, and run: 
 ```PowerShell
 .\RunUAT.bat BuildPlugin -plugin="<path to your project>\Plugins\metasound-plugins\MetasoundBranches.uplugin" -package="<path to your project>\Plugins\metasound-plugins\MetasoundBranches.uplugin"
 ```
-### Mac
+#### Mac
 - In terminal, navigate to the `Engine/Build/BatchFiles/` folder, and run: 
 ```Bash
 sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-plugins/MetasoundBranches.uplugin" -package="<path to your project>/Plugins/metasound-plugins/MetasoundBranches.uplugin"
 ```
 
-Please see [Learning / Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
+Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
 
 ## Documentation
 Development notes:
