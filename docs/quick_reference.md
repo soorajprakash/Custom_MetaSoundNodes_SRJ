@@ -22,27 +22,48 @@ Items in *italics* must use the namespace described in the vertex names.
 
 ## Workflows
 ### Add an input
-- [ ] Add a new `METASOUND_PARAM` to vertex names in the node's namespace
+- [ ] Add a new `METASOUND_PARAM` to the vertex names in the node's namespace
 - [ ] Add a reference to the input buffer to operator parameters (constructor)
 - [ ] Initialise a corresponding variable
-- [ ] Add the new input (TInputDataVertexModel) to DeclareVertexInterface[^1].
+- [ ] Add the new input (`TInputDataVertexModel`) to `DeclareVertexInterface`[^1].
 - [ ] Add DataReference to GetInputs
 - [ ] Add GetDataReadReferenceOrConstructWithVertexDefault to CreateOperator
-- [ ] Add the input as an argument to MakeUnique<*node*Operator>
+- [ ] Add the input as an argument to `MakeUnique<*node*Operator>`
 - [ ] Add private variable for the input
+
+### Add a trigger
+- [ ] Add a pre-trigger lambda function
+- [ ] Add an on-trigger lambda function
+
+```C++
+InputTrigger->ExecuteBlock(
+// Pre-trigger
+  [](int32 StartFrame, int32 EndFrame)
+  {
+      
+  },
+
+  // On-trigger
+  [&](int32 StartFrame, int32 EndFrame)
+  {
+      
+  }
+)
+```
 
 ### Verify namespaces
 Check that the correct namespace (as defined alongside the vertex names) is used in the following locations:
-- [ ] DeclareVertexInterface
-- [ ] GetInputs
-- [ ] GetOutputs
-- [ ] CreateOperator
+- [ ] `DeclareVertexInterface`
+- [ ] `GetInputs`
+- [ ] `GetOutputs`
+- [ ] `CreateOperator`
 
-## Misc Notes
-- [TArray](https://dev.epicgames.com/documentation/en-us/unreal-engine/array-containers-in-unreal-engine)
-  - Add()
-  - SetNum() 
-  - Num() 
+## Misc information
+### Get sample rate
+```CPP
+int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
+```
+
 
 ---
 

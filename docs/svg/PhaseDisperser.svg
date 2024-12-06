@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1335.875 1061.5 438.625 195.375" width="438.625" height="195.375">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-1116.5625 1256.375) rotate(-90) scale(194.375)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_583">
+        <path d="M -1320.375 1062 L -912.75 1062 C -904.4657 1062 -897.75 1068.7157 -897.75 1077 L -897.75 1241.375 C -897.75 1249.6593 -904.4657 1256.375 -912.75 1256.375 L -1320.375 1256.375 C -1328.6593 1256.375 -1335.375 1249.6593 -1335.375 1241.375 L -1335.375 1077 C -1335.375 1068.7157 -1328.6593 1062 -1320.375 1062 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M -1320.375 1062 L -912.75 1062 C -904.4657 1062 -897.75 1068.7157 -897.75 1077 L -897.75 1241.375 C -897.75 1249.6593 -904.4657 1256.375 -912.75 1256.375 L -1320.375 1256.375 C -1328.6593 1256.375 -1335.375 1249.6593 -1335.375 1241.375 L -1335.375 1077 C -1335.375 1068.7157 -1328.6593 1062 -1320.375 1062 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_582">
+        <text transform="translate(-1211.6895 1077.375)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Phase Disperser</tspan>
+        </text>
+      </g>
+      <g id="Graphic_576">
+        <text transform="translate(-1266.25 1179.1875)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stages</tspan>
+        </text>
+      </g>
+      <g id="Graphic_575">
+        <path d="M -1177.7636 1174.5 L -1160.287 1174.5 C -1158.6302 1174.5 -1157.287 1175.8431 -1157.287 1177.5 L -1157.287 1205.25 C -1157.287 1206.9069 -1158.6302 1208.25 -1160.287 1208.25 L -1177.7636 1208.25 C -1179.4205 1208.25 -1180.7636 1206.9069 -1180.7636 1205.25 L -1180.7636 1177.5 C -1180.7636 1175.8431 -1179.4205 1174.5 -1177.7636 1174.5 Z" fill="black"/>
+        <path d="M -1177.7636 1174.5 L -1160.287 1174.5 C -1158.6302 1174.5 -1157.287 1175.8431 -1157.287 1177.5 L -1157.287 1205.25 C -1157.287 1206.9069 -1158.6302 1208.25 -1160.287 1208.25 L -1177.7636 1208.25 C -1179.4205 1208.25 -1180.7636 1206.9069 -1180.7636 1205.25 L -1180.7636 1177.5 C -1180.7636 1175.8431 -1179.4205 1174.5 -1177.7636 1174.5 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-1175.7636 1177.375)" fill="#bfbebf">
+          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="0" y="22" xml:space="preserve">0</tspan>
+        </text>
+      </g>
+      <g id="Group_587">
+        <title>Int32</title>
+        <g id="Graphic_589">
+          <circle cx="-1300.5977" cy="1193.1875" r="11.8125188752161" fill="black"/>
+          <circle cx="-1300.5977" cy="1193.1875" r="11.8125188752161" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_588">
+          <path d="M -1285.8119 1186.5625 L -1279.0619 1193.1875 L -1285.8119 1199.8125 Z" fill="#00d199"/>
+          <path d="M -1285.8119 1186.5625 L -1279.0619 1193.1875 L -1285.8119 1199.8125 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_603">
+        <title>Audio</title>
+        <g id="Graphic_605">
+          <circle cx="-937.6875" cy="1146.25" r="11.8125188752161" fill="black"/>
+          <circle cx="-937.6875" cy="1146.25" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_604">
+          <path d="M -922.9017 1139.625 L -916.1517 1146.25 L -922.9017 1152.875 Z" fill="#ce78ca"/>
+          <path d="M -922.9017 1139.625 L -916.1517 1146.25 L -922.9017 1152.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_602">
+        <text transform="translate(-999.0146 1132.25)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+        </text>
+      </g>
+      <g id="Graphic_601">
+        <text transform="translate(-1269.788 1132.25)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+        </text>
+      </g>
+      <g id="Group_598">
+        <title>Audio</title>
+        <g id="Graphic_600">
+          <circle cx="-1300.7607" cy="1146.25" r="11.8125188752161" fill="black"/>
+          <circle cx="-1300.7607" cy="1146.25" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_599">
+          <path d="M -1285.975 1139.625 L -1279.225 1146.25 L -1285.975 1152.875 Z" fill="#ce78ca"/>
+          <path d="M -1285.975 1139.625 L -1279.225 1146.25 L -1285.975 1152.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

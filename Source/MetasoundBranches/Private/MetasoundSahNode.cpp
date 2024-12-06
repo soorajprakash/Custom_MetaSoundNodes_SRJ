@@ -30,7 +30,7 @@ namespace Metasound
             : InputSignal(InSignal)
             , InputTrigger(InTrigger)
             , InputThreshold(InThreshold)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
+            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSettings))
             , SampledValue(0.0f)
             , PreviousTriggerValue(0.0f)
         {
@@ -65,9 +65,9 @@ namespace Metasound
                     Metadata.ClassName = { StandardNodes::Namespace, TEXT("SaH"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "SaH");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("SahNodeDisplayName", "Sample And Hold (audio trigger)");
                     Metadata.Description = METASOUND_LOCTEXT("SahNodeDesc", "Samples an input signal when a trigger crosses an audio threshold, and holds it until the next trigger.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };

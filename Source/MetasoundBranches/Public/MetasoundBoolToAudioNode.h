@@ -5,9 +5,9 @@
 
 namespace MetasoundBranches
 {
-    class FMetasoundBalanceNode : public Metasound::FNode
+    class FMetasoundBoolToAudioNode : public Metasound::FNode
     {
     public:
-        FMetasoundBalanceNode();
+        FMetasoundBoolToAudioNode();
     };
 }

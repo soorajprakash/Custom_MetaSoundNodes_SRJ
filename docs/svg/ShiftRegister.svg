@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-865.625 52.375 438.625 452.125" width="438.625" height="452.125">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-646.3125 504) rotate(-90) scale(451.125)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_114">
+        <path d="M -850.125 52.875 L -442.5 52.875 C -434.21573 52.875 -427.5 59.59073 -427.5 67.875 L -427.5 489 C -427.5 497.2843 -434.21573 504 -442.5 504 L -850.125 504 C -858.4093 504 -865.125 497.2843 -865.125 489 L -865.125 67.875 C -865.125 59.59073 -858.4093 52.875 -850.125 52.875 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M -850.125 52.875 L -442.5 52.875 C -434.21573 52.875 -427.5 59.59073 -427.5 67.875 L -427.5 489 C -427.5 497.2843 -434.21573 504 -442.5 504 L -850.125 504 C -858.4093 504 -865.125 497.2843 -865.125 489 L -865.125 67.875 C -865.125 59.59073 -858.4093 52.875 -850.125 52.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(-726.46875 66.875)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Shift Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(-571.7617 123.125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_100">
+        <text transform="translate(-800.0352 123.125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+        </text>
+      </g>
+      <g id="Group_115">
+        <title>Float</title>
+        <g id="Graphic_117">
+          <circle cx="-830.3477" cy="137.125" r="11.8125188752161" fill="black"/>
+          <circle cx="-830.3477" cy="137.125" r="11.8125188752161" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_116">
+          <path d="M -815.5619 130.5 L -808.8119 137.125 L -815.5619 143.75 Z" fill="#9df945"/>
+          <path d="M -815.5619 130.5 L -808.8119 137.125 L -815.5619 143.75 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_127">
+        <title>Float</title>
+        <g id="Graphic_129">
+          <circle cx="-467.4375" cy="137.125" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="137.125" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_128">
+          <path d="M -452.6517 130.5 L -445.9017 137.125 L -452.6517 143.75 Z" fill="#9df945"/>
+          <path d="M -452.6517 130.5 L -445.9017 137.125 L -452.6517 143.75 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_130">
+        <text transform="translate(-571.7617 170.0625)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 2</tspan>
+        </text>
+      </g>
+      <g id="Group_131">
+        <title>Float</title>
+        <g id="Graphic_133">
+          <circle cx="-467.4375" cy="184.0625" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="184.0625" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_132">
+          <path d="M -452.6517 177.4375 L -445.9017 184.0625 L -452.6517 190.6875 Z" fill="#9df945"/>
+          <path d="M -452.6517 177.4375 L -445.9017 184.0625 L -452.6517 190.6875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_134">
+        <text transform="translate(-571.7617 221.125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 3</tspan>
+        </text>
+      </g>
+      <g id="Group_135">
+        <title>Float</title>
+        <g id="Graphic_137">
+          <circle cx="-467.4375" cy="235.125" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="235.125" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_136">
+          <path d="M -452.6517 228.5 L -445.9017 235.125 L -452.6517 241.75 Z" fill="#9df945"/>
+          <path d="M -452.6517 228.5 L -445.9017 235.125 L -452.6517 241.75 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_138">
+        <text transform="translate(-571.7617 268.0625)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 4</tspan>
+        </text>
+      </g>
+      <g id="Group_139">
+        <title>Float</title>
+        <g id="Graphic_141">
+          <circle cx="-467.4375" cy="282.0625" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="282.0625" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_140">
+          <path d="M -452.6517 275.4375 L -445.9017 282.0625 L -452.6517 288.6875 Z" fill="#9df945"/>
+          <path d="M -452.6517 275.4375 L -445.9017 282.0625 L -452.6517 288.6875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_142">
+        <text transform="translate(-571.7617 315.5)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 5</tspan>
+        </text>
+      </g>
+      <g id="Group_143">
+        <title>Float</title>
+        <g id="Graphic_145">
+          <circle cx="-467.4375" cy="329.5" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="329.5" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_144">
+          <path d="M -452.6517 322.875 L -445.9017 329.5 L -452.6517 336.125 Z" fill="#9df945"/>
+          <path d="M -452.6517 322.875 L -445.9017 329.5 L -452.6517 336.125 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_146">
+        <text transform="translate(-571.7617 362.4375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 6</tspan>
+        </text>
+      </g>
+      <g id="Group_147">
+        <title>Float</title>
+        <g id="Graphic_149">
+          <circle cx="-467.4375" cy="376.4375" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="376.4375" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_148">
+          <path d="M -452.6517 369.8125 L -445.9017 376.4375 L -452.6517 383.0625 Z" fill="#9df945"/>
+          <path d="M -452.6517 369.8125 L -445.9017 376.4375 L -452.6517 383.0625 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_150">
+        <text transform="translate(-571.7617 413.5)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 7</tspan>
+        </text>
+      </g>
+      <g id="Group_151">
+        <title>Float</title>
+        <g id="Graphic_153">
+          <circle cx="-467.4375" cy="427.5" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="427.5" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_152">
+          <path d="M -452.6517 420.875 L -445.9017 427.5 L -452.6517 434.125 Z" fill="#9df945"/>
+          <path d="M -452.6517 420.875 L -445.9017 427.5 L -452.6517 434.125 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_154">
+        <text transform="translate(-571.7617 460.4375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 8</tspan>
+        </text>
+      </g>
+      <g id="Group_155">
+        <title>Float</title>
+        <g id="Graphic_157">
+          <circle cx="-467.4375" cy="474.4375" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="474.4375" r="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_156">
+          <path d="M -452.6517 467.8125 L -445.9017 474.4375 L -452.6517 481.0625 Z" fill="#9df945"/>
+          <path d="M -452.6517 467.8125 L -445.9017 474.4375 L -452.6517 481.0625 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_158">
+        <title>Trigger</title>
+        <g id="Graphic_160">
+          <circle cx="-829.4235" cy="184.0625" r="11.8125188752161" fill="black"/>
+          <circle cx="-829.4235" cy="184.0625" r="11.8125188752161" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_159">
+          <path d="M -817.611 195.46474 C -815.5243 196.53251 -813.202 195.516 -811.5638 192.41518 C -809.1267 187.80212 -809.1267 180.32287 -811.5638 175.7098 C -813.202 172.609 -815.5243 171.59248 -817.611 172.66024 C -816.5933 173.181 -815.6316 174.19753 -814.8327 175.7098 C -812.3956 180.32287 -812.3956 187.80212 -814.8327 192.41518 C -815.6316 193.92747 -816.5933 194.944 -817.611 195.46474 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_161">
+        <text transform="translate(-800.0352 170.0625)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

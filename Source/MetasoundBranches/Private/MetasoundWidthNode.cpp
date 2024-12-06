@@ -14,7 +14,7 @@ namespace Metasound
     {
         METASOUND_PARAM(InputLeftSignal, "In L", "Left channel.");
         METASOUND_PARAM(InputRightSignal, "In R", "Right channel.");
-        METASOUND_PARAM(InputWidth, "Width", "Stereo width factor ranging from 0 to 200% .");
+        METASOUND_PARAM(InputWidth, "Width", "Stereo width factor ranging from 0 to 200% (0 - 2).");
 
         METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
         METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");
@@ -68,7 +68,7 @@ namespace Metasound
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Width");
                     Metadata.Description = METASOUND_LOCTEXT("WidthNodeDesc", "Adjusts the stereo width of a signal.");
-                    Metadata.Author = PluginAuthor;
+                    Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
                     Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };

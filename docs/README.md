@@ -31,12 +31,11 @@ A purely audio-rate version seemed like a good starting point for my first custo
 ### C++ Implementation (Custom Metasound Node)
 
 I used Anna Lantz's tutorial [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) as a starting point.
-According to the tutorial, this can live in a single .cpp file, but I found that I needed to include a header during troubleshooting (the issue might have been in the build process).
 
 Most of the .cpp file is occupied by setting up the node and its pins (inlets/outlets), and registering the node. 
 The implementation of the sample and hold process itself is quite straightforward, as long as you don't mind pointers (which are pretty much everywhere in this context anyway).
 
-In the following code snippets, we could think of the constructor and execute function as "setup" and "loop" respectively.
+We could think of the constructor and execute function as "setup" and "loop" respectively.
 
 #### Constructor
 ```C++
@@ -97,7 +96,9 @@ void Execute()
     }
 ```
 
-Although we're dealing with individual samples, they come in and out of the `Execute` function as audio buffers, also known as blocks. Depending on the buffer size of the host, the size of this block might range from 32 to 2048 samples (this is the same buffer size we typically modify in audio software to balance latency and performance).
+Although we're dealing with individual samples, they come in and out of the `Execute` function as blocks (audio buffers). 
+
+Depending on the buffer size of the host, the size of this block might range from 32 to 2048 samples. This is the same buffer size we typically modify in audio software to balance latency and performance.
 
 A block is broken down into "frames", each of which represents a sample point when information is read from each of the input buffers.[^1]
 
@@ -106,7 +107,7 @@ To process the signal, we therefore need to loop through these frames during eac
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 #### Misc Notes
-Some supplementary notes on implementing the sample and hold node in Pd can be found [here](./Pd_implementations/SaH_Pd.md).
+Some supplementary notes on implementing the sample and hold node in Pure Data can be found [here](./Pd_implementations/SaH_Pd.md).
 
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
 - use PascalCase throughout

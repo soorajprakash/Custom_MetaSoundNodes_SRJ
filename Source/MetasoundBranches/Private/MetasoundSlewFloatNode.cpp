@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundSlewNode.h"
+#include "MetasoundBranches/Public/MetasoundSlewFloatNode.h"
 #include "MetasoundExecutableOperator.h"
 #include "MetasoundPrimitives.h"
 #include "MetasoundNodeRegistrationMacro.h"
@@ -11,30 +11,30 @@
 namespace Metasound
 {
     // Vertex Names - define the node's inputs and outputs here
-    namespace SlewNodeNames
+    namespace SlewFloatNodeNames
     {
-        METASOUND_PARAM(InputSignal, "In", "Audio signal to smooth.");
+        METASOUND_PARAM(InputSignal, "In", "Float to smooth.");
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
-        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited output signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited  float.");
     }
 
     // Operator Class - defines the way the node is described, created, and executed
-    class FSlewOperator : public TExecutableOperator<FSlewOperator>
+    class FSlewFloatOperator : public TExecutableOperator<FSlewFloatOperator>
     {
     public:
         // Constructor
-        FSlewOperator(
+        FSlewFloatOperator(
             const FOperatorSettings& InSettings,
-            const FAudioBufferReadRef& InSignal,
+            const FFloatReadRef& InSignal,
             const FTimeReadRef& InRiseTime,
             const FTimeReadRef& InFallTime,
             int32 InSampleRate)
             : InputSignal(InSignal)
             , InputRiseTime(InRiseTime)
             , InputFallTime(InFallTime)
-            , OutputSignal(FAudioBufferWriteRef::CreateNew(InSettings))
+            , OutputSignal(FFloatWriteRef::CreateNew(0.0f))
             , PreviousOutputSample(0.0f)
             , SampleRate(InSampleRate)
         {
@@ -43,16 +43,16 @@ namespace Metasound
         // Helper function for constructing vertex interface
         static const FVertexInterface& DeclareVertexInterface()
         {
-            using namespace SlewNodeNames;
+            using namespace SlewFloatNodeNames;
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal)),
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal)),
                     TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputRiseTime)),
                     TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputFallTime))
                 ),
                 FOutputVertexInterface(
-                    TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal))
+                    TOutputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal))
                 )
             );
 
@@ -65,11 +65,11 @@ namespace Metasound
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
             {
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew (audio)"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew (float)"), StandardNodes::AudioVariant };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew (audio)");
-                Metadata.Description = METASOUND_LOCTEXT("SlewDesc", "Smooth the rise and fall times of an incoming signal.");
+                Metadata.DisplayName = METASOUND_LOCTEXT("SlewFloatDisplayName", "Slew (float)");
+                Metadata.Description = METASOUND_LOCTEXT("SlewFloatDesc", "Smooth the rise and fall times of an incoming float value.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
@@ -86,7 +86,7 @@ namespace Metasound
         // Input Data References
         virtual FDataReferenceCollection GetInputs() const override
         {
-            using namespace SlewNodeNames;
+            using namespace SlewFloatNodeNames;
 
             FDataReferenceCollection InputDataReferences;
             InputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputSignal), InputSignal);
@@ -99,7 +99,7 @@ namespace Metasound
         // Output Data References
         virtual FDataReferenceCollection GetOutputs() const override
         {
-            using namespace SlewNodeNames;
+            using namespace SlewFloatNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputSignal), OutputSignal);
@@ -110,13 +110,13 @@ namespace Metasound
         // Operator Factory Method
         static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
         {
-            using namespace SlewNodeNames;
+            using namespace SlewFloatNodeNames;
 
             const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             // Retrieve input references or use default values
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
+            TDataReadReference<float> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputSignal),
                 InParams.OperatorSettings
@@ -134,18 +134,15 @@ namespace Metasound
                 InParams.OperatorSettings
             );
 
-            int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
+            int32 SampleRate = InParams.OperatorSettings.GetActualBlockRate(); // For float processing, use block rate
 
-            return MakeUnique<FSlewOperator>(InParams.OperatorSettings, InputSignal, InputRiseTime, InputFallTime, SampleRate);
+            return MakeUnique<FSlewFloatOperator>(InParams.OperatorSettings, InputSignal, InputRiseTime, InputFallTime, SampleRate);
         }
 
         // Primary node functionality
         virtual void Execute()
         {
-            int32 NumFrames = InputSignal->Num();
-
-            const float* SignalData = InputSignal->GetData();
-            float* OutputDataPtr = OutputSignal->GetData();
+            float SignalSample = *InputSignal;
 
             float RiseTimeSeconds = InputRiseTime->GetSeconds();
             float FallTimeSeconds = InputFallTime->GetSeconds();
@@ -155,37 +152,33 @@ namespace Metasound
             float RiseAlpha = (RiseTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (RiseTimeSeconds * SampleRate)) : 0.0f;
             float FallAlpha = (FallTimeSeconds > 0.0f) ? FMath::Exp(-1.0f / (FallTimeSeconds * SampleRate)) : 0.0f;
 
-            for (int32 i = 0; i < NumFrames; ++i)
+            float OutputSample = PreviousOutputSample;
+
+            if (SignalSample > PreviousOutputSample)
             {
-                float SignalSample = SignalData[i];
-                float OutputSample = PreviousOutputSample;
-
-                if (SignalSample > PreviousOutputSample)
-                {
-                    OutputSample = RiseAlpha * PreviousOutputSample + (1.0f - RiseAlpha) * SignalSample;
-                }
-                else if (SignalSample < PreviousOutputSample)
-                {
-                    OutputSample = FallAlpha * PreviousOutputSample + (1.0f - FallAlpha) * SignalSample;
-                }
-                else
-                {
-                    OutputSample = SignalSample;
-                }
-
-                OutputDataPtr[i] = OutputSample;
-                PreviousOutputSample = OutputSample;
+                OutputSample = RiseAlpha * PreviousOutputSample + (1.0f - RiseAlpha) * SignalSample;
             }
+            else if (SignalSample < PreviousOutputSample)
+            {
+                OutputSample = FallAlpha * PreviousOutputSample + (1.0f - FallAlpha) * SignalSample;
+            }
+            else
+            {
+                OutputSample = SignalSample;
+            }
+
+            *OutputSignal = OutputSample;
+            PreviousOutputSample = OutputSample;
         }
 
     private:
         // Input References
-        FAudioBufferReadRef InputSignal;
+        FFloatReadRef InputSignal;
         FTimeReadRef InputRiseTime;
         FTimeReadRef InputFallTime;
 
         // Output Reference
-        FAudioBufferWriteRef OutputSignal;
+        FFloatWriteRef OutputSignal;
 
         // State Variable
         float PreviousOutputSample;
@@ -195,17 +188,17 @@ namespace Metasound
     };
 
     // Node Facade Class
-    class FSlewNode : public FNodeFacade
+    class FSlewFloatNode : public FNodeFacade
     {
     public:
-        FSlewNode(const FNodeInitData& InitData)
-            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FSlewOperator>())
+        FSlewFloatNode(const FNodeInitData& InitData)
+            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FSlewFloatOperator>())
         {
         }
     };
 
     // Register the Node
-    METASOUND_REGISTER_NODE(FSlewNode);
+    METASOUND_REGISTER_NODE(FSlewFloatNode);
 }
 
 #undef LOCTEXT_NAMESPACE

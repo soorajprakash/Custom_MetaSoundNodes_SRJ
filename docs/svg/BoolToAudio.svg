@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="44.5 52.375 438.625 244" width="438.625" height="244">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(263.8125 295.875) rotate(-90) scale(243)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 60 52.875 L 467.625 52.875 C 475.90927 52.875 482.625 59.59073 482.625 67.875 L 482.625 280.875 C 482.625 289.15927 475.90927 295.875 467.625 295.875 L 60 295.875 C 51.71573 295.875 45 289.15927 45 280.875 L 45 67.875 C 45 59.59073 51.71573 52.875 60 52.875 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M 60 52.875 L 467.625 52.875 C 475.90927 52.875 482.625 59.59073 482.625 67.875 L 482.625 280.875 C 482.625 289.15927 475.90927 295.875 467.625 295.875 L 60 295.875 C 51.71573 295.875 45 289.15927 45 280.875 L 45 67.875 C 45 59.59073 51.71573 52.875 60 52.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(174.875 66.875)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Bool To Audio</tspan>
+        </text>
+      </g>
+      <g id="Group_22">
+        <title>Bool</title>
+        <g id="Graphic_7">
+          <circle cx="80.4375" cy="137.125" r="11.8125188752161" fill="black"/>
+          <circle cx="80.4375" cy="137.125" r="11.8125188752161" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_8">
+          <path d="M 95.22328 130.5 L 101.97328 137.125 L 95.22328 143.75 Z" fill="#900002"/>
+          <path d="M 95.22328 130.5 L 101.97328 137.125 L 95.22328 143.75 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_24">
+        <title>Audio</title>
+        <g id="Graphic_9">
+          <circle cx="442.6875" cy="137.125" r="11.8125188752161" fill="black"/>
+          <circle cx="442.6875" cy="137.125" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_10">
+          <path d="M 457.4733 130.5 L 464.2233 137.125 L 457.4733 143.75 Z" fill="#ce78ca"/>
+          <path d="M 457.4733 130.5 L 464.2233 137.125 L 457.4733 143.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(350.375 123.125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Output</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(110.75 123.125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Value</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 186 120.25 L 207.75 120.25 C 211.0637 120.25 213.75 122.93629 213.75 126.25 L 213.75 148 C 213.75 151.3137 211.0637 154 207.75 154 L 186 154 C 182.6863 154 180 151.3137 180 148 L 180 126.25 C 180 122.93629 182.6863 120.25 186 120.25 Z" fill="black"/>
+        <path d="M 186 120.25 L 207.75 120.25 C 211.0637 120.25 213.75 122.93629 213.75 126.25 L 213.75 148 C 213.75 151.3137 211.0637 154 207.75 154 L 186 154 C 182.6863 154 180 151.3137 180 148 L 180 126.25 C 180 122.93629 182.6863 120.25 186 120.25 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(110.75 177.25)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 226.875 174.375 L 267 174.375 C 268.65685 174.375 270 175.71815 270 177.375 L 270 205.125 C 270 206.78185 268.65685 208.125 267 208.125 L 226.875 208.125 C 225.21815 208.125 223.875 206.78185 223.875 205.125 L 223.875 177.375 C 223.875 175.71815 225.21815 174.375 226.875 174.375 Z" fill="black"/>
+        <path d="M 226.875 174.375 L 267 174.375 C 268.65685 174.375 270 175.71815 270 177.375 L 270 205.125 C 270 206.78185 268.65685 208.125 267 208.125 L 226.875 208.125 C 225.21815 208.125 223.875 206.78185 223.875 205.125 L 223.875 177.375 C 223.875 175.71815 225.21815 174.375 226.875 174.375 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(228.875 177.25)" fill="#bfbebf">
+          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(110.75 233.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 226.875 230.5 L 267 230.5 C 268.65685 230.5 270 231.84315 270 233.5 L 270 261.25 C 270 262.90685 268.65685 264.25 267 264.25 L 226.875 264.25 C 225.21815 264.25 223.875 262.90685 223.875 261.25 L 223.875 233.5 C 223.875 231.84315 225.21815 230.5 226.875 230.5 Z" fill="black"/>
+        <path d="M 226.875 230.5 L 267 230.5 C 268.65685 230.5 270 231.84315 270 233.5 L 270 261.25 C 270 262.90685 268.65685 264.25 267 264.25 L 226.875 264.25 C 225.21815 264.25 223.875 262.90685 223.875 261.25 L 223.875 233.5 C 223.875 231.84315 225.21815 230.5 226.875 230.5 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(228.875 233.375)" fill="#bfbebf">
+          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
+        </text>
+      </g>
+      <g id="Group_37">
+        <title>Time</title>
+        <g id="Graphic_39">
+          <circle cx="80.4375" cy="191.25" r="11.8125188752161" fill="black"/>
+          <circle cx="80.4375" cy="191.25" r="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_38">
+          <path d="M 95.22328 184.625 L 101.97328 191.25 L 95.22328 197.875 Z" fill="#5ed2d1"/>
+          <path d="M 95.22328 184.625 L 101.97328 191.25 L 95.22328 197.875 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+      <g id="Group_40">
+        <title>Time</title>
+        <g id="Graphic_42">
+          <circle cx="80.4375" cy="247.375" r="11.8125188752161" fill="black"/>
+          <circle cx="80.4375" cy="247.375" r="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_41">
+          <path d="M 95.22328 240.75 L 101.97328 247.375 L 95.22328 254 Z" fill="#5ed2d1"/>
+          <path d="M 95.22328 240.75 L 101.97328 247.375 L 95.22328 254 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
