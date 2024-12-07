@@ -4,7 +4,7 @@ This repository contains a collection of custom nodes for Unreal Engine's MetaSo
 ![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/_nodes.svg)
 
 ## Branches
-There are currently fourteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently sixteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node                                | Category              | Description                                                                                                         |
 |-------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -18,7 +18,9 @@ There are currently fourteen nodes available in the *MetaSoundBranches* plugin f
 | `Shift Register`                    | Modulation            | An eight-stage shift register for floats.                                                                           |
 | `Slew (audio)`                      | Filters               | A slew limiter to smooth out the rise and fall times of an audio signal.                                             |
 | `Slew (float)`                      | Filters               | A slew limiter to smooth out the rise and fall times of an audio signal.                                             |
+| `Stereo Balance`                  | Spatialization             | Adjusts the balance of a stereo signal.                                                                                    |
 | `Stereo Crossfade`                  | Envelopes             | A crossfader for stereo signals.                                                                                    |
+| `Stereo Gain`                  | Mix             | Simple gain for a stereo signal.                                                                                    |
 | `Stereo Inverter`                   | Spatialization        | Invert and/or swap stereo channels.                                                                                 |
 | `Stereo Width`                             | Spatialization        | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | `Tuning`                            | Tuning                | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
@@ -28,7 +30,7 @@ Upon installing the plugin, these items will appear in the sub-category `Branche
 ## Installation
 
 ### Downloadable binaries
-- Download for Windows and Mac here: [0.1.0-alpha](https://github.com/matthewscharles/metasound-plugins/releases/tag/0.1.0)
+- Download for Windows and Mac here: [💾 0.1.0-alpha](https://github.com/matthewscharles/metasound-plugins/releases/tag/0.1.0)
 - Extract the contents of the zip file into the plugins folder of your project or engine as preferred.
 
 ### Building from source

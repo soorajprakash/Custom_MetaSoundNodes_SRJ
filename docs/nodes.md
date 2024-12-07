@@ -41,14 +41,14 @@
 
 | Name          | Description                          | Type    |
 |---------------|--------------------------------------|---------|
-| OutputTrigger1 | Output trigger for division 1.       | Trigger |
-| OutputTrigger2 | Output trigger for division 2.       | Trigger |
-| OutputTrigger3 | Output trigger for division 3.       | Trigger |
-| OutputTrigger4 | Output trigger for division 4.       | Trigger |
-| OutputTrigger5 | Output trigger for division 5.       | Trigger |
-| OutputTrigger6 | Output trigger for division 6.       | Trigger |
-| OutputTrigger7 | Output trigger for division 7.       | Trigger |
-| OutputTrigger8 | Output trigger for division 8.       | Trigger |
+| 1 | Output trigger for division 1.       | Trigger |
+| 2 | Output trigger for division 2.       | Trigger |
+| 3 | Output trigger for division 3.       | Trigger |
+| 4 | Output trigger for division 4.       | Trigger |
+| 5 | Output trigger for division 5.       | Trigger |
+| 6 | Output trigger for division 6.       | Trigger |
+| 7 | Output trigger for division 7.       | Trigger |
+| 8 | Output trigger for division 8.       | Trigger |
 
 ## Dust
 ### Inputs
@@ -161,6 +161,22 @@
 |------|----------------------------|-------|
 | Out  | Slew rate limited float.   | Float |
 
+## Stereo Balance
+### Inputs
+
+| Name   | Description                                              | Type         |
+|--------|----------------------------------------------------------|--------------|
+| In L   | Left channel.                                            | Audio Buffer |
+| In R   | Right channel.                                           | Audio Buffer |
+| Balance  | Balance control ranging from -1.0 (full left) to 1.0 (full right).      | Float        |
+
+### Outputs
+
+| Name  | Description                                              | Type         |
+|-------|----------------------------------------------------------|--------------|
+| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+
 ## Stereo Crossfade
 ### Inputs
 
@@ -178,6 +194,22 @@
 |-------|--------------------------------------|--------------|
 | Out L | Left channel of the output signal.   | Audio Buffer |
 | Out R | Right channel of the output signal.  | Audio Buffer |
+
+## Stereo Gain
+### Inputs
+
+| Name   | Description                                              | Type         |
+|--------|----------------------------------------------------------|--------------|
+| In L   | Left channel.                                            | Audio Buffer |
+| In R   | Right channel.                                           | Audio Buffer |
+| Balance  | Gain Input (Lin)", "Gain control (0.0 to 1.0).      | Float        |
+
+### Outputs
+
+| Name  | Description                                              | Type         |
+|-------|----------------------------------------------------------|--------------|
+| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
 
 ## Stereo Inverter
 ### Inputs
