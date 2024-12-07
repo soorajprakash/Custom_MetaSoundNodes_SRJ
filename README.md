@@ -30,7 +30,7 @@ Upon installing the plugin, these items will appear in the sub-category `Branche
 ## Installation
 
 ### Downloadable binaries
-- Download for Windows and Mac here: [💾 0.1.0-alpha](https://github.com/matthewscharles/metasound-plugins/releases/tag/0.1.0)
+- Download for Windows and Mac here: [releases page](https://github.com/matthewscharles/metasound-plugins/releases/)
 - Extract the contents of the zip file into the plugins folder of your project or engine as preferred.
 
 ### Building from source
