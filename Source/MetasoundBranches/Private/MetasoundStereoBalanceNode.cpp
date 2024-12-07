@@ -13,11 +13,11 @@ namespace Metasound
     namespace BalanceNodeNames
     {
         METASOUND_PARAM(InputLeftSignal, "In L", "Left channel of the stereo input signal.");
-        METASOUND_PARAM(InputRightSignal, "R :", "Right channel of the stereo input signal.");
+        METASOUND_PARAM(InputRightSignal, "In R", "Right channel of the stereo input signal.");
         METASOUND_PARAM(InputBalance, "Balance", "Balance control ranging from -1.0 (full left) to 1.0 (full right).");
 
-        METASOUND_PARAM(OutputLeftSignal, "Left Output", "Left channel of the adjusted stereo output signal.");
-        METASOUND_PARAM(OutputRightSignal, "Right Output", "Right channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");
     }
 
     class FBalanceOperator : public TExecutableOperator<FBalanceOperator>
@@ -120,33 +120,28 @@ namespace Metasound
             return MakeUnique<FBalanceOperator>(InParams.OperatorSettings, InputLeftSignal, InputRightSignal, InputBalance);
         }
 
-        void Execute()
+    void Execute()
+    {
+        int32 NumFrames = InputLeftSignal->Num();
+
+        const float* LeftData = InputLeftSignal->GetData();
+        const float* RightData = InputRightSignal->GetData();
+        float* OutputLeftData = OutputLeftSignal->GetData();
+        float* OutputRightData = OutputRightSignal->GetData();
+
+        float Balance = FMath::Clamp(*InputBalance, -1.0f, 1.0f);
+
+        float Angle = (Balance + 1.0f) * (PI / 4.0f);
+
+        float LeftGain = FMath::Cos(Angle);
+        float RightGain = FMath::Sin(Angle);
+
+        for (int32 i = 0; i < NumFrames; ++i)
         {
-            int32 NumFrames = InputLeftSignal->Num();
-
-            const float* LeftData = InputLeftSignal->GetData();
-            const float* RightData = InputRightSignal->GetData();
-            float* OutputLeftData = OutputLeftSignal->GetData();
-            float* OutputRightData = OutputRightSignal->GetData();
-
-            float Balance = FMath::Clamp(*InputBalance, -1.0f, 1.0f);
-
-            const float PI_OVER_4 = PI / 4.0f;
-            float Angle = Balance * PI_OVER_4;
-
-            float LeftGain = FMath::Cos(Angle);
-            float RightGain = FMath::Sin(Angle);
-
-            float GainNormalization = 1.0f / FMath::Sqrt(LeftGain * LeftGain + RightGain * RightGain);
-            LeftGain *= GainNormalization;
-            RightGain *= GainNormalization;
-
-            for (int32 i = 0; i < NumFrames; ++i)
-            {
-                OutputLeftData[i] = LeftData[i] * LeftGain;
-                OutputRightData[i] = RightData[i] * RightGain;
-            }
+            OutputLeftData[i] = LeftData[i] * LeftGain;
+            OutputRightData[i] = RightData[i] * RightGain;
         }
+    }
 
     private:
 
