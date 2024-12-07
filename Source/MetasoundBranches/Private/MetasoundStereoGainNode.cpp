@@ -14,7 +14,7 @@ namespace Metasound
     {
         METASOUND_PARAM(InputLeftSignal, "In L", "Left channel audio input.");
         METASOUND_PARAM(InputRightSignal, "In R", "Right channel audio input.");
-        METASOUND_PARAM(InputGain, "Gain Input (Lin)", "Gain control (0.0 to 1.0).");
+        METASOUND_PARAM(InputGain, "Gain (Lin)", "Gain control (0.0 to 1.0).");
 
         METASOUND_PARAM(OutputLeftSignal, "Out L", "Left output channel.");
         METASOUND_PARAM(OutputRightSignal, "Out R", "Right output channel.");
