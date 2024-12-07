@@ -161,6 +161,22 @@
 |------|----------------------------|-------|
 | Out  | Slew rate limited float.   | Float |
 
+## Stereo Balance
+### Inputs
+
+| Name   | Description                                              | Type         |
+|--------|----------------------------------------------------------|--------------|
+| In L   | Left channel.                                            | Audio Buffer |
+| In R   | Right channel.                                           | Audio Buffer |
+| Balance  | Balance control ranging from -1.0 (full left) to 1.0 (full right).      | Float        |
+
+### Outputs
+
+| Name  | Description                                              | Type         |
+|-------|----------------------------------------------------------|--------------|
+| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+
 ## Stereo Crossfade
 ### Inputs
 
@@ -178,6 +194,22 @@
 |-------|--------------------------------------|--------------|
 | Out L | Left channel of the output signal.   | Audio Buffer |
 | Out R | Right channel of the output signal.  | Audio Buffer |
+
+## Stereo Gain
+### Inputs
+
+| Name   | Description                                              | Type         |
+|--------|----------------------------------------------------------|--------------|
+| In L   | Left channel.                                            | Audio Buffer |
+| In R   | Right channel.                                           | Audio Buffer |
+| Balance  | Gain Input (Lin)", "Gain control (0.0 to 1.0).      | Float        |
+
+### Outputs
+
+| Name  | Description                                              | Type         |
+|-------|----------------------------------------------------------|--------------|
+| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
 
 ## Stereo Inverter
 ### Inputs
