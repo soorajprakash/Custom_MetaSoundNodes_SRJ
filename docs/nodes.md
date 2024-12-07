@@ -41,14 +41,14 @@
 
 | Name          | Description                          | Type    |
 |---------------|--------------------------------------|---------|
-| OutputTrigger1 | Output trigger for division 1.       | Trigger |
-| OutputTrigger2 | Output trigger for division 2.       | Trigger |
-| OutputTrigger3 | Output trigger for division 3.       | Trigger |
-| OutputTrigger4 | Output trigger for division 4.       | Trigger |
-| OutputTrigger5 | Output trigger for division 5.       | Trigger |
-| OutputTrigger6 | Output trigger for division 6.       | Trigger |
-| OutputTrigger7 | Output trigger for division 7.       | Trigger |
-| OutputTrigger8 | Output trigger for division 8.       | Trigger |
+| 1 | Output trigger for division 1.       | Trigger |
+| 2 | Output trigger for division 2.       | Trigger |
+| 3 | Output trigger for division 3.       | Trigger |
+| 4 | Output trigger for division 4.       | Trigger |
+| 5 | Output trigger for division 5.       | Trigger |
+| 6 | Output trigger for division 6.       | Trigger |
+| 7 | Output trigger for division 7.       | Trigger |
+| 8 | Output trigger for division 8.       | Trigger |
 
 ## Dust
 ### Inputs
