@@ -62,18 +62,17 @@ namespace Metasound
                     FVertexInterface NodeInterface = DeclareVertexInterface();
 
                     FNodeClassMetadata Metadata;
-
-                    FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Balance"), StandardNodes::AudioVariant };
-                Metadata.MajorVersion = 1;
-                Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("StereoGainNodeDisplayName", "Stereo Balance");
-                Metadata.Description = METASOUND_LOCTEXT("StereoGainNodeDesc", "Adjusts the balance of a stereo signal.");
-                Metadata.Author = "Charles Matthews";
-                Metadata.PromptIfMissing = PluginNodeMissingPrompt;
-                Metadata.DefaultInterface = NodeInterface;
-                Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
-                Metadata.Keywords = TArray<FText>();
+    
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Balance"), StandardNodes::AudioVariant };
+                    Metadata.MajorVersion = 1;
+                    Metadata.MinorVersion = 0;
+                    Metadata.DisplayName = METASOUND_LOCTEXT("StereoGainNodeDisplayName", "Stereo Balance");
+                    Metadata.Description = METASOUND_LOCTEXT("StereoGainNodeDesc", "Adjusts the balance of a stereo signal.");
+                    Metadata.Author = "Charles Matthews";
+                    Metadata.PromptIfMissing = PluginNodeMissingPrompt;
+                    Metadata.DefaultInterface = NodeInterface;
+                    Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
+                    Metadata.Keywords = TArray<FText>();
 
                     return Metadata;
                 };
