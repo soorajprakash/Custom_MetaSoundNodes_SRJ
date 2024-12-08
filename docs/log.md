@@ -24,4 +24,5 @@
 | 12/04  | - Attempt to update code to new API (replace old branch, not much luck yet).<br>-Add categories to readme.<br>-Remove Sample and Hold bank from collection.  |
 | 12/05  | - Modify Slew and Bool To Audio to use time values.<br>- Add float version of slew node.<br>- Add SVGs for documentation.  |
 | 12/06  | - Add stereo inverter node.<br>- Rename width to stereo width.  |
-| 12/07  | - Add stereo balance and gain.<br>- Test on Windows/Mac, upload next release for testing ([0.1.1](https://github.com/matthewscharles/metasound-plugins/releases/tag/v0.1.1-alpha)). |
+| 12/07  | - Add stereo balance and gain.<br>- Test on Windows/Mac, upload next release for testing ([0.1.1](https://github.com/matthewscharles/metasound-plugins/releases/tag/v0.1.1-alpha)).<br>- Move toward separate dev branch now that there are releases available to download. |
+| 12/08  | - Add passthrough trigger to click node.<br>- Add first draft of stereo cross router (in branch). |

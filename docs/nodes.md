@@ -27,6 +27,7 @@
 
 | Name           | Description                | Type         |
 |----------------|----------------------------|--------------|
+| On Trigger | Trigger passthrough.       | Trigger |
 | Impulse Output | Generated impulse output.  | Audio Buffer |
 
 ## Clock Divider
