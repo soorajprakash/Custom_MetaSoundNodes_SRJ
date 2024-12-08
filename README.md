@@ -12,6 +12,7 @@ There are currently sixteen nodes available in the *MetaSoundBranches* plugin fo
 | `Clock Divider`                     | Triggers              | Divide a trigger into eight density levels.                                                                         |
 | `Click`                             | Generators            | Trigger a one-sample impulse (unipolar or alternating polarity per impulse).                                        |
 | `Dust`                              | Generators            | A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation. |
+| `Edge`                              | Envelopes            | Detects upward and downward changes in an input audio signal, with optional debounce. |
 | `EDO`                               | Tuning                | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440). |
 | `Phase Disperser`                   | Filters               | A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.                      |
 | `Sample And Hold (audio trigger)`   | Filters               | An alternative sample and hold unit with an audio-rate trigger.                                                     |
