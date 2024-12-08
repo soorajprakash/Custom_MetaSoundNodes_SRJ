@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-865.625 540.625 438.625 452.125" width="438.625" height="452.125">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-646.3125 992.25) rotate(-90) scale(451.125)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_162">
+        <path d="M -850.125 541.125 L -442.5 541.125 C -434.21573 541.125 -427.5 547.8407 -427.5 556.125 L -427.5 977.25 C -427.5 985.5343 -434.21573 992.25 -442.5 992.25 L -850.125 992.25 C -858.4093 992.25 -865.125 985.5343 -865.125 977.25 L -865.125 556.125 C -865.125 547.8407 -858.4093 541.125 -850.125 541.125 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M -850.125 541.125 L -442.5 541.125 C -434.21573 541.125 -427.5 547.8407 -427.5 556.125 L -427.5 977.25 C -427.5 985.5343 -434.21573 992.25 -442.5 992.25 L -850.125 992.25 C -858.4093 992.25 -865.125 985.5343 -865.125 977.25 L -865.125 556.125 C -865.125 547.8407 -858.4093 541.125 -850.125 541.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_163">
+        <text transform="translate(-724.2305 555.125)" fill="#a9ec9f">
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Clock Divider</tspan>
+        </text>
+      </g>
+      <g id="Graphic_164">
+        <text transform="translate(-504.5078 611.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_165">
+        <text transform="translate(-800.0352 611.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+        </text>
+      </g>
+      <g id="Graphic_172">
+        <text transform="translate(-504.5078 658.3125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_176">
+        <text transform="translate(-504.5078 709.375)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_180">
+        <text transform="translate(-504.5078 756.3125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_184">
+        <text transform="translate(-504.5078 803.75)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_188">
+        <text transform="translate(-504.5078 850.6875)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_192">
+        <text transform="translate(-504.5078 901.75)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_196">
+        <text transform="translate(-504.5078 948.6875)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">8</tspan>
+        </text>
+      </g>
+      <g id="Group_200">
+        <title>Trigger</title>
+        <g id="Graphic_202">
+          <circle cx="-829.4235" cy="672.3125" r="11.8125188752161" fill="black"/>
+          <circle cx="-829.4235" cy="672.3125" r="11.8125188752161" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_201">
+          <path d="M -817.611 683.7147 C -815.5243 684.7825 -813.202 683.766 -811.5638 680.6652 C -809.1267 676.0521 -809.1267 668.5729 -811.5638 663.9598 C -813.202 660.859 -815.5243 659.8425 -817.611 660.91024 C -816.5933 661.431 -815.6316 662.4475 -814.8327 663.9598 C -812.3956 668.5729 -812.3956 676.0521 -814.8327 680.6652 C -815.6316 682.1775 -816.5933 683.194 -817.611 683.71474 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Graphic_203">
+        <text transform="translate(-798.1739 658.3125)" fill="white">
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reset</tspan>
+        </text>
+      </g>
+      <g id="Group_207">
+        <title>Trigger</title>
+        <g id="Graphic_209">
+          <circle cx="-830.3477" cy="625.375" r="11.8125188752161" fill="black"/>
+          <circle cx="-830.3477" cy="625.375" r="11.8125188752161" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_208">
+          <path d="M -818.5352 636.7772 C -816.4484 637.845 -814.1261 636.8285 -812.488 633.7277 C -810.0509 629.1146 -810.0509 621.6354 -812.488 617.0223 C -814.1261 613.9215 -816.4484 612.905 -818.5351 613.97274 C -817.5174 614.4935 -816.5558 615.51 -815.7568 617.0223 C -813.3197 621.6354 -813.3197 629.1146 -815.7568 633.7277 C -816.5558 635.24 -817.51745 636.2565 -818.5352 636.77724 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_216">
+        <title>Trigger</title>
+        <g id="Graphic_218">
+          <circle cx="-467.4375" cy="625.375" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="625.375" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_217">
+          <path d="M -455.625 636.7772 C -453.5383 637.845 -451.216 636.8285 -449.5778 633.7277 C -447.1407 629.1146 -447.1407 621.6354 -449.5778 617.0223 C -451.216 613.9215 -453.5383 612.905 -455.625 613.97274 C -454.6073 614.4935 -453.6456 615.51 -452.8467 617.0223 C -450.4096 621.6354 -450.4096 629.1146 -452.8467 633.7277 C -453.6456 635.24 -454.6073 636.2565 -455.625 636.77724 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_258">
+        <title>Trigger</title>
+        <g id="Graphic_260">
+          <circle cx="-467.4375" cy="672.3125" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="672.3125" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_259">
+          <path d="M -455.625 683.71475 C -453.5383 684.7825 -451.216 683.766 -449.5778 680.6652 C -447.1407 676.0521 -447.1407 668.5729 -449.5778 663.9598 C -451.216 660.859 -453.5383 659.8425 -455.625 660.91026 C -454.6073 661.431 -453.6456 662.4475 -452.8467 663.9598 C -450.4096 668.5729 -450.4096 676.0521 -452.8467 680.6652 C -453.6456 682.1775 -454.6073 683.194 -455.625 683.71476 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_255">
+        <title>Trigger</title>
+        <g id="Graphic_257">
+          <circle cx="-467.4375" cy="723.375" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="723.375" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_256">
+          <path d="M -455.625 734.7772 C -453.5383 735.845 -451.216 734.8285 -449.5778 731.7277 C -447.1407 727.1146 -447.1407 719.6354 -449.5778 715.0223 C -451.216 711.9215 -453.5383 710.905 -455.625 711.97274 C -454.6073 712.4935 -453.6456 713.51 -452.8467 715.0223 C -450.4096 719.6354 -450.4096 727.1146 -452.8467 731.7277 C -453.6456 733.24 -454.6073 734.2565 -455.625 734.77724 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_252">
+        <title>Trigger</title>
+        <g id="Graphic_254">
+          <circle cx="-467.4375" cy="770.3125" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="770.3125" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_253">
+          <path d="M -455.625 781.71475 C -453.5383 782.7825 -451.216 781.766 -449.5778 778.6652 C -447.1407 774.0521 -447.1407 766.5729 -449.5778 761.9598 C -451.216 758.859 -453.5383 757.8425 -455.625 758.9103 C -454.6073 759.431 -453.6456 760.4475 -452.8467 761.9598 C -450.4096 766.5729 -450.4096 774.0521 -452.8467 778.6652 C -453.6456 780.1775 -454.6073 781.194 -455.625 781.7148 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_249">
+        <title>Trigger</title>
+        <g id="Graphic_251">
+          <circle cx="-467.4375" cy="817.75" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="817.75" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_250">
+          <path d="M -455.625 829.1522 C -453.5383 830.22 -451.216 829.2035 -449.5778 826.1027 C -447.1407 821.4896 -447.1407 814.0104 -449.5778 809.3973 C -451.216 806.2965 -453.5383 805.28 -455.625 806.3478 C -454.6073 806.8685 -453.6456 807.885 -452.8467 809.3973 C -450.4096 814.0104 -450.4096 821.4896 -452.8467 826.1027 C -453.6456 827.615 -454.6073 828.6315 -455.625 829.1523 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_246">
+        <title>Trigger</title>
+        <g id="Graphic_248">
+          <circle cx="-467.4375" cy="864.6875" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="864.6875" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_247">
+          <path d="M -455.625 876.0897 C -453.5383 877.1575 -451.216 876.141 -449.5778 873.0402 C -447.1407 868.4271 -447.1407 860.9479 -449.5778 856.3348 C -451.216 853.234 -453.5383 852.2175 -455.625 853.2852 C -454.6073 853.806 -453.6456 854.8225 -452.8467 856.3348 C -450.4096 860.9479 -450.4096 868.4271 -452.8467 873.0402 C -453.6456 874.5525 -454.6073 875.569 -455.625 876.0897 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_243">
+        <title>Trigger</title>
+        <g id="Graphic_245">
+          <circle cx="-467.4375" cy="915.75" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="915.75" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_244">
+          <path d="M -455.625 927.1522 C -453.5383 928.22 -451.216 927.2035 -449.5778 924.1027 C -447.1407 919.4896 -447.1407 912.0104 -449.5778 907.3973 C -451.216 904.2965 -453.5383 903.28 -455.625 904.3478 C -454.6073 904.8685 -453.6456 905.885 -452.8467 907.3973 C -450.4096 912.0104 -450.4096 919.4896 -452.8467 924.1027 C -453.6456 925.615 -454.6073 926.6315 -455.625 927.1523 Z" fill="white"/>
+        </g>
+      </g>
+      <g id="Group_240">
+        <title>Trigger</title>
+        <g id="Graphic_242">
+          <circle cx="-467.4375" cy="962.6875" r="11.8125188752162" fill="black"/>
+          <circle cx="-467.4375" cy="962.6875" r="11.8125188752162" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_241">
+          <path d="M -455.625 974.0897 C -453.5383 975.1575 -451.216 974.141 -449.5778 971.0402 C -447.1407 966.4271 -447.1407 958.9479 -449.5778 954.3348 C -451.216 951.234 -453.5383 950.2175 -455.625 951.2853 C -454.6073 951.806 -453.6456 952.8225 -452.8467 954.3348 C -450.4096 958.9479 -450.4096 966.4271 -452.8467 971.0402 C -453.6456 972.5525 -454.6073 973.569 -455.625 974.0898 Z" fill="white"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
