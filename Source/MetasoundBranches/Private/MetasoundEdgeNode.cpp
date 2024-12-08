@@ -71,7 +71,7 @@ namespace Metasound
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("EdgeNodeDisplayName", "Edge");
                 Metadata.Description = METASOUND_LOCTEXT("EdgeNodeDesc", "Detects upward and downward changes in an input audio signal, with optional debounce.");
-                Metadata.Author = PluginAuthor;
+                Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();
                 Metadata.CategoryHierarchy = { METASOUND_LOCTEXT("Custom", "Branches") };
@@ -148,13 +148,16 @@ namespace Metasound
 
         void Execute()
         {
-            // Get number of frames
+            
             int32 NumFrames = InputSignal->Num();
             const float* SignalData = InputSignal->GetData();
 
             // Trigger outputs
             FTriggerWriteRef TriggerRise = OutputTriggerRise;
             FTriggerWriteRef TriggerFall = OutputTriggerFall;
+
+            TriggerRise->AdvanceBlock();
+            TriggerFall->AdvanceBlock();
 
             // Recalculate debounce samples if debounce time or sample rate has changed
             static float LastDebounceTime = -1.0f;
