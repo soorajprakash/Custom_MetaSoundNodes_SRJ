@@ -64,7 +64,6 @@ Check that the correct namespace (as defined alongside the vertex names) is used
 int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 ```
 
-
 ---
 
 ## References
