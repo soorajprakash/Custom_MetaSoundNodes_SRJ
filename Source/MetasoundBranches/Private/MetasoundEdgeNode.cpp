@@ -148,21 +148,13 @@ namespace Metasound
 
         void Execute()
         {
-            
-            int32 NumFrames = InputSignal->Num();
+            OutputTriggerRise->AdvanceBlock();
+            OutputTriggerFall->AdvanceBlock();
+
             const float* SignalData = InputSignal->GetData();
-
-            // Trigger outputs
-            FTriggerWriteRef TriggerRise = OutputTriggerRise;
-            FTriggerWriteRef TriggerFall = OutputTriggerFall;
-
-            TriggerRise->AdvanceBlock();
-            TriggerFall->AdvanceBlock();
+            int32 NumFrames = InputSignal->Num();
 
             // Recalculate debounce samples if debounce time or sample rate has changed
-            static float LastDebounceTime = -1.0f;
-            static float LastSampleRate = -1.0f;
-
             if (LastDebounceTime != *InputDebounce || LastSampleRate != SampleRate)
             {
                 DebounceSamples = FMath::RoundToInt(FMath::Clamp(*InputDebounce, 0.001f, 5.0f) * SampleRate);
@@ -174,33 +166,31 @@ namespace Metasound
             {
                 float CurrentSignal = SignalData[i];
 
-                // Detect rising edge
-                if (PreviousSignalValue < CurrentSignal)
-                {
-                    if (DebounceCounter <= 0)
-                    {
-                        TriggerRise->TriggerFrame(i);
-                        DebounceCounter = DebounceSamples;
-                    }
-                }
-                // Detect falling edge
-                else if (PreviousSignalValue > CurrentSignal)
-                {
-                    if (DebounceCounter <= 0)
-                    {
-                        TriggerFall->TriggerFrame(i);
-                        DebounceCounter = DebounceSamples;
-                    }
-                }
-
-                // Update previous signal value
-                PreviousSignalValue = CurrentSignal;
-
                 // Decrement debounce counter
                 if (DebounceCounter > 0)
                 {
                     DebounceCounter--;
                 }
+
+                // Detect rising edge
+                if (CurrentSignal > PreviousSignalValue && !PreviousIsRising && DebounceCounter <= 0)
+                {
+                    // Rising edge detected
+                    OutputTriggerRise->TriggerFrame(i);
+                    DebounceCounter = DebounceSamples;
+                    PreviousIsRising = true;
+                }
+                // Detect falling edge
+                else if (CurrentSignal < PreviousSignalValue && PreviousIsRising && DebounceCounter <= 0)
+                {
+                    // Falling edge detected
+                    OutputTriggerFall->TriggerFrame(i);
+                    DebounceCounter = DebounceSamples;
+                    PreviousIsRising = false;
+                }
+
+                // Update previous signal value
+                PreviousSignalValue = CurrentSignal;
             }
         }
 
@@ -215,9 +205,14 @@ namespace Metasound
 
         // Internal variables
         float PreviousSignalValue;
+        bool PreviousIsRising = false;
         int32 DebounceSamples;
         int32 DebounceCounter;
         float SampleRate;
+        
+        // Variables to track changes in debounce time and sample rate
+        float LastDebounceTime = -1.0f;
+        float LastSampleRate = -1.0f;
     };
 
     class FEdgeNode : public FNodeFacade
