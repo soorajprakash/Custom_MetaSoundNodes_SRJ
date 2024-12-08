@@ -15,7 +15,7 @@ namespace Metasound
         METASOUND_PARAM(InputBool, "Value", "Boolean input to convert to audio.");
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
-        METASOUND_PARAM(OutputSignal, "Output", "Audio signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Audio signal.");
     }
 
     class FBoolToAudioOperator : public TExecutableOperator<FBoolToAudioOperator>

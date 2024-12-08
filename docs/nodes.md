@@ -13,7 +13,7 @@
 
 | Name   | Description             | Type         |
 |--------|-------------------------|--------------|
-| Output | Audio signal.           | Audio |
+| Out | Audio signal.           | Audio |
 
 ## Click
 ### Inputs
@@ -125,7 +125,7 @@
 
 | Name    | Description                          | Type         |
 |---------|--------------------------------------|--------------|
-| Output  | The resulting sampled signal.        | Audio |
+| Out  | The resulting sampled signal.        | Audio |
 
 ## Shift Register
 ### Inputs
@@ -139,14 +139,14 @@
 
 | Name         | Description                          | Type         |
 |--------------|--------------------------------------|--------------|
-| OutputSignal1 | Output signal for stage 1.           | Float        |
-| OutputSignal2 | Output signal for stage 2.           | Float        |
-| OutputSignal3 | Output signal for stage 3.           | Float        |
-| OutputSignal4 | Output signal for stage 4.           | Float        |
-| OutputSignal5 | Output signal for stage 5.           | Float        |
-| OutputSignal6 | Output signal for stage 6.           | Float        |
-| OutputSignal7 | Output signal for stage 7.           | Float        |
-| OutputSignal8 | Output signal for stage 8.           | Float        |
+| Stage 1 | Shifted output at stage 1.           | Float        |
+| Stage 2 | Shifted output at stage 2.           | Float        |
+| Stage 3 | Shifted output at stage 3.           | Float        |
+| Stage 4 | Shifted output at stage 4.           | Float        |
+| Stage 5 | Shifted output at stage 5.           | Float        |
+| Stage 6 | Shifted output at stage 6.           | Float        |
+| Stage 7 | Shifted output at stage 7.           | Float        |
+| Stage 8 | Shifted output at stage 8.           | Float        |
 
 ## Slew (audio)
 ### Inputs
@@ -268,7 +268,7 @@
 
 | Name                | Description                                      | Type  |
 |---------------------|--------------------------------------------------|-------|
-| MIDI Note Number    | Input MIDI note number (integer).                | Int32 |
+| Note Number    | Input MIDI note number (integer).                | Int32 |
 | +/- Cents C         | Tuning adjustment for note 0 in cents.           | Float |
 | +/- Cents C♯ / D♭   | Tuning adjustment for note 1 in cents.           | Float |
 | +/- Cents D         | Tuning adjustment for note 2 in cents.           | Float |

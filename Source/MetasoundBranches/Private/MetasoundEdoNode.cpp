@@ -12,11 +12,11 @@ namespace Metasound
 {
     namespace EdoNodeNames
     {
-        METASOUND_PARAM(InputNoteNumber, "Note Number", "Input MIDI note number (integer).");
-        METASOUND_PARAM(InputReferenceFrequency, "Reference Frequency", "Reference frequency (float).");
-        METASOUND_PARAM(InputReferenceMIDINote, "Reference MIDI Note", "Reference MIDI note (integer).");
-        METASOUND_PARAM(InputDivisions, "Divisions", "Number of divisions of the octave (integer).");
-        METASOUND_PARAM(OutputFrequency, "Frequency", "Output frequency (float).");
+        METASOUND_PARAM(InputNoteNumber, "Note Number", "Input MIDI note number.");
+        METASOUND_PARAM(InputReferenceFrequency, "Reference Frequency", "Reference frequency.");
+        METASOUND_PARAM(InputReferenceMIDINote, "Reference Note", "Reference MIDI note.");
+        METASOUND_PARAM(InputDivisions, "Divisions", "Number of divisions of the octave.");
+        METASOUND_PARAM(OutputFrequency, "Frequency", "Output frequency.");
     }
 
     class FEdoNodeOperator : public TExecutableOperator<FEdoNodeOperator>
