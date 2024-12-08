@@ -13,7 +13,7 @@
 
 | Name   | Description             | Type         |
 |--------|-------------------------|--------------|
-| Output | Audio signal.           | Audio Buffer |
+| Output | Audio signal.           | Audio |
 
 ## Click
 ### Inputs
@@ -28,7 +28,7 @@
 | Name           | Description                | Type         |
 |----------------|----------------------------|--------------|
 | On Trigger | Trigger passthrough.       | Trigger |
-| Impulse Output | Generated impulse output.  | Audio Buffer |
+| Impulse Output | Generated impulse output.  | Audio |
 
 ## Clock Divider
 ### Inputs
@@ -58,14 +58,30 @@
 |----------------|--------------------------------------------------|--------------|
 | Enabled        | Enable or disable the dust node.                 | Bool         |
 | Bi-Polar       | Toggle between bipolar and unipolar impulse output. | Bool         |
-| Density Offset | Offset added to the absolute value of the density input. | Float        |
-| Density        | Input density control signal.                    | Audio Buffer |
+| Density | Probability of impulse generation. | Float        |
+| Modulation        | Density control signal.                    | Audio |
 
 ### Outputs
 
 | Name           | Description                | Type         |
 |----------------|----------------------------|--------------|
-| Impulse Output | Generated impulse output.  | Audio Buffer |
+| Impulse Output | Generated impulse output.  | Audio |
+
+## Edge
+
+### Inputs
+
+| Name      | Description                                             | Type         |
+|-----------|---------------------------------------------------------|--------------|
+| In        | Input audio to monitor for edge detection.              | Audio |
+| Debounce  | Debounce time in seconds to prevent rapid triggering.    | Float        |
+
+### Outputs
+
+| Name  | Description                | Type    |
+|-------|----------------------------|---------|
+| Rise  | Trigger on rise.           | Trigger |
+| Fall  | Trigger on fall.           | Trigger |
 
 ## EDO
 ### Inputs
@@ -88,28 +104,28 @@
 
 | Name     | Description                                      | Type         |
 |----------|--------------------------------------------------|--------------|
-| In       | Incoming audio.                                  | Audio Buffer |
+| In       | Incoming audio.                                  | Audio |
 | Stages   | Number of allpass filter stages to apply (1-128).| Int32        |
 
 ### Outputs
 
 | Name | Description                | Type         |
 |------|----------------------------|--------------|
-| Out  | Phase-dispersed audio.     | Audio Buffer |
+| Out  | Phase-dispersed audio.     | Audio |
 
 ### Inputs
 
 | Name       | Description                                             | Type         |
 |------------|---------------------------------------------------------|--------------|
-| Signal     | Audio rate signal to be sampled.                        | Audio Buffer |
-| Trigger    | Audio rate signal that triggers the sample and hold.    | Audio Buffer |
+| Signal     | Audio rate signal to be sampled.                        | Audio |
+| Trigger    | Audio rate signal that triggers the sample and hold.    | Audio |
 | Threshold  | Float value that determines when the trigger signal is considered "on". | Float        |
 
 ### Outputs
 
 | Name    | Description                          | Type         |
 |---------|--------------------------------------|--------------|
-| Output  | The resulting sampled signal.        | Audio Buffer |
+| Output  | The resulting sampled signal.        | Audio |
 
 ## Shift Register
 ### Inputs
@@ -137,7 +153,7 @@
 
 | Name      | Description                              | Type         |
 |-----------|------------------------------------------|--------------|
-| In        | Audio signal to smooth.                  | Audio Buffer |
+| In        | Audio signal to smooth.                  | Audio |
 | Rise Time | Rise time in seconds.                    | Time         |
 | Fall Time | Fall time in seconds.                    | Time         |
 
@@ -145,7 +161,7 @@
 
 | Name | Description                          | Type         |
 |------|--------------------------------------|--------------|
-| Out  | Slew rate limited output signal.     | Audio Buffer |
+| Out  | Slew rate limited output signal.     | Audio |
 
 ## Slew (float)
 ### Inputs
@@ -167,58 +183,58 @@
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Balance  | Balance control ranging from -1.0 (full left) to 1.0 (full right).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Crossfade
 ### Inputs
 
 | Name       | Description                              | Type         |
 |------------|------------------------------------------|--------------|
-| In1 L      | Left channel of first input.             | Audio Buffer |
-| In1 R      | Right channel of first input.            | Audio Buffer |
-| In2 L      | Left channel of second input.            | Audio Buffer |
-| In2 R      | Right channel of second input.           | Audio Buffer |
+| In1 L      | Left channel of first input.             | Audio |
+| In1 R      | Right channel of first input.            | Audio |
+| In2 L      | Left channel of second input.            | Audio |
+| In2 R      | Right channel of second input.           | Audio |
 | Crossfade  | Crossfade between the two inputs (0.0 to 1.0). | Float        |
 
 ### Outputs
 
 | Name  | Description                          | Type         |
 |-------|--------------------------------------|--------------|
-| Out L | Left channel of the output signal.   | Audio Buffer |
-| Out R | Right channel of the output signal.  | Audio Buffer |
+| Out L | Left channel of the output signal.   | Audio |
+| Out R | Right channel of the output signal.  | Audio |
 
 ## Stereo Gain
 ### Inputs
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Balance  | Gain Input (Lin)", "Gain control (0.0 to 1.0).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Inverter
 ### Inputs
 
 | Name         | Description                              | Type         |
 |--------------|------------------------------------------|--------------|
-| In L         | Left channel audio input.                | Audio Buffer |
-| In R         | Right channel audio input.               | Audio Buffer |
+| In L         | Left channel audio input.                | Audio |
+| In R         | Right channel audio input.               | Audio |
 | Invert L     | Invert the polarity of the left channel. | Bool         |
 | Invert R     | Invert the polarity of the right channel.| Bool         |
 | Swap L/R     | Swap the left and right channels.        | Bool         |
@@ -227,8 +243,8 @@
 
 | Name  | Description                | Type         |
 |-------|----------------------------|--------------|
-| Out L | Left output channel.       | Audio Buffer |
-| Out R | Right output channel.      | Audio Buffer |
+| Out L | Left output channel.       | Audio |
+| Out R | Right output channel.      | Audio |
 
 
 ## Stereo Width
@@ -236,16 +252,16 @@
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Width  | Stereo width factor ranging from 0 to 200% (0 - 2).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Tuning
 ### Inputs
