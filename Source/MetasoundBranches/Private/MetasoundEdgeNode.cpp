@@ -26,7 +26,7 @@ namespace Metasound
         // Constructor
         FEdgeOperator(
             const FAudioBufferReadRef& InSignal,
-            const FFloatReadRef& InDebounce,
+            const FTimeReadRef& InDebounce,
             float InSampleRate,
             const FOperatorSettings& InSettings)
             : InputSignal(InSignal)
@@ -47,7 +47,7 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputSignal)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDebounce))
+                    TInputDataVertexModel<FTime>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDebounce))
                 ),
                 FOutputVertexInterface(
                     TOutputDataVertexModel<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTriggerRise)),
@@ -118,7 +118,7 @@ namespace Metasound
             TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
                 InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
 
-            TDataReadReference<float> InputDebounce = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(
+            TDataReadReference<FTime> InputDebounce = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
                 InputInterface, METASOUND_GET_PARAM_NAME(InputDebounce), InParams.OperatorSettings);
 
             float SampleRate = InParams.OperatorSettings.GetSampleRate();
@@ -153,12 +153,13 @@ namespace Metasound
 
             const float* SignalData = InputSignal->GetData();
             int32 NumFrames = InputSignal->Num();
+            const float DebounceTime = InputDebounce->GetSeconds();
 
             // Recalculate debounce samples if debounce time or sample rate has changed
-            if (LastDebounceTime != *InputDebounce || LastSampleRate != SampleRate)
+            if (LastDebounceTime != DebounceTime || LastSampleRate != SampleRate)
             {
-                DebounceSamples = FMath::RoundToInt(FMath::Clamp(*InputDebounce, 0.001f, 5.0f) * SampleRate);
-                LastDebounceTime = *InputDebounce;
+                DebounceSamples = FMath::RoundToInt(FMath::Clamp(DebounceTime, 0.001f, 5.0f) * SampleRate);
+                LastDebounceTime = DebounceTime;
                 LastSampleRate = SampleRate;
             }
 
@@ -197,7 +198,7 @@ namespace Metasound
     private:
         // Inputs
         FAudioBufferReadRef InputSignal;
-        FFloatReadRef InputDebounce;
+        FTimeReadRef InputDebounce;
 
         // Outputs
         FTriggerWriteRef OutputTriggerRise;
