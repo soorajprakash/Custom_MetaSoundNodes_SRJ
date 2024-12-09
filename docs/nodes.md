@@ -74,7 +74,7 @@
 | Name      | Description                                             | Type         |
 |-----------|---------------------------------------------------------|--------------|
 | In        | Input audio to monitor for edge detection.              | Audio |
-| Debounce  | Debounce time in seconds to prevent rapid triggering.    | Float        |
+| Debounce  | Debounce time in seconds to prevent rapid triggering.    | Time        |
 
 ### Outputs
 
