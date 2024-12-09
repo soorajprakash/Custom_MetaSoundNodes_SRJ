@@ -1,6 +1,7 @@
 # Nodes
 
 ## Bool To Audio
+Convert a boolean value to an audio signal, with optional rise and fall times.
 ### Inputs
 
 | Name      | Description                              | Type    |
@@ -15,22 +16,8 @@
 |--------|-------------------------|--------------|
 | Out | Audio signal.           | Audio |
 
-## Click
-### Inputs
-
-| Name     | Description                                      | Type    |
-|----------|--------------------------------------------------|---------|
-| Trigger  | Trigger input to generate an impulse.            | Trigger |
-| Bi-Polar | Toggle between bipolar and unipolar impulse output. | Bool    |
-
-### Outputs
-
-| Name           | Description                | Type         |
-|----------------|----------------------------|--------------|
-| On Trigger | Trigger passthrough.       | Trigger |
-| Impulse Output | Generated impulse output.  | Audio |
-
 ## Clock Divider
+Divide a trigger into eight density levels.
 ### Inputs
 
 | Name    | Description                              | Type    |
@@ -51,7 +38,24 @@
 | 7 | Output trigger for division 7.       | Trigger |
 | 8 | Output trigger for division 8.       | Trigger |
 
+## Click
+Trigger a one-sample impulse (unipolar or alternating polarity per impulse).
+### Inputs
+
+| Name     | Description                                      | Type    |
+|----------|--------------------------------------------------|---------|
+| Trigger  | Trigger input to generate an impulse.            | Trigger |
+| Bi-Polar | Toggle between bipolar and unipolar impulse output. | Bool    |
+
+### Outputs
+
+| Name           | Description                | Type         |
+|----------------|----------------------------|--------------|
+| On Trigger | Trigger passthrough.       | Trigger |
+| Impulse Output | Generated impulse output.  | Audio |
+
 ## Dust
+A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.
 ### Inputs
 
 | Name           | Description                                      | Type         |
@@ -68,7 +72,7 @@
 | Impulse Output | Generated impulse output.  | Audio |
 
 ## Edge
-
+Detects upward and downward changes in an input audio signal, with optional debounce.
 ### Inputs
 
 | Name      | Description                                             | Type         |
@@ -84,6 +88,7 @@
 | Fall  | Trigger on fall.           | Trigger |
 
 ## EDO
+Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440).
 ### Inputs
 
 | Name                | Description                                      | Type  |
@@ -100,6 +105,7 @@
 | Frequency | Output frequency (float).  | Float |
 
 ## Phase Disperser
+A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.
 ### Inputs
 
 | Name     | Description                                      | Type         |
@@ -112,6 +118,9 @@
 | Name | Description                | Type         |
 |------|----------------------------|--------------|
 | Out  | Phase-dispersed audio.     | Audio |
+
+## Sample and Hold (audio trigger)
+An alternative sample and hold unit with an audio-rate trigger and threshold control.
 
 ### Inputs
 
@@ -128,6 +137,7 @@
 | Out  | The resulting sampled signal.        | Audio |
 
 ## Shift Register
+An eight-stage shift register for floats.
 ### Inputs
 
 | Name    | Description                              | Type         |
@@ -149,6 +159,7 @@
 | Stage 8 | Shifted output at stage 8.           | Float        |
 
 ## Slew (audio)
+A slew limiter to smooth out the rise and fall times of an audio signal.
 ### Inputs
 
 | Name      | Description                              | Type         |
@@ -164,6 +175,7 @@
 | Out  | Slew rate limited output signal.     | Audio |
 
 ## Slew (float)
+A slew limiter to smooth out the rise and fall times of an float value.
 ### Inputs
 
 | Name      | Description                              | Type  |
@@ -179,6 +191,7 @@
 | Out  | Slew rate limited float.   | Float |
 
 ## Stereo Balance
+Adjust the balance of a stereo signal.
 ### Inputs
 
 | Name   | Description                                              | Type         |
@@ -195,6 +208,7 @@
 | Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Crossfade
+Cross fade between two stereo signals.
 ### Inputs
 
 | Name       | Description                              | Type         |
@@ -213,6 +227,7 @@
 | Out R | Right channel of the output signal.  | Audio |
 
 ## Stereo Gain
+Adjust gain for a stereo signal.
 ### Inputs
 
 | Name   | Description                                              | Type         |
@@ -229,6 +244,7 @@
 | Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Inverter
+Invert and/or swap stereo channels.
 ### Inputs
 
 | Name         | Description                              | Type         |
@@ -248,6 +264,7 @@
 
 
 ## Stereo Width
+Stereo width adjustment (0-200%), using mid-side processing.
 ### Inputs
 
 | Name   | Description                                              | Type         |
@@ -264,6 +281,7 @@
 | Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Tuning
+Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.
 ### Inputs
 
 | Name                | Description                                      | Type  |
