@@ -21,7 +21,7 @@ There are currently sixteen nodes available in the *MetaSoundBranches* plugin fo
 | `Slew (float)`                      | Filters               | A slew limiter to smooth out the rise and fall times of a float value.                                             |
 | `Stereo Balance`                  | Spatialization             | Adjust the balance of a stereo signal.                                                                                    |
 | `Stereo Crossfade`                  | Envelopes             | Cross fade between two stereo signals.                                                                                    |
-| `Stereo Gain`                  | Mix             | Simple gain for a stereo signal.                                                                                    |
+| `Stereo Gain`                  | Mix             | Adjust gain for a stereo signal.                                                                                    |
 | `Stereo Inverter`                   | Spatialization        | Invert and/or swap stereo channels.                                                                                 |
 | `Stereo Width`                             | Spatialization        | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | `Tuning`                            | Tuning                | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
