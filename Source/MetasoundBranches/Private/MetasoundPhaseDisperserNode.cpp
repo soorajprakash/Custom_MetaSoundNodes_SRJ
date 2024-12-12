@@ -9,31 +9,29 @@
 
 #define LOCTEXT_NAMESPACE "MetasoundStandardNodes_PhaseDisperserNode"
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-
 namespace Metasound
 {
     namespace PhaseDisperserNodeNames
     {
-        static constexpr int32 MaxAllowedFilters = 256;
         METASOUND_PARAM(InputSignal, "In", "Incoming audio.");
         METASOUND_PARAM(OutputSignal, "Out", "Phase-dispersed audio.");
 
-        METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-" TOSTRING(MaxAllowedFilters) ").");
+        METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-128).");
     }
 
     class FPhaseDisperserOperator : public TExecutableOperator<FPhaseDisperserOperator>
     {
     public:
+        // Maximum number of allowed allpass filters
+        static constexpr int32 MaxAllowedFilters = 128;
+
         FPhaseDisperserOperator(const FAudioBufferReadRef& InSignal, const TDataReadReference<int32>& InNumFilters)
             : InputSignal(InSignal)
             , NumFilters(InNumFilters)
             , OutputSignal(FAudioBufferWriteRef::CreateNew(InSignal->Num()))
         {
-            AllPassFilters.SetNum(PhaseDisperserNodeNames::MaxAllowedFilters);
-            for (int32 i = 0; i < PhaseDisperserNodeNames::MaxAllowedFilters; ++i)
+            AllPassFilters.SetNum(MaxAllowedFilters);
+            for (int32 i = 0; i < MaxAllowedFilters; ++i)
             {
                 AllPassFilters[i].Init();
             }
@@ -115,7 +113,7 @@ namespace Metasound
             TDataReadReference<int32> NumFiltersRef = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(
                 InputInterface, METASOUND_GET_PARAM_NAME(NumFilters), InParams.OperatorSettings);
 
-            int32 ClampedNumFilters = FMath::Clamp(*NumFiltersRef, 1, PhaseDisperserNodeNames::MaxAllowedFilters);
+            int32 ClampedNumFilters = FMath::Clamp(*NumFiltersRef, 1, MaxAllowedFilters);
           
             return MakeUnique<FPhaseDisperserOperator>(InputSignal, NumFiltersRef);
         }
@@ -133,7 +131,7 @@ namespace Metasound
             // Initial copy of input to temp buffer
             FMemory::Memcpy(TempBuffer.GetData(), InputData, NumFrames * sizeof(float));
 
-            int32 CurrentNumFilters = FMath::Clamp(*NumFilters, 1, PhaseDisperserNodeNames::MaxAllowedFilters);
+            int32 CurrentNumFilters = FMath::Clamp(*NumFilters, 1, MaxAllowedFilters);
 
             for (int32 i = 0; i < CurrentNumFilters; ++i)
             {
