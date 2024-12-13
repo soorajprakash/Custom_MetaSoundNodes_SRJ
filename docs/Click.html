@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bool To Audio</title>
+  <title>Click</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    <h1>Bool To Audio</h1>
-    <img src="./svg/BoolToAudio.svg" alt="Bool To Audio">
-    <p>Convert a boolean value to an audio signal, with optional rise and fall times.</p>
+    <h1>Click</h1>
+    <img src="./svg/Click.svg" alt="Click">
+    <p>Trigger a one-sample impulse (unipolar or alternating polarity per impulse).</p>
     <h2>Inputs</h2>
     <table>
       <thead>
@@ -22,23 +22,16 @@
       <tbody>
         
       <tr>
-        <td>Value</td>
-        <td>Boolean input to convert to audio.</td>
+        <td>Trigger</td>
+        <td>Trigger input to generate an impulse.</td>
+        <td>Trigger</td>
+      </tr>
+    
+
+      <tr>
+        <td>Bi-Polar</td>
+        <td>Toggle between bipolar and unipolar impulse output.</td>
         <td>Bool</td>
-      </tr>
-    
-
-      <tr>
-        <td>Rise Time</td>
-        <td>Rise time in seconds.</td>
-        <td>Time</td>
-      </tr>
-    
-
-      <tr>
-        <td>Fall Time</td>
-        <td>Fall time in seconds.</td>
-        <td>Time</td>
       </tr>
     
       </tbody>
@@ -56,8 +49,15 @@
       <tbody>
         
       <tr>
-        <td>Out</td>
-        <td>Audio signal.</td>
+        <td>On Trigger</td>
+        <td>Trigger passthrough.</td>
+        <td>Trigger</td>
+      </tr>
+    
+
+      <tr>
+        <td>Impulse Output</td>
+        <td>Generated impulse output.</td>
         <td>Audio</td>
       </tr>
     

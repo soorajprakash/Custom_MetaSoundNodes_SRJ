@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bool To Audio</title>
+  <title>Slew (float)</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    <h1>Bool To Audio</h1>
-    <img src="./svg/BoolToAudio.svg" alt="Bool To Audio">
-    <p>Convert a boolean value to an audio signal, with optional rise and fall times.</p>
+    <h1>Slew (float)</h1>
+    <img src="./svg/SlewFloat.svg" alt="Slew (float)">
+    <p>A slew limiter to smooth out the rise and fall times of a float value.</p>
     <h2>Inputs</h2>
     <table>
       <thead>
@@ -22,9 +22,9 @@
       <tbody>
         
       <tr>
-        <td>Value</td>
-        <td>Boolean input to convert to audio.</td>
-        <td>Bool</td>
+        <td>In</td>
+        <td>Float to smooth.</td>
+        <td>Float</td>
       </tr>
     
 
@@ -57,8 +57,8 @@
         
       <tr>
         <td>Out</td>
-        <td>Audio signal.</td>
-        <td>Audio</td>
+        <td>Slew rate limited float.</td>
+        <td>Float</td>
       </tr>
     
       </tbody>

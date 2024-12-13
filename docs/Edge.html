@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bool To Audio</title>
+  <title>Edge</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    <h1>Bool To Audio</h1>
-    <img src="./svg/BoolToAudio.svg" alt="Bool To Audio">
-    <p>Convert a boolean value to an audio signal, with optional rise and fall times.</p>
+    <h1>Edge</h1>
+    <img src="./svg/Edge.svg" alt="Edge">
+    <p>Detects upward and downward changes in an input audio signal, with optional debounce.</p>
     <h2>Inputs</h2>
     <table>
       <thead>
@@ -22,22 +22,15 @@
       <tbody>
         
       <tr>
-        <td>Value</td>
-        <td>Boolean input to convert to audio.</td>
-        <td>Bool</td>
+        <td>In</td>
+        <td>Input audio to monitor for edge detection.</td>
+        <td>Audio</td>
       </tr>
     
 
       <tr>
-        <td>Rise Time</td>
-        <td>Rise time in seconds.</td>
-        <td>Time</td>
-      </tr>
-    
-
-      <tr>
-        <td>Fall Time</td>
-        <td>Fall time in seconds.</td>
+        <td>Debounce</td>
+        <td>Debounce time in seconds to prevent rapid triggering.</td>
         <td>Time</td>
       </tr>
     
@@ -56,9 +49,16 @@
       <tbody>
         
       <tr>
-        <td>Out</td>
-        <td>Audio signal.</td>
-        <td>Audio</td>
+        <td>Rise</td>
+        <td>Trigger on rise.</td>
+        <td>Trigger</td>
+      </tr>
+    
+
+      <tr>
+        <td>Fall</td>
+        <td>Trigger on fall.</td>
+        <td>Trigger</td>
       </tr>
     
       </tbody>
