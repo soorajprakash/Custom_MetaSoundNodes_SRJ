@@ -88,7 +88,19 @@ data.forEach(node => {
       </tbody>
     </table>
   </main>
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.querySelector('.sidebar');
+    const toggleBtn = document.querySelector('.menu-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+    });
+  });
+</script>
 </html>
 `;
 
