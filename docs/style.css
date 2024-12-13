@@ -78,3 +78,35 @@ main thead th:nth-child(3),
 main tbody td:nth-child(3) {
   width: 10ch;
 }
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;     
+  }
+
+  .sidebar {
+    width: 100%;                
+    padding: 10px;
+    margin:none;
+    height: auto;              
+  }
+
+  main {
+    margin-left: 0;             
+    max-width: 100%;            
+    padding: 10px;              
+  }
+  
+  main img{
+    max-width: 80vw;
+  }
+
+  main table {
+    font-size: 14px;           
+  }
+  
+  main thead th:nth-child(1),
+  main tbody td:nth-child(1) {
+    max-width: 20vw;
+  }
+}
