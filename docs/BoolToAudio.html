@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bool To Audio</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="BoolToAudio.html">Bool To Audio</a></li>
+<li><a href="ClockDivider.html">Clock Divider</a></li>
+<li><a href="Click.html">Click</a></li>
+<li><a href="Dust.html">Dust</a></li>
+<li><a href="Edge.html">Edge</a></li>
+<li><a href="EDO.html">EDO</a></li>
+<li><a href="PhaseDisperser.html">Phase Disperser</a></li>
+<li><a href="SampleandHold.html">Sample and Hold</a></li>
+<li><a href="ShiftRegister.html">Shift Register</a></li>
+<li><a href="Slew(audio).html">Slew (audio)</a></li>
+<li><a href="Slew(float).html">Slew (float)</a></li>
+<li><a href="StereoBalance.html">Stereo Balance</a></li>
+<li><a href="StereoCrossfade.html">Stereo Crossfade</a></li>
+<li><a href="StereoGain.html">Stereo Gain</a></li>
+<li><a href="StereoInverter.html">Stereo Inverter</a></li>
+<li><a href="StereoWidth.html">Stereo Width</a></li>
+<li><a href="Tuning.html">Tuning</a></li>
+        </ul>
+    </nav>
+  <main>
+    <h1>Bool To Audio</h1>
+    <img src="./svg/BoolToAudio.svg" alt="Bool To Audio">
+    <p>Convert a boolean value to an audio signal, with optional rise and fall times.</p>
+    <h2>Inputs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td>Value</td>
+        <td>Boolean input to convert to audio.</td>
+        <td>Bool</td>
+      </tr>
+    
+
+      <tr>
+        <td>Rise Time</td>
+        <td>Rise time in seconds.</td>
+        <td>Time</td>
+      </tr>
+    
+
+      <tr>
+        <td>Fall Time</td>
+        <td>Fall time in seconds.</td>
+        <td>Time</td>
+      </tr>
+    
+      </tbody>
+    </table>
+
+    <h2>Outputs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td>Out</td>
+        <td>Audio signal.</td>
+        <td>Audio</td>
+      </tr>
+    
+      </tbody>
+    </table>
+  </main>
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.querySelector('.sidebar');
+    const toggleBtn = document.querySelector('.menu-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+    });
+  });
+</script>
+</html>
