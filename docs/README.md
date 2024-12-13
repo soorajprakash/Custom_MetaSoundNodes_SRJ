@@ -1,3 +1,7 @@
+A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released as the *Branches* plugin.
+
+![Screenshot of a selection of custom nodes in Metasound](./svg/_nodes.svg)
+
 # Nodes
 
 - [Bool To Audio](BoolToAudio.html)
@@ -17,3 +21,7 @@
 - [Stereo Inverter](StereoInverter.html)
 - [Stereo Width](StereoWidth.html)
 - [Tuning](Tuning.html)
+
+---
+
+[Charles Matthews 2024](https://github.com/matthewscharles/)
