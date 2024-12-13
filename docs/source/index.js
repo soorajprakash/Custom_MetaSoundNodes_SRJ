@@ -10,6 +10,12 @@ if (!fs.existsSync(outputDir)) {
 
 const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 
+const sidebarContent = data.map(d => {
+    const nodeFileName = d.name.replace(/\s+/g, '') + '.html';
+    return `<li><a href="${nodeFileName}">${d.name}</a></li>`;
+}).join('\n');
+
+
 data.forEach(node => {
   const { name, description, image, inputs, outputs } = node;
 
@@ -42,6 +48,11 @@ data.forEach(node => {
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <nav class="sidebar">
+        <ul>
+            ${sidebarContent}
+        </ul>
+    </nav>
   <main>
     <h1>${name}</h1>
     <img src="./svg/${image}" alt="${name}">
