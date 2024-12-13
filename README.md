@@ -54,8 +54,8 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 ## Documentation
 Development notes:
 - [List of nodes and inputs/outputs](./docs/nodes.md)
-- [Initial notes](./docs/README.md): information on the first custom node and development process.
-- [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
+- [Development notes](./docs/development_notes.md): information on the first custom node and development process.
+    - [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
 
 ---
 
