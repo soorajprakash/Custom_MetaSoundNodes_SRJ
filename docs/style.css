@@ -1,38 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-table {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+main table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Roboto', sans-serif;
   table-layout: fixed;
 }
 
-th, td {
+main th, td {
   border: 1px solid #ccc; 
   padding: 10px;
   text-align: left;
 }
 
-td {
+main td {
   font-weight: 400;
 }
 
-th {
+main th {
   background-color: #f4f4f9;
   font-weight: 700;
 }
 
-thead th:nth-child(1),
-tbody td:nth-child(1) {
+main thead th:nth-child(1),
+main tbody td:nth-child(1) {
   width: 20ch;
 }
 
-thead th:nth-child(2),
-tbody td:nth-child(2) {
+main thead th:nth-child(2),
+main tbody td:nth-child(2) {
   /* width: 60%; */
 }
 
-thead th:nth-child(3),
-tbody td:nth-child(3) {
+main thead th:nth-child(3),
+main tbody td:nth-child(3) {
   width: 10ch;
 }
