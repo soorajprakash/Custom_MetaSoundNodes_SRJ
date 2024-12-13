@@ -16,6 +16,7 @@ namespace Metasound
     {
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger input to generate an impulse.");
         METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
+        METASOUND_PARAM(OutputOnTrigger, "On Trigger", "Trigger output when the node is triggered.");
         METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
     }
 
@@ -30,6 +31,7 @@ namespace Metasound
             const FBoolReadRef& InBiPolar)
             : InputTrigger(InTrigger)
             , InputBiPolar(InBiPolar)
+            , OnTrigger(FTriggerWriteRef::CreateNew(InSettings))
             , OutputImpulse(FAudioBufferWriteRef::CreateNew(InSettings))
             , SignalIsPositive(true)
         {
@@ -46,6 +48,7 @@ namespace Metasound
                     TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputBiPolar), true)
                 ),
                 FOutputVertexInterface(
+                    TOutputDataVertexModel<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputOnTrigger)),
                     TOutputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputImpulse))
                 )
             );
@@ -96,7 +99,8 @@ namespace Metasound
             using namespace ClickNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
-
+            
+            OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputOnTrigger), OnTrigger);
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputImpulse), OutputImpulse);
 
             return OutputDataReferences;
@@ -123,6 +127,9 @@ namespace Metasound
         // Primary node functionality
         void Execute()
         {
+            OnTrigger->AdvanceBlock();
+            OutputImpulse->Zero(); // Ensure the output buffer is cleared
+            
             // Initialize the output buffer to zero
             int32 NumFrames = OutputImpulse->Num();
             float* OutputDataPtr = OutputImpulse->GetData();
@@ -141,6 +148,7 @@ namespace Metasound
                 {
                     if (TriggerFrame < NumFrames)
                     {
+                        OnTrigger->TriggerFrame(TriggerFrame);
                         if (*InputBiPolar)
                         {
                             OutputDataPtr[TriggerFrame] = SignalIsPositive ? 1.0f : -1.0f;
@@ -162,6 +170,7 @@ namespace Metasound
         FBoolReadRef InputBiPolar;
 
         // Outputs
+        FTriggerWriteRef OnTrigger;
         FAudioBufferWriteRef OutputImpulse;
 
         bool SignalIsPositive;

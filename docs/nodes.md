@@ -1,6 +1,7 @@
 # Nodes
 
 ## Bool To Audio
+Convert a boolean value to an audio signal, with optional rise and fall times.
 ### Inputs
 
 | Name      | Description                              | Type    |
@@ -13,23 +14,10 @@
 
 | Name   | Description             | Type         |
 |--------|-------------------------|--------------|
-| Output | Audio signal.           | Audio Buffer |
-
-## Click
-### Inputs
-
-| Name     | Description                                      | Type    |
-|----------|--------------------------------------------------|---------|
-| Trigger  | Trigger input to generate an impulse.            | Trigger |
-| Bi-Polar | Toggle between bipolar and unipolar impulse output. | Bool    |
-
-### Outputs
-
-| Name           | Description                | Type         |
-|----------------|----------------------------|--------------|
-| Impulse Output | Generated impulse output.  | Audio Buffer |
+| Out | Audio signal.           | Audio |
 
 ## Clock Divider
+Divide a trigger into eight density levels.
 ### Inputs
 
 | Name    | Description                              | Type    |
@@ -50,23 +38,57 @@
 | 7 | Output trigger for division 7.       | Trigger |
 | 8 | Output trigger for division 8.       | Trigger |
 
+## Click
+Trigger a one-sample impulse (unipolar or alternating polarity per impulse).
+### Inputs
+
+| Name     | Description                                      | Type    |
+|----------|--------------------------------------------------|---------|
+| Trigger  | Trigger input to generate an impulse.            | Trigger |
+| Bi-Polar | Toggle between bipolar and unipolar impulse output. | Bool    |
+
+### Outputs
+
+| Name           | Description                | Type         |
+|----------------|----------------------------|--------------|
+| On Trigger | Trigger passthrough.       | Trigger |
+| Impulse Output | Generated impulse output.  | Audio |
+
 ## Dust
+A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.
 ### Inputs
 
 | Name           | Description                                      | Type         |
 |----------------|--------------------------------------------------|--------------|
 | Enabled        | Enable or disable the dust node.                 | Bool         |
 | Bi-Polar       | Toggle between bipolar and unipolar impulse output. | Bool         |
-| Density Offset | Offset added to the absolute value of the density input. | Float        |
-| Density        | Input density control signal.                    | Audio Buffer |
+| Density | Probability of impulse generation. | Float        |
+| Modulation        | Density control signal.                    | Audio |
 
 ### Outputs
 
 | Name           | Description                | Type         |
 |----------------|----------------------------|--------------|
-| Impulse Output | Generated impulse output.  | Audio Buffer |
+| Impulse Output | Generated impulse output.  | Audio |
+
+## Edge
+Detects upward and downward changes in an input audio signal, with optional debounce.
+### Inputs
+
+| Name      | Description                                             | Type         |
+|-----------|---------------------------------------------------------|--------------|
+| In        | Input audio to monitor for edge detection.              | Audio |
+| Debounce  | Debounce time in seconds to prevent rapid triggering.    | Time        |
+
+### Outputs
+
+| Name  | Description                | Type    |
+|-------|----------------------------|---------|
+| Rise  | Trigger on rise.           | Trigger |
+| Fall  | Trigger on fall.           | Trigger |
 
 ## EDO
+Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440).
 ### Inputs
 
 | Name                | Description                                      | Type  |
@@ -83,34 +105,39 @@
 | Frequency | Output frequency (float).  | Float |
 
 ## Phase Disperser
+A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.
 ### Inputs
 
 | Name     | Description                                      | Type         |
 |----------|--------------------------------------------------|--------------|
-| In       | Incoming audio.                                  | Audio Buffer |
+| In       | Incoming audio.                                  | Audio |
 | Stages   | Number of allpass filter stages to apply (1-128).| Int32        |
 
 ### Outputs
 
 | Name | Description                | Type         |
 |------|----------------------------|--------------|
-| Out  | Phase-dispersed audio.     | Audio Buffer |
+| Out  | Phase-dispersed audio.     | Audio |
+
+## Sample and Hold (audio trigger)
+An alternative sample and hold unit with an audio-rate trigger and threshold control.
 
 ### Inputs
 
 | Name       | Description                                             | Type         |
 |------------|---------------------------------------------------------|--------------|
-| Signal     | Audio rate signal to be sampled.                        | Audio Buffer |
-| Trigger    | Audio rate signal that triggers the sample and hold.    | Audio Buffer |
+| Signal     | Audio rate signal to be sampled.                        | Audio |
+| Trigger    | Audio rate signal that triggers the sample and hold.    | Audio |
 | Threshold  | Float value that determines when the trigger signal is considered "on". | Float        |
 
 ### Outputs
 
 | Name    | Description                          | Type         |
 |---------|--------------------------------------|--------------|
-| Output  | The resulting sampled signal.        | Audio Buffer |
+| Out  | The resulting sampled signal.        | Audio |
 
 ## Shift Register
+An eight-stage shift register for floats.
 ### Inputs
 
 | Name    | Description                              | Type         |
@@ -122,21 +149,22 @@
 
 | Name         | Description                          | Type         |
 |--------------|--------------------------------------|--------------|
-| OutputSignal1 | Output signal for stage 1.           | Float        |
-| OutputSignal2 | Output signal for stage 2.           | Float        |
-| OutputSignal3 | Output signal for stage 3.           | Float        |
-| OutputSignal4 | Output signal for stage 4.           | Float        |
-| OutputSignal5 | Output signal for stage 5.           | Float        |
-| OutputSignal6 | Output signal for stage 6.           | Float        |
-| OutputSignal7 | Output signal for stage 7.           | Float        |
-| OutputSignal8 | Output signal for stage 8.           | Float        |
+| Stage 1 | Shifted output at stage 1.           | Float        |
+| Stage 2 | Shifted output at stage 2.           | Float        |
+| Stage 3 | Shifted output at stage 3.           | Float        |
+| Stage 4 | Shifted output at stage 4.           | Float        |
+| Stage 5 | Shifted output at stage 5.           | Float        |
+| Stage 6 | Shifted output at stage 6.           | Float        |
+| Stage 7 | Shifted output at stage 7.           | Float        |
+| Stage 8 | Shifted output at stage 8.           | Float        |
 
 ## Slew (audio)
+A slew limiter to smooth out the rise and fall times of an audio signal.
 ### Inputs
 
 | Name      | Description                              | Type         |
 |-----------|------------------------------------------|--------------|
-| In        | Audio signal to smooth.                  | Audio Buffer |
+| In        | Audio signal to smooth.                  | Audio |
 | Rise Time | Rise time in seconds.                    | Time         |
 | Fall Time | Fall time in seconds.                    | Time         |
 
@@ -144,9 +172,10 @@
 
 | Name | Description                          | Type         |
 |------|--------------------------------------|--------------|
-| Out  | Slew rate limited output signal.     | Audio Buffer |
+| Out  | Slew rate limited output signal.     | Audio |
 
 ## Slew (float)
+A slew limiter to smooth out the rise and fall times of an float value.
 ### Inputs
 
 | Name      | Description                              | Type  |
@@ -162,62 +191,66 @@
 | Out  | Slew rate limited float.   | Float |
 
 ## Stereo Balance
+Adjust the balance of a stereo signal.
 ### Inputs
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Balance  | Balance control ranging from -1.0 (full left) to 1.0 (full right).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Crossfade
+Cross fade between two stereo signals.
 ### Inputs
 
 | Name       | Description                              | Type         |
 |------------|------------------------------------------|--------------|
-| In1 L      | Left channel of first input.             | Audio Buffer |
-| In1 R      | Right channel of first input.            | Audio Buffer |
-| In2 L      | Left channel of second input.            | Audio Buffer |
-| In2 R      | Right channel of second input.           | Audio Buffer |
+| In1 L      | Left channel of first input.             | Audio |
+| In1 R      | Right channel of first input.            | Audio |
+| In2 L      | Left channel of second input.            | Audio |
+| In2 R      | Right channel of second input.           | Audio |
 | Crossfade  | Crossfade between the two inputs (0.0 to 1.0). | Float        |
 
 ### Outputs
 
 | Name  | Description                          | Type         |
 |-------|--------------------------------------|--------------|
-| Out L | Left channel of the output signal.   | Audio Buffer |
-| Out R | Right channel of the output signal.  | Audio Buffer |
+| Out L | Left channel of the output signal.   | Audio |
+| Out R | Right channel of the output signal.  | Audio |
 
 ## Stereo Gain
+Adjust gain for a stereo signal.
 ### Inputs
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Balance  | Gain Input (Lin)", "Gain control (0.0 to 1.0).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Stereo Inverter
+Invert and/or swap stereo channels.
 ### Inputs
 
 | Name         | Description                              | Type         |
 |--------------|------------------------------------------|--------------|
-| In L         | Left channel audio input.                | Audio Buffer |
-| In R         | Right channel audio input.               | Audio Buffer |
+| In L         | Left channel audio input.                | Audio |
+| In R         | Right channel audio input.               | Audio |
 | Invert L     | Invert the polarity of the left channel. | Bool         |
 | Invert R     | Invert the polarity of the right channel.| Bool         |
 | Swap L/R     | Swap the left and right channels.        | Bool         |
@@ -226,32 +259,34 @@
 
 | Name  | Description                | Type         |
 |-------|----------------------------|--------------|
-| Out L | Left output channel.       | Audio Buffer |
-| Out R | Right output channel.      | Audio Buffer |
+| Out L | Left output channel.       | Audio |
+| Out R | Right output channel.      | Audio |
 
 
 ## Stereo Width
+Stereo width adjustment (0-200%), using mid-side processing.
 ### Inputs
 
 | Name   | Description                                              | Type         |
 |--------|----------------------------------------------------------|--------------|
-| In L   | Left channel.                                            | Audio Buffer |
-| In R   | Right channel.                                           | Audio Buffer |
+| In L   | Left channel.                                            | Audio |
+| In R   | Right channel.                                           | Audio |
 | Width  | Stereo width factor ranging from 0 to 200% (0 - 2).      | Float        |
 
 ### Outputs
 
 | Name  | Description                                              | Type         |
 |-------|----------------------------------------------------------|--------------|
-| Out L | Left channel of the adjusted stereo output signal.       | Audio Buffer |
-| Out R | Right channel of the adjusted stereo output signal.      | Audio Buffer |
+| Out L | Left channel of the adjusted stereo output signal.       | Audio |
+| Out R | Right channel of the adjusted stereo output signal.      | Audio |
 
 ## Tuning
+Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.
 ### Inputs
 
 | Name                | Description                                      | Type  |
 |---------------------|--------------------------------------------------|-------|
-| MIDI Note Number    | Input MIDI note number (integer).                | Int32 |
+| Note Number    | Input MIDI note number (integer).                | Int32 |
 | +/- Cents C         | Tuning adjustment for note 0 in cents.           | Float |
 | +/- Cents C♯ / D♭   | Tuning adjustment for note 1 in cents.           | Float |
 | +/- Cents D         | Tuning adjustment for note 2 in cents.           | Float |

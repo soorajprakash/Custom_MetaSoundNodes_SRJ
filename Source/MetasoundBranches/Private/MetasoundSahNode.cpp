@@ -16,7 +16,7 @@ namespace Metasound
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger signal.");
         METASOUND_PARAM(InputThreshold, "Threshold", "Threshold for trigger.");
 
-        METASOUND_PARAM(OutputSignal, "Output", "Sampled output signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Sampled output signal.");
     }
 
     class FSahOperator : public TExecutableOperator<FSahOperator>

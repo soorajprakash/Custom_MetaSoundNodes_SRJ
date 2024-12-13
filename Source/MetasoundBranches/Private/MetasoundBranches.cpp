@@ -7,13 +7,13 @@
 void FMetasoundBranchesModule::StartupModule()
 {
     // Initialization
-    UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started..."));
+    // UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started..."));
 }
 
 void FMetasoundBranchesModule::ShutdownModule()
 {
     // Cleanup
-    UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module shutting down..."));
+    // UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module shutting down..."));
 }
 
 #undef LOCTEXT_NAMESPACE

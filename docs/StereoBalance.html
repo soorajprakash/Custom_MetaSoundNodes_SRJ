@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stereo Balance</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="BoolToAudio.html">Bool To Audio</a></li>
+<li><a href="ClockDivider.html">Clock Divider</a></li>
+<li><a href="Click.html">Click</a></li>
+<li><a href="Dust.html">Dust</a></li>
+<li><a href="Edge.html">Edge</a></li>
+<li><a href="EDO.html">EDO</a></li>
+<li><a href="PhaseDisperser.html">Phase Disperser</a></li>
+<li><a href="SampleandHold.html">Sample and Hold</a></li>
+<li><a href="ShiftRegister.html">Shift Register</a></li>
+<li><a href="Slew(audio).html">Slew (audio)</a></li>
+<li><a href="Slew(float).html">Slew (float)</a></li>
+<li><a href="StereoBalance.html">Stereo Balance</a></li>
+<li><a href="StereoCrossfade.html">Stereo Crossfade</a></li>
+<li><a href="StereoGain.html">Stereo Gain</a></li>
+<li><a href="StereoInverter.html">Stereo Inverter</a></li>
+<li><a href="StereoWidth.html">Stereo Width</a></li>
+<li><a href="Tuning.html">Tuning</a></li>
+        </ul>
+    </nav>
+  <main>
+    <h1>Stereo Balance</h1>
+    <img src="./svg/StereoBalance.svg" alt="Stereo Balance">
+    <p>Adjust the balance of a stereo signal.</p>
+    <h2>Inputs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td>In L</td>
+        <td>Left channel.</td>
+        <td>Audio</td>
+      </tr>
+    
+
+      <tr>
+        <td>In R</td>
+        <td>Right channel.</td>
+        <td>Audio</td>
+      </tr>
+    
+
+      <tr>
+        <td>Balance</td>
+        <td>Balance control ranging from -1.0 (full left) to 1.0 (full right).</td>
+        <td>Float</td>
+      </tr>
+    
+      </tbody>
+    </table>
+
+    <h2>Outputs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td>Out L</td>
+        <td>Left channel of the adjusted stereo output signal.</td>
+        <td>Audio</td>
+      </tr>
+    
+
+      <tr>
+        <td>Out R</td>
+        <td>Right channel of the adjusted stereo output signal.</td>
+        <td>Audio</td>
+      </tr>
+    
+      </tbody>
+    </table>
+  </main>
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.querySelector('.sidebar');
+    const toggleBtn = document.querySelector('.menu-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+    });
+  });
+</script>
+</html>
