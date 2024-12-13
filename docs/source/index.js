@@ -11,7 +11,8 @@ if (!fs.existsSync(outputDir)) {
 const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 
 const sidebarContent = data.map(d => {
-    const nodeFileName = d.name.replace(/\s+/g, '') + '.html';
+    const safeName = d.name.replace(/\s+/g, '');
+    const nodeFileName = `${safeName}.html`;
     return `<li><a href="${nodeFileName}">${d.name}</a></li>`;
 }).join('\n');
 
