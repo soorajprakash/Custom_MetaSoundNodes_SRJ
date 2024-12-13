@@ -135,3 +135,27 @@ main tbody td:nth-child(3) {
     max-width: 20vw;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  .sidebar {
+    background-color: #333;
+  }
+
+  .sidebar a {
+    color: #e0e0e0;
+  }
+
+  main {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  main th {
+    background-color: #2e2e2e;
+  }
+}
