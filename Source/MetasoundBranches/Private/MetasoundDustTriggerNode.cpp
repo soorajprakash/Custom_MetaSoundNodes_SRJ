@@ -20,7 +20,7 @@ namespace Metasound
         METASOUND_PARAM(InputDensity, "Modulation", "Input density control signal.");
         METASOUND_PARAM(InputDensityOffset, "Density", "Probability of trigger generation.");
         METASOUND_PARAM(InputEnabled, "Enabled", "Enable or disable generation.");
-        METASOUND_PARAM(OutputTrigger, "Trigger Output", "Generated trigger output.");
+        METASOUND_PARAM(OutputTrigger, "Trigger Out", "Generated trigger output.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
