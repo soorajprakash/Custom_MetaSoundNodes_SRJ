@@ -2,13 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1490 362.1875 438.625 685" width="438.625" height="685">
   <defs>
-    <style type="text/css">
-      @font-face {
-        font-family: 'Roboto';
-        src: url('https://fonts.googleapis.com/css2?family=Roboto') format('truetype');
-      }
-    </style>
-
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#181a19"/>
       <stop offset=".9079928" stop-color="#262726"/>
