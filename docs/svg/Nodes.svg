@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-2840 -303.125 1788.625 1362.625" width="1788.625" height="1362.625">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Roboto';
+        src: url('https://fonts.googleapis.com/css2?family=Roboto') format('truetype');
+      }
+    </style>
+
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a19"/>
+      <stop offset=".9079928" stop-color="#262726"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-2623.5 966.5) rotate(-90) scale(270)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(-2623.5 674.7083) rotate(-90) scale(450)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(-2623.5 202.91667) rotate(-90) scale(180)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(-2623.5 1.125) rotate(-90) scale(243)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(-2174.625 -130.625) rotate(-90) scale(172)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(-2174.625 173.28125) rotate(-90) scale(288)"/>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient" gradientTransform="translate(-2174.625 361.1875) rotate(-90) scale(172)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient" gradientTransform="translate(-2174.625 593.09375) rotate(-90) scale(216)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient" gradientTransform="translate(-2174.625 1059) rotate(-90) scale(450)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient" gradientTransform="translate(-1721.25 -58.5) rotate(-90) scale(243)"/>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient" gradientTransform="translate(-1724.0625 200.92188) rotate(-90) scale(243)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient" gradientTransform="translate(-1724.0625 453.59375) rotate(-90) scale(236.25)"/>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient" gradientTransform="translate(-1724.0625 794.0156) rotate(-90) scale(324)"/>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient" gradientTransform="translate(-1724.0625 1046.6875) rotate(-90) scale(236.25)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient" gradientTransform="translate(-1273.5 59.625) rotate(-90) scale(342)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient" gradientTransform="translate(-1270.6875 316.34375) rotate(-90) scale(236.25)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient" gradientTransform="translate(-1270.6875 1020.8125) rotate(-90) scale(684)"/>
+  </defs>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Group_739">
+        <g id="Graphic_47">
+          <path d="M -2824.5 696.5 L -2422.5 696.5 C -2414.2157 696.5 -2407.5 703.2157 -2407.5 711.5 L -2407.5 951.5 C -2407.5 959.7843 -2414.2157 966.5 -2422.5 966.5 L -2824.5 966.5 C -2832.7843 966.5 -2839.5 959.7843 -2839.5 951.5 L -2839.5 711.5 C -2839.5 703.2157 -2832.7843 696.5 -2824.5 696.5 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M -2824.5 696.5 L -2422.5 696.5 C -2414.2157 696.5 -2407.5 703.2157 -2407.5 711.5 L -2407.5 951.5 C -2407.5 959.7843 -2414.2157 966.5 -2422.5 966.5 L -2824.5 966.5 C -2832.7843 966.5 -2839.5 959.7843 -2839.5 951.5 L -2839.5 711.5 C -2839.5 703.2157 -2832.7843 696.5 -2824.5 696.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_48">
+          <text transform="translate(-2663.477 710.1543)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Dust</tspan>
+          </text>
+        </g>
+        <g id="Group_49">
+          <title>Bool</title>
+          <g id="Graphic_51">
+            <ellipse cx="-2804.518" cy="779.7099" rx="11.6606870130668" ry="11.6666853088554" fill="black"/>
+            <ellipse cx="-2804.518" cy="779.7099" rx="11.6606870130668" ry="11.6666853088554" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_50">
+            <path d="M -2789.9223 773.1667 L -2783.259 779.7099 L -2789.9223 786.2531 Z" fill="#900002"/>
+            <path d="M -2789.9223 773.1667 L -2783.259 779.7099 L -2789.9223 786.2531 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_52">
+          <title>Audio</title>
+          <g id="Graphic_54">
+            <ellipse cx="-2446.9242" cy="779.7099" rx="11.6606870130667" ry="11.6666853088554" fill="black"/>
+            <ellipse cx="-2446.9242" cy="779.7099" rx="11.6606870130667" ry="11.6666853088554" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_53">
+            <path d="M -2432.3284 773.1667 L -2425.6652 779.7099 L -2432.3284 786.2531 Z" fill="#ce78ca"/>
+            <path d="M -2432.3284 773.1667 L -2425.6652 779.7099 L -2432.3284 786.2531 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_55">
+          <text transform="translate(-2601.625 765.7099)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_56">
+          <text transform="translate(-2774.531 765.7099)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Enabled</tspan>
+          </text>
+        </g>
+        <g id="Graphic_57">
+          <path d="M -2675.7685 763.0432 L -2654.4523 763.0432 C -2651.1386 763.0432 -2648.4523 765.7295 -2648.4523 769.0432 L -2648.4523 790.3765 C -2648.4523 793.69025 -2651.1386 796.3765 -2654.4523 796.3765 L -2675.7685 796.3765 C -2679.0822 796.3765 -2681.7685 793.69025 -2681.7685 790.3765 L -2681.7685 769.0432 C -2681.7685 765.7295 -2679.0822 763.0432 -2675.7685 763.0432 Z" fill="black"/>
+          <path d="M -2675.7685 763.0432 L -2654.4523 763.0432 C -2651.1386 763.0432 -2648.4523 765.7295 -2648.4523 769.0432 L -2648.4523 790.3765 C -2648.4523 793.69025 -2651.1386 796.3765 -2654.4523 796.3765 L -2675.7685 796.3765 C -2679.0822 796.3765 -2681.7685 793.69025 -2681.7685 790.3765 L -2681.7685 769.0432 C -2681.7685 765.7295 -2679.0822 763.0432 -2675.7685 763.0432 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2676.7685 765.7099)" fill="#00b0f0">
+            <tspan font-family="Lucida Grande" font-size="24" fill="#00b0f0" x="2.4881754" y="23" xml:space="preserve">✓</tspan>
+          </text>
+        </g>
+        <g id="Group_68">
+          <title>Bool</title>
+          <g id="Graphic_70">
+            <ellipse cx="-2805.1697" cy="826.0679" rx="11.6606870130668" ry="11.6666853088555" fill="black"/>
+            <ellipse cx="-2805.1697" cy="826.0679" rx="11.6606870130668" ry="11.6666853088555" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_69">
+            <path d="M -2790.574 819.5247 L -2783.9107 826.0679 L -2790.574 832.6111 Z" fill="#900002"/>
+            <path d="M -2790.574 819.5247 L -2783.9107 826.0679 L -2790.574 832.6111 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_71">
+          <text transform="translate(-2775.1825 812.0679)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_72">
+          <path d="M -2676.4202 809.4012 L -2655.104 809.4012 C -2651.7903 809.4012 -2649.104 812.0875 -2649.104 815.4012 L -2649.104 836.7346 C -2649.104 840.0483 -2651.7903 842.7346 -2655.104 842.7346 L -2676.4202 842.7346 C -2679.734 842.7346 -2682.4202 840.0483 -2682.4202 836.7346 L -2682.4202 815.4012 C -2682.4202 812.0875 -2679.734 809.4012 -2676.4202 809.4012 Z" fill="black"/>
+          <path d="M -2676.4202 809.4012 L -2655.104 809.4012 C -2651.7903 809.4012 -2649.104 812.0875 -2649.104 815.4012 L -2649.104 836.7346 C -2649.104 840.0483 -2651.7903 842.7346 -2655.104 842.7346 L -2676.4202 842.7346 C -2679.734 842.7346 -2682.4202 840.0483 -2682.4202 836.7346 L -2682.4202 815.4012 C -2682.4202 812.0875 -2679.734 809.4012 -2676.4202 809.4012 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2677.4202 812.0679)" fill="#00b0f0">
+            <tspan font-family="Lucida Grande" font-size="24" fill="#00b0f0" x="2.4881754" y="23" xml:space="preserve">✓</tspan>
+          </text>
+        </g>
+        <g id="Group_74">
+          <title>Float</title>
+          <g id="Graphic_76">
+            <ellipse cx="-2805.1697" cy="876.5" rx="11.6606870130668" ry="11.6666853088555" fill="black"/>
+            <ellipse cx="-2805.1697" cy="876.5" rx="11.6606870130668" ry="11.6666853088555" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_75">
+            <path d="M -2790.574 869.9568 L -2783.9107 876.5 L -2790.574 883.0432 Z" fill="#9df945"/>
+            <path d="M -2790.574 869.9568 L -2783.9107 876.5 L -2790.574 883.0432 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_78">
+          <text transform="translate(-2771.1992 862.5)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Density</tspan>
+          </text>
+        </g>
+        <g id="Graphic_79">
+          <path d="M -2678.7685 857.7346 L -2639.2364 857.7346 C -2637.5795 857.7346 -2636.2364 859.0777 -2636.2364 860.7346 L -2636.2364 888.0679 C -2636.2364 889.7248 -2637.5795 891.0679 -2639.2364 891.0679 L -2678.7685 891.0679 C -2680.4254 891.0679 -2681.7685 889.7248 -2681.7685 888.0679 L -2681.7685 860.7346 C -2681.7685 859.0777 -2680.4254 857.7346 -2678.7685 857.7346 Z" fill="black"/>
+          <path d="M -2678.7685 857.7346 L -2639.2364 857.7346 C -2637.5795 857.7346 -2636.2364 859.0777 -2636.2364 860.7346 L -2636.2364 888.0679 C -2636.2364 889.7248 -2637.5795 891.0679 -2639.2364 891.0679 L -2678.7685 891.0679 C -2680.4254 891.0679 -2681.7685 889.7248 -2681.7685 888.0679 L -2681.7685 860.7346 C -2681.7685 859.0777 -2680.4254 857.7346 -2678.7685 857.7346 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2676.7685 860.4012)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_80">
+          <title>Audio</title>
+          <g id="Graphic_82">
+            <ellipse cx="-2805.1697" cy="924.8333" rx="11.6606870130668" ry="11.6666853088555" fill="black"/>
+            <ellipse cx="-2805.1697" cy="924.8333" rx="11.6606870130668" ry="11.6666853088555" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_81">
+            <path d="M -2790.574 918.2901 L -2783.9107 924.8333 L -2790.574 931.3765 Z" fill="#ce78ca"/>
+            <path d="M -2790.574 918.2901 L -2783.9107 924.8333 L -2790.574 931.3765 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_89">
+          <text transform="translate(-2771.1992 910.8333)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Modulation</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_3">
+      <title>Layer 3</title>
+      <g id="Group_740">
+        <g id="Graphic_162">
+          <path d="M -2824.5 224.70833 L -2422.5 224.70833 C -2414.2157 224.70833 -2407.5 231.42406 -2407.5 239.70833 L -2407.5 659.7083 C -2407.5 667.9926 -2414.2157 674.7083 -2422.5 674.7083 L -2824.5 674.7083 C -2832.7843 674.7083 -2839.5 667.9926 -2839.5 659.7083 L -2839.5 239.70833 C -2839.5 231.42406 -2832.7843 224.70833 -2824.5 224.70833 Z" fill="url(#Obj_Gradient_2)"/>
+          <path d="M -2824.5 224.70833 L -2422.5 224.70833 C -2414.2157 224.70833 -2407.5 231.42406 -2407.5 239.70833 L -2407.5 659.7083 C -2407.5 667.9926 -2414.2157 674.7083 -2422.5 674.7083 L -2824.5 674.7083 C -2832.7843 674.7083 -2839.5 667.9926 -2839.5 659.7083 L -2839.5 239.70833 C -2839.5 231.42406 -2832.7843 224.70833 -2824.5 224.70833 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_163">
+          <text transform="translate(-2701.418 238.6385)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Clock Divider</tspan>
+          </text>
+        </g>
+        <g id="Graphic_164">
+          <text transform="translate(-2483.7555 294.74823)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_165">
+          <text transform="translate(-2775.1825 294.74823)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+          </text>
+        </g>
+        <g id="Graphic_172">
+          <text transform="translate(-2483.7555 341.5687)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_176">
+          <text transform="translate(-2483.7555 392.50384)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">3</tspan>
+          </text>
+        </g>
+        <g id="Graphic_180">
+          <text transform="translate(-2483.7555 439.3243)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">4</tspan>
+          </text>
+        </g>
+        <g id="Graphic_184">
+          <text transform="translate(-2483.7555 486.6435)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">5</tspan>
+          </text>
+        </g>
+        <g id="Graphic_188">
+          <text transform="translate(-2483.7555 533.46394)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">6</tspan>
+          </text>
+        </g>
+        <g id="Graphic_192">
+          <text transform="translate(-2483.7555 584.3991)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">7</tspan>
+          </text>
+        </g>
+        <g id="Graphic_196">
+          <text transform="translate(-2483.7555 631.21956)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">8</tspan>
+          </text>
+        </g>
+        <g id="Group_200">
+          <title>Trigger</title>
+          <g id="Graphic_202">
+            <ellipse cx="-2804.2574" cy="355.5687" rx="11.660687013067" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2804.2574" cy="355.5687" rx="11.660687013067" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_201">
+            <path d="M -2792.5967 366.9425 C -2790.537 368.0076 -2788.2444 366.9936 -2786.6273 363.90054 C -2784.2215 359.29898 -2784.2215 351.83838 -2786.6273 347.2368 C -2788.2444 344.14375 -2790.5368 343.12976 -2792.5967 344.19486 C -2791.592 344.71433 -2790.6428 345.7283 -2789.854 347.2368 C -2787.4484 351.83838 -2787.4484 359.29898 -2789.854 363.90054 C -2790.6428 365.40905 -2791.592 366.42303 -2792.5967 366.9425 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Graphic_203">
+          <text transform="translate(-2773.3452 341.5687)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reset</tspan>
+          </text>
+        </g>
+        <g id="Group_207">
+          <title>Trigger</title>
+          <g id="Graphic_209">
+            <ellipse cx="-2805.1697" cy="308.74823" rx="11.6606870130668" ry="11.7830612221608" fill="black"/>
+            <ellipse cx="-2805.1697" cy="308.74823" rx="11.6606870130668" ry="11.7830612221608" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_208">
+            <path d="M -2793.509 320.12204 C -2791.449 321.18715 -2789.1566 320.17317 -2787.5395 317.0801 C -2785.1338 312.47853 -2785.1338 305.01793 -2787.5395 300.41637 C -2789.1566 297.3233 -2791.449 296.3093 -2793.509 297.3744 C -2792.5044 297.89388 -2791.555 298.90786 -2790.7664 300.41637 C -2788.3606 305.01793 -2788.3606 312.47853 -2790.7664 317.0801 C -2791.555 318.5886 -2792.5044 319.6026 -2793.509 320.12204 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_216">
+          <title>Trigger</title>
+          <g id="Graphic_218">
+            <ellipse cx="-2446.9242" cy="308.74823" rx="11.6606870130667" ry="11.7830612221608" fill="black"/>
+            <ellipse cx="-2446.9242" cy="308.74823" rx="11.6606870130667" ry="11.7830612221608" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_217">
+            <path d="M -2435.2635 320.12204 C -2433.2036 321.18715 -2430.9111 320.17317 -2429.294 317.0801 C -2426.8883 312.47853 -2426.8883 305.01793 -2429.294 300.41637 C -2430.911 297.3233 -2433.2036 296.3093 -2435.2635 297.3744 C -2434.259 297.89388 -2433.3096 298.90786 -2432.521 300.41637 C -2430.115 305.01793 -2430.115 312.47853 -2432.521 317.0801 C -2433.3096 318.5886 -2434.259 319.6026 -2435.2635 320.12204 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_258">
+          <title>Trigger</title>
+          <g id="Graphic_260">
+            <ellipse cx="-2446.9242" cy="355.5687" rx="11.6606870130667" ry="11.7830612221608" fill="black"/>
+            <ellipse cx="-2446.9242" cy="355.5687" rx="11.6606870130667" ry="11.7830612221608" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_259">
+            <path d="M -2435.2635 366.9425 C -2433.2036 368.0076 -2430.9111 366.99363 -2429.294 363.90055 C -2426.8883 359.299 -2426.8883 351.8384 -2429.294 347.23683 C -2430.911 344.14376 -2433.2036 343.12977 -2435.2635 344.19487 C -2434.259 344.71434 -2433.3096 345.72832 -2432.521 347.23683 C -2430.115 351.8384 -2430.115 359.299 -2432.521 363.90055 C -2433.3096 365.40906 -2434.259 366.42305 -2435.2635 366.9425 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_255">
+          <title>Trigger</title>
+          <g id="Graphic_257">
+            <ellipse cx="-2446.9242" cy="406.50384" rx="11.6606870130667" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2446.9242" cy="406.50384" rx="11.6606870130667" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_256">
+            <path d="M -2435.2635 417.87765 C -2433.2036 418.94276 -2430.9111 417.9288 -2429.294 414.8357 C -2426.8883 410.23414 -2426.8883 402.77354 -2429.294 398.172 C -2430.911 395.0789 -2433.2036 394.0649 -2435.2635 395.13 C -2434.259 395.6495 -2433.3096 396.66347 -2432.521 398.172 C -2430.115 402.77354 -2430.115 410.23414 -2432.521 414.8357 C -2433.3096 416.3442 -2434.259 417.3582 -2435.2635 417.87765 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_252">
+          <title>Trigger</title>
+          <g id="Graphic_254">
+            <ellipse cx="-2446.9242" cy="453.3243" rx="11.6606870130667" ry="11.7830612221608" fill="black"/>
+            <ellipse cx="-2446.9242" cy="453.3243" rx="11.6606870130667" ry="11.7830612221608" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_253">
+            <path d="M -2435.2635 464.6981 C -2433.2036 465.7632 -2430.9111 464.74924 -2429.294 461.65616 C -2426.8883 457.0546 -2426.8883 449.594 -2429.294 444.99244 C -2430.911 441.89937 -2433.2036 440.8854 -2435.2635 441.9505 C -2434.259 442.46995 -2433.3096 443.48393 -2432.521 444.99244 C -2430.115 449.594 -2430.115 457.0546 -2432.521 461.65616 C -2433.3096 463.1647 -2434.259 464.17866 -2435.2635 464.6981 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_249">
+          <title>Trigger</title>
+          <g id="Graphic_251">
+            <ellipse cx="-2446.9242" cy="500.6435" rx="11.6606870130667" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2446.9242" cy="500.6435" rx="11.6606870130667" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_250">
+            <path d="M -2435.2635 512.0173 C -2433.2036 513.0824 -2430.9111 512.06844 -2429.294 508.97536 C -2426.8883 504.3738 -2426.8883 496.9132 -2429.294 492.31164 C -2430.911 489.21857 -2433.2036 488.2046 -2435.2635 489.2697 C -2434.259 489.78915 -2433.3096 490.80313 -2432.521 492.31164 C -2430.115 496.9132 -2430.115 504.3738 -2432.521 508.97536 C -2433.3096 510.4839 -2434.259 511.49786 -2435.2635 512.0173 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_246">
+          <title>Trigger</title>
+          <g id="Graphic_248">
+            <ellipse cx="-2446.9242" cy="547.46394" rx="11.6606870130667" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2446.9242" cy="547.46394" rx="11.6606870130667" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_247">
+            <path d="M -2435.2635 558.83775 C -2433.2036 559.90286 -2430.9111 558.8889 -2429.294 555.7958 C -2426.8883 551.19424 -2426.8883 543.73364 -2429.294 539.1321 C -2430.911 536.039 -2433.2036 535.025 -2435.2635 536.0901 C -2434.259 536.6096 -2433.3096 537.6236 -2432.521 539.1321 C -2430.115 543.73364 -2430.115 551.19424 -2432.521 555.7958 C -2433.3096 557.3043 -2434.259 558.3183 -2435.2635 558.83775 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_243">
+          <title>Trigger</title>
+          <g id="Graphic_245">
+            <ellipse cx="-2446.9242" cy="598.3991" rx="11.6606870130667" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2446.9242" cy="598.3991" rx="11.6606870130667" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_244">
+            <path d="M -2435.2635 609.7729 C -2433.2036 610.838 -2430.9111 609.82405 -2429.294 606.731 C -2426.8883 602.1294 -2426.8883 594.6688 -2429.294 590.06725 C -2430.911 586.9742 -2433.2036 585.9602 -2435.2635 587.0253 C -2434.259 587.54476 -2433.3096 588.55875 -2432.521 590.06725 C -2430.115 594.6688 -2430.115 602.1294 -2432.521 606.731 C -2433.3096 608.2395 -2434.259 609.2535 -2435.2635 609.7729 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_240">
+          <title>Trigger</title>
+          <g id="Graphic_242">
+            <ellipse cx="-2446.9242" cy="645.2196" rx="11.6606870130667" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2446.9242" cy="645.2196" rx="11.6606870130667" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_241">
+            <path d="M -2435.2635 656.5934 C -2433.2036 657.6585 -2430.9111 656.6445 -2429.294 653.5514 C -2426.8883 648.94986 -2426.8883 641.4893 -2429.294 636.8877 C -2430.911 633.7946 -2433.2036 632.78064 -2435.2635 633.84575 C -2434.259 634.3652 -2433.3096 635.3792 -2432.521 636.8877 C -2430.115 641.4893 -2430.115 648.94986 -2432.521 653.5514 C -2433.3096 655.0599 -2434.259 656.0739 -2435.2635 656.5934 Z" fill="white"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_4">
+      <title>Layer 4</title>
+      <g id="Group_907">
+        <g id="Graphic_630">
+          <path d="M -2824.5 22.916667 L -2422.5 22.916667 C -2414.2157 22.916667 -2407.5 29.632395 -2407.5 37.916667 L -2407.5 187.91667 C -2407.5 196.20094 -2414.2157 202.91667 -2422.5 202.91667 L -2824.5 202.91667 C -2832.7843 202.91667 -2839.5 196.20094 -2839.5 187.91667 L -2839.5 37.916667 C -2839.5 29.632395 -2832.7843 22.916667 -2824.5 22.916667 Z" fill="url(#Obj_Gradient_3)"/>
+          <path d="M -2824.5 22.916667 L -2422.5 22.916667 C -2414.2157 22.916667 -2407.5 29.632395 -2407.5 37.916667 L -2407.5 187.91667 C -2407.5 196.20094 -2414.2157 202.91667 -2422.5 202.91667 L -2824.5 202.91667 C -2832.7843 202.91667 -2839.5 196.20094 -2839.5 187.91667 L -2839.5 37.916667 C -2839.5 29.632395 -2832.7843 22.916667 -2824.5 22.916667 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_629">
+          <text transform="translate(-2661.2693 37.819892)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Click</tspan>
+          </text>
+        </g>
+        <g id="Group_623">
+          <title>Audio</title>
+          <g id="Graphic_625">
+            <ellipse cx="-2448.3525" cy="158.33602" rx="11.6606870130667" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-2448.3525" cy="158.33602" rx="11.6606870130667" ry="12.1935678711909" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_624">
+            <path d="M -2433.7567 151.49731 L -2427.0935 158.33602 L -2433.7567 165.17473 Z" fill="#ce78ca"/>
+            <path d="M -2433.7567 151.49731 L -2427.0935 158.33602 L -2433.7567 165.17473 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_622">
+          <text transform="translate(-2632.6995 144.33602)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
+          </text>
+        </g>
+        <g id="Graphic_621">
+          <text transform="translate(-2774.531 95.88441)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+          </text>
+        </g>
+        <g id="Group_617">
+          <title>Bool</title>
+          <g id="Graphic_619">
+            <ellipse cx="-2805.1697" cy="158.33602" rx="11.6606870130668" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-2805.1697" cy="158.33602" rx="11.6606870130668" ry="12.1935678711909" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_618">
+            <path d="M -2790.574 151.49731 L -2783.9107 158.33602 L -2790.574 165.17473 Z" fill="#900002"/>
+            <path d="M -2790.574 151.49731 L -2783.9107 158.33602 L -2790.574 165.17473 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_616">
+          <text transform="translate(-2775.1825 144.33602)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_615">
+          <path d="M -2676.4202 140.91667 L -2655.104 140.91667 C -2651.7903 140.91667 -2649.104 143.60296 -2649.104 146.91667 L -2649.104 169.75538 C -2649.104 173.06908 -2651.7903 175.75538 -2655.104 175.75538 L -2676.4202 175.75538 C -2679.734 175.75538 -2682.4202 173.06908 -2682.4202 169.75538 L -2682.4202 146.91667 C -2682.4202 143.60296 -2679.734 140.91667 -2676.4202 140.91667 Z" fill="black"/>
+          <path d="M -2676.4202 140.91667 L -2655.104 140.91667 C -2651.7903 140.91667 -2649.104 143.60296 -2649.104 146.91667 L -2649.104 169.75538 C -2649.104 173.06908 -2651.7903 175.75538 -2655.104 175.75538 L -2676.4202 175.75538 C -2679.734 175.75538 -2682.4202 173.06908 -2682.4202 169.75538 L -2682.4202 146.91667 C -2682.4202 143.60296 -2679.734 140.91667 -2676.4202 140.91667 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2677.4202 144.33602)" fill="#00b0f0">
+            <tspan font-family="Lucida Grande" font-size="24" fill="#00b0f0" x="2.4881754" y="23" xml:space="preserve">✓</tspan>
+          </text>
+        </g>
+        <g id="Group_634">
+          <title>Trigger</title>
+          <g id="Graphic_636">
+            <ellipse cx="-2804.2574" cy="110.5941" rx="11.660687013067" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-2804.2574" cy="110.5941" rx="11.660687013067" ry="12.1935678711909" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_635">
+            <path d="M -2792.5967 122.36415 C -2790.537 123.46637 -2788.2444 122.41706 -2786.6273 119.21622 C -2784.2215 114.45435 -2784.2215 106.73383 -2786.6273 101.97196 C -2788.2444 98.77113 -2790.5368 97.72182 -2792.5967 98.82403 C -2791.592 99.36159 -2790.6428 100.4109 -2789.854 101.97196 C -2787.4484 106.73383 -2787.4484 114.45435 -2789.854 119.21622 C -2790.6428 120.77729 -2791.592 121.8266 -2792.5967 122.36416 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Graphic_906">
+          <text transform="translate(-2579.125 91.29772)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">On Trigger</tspan>
+          </text>
+        </g>
+        <g id="Group_903">
+          <title>Trigger</title>
+          <g id="Graphic_905">
+            <ellipse cx="-2446.528" cy="105.29773" rx="11.6606870130669" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-2446.528" cy="105.29773" rx="11.6606870130669" ry="12.1935678711909" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_904">
+            <path d="M -2434.8673 117.06778 C -2432.8074 118.17 -2430.515 117.12069 -2428.8978 113.91985 C -2426.492 109.15798 -2426.492 101.43746 -2428.8978 96.67559 C -2430.515 93.47476 -2432.8074 92.42545 -2434.8673 93.52766 C -2433.8627 94.06522 -2432.9134 95.11453 -2432.1247 96.67559 C -2429.719 101.43746 -2429.719 109.15798 -2432.1247 113.91985 C -2432.9134 115.48092 -2433.8627 116.53023 -2434.8673 117.06779 Z" fill="white"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_5">
+      <title>Layer 5</title>
+      <g id="Group_741">
+        <g id="Graphic_3">
+          <path d="M -2824.5 -241.875 L -2422.5 -241.875 C -2414.2157 -241.875 -2407.5 -235.15927 -2407.5 -226.875 L -2407.5 -13.875 C -2407.5 -5.590729 -2414.2157 1.125 -2422.5 1.125 L -2824.5 1.125 C -2832.7843 1.125 -2839.5 -5.590729 -2839.5 -13.875 L -2839.5 -226.875 C -2839.5 -235.15927 -2832.7843 -241.875 -2824.5 -241.875 Z" fill="url(#Obj_Gradient_4)"/>
+          <path d="M -2824.5 -241.875 L -2422.5 -241.875 C -2414.2157 -241.875 -2407.5 -235.15927 -2407.5 -226.875 L -2407.5 -13.875 C -2407.5 -5.590729 -2414.2157 1.125 -2422.5 1.125 L -2824.5 1.125 C -2832.7843 1.125 -2839.5 -5.590729 -2839.5 -13.875 L -2839.5 -226.875 C -2839.5 -235.15927 -2832.7843 -241.875 -2824.5 -241.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_4">
+          <text transform="translate(-2712.3406 -227.875)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Bool To Audio</tspan>
+          </text>
+        </g>
+        <g id="Group_22">
+          <title>Bool</title>
+          <g id="Graphic_7">
+            <ellipse cx="-2804.518" cy="-157.625" rx="11.6606870130668" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-2804.518" cy="-157.625" rx="11.6606870130668" ry="11.8125188752162" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_8">
+            <path d="M -2789.9223 -164.25 L -2783.259 -157.625 L -2789.9223 -151 Z" fill="#900002"/>
+            <path d="M -2789.9223 -164.25 L -2783.259 -157.625 L -2789.9223 -151 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_24">
+          <title>Audio</title>
+          <g id="Graphic_9">
+            <ellipse cx="-2446.9242" cy="-157.625" rx="11.6606870130667" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-2446.9242" cy="-157.625" rx="11.6606870130667" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_10">
+            <path d="M -2432.3284 -164.25 L -2425.6652 -157.625 L -2432.3284 -151 Z" fill="#ce78ca"/>
+            <path d="M -2432.3284 -164.25 L -2425.6652 -157.625 L -2432.3284 -151 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_11">
+          <text transform="translate(-2507.125 -171.625)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_12">
+          <text transform="translate(-2774.978 -171.625)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Value</tspan>
+          </text>
+        </g>
+        <g id="Graphic_13">
+          <path d="M -2700.2352 -174.5 L -2678.919 -174.5 C -2675.6053 -174.5 -2672.919 -171.8137 -2672.919 -168.5 L -2672.919 -146.75 C -2672.919 -143.4363 -2675.6053 -140.75 -2678.919 -140.75 L -2700.2352 -140.75 C -2703.549 -140.75 -2706.2352 -143.4363 -2706.2352 -146.75 L -2706.2352 -168.5 C -2706.2352 -171.8137 -2703.549 -174.5 -2700.2352 -174.5 Z" fill="black"/>
+          <path d="M -2700.2352 -174.5 L -2678.919 -174.5 C -2675.6053 -174.5 -2672.919 -171.8137 -2672.919 -168.5 L -2672.919 -146.75 C -2672.919 -143.4363 -2675.6053 -140.75 -2678.919 -140.75 L -2700.2352 -140.75 C -2703.549 -140.75 -2706.2352 -143.4363 -2706.2352 -146.75 L -2706.2352 -168.5 C -2706.2352 -171.8137 -2703.549 -174.5 -2700.2352 -174.5 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_16">
+          <text transform="translate(-2775.2703 -117.5)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_17">
+          <path d="M -2659.9242 -120.375 L -2620.392 -120.375 C -2618.7352 -120.375 -2617.392 -119.03185 -2617.392 -117.375 L -2617.392 -89.625 C -2617.392 -87.96815 -2618.7352 -86.625 -2620.392 -86.625 L -2659.9242 -86.625 C -2661.581 -86.625 -2662.9242 -87.96815 -2662.9242 -89.625 L -2662.9242 -117.375 C -2662.9242 -119.03185 -2661.581 -120.375 -2659.9242 -120.375 Z" fill="black"/>
+          <path d="M -2659.9242 -120.375 L -2620.392 -120.375 C -2618.7352 -120.375 -2617.392 -119.03185 -2617.392 -117.375 L -2617.392 -89.625 C -2617.392 -87.96815 -2618.7352 -86.625 -2620.392 -86.625 L -2659.9242 -86.625 C -2661.581 -86.625 -2662.9242 -87.96815 -2662.9242 -89.625 L -2662.9242 -117.375 C -2662.9242 -119.03185 -2661.581 -120.375 -2659.9242 -120.375 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2657.9242 -117.5)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_20">
+          <text transform="translate(-2775.218 -61.375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_21">
+          <path d="M -2659.9242 -64.25 L -2620.392 -64.25 C -2618.7352 -64.25 -2617.392 -62.906854 -2617.392 -61.25 L -2617.392 -33.5 C -2617.392 -31.843146 -2618.7352 -30.5 -2620.392 -30.5 L -2659.9242 -30.5 C -2661.581 -30.5 -2662.9242 -31.843146 -2662.9242 -33.5 L -2662.9242 -61.25 C -2662.9242 -62.906854 -2661.581 -64.25 -2659.9242 -64.25 Z" fill="black"/>
+          <path d="M -2659.9242 -64.25 L -2620.392 -64.25 C -2618.7352 -64.25 -2617.392 -62.906854 -2617.392 -61.25 L -2617.392 -33.5 C -2617.392 -31.843146 -2618.7352 -30.5 -2620.392 -30.5 L -2659.9242 -30.5 C -2661.581 -30.5 -2662.9242 -31.843146 -2662.9242 -33.5 L -2662.9242 -61.25 C -2662.9242 -62.906854 -2661.581 -64.25 -2659.9242 -64.25 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2657.9242 -61.375)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_37">
+          <title>Time</title>
+          <g id="Graphic_39">
+            <ellipse cx="-2804.518" cy="-103.5" rx="11.6606870130668" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-2804.518" cy="-103.5" rx="11.6606870130668" ry="11.8125188752162" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_38">
+            <path d="M -2789.9223 -110.125 L -2783.259 -103.5 L -2789.9223 -96.875 Z" fill="#5ed2d1"/>
+            <path d="M -2789.9223 -110.125 L -2783.259 -103.5 L -2789.9223 -96.875 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_40">
+          <title>Time</title>
+          <g id="Graphic_42">
+            <ellipse cx="-2804.518" cy="-47.375" rx="11.6606870130668" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-2804.518" cy="-47.375" rx="11.6606870130668" ry="11.8125188752162" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_41">
+            <path d="M -2789.9223 -54 L -2783.259 -47.375 L -2789.9223 -40.75 Z" fill="#5ed2d1"/>
+            <path d="M -2789.9223 -54 L -2783.259 -47.375 L -2789.9223 -40.75 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_6">
+      <title>Layer 6</title>
+      <g id="Group_953">
+        <g id="Graphic_931">
+          <path d="M -2375.625 -302.625 L -1973.625 -302.625 C -1965.3407 -302.625 -1958.625 -295.90927 -1958.625 -287.625 L -1958.625 -145.625 C -1958.625 -137.34073 -1965.3407 -130.625 -1973.625 -130.625 L -2375.625 -130.625 C -2383.9093 -130.625 -2390.625 -137.34073 -2390.625 -145.625 L -2390.625 -287.625 C -2390.625 -295.90927 -2383.9093 -302.625 -2375.625 -302.625 Z" fill="url(#Obj_Gradient_5)"/>
+          <path d="M -2375.625 -302.625 L -1973.625 -302.625 C -1965.3407 -302.625 -1958.625 -295.90927 -1958.625 -287.625 L -1958.625 -145.625 C -1958.625 -137.34073 -1965.3407 -130.625 -1973.625 -130.625 L -2375.625 -130.625 C -2383.9093 -130.625 -2390.625 -137.34073 -2390.625 -145.625 L -2390.625 -287.625 C -2390.625 -295.90927 -2383.9093 -302.625 -2375.625 -302.625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_930">
+          <text transform="translate(-2208.6328 -288.625)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Edge</tspan>
+          </text>
+        </g>
+        <g id="Graphic_926">
+          <text transform="translate(-2071.898 -232.375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise</tspan>
+          </text>
+        </g>
+        <g id="Graphic_925">
+          <text transform="translate(-2325.6558 -232.375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          </text>
+        </g>
+        <g id="Group_922">
+          <title>Audio</title>
+          <g id="Graphic_924">
+            <ellipse cx="-2356.2947" cy="-218.375" rx="11.6606870130668" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-2356.2947" cy="-218.375" rx="11.6606870130668" ry="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_923">
+            <path d="M -2341.699 -225 L -2335.0357 -218.375 L -2341.699 -211.75 Z" fill="#ce78ca"/>
+            <path d="M -2341.699 -225 L -2335.0357 -218.375 L -2341.699 -211.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_914">
+          <text transform="translate(-2061.9376 -183.75)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall</tspan>
+          </text>
+        </g>
+        <g id="Graphic_910">
+          <text transform="translate(-2325.6558 -183.75)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Debounce</tspan>
+          </text>
+        </g>
+        <g id="Graphic_909">
+          <path d="M -2206.9688 -188.75 L -2167.4366 -188.75 C -2165.7798 -188.75 -2164.4366 -187.40685 -2164.4366 -185.75 L -2164.4366 -158 C -2164.4366 -156.34315 -2165.7798 -155 -2167.4366 -155 L -2206.9688 -155 C -2208.6256 -155 -2209.9688 -156.34315 -2209.9688 -158 L -2209.9688 -185.75 C -2209.9688 -187.40685 -2208.6256 -188.75 -2206.9688 -188.75 Z" fill="black"/>
+          <path d="M -2206.9688 -188.75 L -2167.4366 -188.75 C -2165.7798 -188.75 -2164.4366 -187.40685 -2164.4366 -185.75 L -2164.4366 -158 C -2164.4366 -156.34315 -2165.7798 -155 -2167.4366 -155 L -2206.9688 -155 C -2208.6256 -155 -2209.9688 -156.34315 -2209.9688 -158 L -2209.9688 -185.75 C -2209.9688 -187.40685 -2208.6256 -188.75 -2206.9688 -188.75 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2204.9688 -185.875)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_941">
+          <title>Trigger</title>
+          <g id="Graphic_943">
+            <ellipse cx="-1998.6406" cy="-217.99394" rx="11.510806717269" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-1998.6406" cy="-217.99394" rx="11.510806717269" ry="12.1935678711909" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_942">
+            <path d="M -1987.1298 -206.2239 C -1985.0964 -205.12167 -1982.8334 -206.17098 -1981.237 -209.37181 C -1978.8622 -214.1337 -1978.8622 -221.8542 -1981.237 -226.61608 C -1982.8334 -229.8169 -1985.0963 -230.86622 -1987.1298 -229.764 C -1986.138 -229.22645 -1985.201 -228.17714 -1984.4224 -226.61608 C -1982.0476 -221.8542 -1982.0476 -214.1337 -1984.4224 -209.37181 C -1985.201 -207.81075 -1986.138 -206.76144 -1987.1298 -206.22388 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_938">
+          <title>Trigger</title>
+          <g id="Graphic_940">
+            <ellipse cx="-1998.6406" cy="-169.36894" rx="11.510806717269" ry="12.1935678711909" fill="black"/>
+            <ellipse cx="-1998.6406" cy="-169.36894" rx="11.510806717269" ry="12.1935678711909" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_939">
+            <path d="M -1987.1298 -157.59889 C -1985.0964 -156.49667 -1982.8334 -157.54598 -1981.237 -160.74681 C -1978.8622 -165.50869 -1978.8622 -173.2292 -1981.237 -177.99108 C -1982.8334 -181.1919 -1985.0963 -182.24122 -1987.1298 -181.139 C -1986.138 -180.60145 -1985.201 -179.55214 -1984.4224 -177.99108 C -1982.0476 -173.2292 -1982.0476 -165.50869 -1984.4224 -160.74681 C -1985.201 -159.18575 -1986.138 -158.13644 -1987.1298 -157.59888 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Group_950">
+          <title>Time</title>
+          <g id="Graphic_952">
+            <ellipse cx="-2356.2947" cy="-171.875" rx="11.6606870130668" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-2356.2947" cy="-171.875" rx="11.6606870130668" ry="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_951">
+            <path d="M -2341.699 -178.5 L -2335.0357 -171.875 L -2341.699 -165.25 Z" fill="#5ed2d1"/>
+            <path d="M -2341.699 -178.5 L -2335.0357 -171.875 L -2341.699 -165.25 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_7">
+      <title>Layer 7</title>
+      <g id="Group_742">
+        <g id="Graphic_261">
+          <path d="M -2375.625 -114.71875 L -1973.625 -114.71875 C -1965.3407 -114.71875 -1958.625 -108.00302 -1958.625 -99.71875 L -1958.625 158.28125 C -1958.625 166.56552 -1965.3407 173.28125 -1973.625 173.28125 L -2375.625 173.28125 C -2383.9093 173.28125 -2390.625 166.56552 -2390.625 158.28125 L -2390.625 -99.71875 C -2390.625 -108.00302 -2383.9093 -114.71875 -2375.625 -114.71875 Z" fill="url(#Obj_Gradient_6)"/>
+          <path d="M -2375.625 -114.71875 L -1973.625 -114.71875 C -1965.3407 -114.71875 -1958.625 -108.00302 -1958.625 -99.71875 L -1958.625 158.28125 C -1958.625 166.56552 -1965.3407 173.28125 -1973.625 173.28125 L -2375.625 173.28125 C -2383.9093 173.28125 -2390.625 166.56552 -2390.625 158.28125 L -2390.625 -99.71875 C -2390.625 -108.00302 -2383.9093 -114.71875 -2375.625 -114.71875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_262">
+          <text transform="translate(-2214.6019 -101.44095)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">EDO</tspan>
+          </text>
+        </g>
+        <g id="Graphic_269">
+          <text transform="translate(-2130.1777 -46.6418)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Frequency</tspan>
+          </text>
+        </g>
+        <g id="Graphic_270">
+          <text transform="translate(-2322.3242 -46.6418)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Note Number</tspan>
+          </text>
+        </g>
+        <g id="Group_277">
+          <title>Float</title>
+          <g id="Graphic_279">
+            <ellipse cx="-2356.2947" cy="13.085061" rx="11.6606870130668" ry="11.5078407985192" fill="black"/>
+            <ellipse cx="-2356.2947" cy="13.085061" rx="11.6606870130668" ry="11.5078407985192" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_278">
+            <path d="M -2341.699 6.630939 L -2335.0357 13.085061 L -2341.699 19.539184 Z" fill="#9df945"/>
+            <path d="M -2341.699 6.630939 L -2335.0357 13.085061 L -2341.699 19.539184 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_280">
+          <text transform="translate(-2322.3242 -.9149387)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reference Frequency</tspan>
+          </text>
+        </g>
+        <g id="Graphic_281">
+          <path d="M -2316.886 29.951017 L -2249.8178 29.951017 C -2248.161 29.951017 -2246.8178 31.294163 -2246.8178 32.951017 L -2246.8178 59.83051 C -2246.8178 61.487364 -2248.161 62.83051 -2249.8178 62.83051 L -2316.886 62.83051 C -2318.5428 62.83051 -2319.886 61.487364 -2319.886 59.83051 L -2319.886 32.951017 C -2319.886 31.294163 -2318.5428 29.951017 -2316.886 29.951017 Z" fill="black"/>
+          <path d="M -2316.886 29.951017 L -2249.8178 29.951017 C -2248.161 29.951017 -2246.8178 31.294163 -2246.8178 32.951017 L -2246.8178 59.83051 C -2246.8178 61.487364 -2248.161 62.83051 -2249.8178 62.83051 L -2316.886 62.83051 C -2318.5428 62.83051 -2319.886 61.487364 -2319.886 59.83051 L -2319.886 32.951017 C -2319.886 31.294163 -2318.5428 29.951017 -2316.886 29.951017 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2314.886 32.390764)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4227333" y="22" xml:space="preserve">440.0</tspan>
+          </text>
+        </g>
+        <g id="Group_295">
+          <title>Float</title>
+          <g id="Graphic_297">
+            <ellipse cx="-1998.0492" cy="-32.641794" rx="11.6606870130669" ry="11.5078407985192" fill="black"/>
+            <ellipse cx="-1998.0492" cy="-32.641794" rx="11.6606870130669" ry="11.5078407985192" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_296">
+            <path d="M -1983.4534 -39.095917 L -1976.7902 -32.641794 L -1983.4534 -26.187672 Z" fill="#9df945"/>
+            <path d="M -1983.4534 -39.095917 L -1976.7902 -32.641794 L -1983.4534 -26.187672 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_302">
+          <title>Int32</title>
+          <g id="Graphic_304">
+            <ellipse cx="-2356.2947" cy="-32.641806" rx="11.6606870130668" ry="11.5078407985192" fill="black"/>
+            <ellipse cx="-2356.2947" cy="-32.641806" rx="11.6606870130668" ry="11.5078407985192" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_303">
+            <path d="M -2341.699 -39.09593 L -2335.0357 -32.641806 L -2341.699 -26.187683 Z" fill="#00d199"/>
+            <path d="M -2341.699 -39.09593 L -2335.0357 -32.641806 L -2341.699 -26.187683 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_323">
+          <text transform="translate(-2322.3242 79.39626)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reference Note Number</tspan>
+          </text>
+        </g>
+        <g id="Group_320">
+          <title>Int32</title>
+          <g id="Graphic_322">
+            <ellipse cx="-2356.2947" cy="93.39626" rx="11.6606870130668" ry="11.5078407985192" fill="black"/>
+            <ellipse cx="-2356.2947" cy="93.39626" rx="11.6606870130668" ry="11.5078407985192" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_321">
+            <path d="M -2341.699 86.94214 L -2335.0357 93.39626 L -2341.699 99.85038 Z" fill="#00d199"/>
+            <path d="M -2341.699 86.94214 L -2335.0357 93.39626 L -2341.699 99.85038 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_319">
+          <text transform="translate(-2322.3242 128.95905)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Divisions</tspan>
+          </text>
+        </g>
+        <g id="Group_316">
+          <title>Int32</title>
+          <g id="Graphic_318">
+            <ellipse cx="-2356.2947" cy="142.95905" rx="11.6606870130668" ry="11.5078407985192" fill="black"/>
+            <ellipse cx="-2356.2947" cy="142.95905" rx="11.6606870130668" ry="11.5078407985192" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_317">
+            <path d="M -2341.699 136.50493 L -2335.0357 142.95905 L -2341.699 149.41317 Z" fill="#00d199"/>
+            <path d="M -2341.699 136.50493 L -2335.0357 142.95905 L -2341.699 149.41317 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_315">
+          <path d="M -2217.5929 126.51931 L -2185.3408 126.51931 C -2183.684 126.51931 -2182.3408 127.86245 -2182.3408 129.51931 L -2182.3408 156.3988 C -2182.3408 158.05565 -2183.684 159.3988 -2185.3408 159.3988 L -2217.5929 159.3988 C -2219.2497 159.3988 -2220.5929 158.05565 -2220.5929 156.3988 L -2220.5929 129.51931 C -2220.5929 127.86245 -2219.2497 126.51931 -2217.5929 126.51931 Z" fill="black"/>
+          <path d="M -2217.5929 126.51931 L -2185.3408 126.51931 C -2183.684 126.51931 -2182.3408 127.86245 -2182.3408 129.51931 L -2182.3408 156.3988 C -2182.3408 158.05565 -2183.684 159.3988 -2185.3408 159.3988 L -2217.5929 159.3988 C -2219.2497 159.3988 -2220.5929 158.05565 -2220.5929 156.3988 L -2220.5929 129.51931 C -2220.5929 127.86245 -2219.2497 126.51931 -2217.5929 126.51931 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2215.5929 128.95905)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x=".649457" y="22" xml:space="preserve">12</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_8">
+      <title>Layer 8</title>
+      <g id="Group_743">
+        <g id="Graphic_583">
+          <path d="M -2375.625 189.1875 L -1973.625 189.1875 C -1965.3407 189.1875 -1958.625 195.90323 -1958.625 204.1875 L -1958.625 346.1875 C -1958.625 354.47177 -1965.3407 361.1875 -1973.625 361.1875 L -2375.625 361.1875 C -2383.9093 361.1875 -2390.625 354.47177 -2390.625 346.1875 L -2390.625 204.1875 C -2390.625 195.90323 -2383.9093 189.1875 -2375.625 189.1875 Z" fill="url(#Obj_Gradient_7)"/>
+          <path d="M -2375.625 189.1875 L -1973.625 189.1875 C -1965.3407 189.1875 -1958.625 195.90323 -1958.625 204.1875 L -1958.625 346.1875 C -1958.625 354.47177 -1965.3407 361.1875 -1973.625 361.1875 L -2375.625 361.1875 C -2383.9093 361.1875 -2390.625 354.47177 -2390.625 346.1875 L -2390.625 204.1875 C -2390.625 195.90323 -2383.9093 189.1875 -2375.625 189.1875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_582">
+          <text transform="translate(-2268.465 205.11033)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Phase Disperser</tspan>
+          </text>
+        </g>
+        <g id="Graphic_576">
+          <text transform="translate(-2322.3242 308.8216)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stages</tspan>
+          </text>
+        </g>
+        <g id="Graphic_575">
+          <path d="M -2235.001 303.78557 L -2217.826 303.78557 C -2216.1692 303.78557 -2214.826 305.1287 -2214.826 306.78557 L -2214.826 335.165 C -2214.826 336.82185 -2216.1692 338.165 -2217.826 338.165 L -2235.001 338.165 C -2236.6578 338.165 -2238.001 336.82185 -2238.001 335.165 L -2238.001 306.78557 C -2238.001 305.1287 -2236.6578 303.78557 -2235.001 303.78557 Z" fill="black"/>
+          <path d="M -2235.001 303.78557 L -2217.826 303.78557 C -2216.1692 303.78557 -2214.826 305.1287 -2214.826 306.78557 L -2214.826 335.165 C -2214.826 336.82185 -2216.1692 338.165 -2217.826 338.165 L -2235.001 338.165 C -2236.6578 338.165 -2238.001 336.82185 -2238.001 335.165 L -2238.001 306.78557 C -2238.001 305.1287 -2236.6578 303.78557 -2235.001 303.78557 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2233.001 306.97528)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="0" y="22" xml:space="preserve">0</tspan>
+          </text>
+        </g>
+        <g id="Group_587">
+          <title>Int32</title>
+          <g id="Graphic_589">
+            <ellipse cx="-2356.2947" cy="322.8216" rx="11.6606870130668" ry="12.0328166548825" fill="black"/>
+            <ellipse cx="-2356.2947" cy="322.8216" rx="11.6606870130668" ry="12.0328166548825" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_588">
+            <path d="M -2341.699 316.07304 L -2335.0357 322.8216 L -2341.699 329.57014 Z" fill="#00d199"/>
+            <path d="M -2341.699 316.07304 L -2335.0357 322.8216 L -2341.699 329.57014 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_603">
+          <title>Audio</title>
+          <g id="Graphic_605">
+            <ellipse cx="-1998.0492" cy="275.00872" rx="11.6606870130669" ry="12.0328166548825" fill="black"/>
+            <ellipse cx="-1998.0492" cy="275.00872" rx="11.6606870130669" ry="12.0328166548825" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_604">
+            <path d="M -1983.4534 268.26017 L -1976.7902 275.00872 L -1983.4534 281.75727 Z" fill="#ce78ca"/>
+            <path d="M -1983.4534 268.26017 L -1976.7902 275.00872 L -1983.4534 281.75727 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_602">
+          <text transform="translate(-2058.5238 261.00872)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_601">
+          <text transform="translate(-2325.8168 261.00872)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          </text>
+        </g>
+        <g id="Group_598">
+          <title>Audio</title>
+          <g id="Graphic_600">
+            <ellipse cx="-2356.4556" cy="275.00872" rx="11.6606870130668" ry="12.0328166548825" fill="black"/>
+            <ellipse cx="-2356.4556" cy="275.00872" rx="11.6606870130668" ry="12.0328166548825" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_599">
+            <path d="M -2341.86 268.26017 L -2335.1967 275.00872 L -2341.86 281.75727 Z" fill="#ce78ca"/>
+            <path d="M -2341.86 268.26017 L -2335.1967 275.00872 L -2341.86 281.75727 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_9">
+      <title>Layer 9</title>
+      <g id="Group_746">
+        <g id="Graphic_637">
+          <path d="M -2375.625 377.09375 L -1973.625 377.09375 C -1965.3407 377.09375 -1958.625 383.8095 -1958.625 392.09375 L -1958.625 578.09375 C -1958.625 586.378 -1965.3407 593.09375 -1973.625 593.09375 L -2375.625 593.09375 C -2383.9093 593.09375 -2390.625 586.378 -2390.625 578.09375 L -2390.625 392.09375 C -2390.625 383.8095 -2383.9093 377.09375 -2375.625 377.09375 Z" fill="url(#Obj_Gradient_8)"/>
+          <path d="M -2375.625 377.09375 L -1973.625 377.09375 C -1965.3407 377.09375 -1958.625 383.8095 -1958.625 392.09375 L -1958.625 578.09375 C -1958.625 586.378 -1965.3407 593.09375 -1973.625 593.09375 L -2375.625 593.09375 C -2383.9093 593.09375 -2390.625 586.378 -2390.625 578.09375 L -2390.625 392.09375 C -2390.625 383.8095 -2383.9093 377.09375 -2375.625 377.09375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_638">
+          <text transform="translate(-2353.248 393.12925)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Sample and Hold (audio trigger)</tspan>
+          </text>
+        </g>
+        <g id="Group_644">
+          <title>Audio</title>
+          <g id="Graphic_646">
+            <ellipse cx="-1998.0492" cy="463.23813" rx="11.6606870130669" ry="12.078125808505" fill="black"/>
+            <ellipse cx="-1998.0492" cy="463.23813" rx="11.6606870130669" ry="12.078125808505" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_645">
+            <path d="M -1983.4534 456.46416 L -1976.7902 463.23813 L -1983.4534 470.0121 Z" fill="#ce78ca"/>
+            <path d="M -1983.4534 456.46416 L -1976.7902 463.23813 L -1983.4534 470.0121 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_647">
+          <text transform="translate(-2058.203 449.23813)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_648">
+          <text transform="translate(-2325.8168 449.23813)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Signal</tspan>
+          </text>
+        </g>
+        <g id="Group_649">
+          <title>Audio</title>
+          <g id="Graphic_651">
+            <ellipse cx="-2356.4556" cy="463.23813" rx="11.6606870130668" ry="12.078125808505" fill="black"/>
+            <ellipse cx="-2356.4556" cy="463.23813" rx="11.6606870130668" ry="12.078125808505" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_650">
+            <path d="M -2341.86 456.46416 L -2335.1967 463.23813 L -2341.86 470.0121 Z" fill="#ce78ca"/>
+            <path d="M -2341.86 456.46416 L -2335.1967 463.23813 L -2341.86 470.0121 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_670">
+          <text transform="translate(-2324.2299 497.29493)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+          </text>
+        </g>
+        <g id="Group_684">
+          <title>Audio</title>
+          <g id="Graphic_686">
+            <ellipse cx="-2356.4556" cy="511.29493" rx="11.6606870130668" ry="12.0781258085051" fill="black"/>
+            <ellipse cx="-2356.4556" cy="511.29493" rx="11.6606870130668" ry="12.0781258085051" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_685">
+            <path d="M -2341.86 504.52097 L -2335.1967 511.29493 L -2341.86 518.0689 Z" fill="#ce78ca"/>
+            <path d="M -2341.86 504.52097 L -2335.1967 511.29493 L -2341.86 518.0689 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_681">
+          <title>Float</title>
+          <g id="Graphic_683">
+            <ellipse cx="-2356.4556" cy="561.90795" rx="11.6606870130668" ry="12.0781258085051" fill="black"/>
+            <ellipse cx="-2356.4556" cy="561.90795" rx="11.6606870130668" ry="12.0781258085051" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_682">
+            <path d="M -2341.86 555.134 L -2335.1967 561.90795 L -2341.86 568.6819 Z" fill="#9df945"/>
+            <path d="M -2341.86 555.134 L -2335.1967 561.90795 L -2341.86 568.6819 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_680">
+          <text transform="translate(-2322.4852 547.90795)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Threshold</tspan>
+          </text>
+        </g>
+        <g id="Graphic_679">
+          <path d="M -2202.7673 542.4807 L -2163.2352 542.4807 C -2161.5784 542.4807 -2160.2352 543.8239 -2160.2352 545.4807 L -2160.2352 573.9896 C -2160.2352 575.64646 -2161.5784 576.9896 -2163.2352 576.9896 L -2202.7673 576.9896 C -2204.4242 576.9896 -2205.7673 575.64646 -2205.7673 573.9896 L -2205.7673 545.4807 C -2205.7673 543.8239 -2204.4242 542.4807 -2202.7673 542.4807 Z" fill="black"/>
+          <path d="M -2202.7673 542.4807 L -2163.2352 542.4807 C -2161.5784 542.4807 -2160.2352 543.8239 -2160.2352 545.4807 L -2160.2352 573.9896 C -2160.2352 575.64646 -2161.5784 576.9896 -2163.2352 576.9896 L -2202.7673 576.9896 C -2204.4242 576.9896 -2205.7673 575.64646 -2205.7673 573.9896 L -2205.7673 545.4807 C -2205.7673 543.8239 -2204.4242 542.4807 -2202.7673 542.4807 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-2200.7673 545.7352)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_10">
+      <title>Layer 10</title>
+      <g id="Group_737">
+        <g id="Graphic_114">
+          <path d="M -2375.625 609 L -1973.625 609 C -1965.3407 609 -1958.625 615.7157 -1958.625 624 L -1958.625 1044 C -1958.625 1052.2843 -1965.3407 1059 -1973.625 1059 L -2375.625 1059 C -2383.9093 1059 -2390.625 1052.2843 -2390.625 1044 L -2390.625 624 C -2390.625 615.7157 -2383.9093 609 -2375.625 609 Z" fill="url(#Obj_Gradient_9)"/>
+          <path d="M -2375.625 609 L -1973.625 609 C -1965.3407 609 -1958.625 615.7157 -1958.625 624 L -1958.625 1044 C -1958.625 1052.2843 -1965.3407 1059 -1973.625 1059 L -2375.625 1059 C -2383.9093 1059 -2390.625 1052.2843 -2390.625 1044 L -2390.625 624 C -2390.625 615.7157 -2383.9093 609 -2375.625 609 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_113">
+          <text transform="translate(-2254.7812 622.9302)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Shift Register</tspan>
+          </text>
+        </g>
+        <g id="Graphic_106">
+          <text transform="translate(-2100.9682 679.0399)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_100">
+          <text transform="translate(-2326.3075 679.0399)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          </text>
+        </g>
+        <g id="Group_115">
+          <title>Float</title>
+          <g id="Graphic_117">
+            <ellipse cx="-2356.2947" cy="693.0399" rx="11.6606870130668" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2356.2947" cy="693.0399" rx="11.6606870130668" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_116">
+            <path d="M -2341.699 686.4314 L -2335.0357 693.0399 L -2341.699 699.6484 Z" fill="#9df945"/>
+            <path d="M -2341.699 686.4314 L -2335.0357 693.0399 L -2341.699 699.6484 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_127">
+          <title>Float</title>
+          <g id="Graphic_129">
+            <ellipse cx="-1998.0492" cy="693.0399" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="693.0399" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_128">
+            <path d="M -1983.4534 686.4314 L -1976.7902 693.0399 L -1983.4534 699.6484 Z" fill="#9df945"/>
+            <path d="M -1983.4534 686.4314 L -1976.7902 693.0399 L -1983.4534 699.6484 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_130">
+          <text transform="translate(-2100.9682 725.86035)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 2</tspan>
+          </text>
+        </g>
+        <g id="Group_131">
+          <title>Float</title>
+          <g id="Graphic_133">
+            <ellipse cx="-1998.0492" cy="739.86035" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="739.86035" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_132">
+            <path d="M -1983.4534 733.2519 L -1976.7902 739.86035 L -1983.4534 746.4688 Z" fill="#9df945"/>
+            <path d="M -1983.4534 733.2519 L -1976.7902 739.86035 L -1983.4534 746.4688 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_134">
+          <text transform="translate(-2100.9682 776.7955)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 3</tspan>
+          </text>
+        </g>
+        <g id="Group_135">
+          <title>Float</title>
+          <g id="Graphic_137">
+            <ellipse cx="-1998.0492" cy="790.7955" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="790.7955" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_136">
+            <path d="M -1983.4534 784.187 L -1976.7902 790.7955 L -1983.4534 797.404 Z" fill="#9df945"/>
+            <path d="M -1983.4534 784.187 L -1976.7902 790.7955 L -1983.4534 797.404 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_138">
+          <text transform="translate(-2100.9682 823.616)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 4</tspan>
+          </text>
+        </g>
+        <g id="Group_139">
+          <title>Float</title>
+          <g id="Graphic_141">
+            <ellipse cx="-1998.0492" cy="837.616" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="837.616" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_140">
+            <path d="M -1983.4534 831.0075 L -1976.7902 837.616 L -1983.4534 844.2244 Z" fill="#9df945"/>
+            <path d="M -1983.4534 831.0075 L -1976.7902 837.616 L -1983.4534 844.2244 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_142">
+          <text transform="translate(-2100.9682 870.9352)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 5</tspan>
+          </text>
+        </g>
+        <g id="Group_143">
+          <title>Float</title>
+          <g id="Graphic_145">
+            <ellipse cx="-1998.0492" cy="884.9352" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="884.9352" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_144">
+            <path d="M -1983.4534 878.3267 L -1976.7902 884.9352 L -1983.4534 891.5436 Z" fill="#9df945"/>
+            <path d="M -1983.4534 878.3267 L -1976.7902 884.9352 L -1983.4534 891.5436 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_146">
+          <text transform="translate(-2100.9682 917.7556)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 6</tspan>
+          </text>
+        </g>
+        <g id="Group_147">
+          <title>Float</title>
+          <g id="Graphic_149">
+            <ellipse cx="-1998.0492" cy="931.7556" rx="11.6606870130669" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-1998.0492" cy="931.7556" rx="11.6606870130669" ry="11.7830612221607" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_148">
+            <path d="M -1983.4534 925.1471 L -1976.7902 931.7556 L -1983.4534 938.3641 Z" fill="#9df945"/>
+            <path d="M -1983.4534 925.1471 L -1976.7902 931.7556 L -1983.4534 938.3641 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_150">
+          <text transform="translate(-2100.9682 968.6908)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 7</tspan>
+          </text>
+        </g>
+        <g id="Group_151">
+          <title>Float</title>
+          <g id="Graphic_153">
+            <ellipse cx="-1998.0492" cy="982.6908" rx="11.6606870130669" ry="11.7830612221606" fill="black"/>
+            <ellipse cx="-1998.0492" cy="982.6908" rx="11.6606870130669" ry="11.7830612221606" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_152">
+            <path d="M -1983.4534 976.0823 L -1976.7902 982.6908 L -1983.4534 989.2993 Z" fill="#9df945"/>
+            <path d="M -1983.4534 976.0823 L -1976.7902 982.6908 L -1983.4534 989.2993 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_154">
+          <text transform="translate(-2100.9682 1015.5112)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 8</tspan>
+          </text>
+        </g>
+        <g id="Group_155">
+          <title>Float</title>
+          <g id="Graphic_157">
+            <ellipse cx="-1998.0492" cy="1029.5112" rx="11.6606870130669" ry="11.7830612221608" fill="black"/>
+            <ellipse cx="-1998.0492" cy="1029.5112" rx="11.6606870130669" ry="11.7830612221608" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_156">
+            <path d="M -1983.4534 1022.9027 L -1976.7902 1029.5112 L -1983.4534 1036.1197 Z" fill="#9df945"/>
+            <path d="M -1983.4534 1022.9027 L -1976.7902 1029.5112 L -1983.4534 1036.1197 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_158">
+          <title>Trigger</title>
+          <g id="Graphic_160">
+            <ellipse cx="-2355.3824" cy="739.86035" rx="11.6606870130668" ry="11.7830612221607" fill="black"/>
+            <ellipse cx="-2355.3824" cy="739.86035" rx="11.6606870130668" ry="11.7830612221607" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_159">
+            <path d="M -2343.7217 751.23415 C -2341.6618 752.2993 -2339.3694 751.2853 -2337.7523 748.1922 C -2335.3465 743.5906 -2335.3465 736.13004 -2337.7523 731.5285 C -2339.3694 728.4354 -2341.6618 727.4214 -2343.7217 728.4865 C -2342.717 729.006 -2341.7678 730.02 -2340.979 731.5285 C -2338.5734 736.13004 -2338.5734 743.5906 -2340.979 748.1922 C -2341.7678 749.7007 -2342.717 750.7147 -2343.7217 751.2342 Z" fill="white"/>
+          </g>
+        </g>
+        <g id="Graphic_161">
+          <text transform="translate(-2326.3075 725.86035)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_11">
+      <title>Layer 11</title>
+      <g id="Group_748">
+        <g id="Graphic_344">
+          <path d="M -1922.25 -301.5 L -1520.25 -301.5 C -1511.9657 -301.5 -1505.25 -294.78427 -1505.25 -286.5 L -1505.25 -73.5 C -1505.25 -65.21573 -1511.9657 -58.5 -1520.25 -58.5 L -1922.25 -58.5 C -1930.5343 -58.5 -1937.25 -65.21573 -1937.25 -73.5 L -1937.25 -286.5 C -1937.25 -294.78427 -1930.5343 -301.5 -1922.25 -301.5 Z" fill="url(#Obj_Gradient_10)"/>
+          <path d="M -1922.25 -301.5 L -1520.25 -301.5 C -1511.9657 -301.5 -1505.25 -294.78427 -1505.25 -286.5 L -1505.25 -73.5 C -1505.25 -65.21573 -1511.9657 -58.5 -1520.25 -58.5 L -1922.25 -58.5 C -1930.5343 -58.5 -1937.25 -65.21573 -1937.25 -73.5 L -1937.25 -286.5 C -1937.25 -294.78427 -1930.5343 -301.5 -1922.25 -301.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_343">
+          <text transform="translate(-1795.4648 -287.5)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Slew (audio)</tspan>
+          </text>
+        </g>
+        <g id="Group_337">
+          <title>Audio</title>
+          <g id="Graphic_339">
+            <ellipse cx="-1544.6742" cy="-217.25" rx="11.6606870130669" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1544.6742" cy="-217.25" rx="11.6606870130669" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_338">
+            <path d="M -1530.0784 -223.875 L -1523.4152 -217.25 L -1530.0784 -210.625 Z" fill="#ce78ca"/>
+            <path d="M -1530.0784 -223.875 L -1523.4152 -217.25 L -1530.0784 -210.625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_336">
+          <text transform="translate(-1605.2935 -231.25)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_335">
+          <text transform="translate(-1872.4722 -231.25)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          </text>
+        </g>
+        <g id="Graphic_333">
+          <text transform="translate(-1873.0203 -177.125)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_332">
+          <path d="M -1757.6742 -180 L -1718.142 -180 C -1716.4852 -180 -1715.142 -178.65685 -1715.142 -177 L -1715.142 -149.25 C -1715.142 -147.59315 -1716.4852 -146.25 -1718.142 -146.25 L -1757.6742 -146.25 C -1759.331 -146.25 -1760.6742 -147.59315 -1760.6742 -149.25 L -1760.6742 -177 C -1760.6742 -178.65685 -1759.331 -180 -1757.6742 -180 Z" fill="black"/>
+          <path d="M -1757.6742 -180 L -1718.142 -180 C -1716.4852 -180 -1715.142 -178.65685 -1715.142 -177 L -1715.142 -149.25 C -1715.142 -147.59315 -1716.4852 -146.25 -1718.142 -146.25 L -1757.6742 -146.25 C -1759.331 -146.25 -1760.6742 -147.59315 -1760.6742 -149.25 L -1760.6742 -177 C -1760.6742 -178.65685 -1759.331 -180 -1757.6742 -180 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1755.6742 -177.125)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_331">
+          <text transform="translate(-1872.968 -121)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_330">
+          <path d="M -1757.6742 -123.875 L -1718.142 -123.875 C -1716.4852 -123.875 -1715.142 -122.53185 -1715.142 -120.875 L -1715.142 -93.125 C -1715.142 -91.46815 -1716.4852 -90.125 -1718.142 -90.125 L -1757.6742 -90.125 C -1759.331 -90.125 -1760.6742 -91.46815 -1760.6742 -93.125 L -1760.6742 -120.875 C -1760.6742 -122.53185 -1759.331 -123.875 -1757.6742 -123.875 Z" fill="black"/>
+          <path d="M -1757.6742 -123.875 L -1718.142 -123.875 C -1716.4852 -123.875 -1715.142 -122.53185 -1715.142 -120.875 L -1715.142 -93.125 C -1715.142 -91.46815 -1716.4852 -90.125 -1718.142 -90.125 L -1757.6742 -90.125 C -1759.331 -90.125 -1760.6742 -91.46815 -1760.6742 -93.125 L -1760.6742 -120.875 C -1760.6742 -122.53185 -1759.331 -123.875 -1757.6742 -123.875 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1755.6742 -121)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_327">
+          <title>Time</title>
+          <g id="Graphic_329">
+            <ellipse cx="-1902.268" cy="-163.125" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1902.268" cy="-163.125" rx="11.660687013067" ry="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_328">
+            <path d="M -1887.6723 -169.75 L -1881.009 -163.125 L -1887.6723 -156.5 Z" fill="#5ed2d1"/>
+            <path d="M -1887.6723 -169.75 L -1881.009 -163.125 L -1887.6723 -156.5 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_324">
+          <title>Time</title>
+          <g id="Graphic_326">
+            <ellipse cx="-1902.268" cy="-107" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1902.268" cy="-107" rx="11.660687013067" ry="11.8125188752162" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_325">
+            <path d="M -1887.6723 -113.625 L -1881.009 -107 L -1887.6723 -100.375 Z" fill="#5ed2d1"/>
+            <path d="M -1887.6723 -113.625 L -1881.009 -107 L -1887.6723 -100.375 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_348">
+          <title>Audio</title>
+          <g id="Graphic_350">
+            <ellipse cx="-1902.9197" cy="-217.25" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1902.9197" cy="-217.25" rx="11.660687013067" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_349">
+            <path d="M -1888.324 -223.875 L -1881.6607 -217.25 L -1888.324 -210.625 Z" fill="#ce78ca"/>
+            <path d="M -1888.324 -223.875 L -1881.6607 -217.25 L -1888.324 -210.625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_12">
+      <title>Layer 12</title>
+      <g id="Group_745">
+        <g id="Graphic_351">
+          <path d="M -1925.0625 -42.078125 L -1523.0625 -42.078125 C -1514.7782 -42.078125 -1508.0625 -35.362396 -1508.0625 -27.078125 L -1508.0625 185.92188 C -1508.0625 194.20615 -1514.7782 200.92188 -1523.0625 200.92188 L -1925.0625 200.92188 C -1933.3468 200.92188 -1940.0625 194.20615 -1940.0625 185.92188 L -1940.0625 -27.078125 C -1940.0625 -35.362396 -1933.3468 -42.078125 -1925.0625 -42.078125 Z" fill="url(#Obj_Gradient_11)"/>
+          <path d="M -1925.0625 -42.078125 L -1523.0625 -42.078125 C -1514.7782 -42.078125 -1508.0625 -35.362396 -1508.0625 -27.078125 L -1508.0625 185.92188 C -1508.0625 194.20615 -1514.7782 200.92188 -1523.0625 200.92188 L -1925.0625 200.92188 C -1933.3468 200.92188 -1940.0625 194.20615 -1940.0625 185.92188 L -1940.0625 -27.078125 C -1940.0625 -35.362396 -1933.3468 -42.078125 -1925.0625 -42.078125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_352">
+          <text transform="translate(-1792.8633 -26.703125)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Slew (float)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_356">
+          <text transform="translate(-1608.106 28.171875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          </text>
+        </g>
+        <g id="Graphic_357">
+          <text transform="translate(-1875.2847 28.171875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          </text>
+        </g>
+        <g id="Graphic_358">
+          <text transform="translate(-1875.8328 82.296875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_359">
+          <path d="M -1760.4867 79.421875 L -1720.9545 79.421875 C -1719.2977 79.421875 -1717.9545 80.76502 -1717.9545 82.421875 L -1717.9545 110.17188 C -1717.9545 111.82873 -1719.2977 113.17188 -1720.9545 113.17188 L -1760.4867 113.17188 C -1762.1435 113.17188 -1763.4867 111.82873 -1763.4867 110.17188 L -1763.4867 82.421875 C -1763.4867 80.76502 -1762.1435 79.421875 -1760.4867 79.421875 Z" fill="black"/>
+          <path d="M -1760.4867 79.421875 L -1720.9545 79.421875 C -1719.2977 79.421875 -1717.9545 80.76502 -1717.9545 82.421875 L -1717.9545 110.17188 C -1717.9545 111.82873 -1719.2977 113.17188 -1720.9545 113.17188 L -1760.4867 113.17188 C -1762.1435 113.17188 -1763.4867 111.82873 -1763.4867 110.17188 L -1763.4867 82.421875 C -1763.4867 80.76502 -1762.1435 79.421875 -1760.4867 79.421875 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1758.4867 82.296875)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_360">
+          <text transform="translate(-1875.7806 138.42188)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_361">
+          <path d="M -1760.4867 135.54688 L -1720.9545 135.54688 C -1719.2977 135.54688 -1717.9545 136.89002 -1717.9545 138.54688 L -1717.9545 166.29688 C -1717.9545 167.95373 -1719.2977 169.29688 -1720.9545 169.29688 L -1760.4867 169.29688 C -1762.1435 169.29688 -1763.4867 167.95373 -1763.4867 166.29688 L -1763.4867 138.54688 C -1763.4867 136.89002 -1762.1435 135.54688 -1760.4867 135.54688 Z" fill="black"/>
+          <path d="M -1760.4867 135.54688 L -1720.9545 135.54688 C -1719.2977 135.54688 -1717.9545 136.89002 -1717.9545 138.54688 L -1717.9545 166.29688 C -1717.9545 167.95373 -1719.2977 169.29688 -1720.9545 169.29688 L -1760.4867 169.29688 C -1762.1435 169.29688 -1763.4867 167.95373 -1763.4867 166.29688 L -1763.4867 138.54688 C -1763.4867 136.89002 -1762.1435 135.54688 -1760.4867 135.54688 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1758.4867 138.42188)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_362">
+          <title>Time</title>
+          <g id="Graphic_364">
+            <ellipse cx="-1905.0805" cy="96.29688" rx="11.6606870130669" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1905.0805" cy="96.29688" rx="11.6606870130669" ry="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_363">
+            <path d="M -1890.4848 89.67188 L -1883.8215 96.29688 L -1890.4848 102.92188 Z" fill="#5ed2d1"/>
+            <path d="M -1890.4848 89.67188 L -1883.8215 96.29688 L -1890.4848 102.92188 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_365">
+          <title>Time</title>
+          <g id="Graphic_367">
+            <ellipse cx="-1905.0805" cy="152.42188" rx="11.6606870130669" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1905.0805" cy="152.42188" rx="11.6606870130669" ry="11.8125188752161" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_366">
+            <path d="M -1890.4848 145.79688 L -1883.8215 152.42188 L -1890.4848 159.04688 Z" fill="#5ed2d1"/>
+            <path d="M -1890.4848 145.79688 L -1883.8215 152.42188 L -1890.4848 159.04688 Z" stroke="#5ed2d1" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_380">
+          <title>Float</title>
+          <g id="Graphic_382">
+            <ellipse cx="-1547.4867" cy="42.171875" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1547.4867" cy="42.171875" rx="11.660687013067" ry="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_381">
+            <path d="M -1532.891 35.546875 L -1526.2277 42.171875 L -1532.891 48.796875 Z" fill="#9df945"/>
+            <path d="M -1532.891 35.546875 L -1526.2277 42.171875 L -1532.891 48.796875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_377">
+          <title>Float</title>
+          <g id="Graphic_379">
+            <ellipse cx="-1905.7322" cy="42.171875" rx="11.6606870130669" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1905.7322" cy="42.171875" rx="11.6606870130669" ry="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_378">
+            <path d="M -1891.1364 35.546875 L -1884.4732 42.171875 L -1891.1364 48.796875 Z" fill="#9df945"/>
+            <path d="M -1891.1364 35.546875 L -1884.4732 42.171875 L -1891.1364 48.796875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_13">
+      <title>Layer 13</title>
+      <g id="Group_774">
+        <g id="Graphic_797">
+          <path d="M -1925.0625 217.34375 L -1523.0625 217.34375 C -1514.7782 217.34375 -1508.0625 224.05948 -1508.0625 232.34375 L -1508.0625 438.59375 C -1508.0625 446.878 -1514.7782 453.59375 -1523.0625 453.59375 L -1925.0625 453.59375 C -1933.3468 453.59375 -1940.0625 446.878 -1940.0625 438.59375 L -1940.0625 232.34375 C -1940.0625 224.05948 -1933.3468 217.34375 -1925.0625 217.34375 Z" fill="url(#Obj_Gradient_12)"/>
+          <path d="M -1925.0625 217.34375 L -1523.0625 217.34375 C -1514.7782 217.34375 -1508.0625 224.05948 -1508.0625 232.34375 L -1508.0625 438.59375 C -1508.0625 446.878 -1514.7782 453.59375 -1523.0625 453.59375 L -1925.0625 453.59375 C -1933.3468 453.59375 -1940.0625 446.878 -1940.0625 438.59375 L -1940.0625 232.34375 C -1940.0625 224.05948 -1933.3468 217.34375 -1925.0625 217.34375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_796">
+          <text transform="translate(-1812.4336 231.34375)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Balance</tspan>
+          </text>
+        </g>
+        <g id="Group_793">
+          <title>Audio</title>
+          <g id="Graphic_795">
+            <ellipse cx="-1547.9282" cy="301.59375" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1547.9282" cy="301.59375" rx="11.660687013067" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_794">
+            <path d="M -1533.3324 294.96875 L -1526.6692 301.59375 L -1533.3324 308.21875 Z" fill="#ce78ca"/>
+            <path d="M -1533.3324 294.96875 L -1526.6692 301.59375 L -1533.3324 308.21875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_792">
+          <text transform="translate(-1631.4282 287.59375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_791">
+          <text transform="translate(-1875.2486 287.59375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          </text>
+        </g>
+        <g id="Group_788">
+          <title>Audio</title>
+          <g id="Graphic_790">
+            <ellipse cx="-1905.7322" cy="301.59375" rx="11.6606870130669" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1905.7322" cy="301.59375" rx="11.6606870130669" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_789">
+            <path d="M -1891.1364 294.96875 L -1884.4732 301.59375 L -1891.1364 308.21875 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 294.96875 L -1884.4732 301.59375 L -1891.1364 308.21875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_787">
+          <text transform="translate(-1875.2545 341.59375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          </text>
+        </g>
+        <g id="Group_784">
+          <title>Audio</title>
+          <g id="Graphic_786">
+            <ellipse cx="-1905.7322" cy="355.59375" rx="11.6606870130669" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1905.7322" cy="355.59375" rx="11.6606870130669" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_785">
+            <path d="M -1891.1364 348.96875 L -1884.4732 355.59375 L -1891.1364 362.21875 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 348.96875 L -1884.4732 355.59375 L -1891.1364 362.21875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_781">
+          <title>Audio</title>
+          <g id="Graphic_783">
+            <ellipse cx="-1547.9282" cy="350.21875" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1547.9282" cy="350.21875" rx="11.660687013067" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_782">
+            <path d="M -1533.3324 343.59375 L -1526.6692 350.21875 L -1533.3324 356.84375 Z" fill="#ce78ca"/>
+            <path d="M -1533.3324 343.59375 L -1526.6692 350.21875 L -1533.3324 356.84375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_780">
+          <text transform="translate(-1631.4341 336.21875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          </text>
+        </g>
+        <g id="Group_777">
+          <title>Float</title>
+          <g id="Graphic_779">
+            <ellipse cx="-1905.7322" cy="411.84375" rx="11.6606870130669" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1905.7322" cy="411.84375" rx="11.6606870130669" ry="11.8125188752162" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_778">
+            <path d="M -1891.1364 405.21875 L -1884.4732 411.84375 L -1891.1364 418.46875 Z" fill="#9df945"/>
+            <path d="M -1891.1364 405.21875 L -1884.4732 411.84375 L -1891.1364 418.46875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_776">
+          <text transform="translate(-1872.0663 397.84375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Balance</tspan>
+          </text>
+        </g>
+        <g id="Graphic_775">
+          <path d="M -1773.8131 394.96875 L -1734.281 394.96875 C -1732.6242 394.96875 -1731.281 396.3119 -1731.281 397.96875 L -1731.281 425.71875 C -1731.281 427.3756 -1732.6242 428.71875 -1734.281 428.71875 L -1773.8131 428.71875 C -1775.47 428.71875 -1776.8131 427.3756 -1776.8131 425.71875 L -1776.8131 397.96875 C -1776.8131 396.3119 -1775.47 394.96875 -1773.8131 394.96875 Z" fill="black"/>
+          <path d="M -1773.8131 394.96875 L -1734.281 394.96875 C -1732.6242 394.96875 -1731.281 396.3119 -1731.281 397.96875 L -1731.281 425.71875 C -1731.281 427.3756 -1732.6242 428.71875 -1734.281 428.71875 L -1773.8131 428.71875 C -1775.47 428.71875 -1776.8131 427.3756 -1776.8131 425.71875 L -1776.8131 397.96875 C -1776.8131 396.3119 -1775.47 394.96875 -1773.8131 394.96875 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1771.8131 397.84375)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_14">
+      <title>Layer 14</title>
+      <g id="Group_747">
+        <g id="Graphic_383">
+          <path d="M -1925.0625 470.0156 L -1523.0625 470.0156 C -1514.7782 470.0156 -1508.0625 476.73135 -1508.0625 485.0156 L -1508.0625 779.0156 C -1508.0625 787.2999 -1514.7782 794.0156 -1523.0625 794.0156 L -1925.0625 794.0156 C -1933.3468 794.0156 -1940.0625 787.2999 -1940.0625 779.0156 L -1940.0625 485.0156 C -1940.0625 476.73135 -1933.3468 470.0156 -1925.0625 470.0156 Z" fill="url(#Obj_Gradient_13)"/>
+          <path d="M -1925.0625 470.0156 L -1523.0625 470.0156 C -1514.7782 470.0156 -1508.0625 476.73135 -1508.0625 485.0156 L -1508.0625 779.0156 C -1508.0625 787.2999 -1514.7782 794.0156 -1523.0625 794.0156 L -1925.0625 794.0156 C -1933.3468 794.0156 -1940.0625 787.2999 -1940.0625 779.0156 L -1940.0625 485.0156 C -1940.0625 476.73135 -1933.3468 470.0156 -1925.0625 470.0156 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_384">
+          <text transform="translate(-1824.4395 483.5378)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Crossfade</tspan>
+          </text>
+        </g>
+        <g id="Group_385">
+          <title>Audio</title>
+          <g id="Graphic_387">
+            <ellipse cx="-1547.9282" cy="552.8279" rx="11.660687013067" ry="11.6109400548199" fill="black"/>
+            <ellipse cx="-1547.9282" cy="552.8279" rx="11.660687013067" ry="11.6109400548199" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_386">
+            <path d="M -1533.3324 546.31597 L -1526.6692 552.8279 L -1533.3324 559.33986 Z" fill="#ce78ca"/>
+            <path d="M -1533.3324 546.31597 L -1526.6692 552.8279 L -1533.3324 559.33986 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_388">
+          <text transform="translate(-1631.2161 538.8279)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_389">
+          <text transform="translate(-1875.0933 538.8279)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In 1 L</tspan>
+          </text>
+        </g>
+        <g id="Group_400">
+          <title>Audio</title>
+          <g id="Graphic_402">
+            <ellipse cx="-1905.7322" cy="552.8279" rx="11.6606870130669" ry="11.6109400548199" fill="black"/>
+            <ellipse cx="-1905.7322" cy="552.8279" rx="11.6606870130669" ry="11.6109400548199" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_401">
+            <path d="M -1891.1364 546.31597 L -1884.4732 552.8279 L -1891.1364 559.33986 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 546.31597 L -1884.4732 552.8279 L -1891.1364 559.33986 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_410">
+          <text transform="translate(-1875.0933 591.9064)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In 1 R</tspan>
+          </text>
+        </g>
+        <g id="Group_407">
+          <title>Audio</title>
+          <g id="Graphic_409">
+            <ellipse cx="-1905.7322" cy="605.9064" rx="11.6606870130669" ry="11.6109400548199" fill="black"/>
+            <ellipse cx="-1905.7322" cy="605.9064" rx="11.6606870130669" ry="11.6109400548199" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_408">
+            <path d="M -1891.1364 599.3945 L -1884.4732 605.9064 L -1891.1364 612.41836 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 599.3945 L -1884.4732 605.9064 L -1891.1364 612.41836 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_426">
+          <text transform="translate(-1875.0933 647.1965)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In 1 L</tspan>
+          </text>
+        </g>
+        <g id="Group_423">
+          <title>Audio</title>
+          <g id="Graphic_425">
+            <ellipse cx="-1905.7322" cy="661.1965" rx="11.6606870130669" ry="11.61094005482" fill="black"/>
+            <ellipse cx="-1905.7322" cy="661.1965" rx="11.6606870130669" ry="11.61094005482" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_424">
+            <path d="M -1891.1364 654.6846 L -1884.4732 661.1965 L -1891.1364 667.70846 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 654.6846 L -1884.4732 661.1965 L -1891.1364 667.70846 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_422">
+          <text transform="translate(-1875.0933 700.275)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In 1 R</tspan>
+          </text>
+        </g>
+        <g id="Group_419">
+          <title>Audio</title>
+          <g id="Graphic_421">
+            <ellipse cx="-1905.7322" cy="714.275" rx="11.6606870130669" ry="11.61094005482" fill="black"/>
+            <ellipse cx="-1905.7322" cy="714.275" rx="11.6606870130669" ry="11.61094005482" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_420">
+            <path d="M -1891.1364 707.7631 L -1884.4732 714.275 L -1891.1364 720.78696 Z" fill="#ce78ca"/>
+            <path d="M -1891.1364 707.7631 L -1884.4732 714.275 L -1891.1364 720.78696 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_427">
+          <title>Float</title>
+          <g id="Graphic_429">
+            <ellipse cx="-1905.7322" cy="762.9303" rx="11.6606870130669" ry="11.61094005482" fill="black"/>
+            <ellipse cx="-1905.7322" cy="762.9303" rx="11.6606870130669" ry="11.61094005482" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_428">
+            <path d="M -1891.1364 756.4184 L -1884.4732 762.9303 L -1891.1364 769.44225 Z" fill="#9df945"/>
+            <path d="M -1891.1364 756.4184 L -1884.4732 762.9303 L -1891.1364 769.44225 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_430">
+          <text transform="translate(-1871.7617 748.9303)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Crossfade</tspan>
+          </text>
+        </g>
+        <g id="Graphic_431">
+          <path d="M -1752.0439 744.2545 L -1712.5117 744.2545 C -1710.8549 744.2545 -1709.5117 745.5977 -1709.5117 747.2545 L -1709.5117 774.4286 C -1709.5117 776.08545 -1710.8549 777.4286 -1712.5117 777.4286 L -1752.0439 777.4286 C -1753.7007 777.4286 -1755.0439 776.08545 -1755.0439 774.4286 L -1755.0439 747.2545 C -1755.0439 745.5977 -1753.7007 744.2545 -1752.0439 744.2545 Z" fill="black"/>
+          <path d="M -1752.0439 744.2545 L -1712.5117 744.2545 C -1710.8549 744.2545 -1709.5117 745.5977 -1709.5117 747.2545 L -1709.5117 774.4286 C -1709.5117 776.08545 -1710.8549 777.4286 -1712.5117 777.4286 L -1752.0439 777.4286 C -1753.7007 777.4286 -1755.0439 776.08545 -1755.0439 774.4286 L -1755.0439 747.2545 C -1755.0439 745.5977 -1753.7007 744.2545 -1752.0439 744.2545 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1750.0439 746.8416)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.5</tspan>
+          </text>
+        </g>
+        <g id="Group_432">
+          <title>Audio</title>
+          <g id="Graphic_434">
+            <ellipse cx="-1547.9282" cy="600.6231" rx="11.660687013067" ry="11.6109400548199" fill="black"/>
+            <ellipse cx="-1547.9282" cy="600.6231" rx="11.660687013067" ry="11.6109400548199" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_433">
+            <path d="M -1533.3324 594.1112 L -1526.6692 600.6231 L -1533.3324 607.1351 Z" fill="#ce78ca"/>
+            <path d="M -1533.3324 594.1112 L -1526.6692 600.6231 L -1533.3324 607.1351 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_435">
+          <text transform="translate(-1631.2161 586.6231)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_15">
+      <title>Layer 15</title>
+      <g id="Group_750">
+        <g id="Graphic_773">
+          <path d="M -1927.875 810.4375 L -1520.25 810.4375 C -1511.9657 810.4375 -1505.25 817.1532 -1505.25 825.4375 L -1505.25 1031.6875 C -1505.25 1039.9718 -1511.9657 1046.6875 -1520.25 1046.6875 L -1927.875 1046.6875 C -1936.1593 1046.6875 -1942.875 1039.9718 -1942.875 1031.6875 L -1942.875 825.4375 C -1942.875 817.1532 -1936.1593 810.4375 -1927.875 810.4375 Z" fill="url(#Obj_Gradient_14)"/>
+          <path d="M -1927.875 810.4375 L -1520.25 810.4375 C -1511.9657 810.4375 -1505.25 817.1532 -1505.25 825.4375 L -1505.25 1031.6875 C -1505.25 1039.9718 -1511.9657 1046.6875 -1520.25 1046.6875 L -1927.875 1046.6875 C -1936.1593 1046.6875 -1942.875 1039.9718 -1942.875 1031.6875 L -1942.875 825.4375 C -1942.875 817.1532 -1936.1593 810.4375 -1927.875 810.4375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_772">
+          <text transform="translate(-1793.8184 824.4375)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Gain</tspan>
+          </text>
+        </g>
+        <g id="Group_769">
+          <title>Audio</title>
+          <g id="Graphic_771">
+            <circle cx="-1545.6348" cy="894.6875" r="11.8125188752161" fill="black"/>
+            <circle cx="-1545.6348" cy="894.6875" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_770">
+            <path d="M -1530.849 888.0625 L -1524.099 894.6875 L -1530.849 901.3125 Z" fill="#ce78ca"/>
+            <path d="M -1530.849 888.0625 L -1524.099 894.6875 L -1530.849 901.3125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_768">
+          <text transform="translate(-1630.0723 880.6875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_767">
+          <text transform="translate(-1877.125 880.6875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          </text>
+        </g>
+        <g id="Group_764">
+          <title>Audio</title>
+          <g id="Graphic_766">
+            <circle cx="-1908.0977" cy="894.6875" r="11.8125188752161" fill="black"/>
+            <circle cx="-1908.0977" cy="894.6875" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_765">
+            <path d="M -1893.3119 888.0625 L -1886.5619 894.6875 L -1893.3119 901.3125 Z" fill="#ce78ca"/>
+            <path d="M -1893.3119 888.0625 L -1886.5619 894.6875 L -1893.3119 901.3125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_763">
+          <text transform="translate(-1877.125 934.6875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          </text>
+        </g>
+        <g id="Group_760">
+          <title>Audio</title>
+          <g id="Graphic_762">
+            <circle cx="-1908.0977" cy="948.6875" r="11.8125188752161" fill="black"/>
+            <circle cx="-1908.0977" cy="948.6875" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_761">
+            <path d="M -1893.3119 942.0625 L -1886.5619 948.6875 L -1893.3119 955.3125 Z" fill="#ce78ca"/>
+            <path d="M -1893.3119 942.0625 L -1886.5619 948.6875 L -1893.3119 955.3125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_757">
+          <title>Audio</title>
+          <g id="Graphic_759">
+            <circle cx="-1545.6348" cy="943.3125" r="11.8125188752161" fill="black"/>
+            <circle cx="-1545.6348" cy="943.3125" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_758">
+            <path d="M -1530.849 936.6875 L -1524.099 943.3125 L -1530.849 949.9375 Z" fill="#ce78ca"/>
+            <path d="M -1530.849 936.6875 L -1524.099 943.3125 L -1530.849 949.9375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_756">
+          <text transform="translate(-1630.0723 929.3125)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          </text>
+        </g>
+        <g id="Group_753">
+          <title>Float</title>
+          <g id="Graphic_755">
+            <circle cx="-1908.0977" cy="1004.9375" r="11.8125188752161" fill="black"/>
+            <circle cx="-1908.0977" cy="1004.9375" r="11.8125188752161" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_754">
+            <path d="M -1893.3119 998.3125 L -1886.5619 1004.9375 L -1893.3119 1011.5625 Z" fill="#9df945"/>
+            <path d="M -1893.3119 998.3125 L -1886.5619 1004.9375 L -1893.3119 1011.5625 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_752">
+          <text transform="translate(-1873.75 990.9375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Gain (Lin)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_751">
+          <path d="M -1758.75 985.9375 L -1718.625 985.9375 C -1716.9681 985.9375 -1715.625 987.2806 -1715.625 988.9375 L -1715.625 1016.6875 C -1715.625 1018.3444 -1716.9681 1019.6875 -1718.625 1019.6875 L -1758.75 1019.6875 C -1760.4069 1019.6875 -1761.75 1018.3444 -1761.75 1016.6875 L -1761.75 988.9375 C -1761.75 987.2806 -1760.4069 985.9375 -1758.75 985.9375 Z" fill="black"/>
+          <path d="M -1758.75 985.9375 L -1718.625 985.9375 C -1716.9681 985.9375 -1715.625 987.2806 -1715.625 988.9375 L -1715.625 1016.6875 C -1715.625 1018.3444 -1716.9681 1019.6875 -1718.625 1019.6875 L -1758.75 1019.6875 C -1760.4069 1019.6875 -1761.75 1018.3444 -1761.75 1016.6875 L -1761.75 988.9375 C -1761.75 987.2806 -1760.4069 985.9375 -1758.75 985.9375 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1756.75 988.8125)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">1.0</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_16">
+      <title>Layer 16</title>
+      <g id="Group_738">
+        <g id="Graphic_711">
+          <path d="M -1474.5 -282.375 L -1072.5 -282.375 C -1064.2157 -282.375 -1057.5 -275.65927 -1057.5 -267.375 L -1057.5 44.625 C -1057.5 52.90927 -1064.2157 59.625 -1072.5 59.625 L -1474.5 59.625 C -1482.7843 59.625 -1489.5 52.90927 -1489.5 44.625 L -1489.5 -267.375 C -1489.5 -275.65927 -1482.7843 -282.375 -1474.5 -282.375 Z" fill="url(#Obj_Gradient_15)"/>
+          <path d="M -1474.5 -282.375 L -1072.5 -282.375 C -1064.2157 -282.375 -1057.5 -275.65927 -1057.5 -267.375 L -1057.5 44.625 C -1057.5 52.90927 -1064.2157 59.625 -1072.5 59.625 L -1474.5 59.625 C -1482.7843 59.625 -1489.5 52.90927 -1489.5 44.625 L -1489.5 -267.375 C -1489.5 -275.65927 -1482.7843 -282.375 -1474.5 -282.375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_710">
+          <text transform="translate(-1368.8198 -268.375)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Inverter</tspan>
+          </text>
+        </g>
+        <g id="Group_707">
+          <title>Bool</title>
+          <g id="Graphic_709">
+            <ellipse cx="-1456.5495" cy="-90.25" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1456.5495" cy="-90.25" rx="11.660687013067" ry="11.8125188752161" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_708">
+            <path d="M -1441.9537 -96.875 L -1435.2905 -90.25 L -1441.9537 -83.625 Z" fill="#900002"/>
+            <path d="M -1441.9537 -96.875 L -1435.2905 -90.25 L -1441.9537 -83.625 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_702">
+          <text transform="translate(-1427.1366 -104.25)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_701">
+          <path d="M -1327.8 -107.125 L -1306.4838 -107.125 C -1303.1701 -107.125 -1300.4838 -104.43871 -1300.4838 -101.125 L -1300.4838 -79.375 C -1300.4838 -76.06129 -1303.1701 -73.375 -1306.4838 -73.375 L -1327.8 -73.375 C -1331.1137 -73.375 -1333.8 -76.06129 -1333.8 -79.375 L -1333.8 -101.125 C -1333.8 -104.43871 -1331.1137 -107.125 -1327.8 -107.125 Z" fill="black"/>
+          <path d="M -1327.8 -107.125 L -1306.4838 -107.125 C -1303.1701 -107.125 -1300.4838 -104.43871 -1300.4838 -101.125 L -1300.4838 -79.375 C -1300.4838 -76.06129 -1303.1701 -73.375 -1306.4838 -73.375 L -1327.8 -73.375 C -1331.1137 -73.375 -1333.8 -76.06129 -1333.8 -79.375 L -1333.8 -101.125 C -1333.8 -104.43871 -1331.1137 -107.125 -1327.8 -107.125 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Group_698">
+          <title>Bool</title>
+          <g id="Graphic_700">
+            <ellipse cx="-1457.2011" cy="-43.3125" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1457.2011" cy="-43.3125" rx="11.660687013067" ry="11.8125188752162" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_699">
+            <path d="M -1442.6054 -49.9375 L -1435.9422 -43.3125 L -1442.6054 -36.6875 Z" fill="#900002"/>
+            <path d="M -1442.6054 -49.9375 L -1435.9422 -43.3125 L -1442.6054 -36.6875 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_697">
+          <text transform="translate(-1427.8003 -57.3125)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert R</tspan>
+          </text>
+        </g>
+        <g id="Graphic_696">
+          <path d="M -1328.4517 -60.1875 L -1307.1355 -60.1875 C -1303.8218 -60.1875 -1301.1355 -57.50121 -1301.1355 -54.1875 L -1301.1355 -32.4375 C -1301.1355 -29.12379 -1303.8218 -26.4375 -1307.1355 -26.4375 L -1328.4517 -26.4375 C -1331.7654 -26.4375 -1334.4517 -29.12379 -1334.4517 -32.4375 L -1334.4517 -54.1875 C -1334.4517 -57.50121 -1331.7654 -60.1875 -1328.4517 -60.1875 Z" fill="black"/>
+          <path d="M -1328.4517 -60.1875 L -1307.1355 -60.1875 C -1303.8218 -60.1875 -1301.1355 -57.50121 -1301.1355 -54.1875 L -1301.1355 -32.4375 C -1301.1355 -29.12379 -1303.8218 -26.4375 -1307.1355 -26.4375 L -1328.4517 -26.4375 C -1331.7654 -26.4375 -1334.4517 -29.12379 -1334.4517 -32.4375 L -1334.4517 -54.1875 C -1334.4517 -57.50121 -1331.7654 -60.1875 -1328.4517 -60.1875 Z" stroke="#363536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Group_717">
+          <title>Bool</title>
+          <g id="Graphic_719">
+            <ellipse cx="-1456.6943" cy="7.75" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1456.6943" cy="7.75" rx="11.660687013067" ry="11.8125188752161" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_718">
+            <path d="M -1442.0986 1.125 L -1435.4353 7.75 L -1442.0986 14.375 Z" fill="#900002"/>
+            <path d="M -1442.0986 1.125 L -1435.4353 7.75 L -1442.0986 14.375 Z" stroke="#900002" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_716">
+          <text transform="translate(-1427.5053 -6.25)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Swap L / R</tspan>
+          </text>
+        </g>
+        <g id="Group_733">
+          <title>Audio</title>
+          <g id="Graphic_735">
+            <ellipse cx="-1099.3972" cy="-193.75" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1099.3972" cy="-193.75" rx="11.660687013067" ry="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_734">
+            <path d="M -1084.8014 -200.375 L -1078.1382 -193.75 L -1084.8014 -187.125 Z" fill="#ce78ca"/>
+            <path d="M -1084.8014 -200.375 L -1078.1382 -193.75 L -1084.8014 -187.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_732">
+          <text transform="translate(-1183.112 -207.75)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_731">
+          <text transform="translate(-1426.8748 -207.75)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          </text>
+        </g>
+        <g id="Group_728">
+          <title>Audio</title>
+          <g id="Graphic_730">
+            <ellipse cx="-1457.2011" cy="-193.75" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1457.2011" cy="-193.75" rx="11.660687013067" ry="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_729">
+            <path d="M -1442.6054 -200.375 L -1435.9422 -193.75 L -1442.6054 -187.125 Z" fill="#ce78ca"/>
+            <path d="M -1442.6054 -200.375 L -1435.9422 -193.75 L -1442.6054 -187.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_727">
+          <text transform="translate(-1426.8868 -153.75)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          </text>
+        </g>
+        <g id="Group_724">
+          <title>Audio</title>
+          <g id="Graphic_726">
+            <ellipse cx="-1457.2011" cy="-139.75" rx="11.660687013067" ry="11.8125188752161" fill="black"/>
+            <ellipse cx="-1457.2011" cy="-139.75" rx="11.660687013067" ry="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_725">
+            <path d="M -1442.6054 -146.375 L -1435.9422 -139.75 L -1442.6054 -133.125 Z" fill="#ce78ca"/>
+            <path d="M -1442.6054 -146.375 L -1435.9422 -139.75 L -1442.6054 -133.125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_721">
+          <title>Audio</title>
+          <g id="Graphic_723">
+            <ellipse cx="-1099.3972" cy="-145.125" rx="11.660687013067" ry="11.8125188752162" fill="black"/>
+            <ellipse cx="-1099.3972" cy="-145.125" rx="11.660687013067" ry="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_722">
+            <path d="M -1084.8014 -151.75 L -1078.1382 -145.125 L -1084.8014 -138.5 Z" fill="#ce78ca"/>
+            <path d="M -1084.8014 -151.75 L -1078.1382 -145.125 L -1084.8014 -138.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_720">
+          <text transform="translate(-1183.124 -159.125)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_17">
+      <title>Layer 17</title>
+      <g id="Group_749">
+        <g id="Graphic_436">
+          <path d="M -1474.5 80.09375 L -1066.875 80.09375 C -1058.5907 80.09375 -1051.875 86.80948 -1051.875 95.09375 L -1051.875 301.34375 C -1051.875 309.62802 -1058.5907 316.34375 -1066.875 316.34375 L -1474.5 316.34375 C -1482.7843 316.34375 -1489.5 309.62802 -1489.5 301.34375 L -1489.5 95.09375 C -1489.5 86.80948 -1482.7843 80.09375 -1474.5 80.09375 Z" fill="url(#Obj_Gradient_16)"/>
+          <path d="M -1474.5 80.09375 L -1066.875 80.09375 C -1058.5907 80.09375 -1051.875 86.80948 -1051.875 95.09375 L -1051.875 301.34375 C -1051.875 309.62802 -1058.5907 316.34375 -1066.875 316.34375 L -1474.5 316.34375 C -1482.7843 316.34375 -1489.5 309.62802 -1489.5 301.34375 L -1489.5 95.09375 C -1489.5 86.80948 -1482.7843 80.09375 -1474.5 80.09375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_437">
+          <text transform="translate(-1347.0938 94.09375)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Width</tspan>
+          </text>
+        </g>
+        <g id="Group_438">
+          <title>Audio</title>
+          <g id="Graphic_440">
+            <circle cx="-1092.2598" cy="164.34375" r="11.8125188752161" fill="black"/>
+            <circle cx="-1092.2598" cy="164.34375" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_439">
+            <path d="M -1077.474 157.71875 L -1070.724 164.34375 L -1077.474 170.96875 Z" fill="#ce78ca"/>
+            <path d="M -1077.474 157.71875 L -1070.724 164.34375 L -1077.474 170.96875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_441">
+          <text transform="translate(-1176.6973 150.34375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          </text>
+        </g>
+        <g id="Graphic_442">
+          <text transform="translate(-1423.75 150.34375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          </text>
+        </g>
+        <g id="Group_443">
+          <title>Audio</title>
+          <g id="Graphic_445">
+            <circle cx="-1454.7227" cy="164.34375" r="11.8125188752161" fill="black"/>
+            <circle cx="-1454.7227" cy="164.34375" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_444">
+            <path d="M -1439.9369 157.71875 L -1433.1869 164.34375 L -1439.9369 170.96875 Z" fill="#ce78ca"/>
+            <path d="M -1439.9369 157.71875 L -1433.1869 164.34375 L -1439.9369 170.96875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_446">
+          <text transform="translate(-1423.75 204.34375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          </text>
+        </g>
+        <g id="Group_447">
+          <title>Audio</title>
+          <g id="Graphic_449">
+            <circle cx="-1454.7227" cy="218.34375" r="11.8125188752161" fill="black"/>
+            <circle cx="-1454.7227" cy="218.34375" r="11.8125188752161" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_448">
+            <path d="M -1439.9369 211.71875 L -1433.1869 218.34375 L -1439.9369 224.96875 Z" fill="#ce78ca"/>
+            <path d="M -1439.9369 211.71875 L -1433.1869 218.34375 L -1439.9369 224.96875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_463">
+          <title>Audio</title>
+          <g id="Graphic_465">
+            <circle cx="-1092.2598" cy="212.96875" r="11.8125188752162" fill="black"/>
+            <circle cx="-1092.2598" cy="212.96875" r="11.8125188752162" stroke="#cd79cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_464">
+            <path d="M -1077.474 206.34375 L -1070.724 212.96875 L -1077.474 219.59375 Z" fill="#ce78ca"/>
+            <path d="M -1077.474 206.34375 L -1070.724 212.96875 L -1077.474 219.59375 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_466">
+          <text transform="translate(-1176.6973 198.96875)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          </text>
+        </g>
+        <g id="Group_474">
+          <title>Float</title>
+          <g id="Graphic_476">
+            <circle cx="-1454.7227" cy="274.59375" r="11.8125188752161" fill="black"/>
+            <circle cx="-1454.7227" cy="274.59375" r="11.8125188752161" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_475">
+            <path d="M -1439.9369 267.96875 L -1433.1869 274.59375 L -1439.9369 281.21875 Z" fill="#9df945"/>
+            <path d="M -1439.9369 267.96875 L -1433.1869 274.59375 L -1439.9369 281.21875 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_473">
+          <text transform="translate(-1420.375 260.59375)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Width</tspan>
+          </text>
+        </g>
+        <g id="Graphic_472">
+          <path d="M -1348.125 255.59375 L -1308 255.59375 C -1306.3431 255.59375 -1305 256.9369 -1305 258.59375 L -1305 286.34375 C -1305 288.0006 -1306.3431 289.34375 -1308 289.34375 L -1348.125 289.34375 C -1349.7819 289.34375 -1351.125 288.0006 -1351.125 286.34375 L -1351.125 258.59375 C -1351.125 256.9369 -1349.7819 255.59375 -1348.125 255.59375 Z" fill="black"/>
+          <path d="M -1348.125 255.59375 L -1308 255.59375 C -1306.3431 255.59375 -1305 256.9369 -1305 258.59375 L -1305 286.34375 C -1305 288.0006 -1306.3431 289.34375 -1308 289.34375 L -1348.125 289.34375 C -1349.7819 289.34375 -1351.125 288.0006 -1351.125 286.34375 L -1351.125 258.59375 C -1351.125 256.9369 -1349.7819 255.59375 -1348.125 255.59375 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1346.125 258.46875)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">1.0</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_18">
+      <title>Layer 18</title>
+      <g id="Group_945">
+        <g id="Graphic_477">
+          <path d="M -1474.5 336.8125 L -1066.875 336.8125 C -1058.5907 336.8125 -1051.875 343.52823 -1051.875 351.8125 L -1051.875 1005.8125 C -1051.875 1014.0968 -1058.5907 1020.8125 -1066.875 1020.8125 L -1474.5 1020.8125 C -1482.7843 1020.8125 -1489.5 1014.0968 -1489.5 1005.8125 L -1489.5 351.8125 C -1489.5 343.52823 -1482.7843 336.8125 -1474.5 336.8125 Z" fill="url(#Obj_Gradient_17)"/>
+          <path d="M -1474.5 336.8125 L -1066.875 336.8125 C -1058.5907 336.8125 -1051.875 343.52823 -1051.875 351.8125 L -1051.875 1005.8125 C -1051.875 1014.0968 -1058.5907 1020.8125 -1066.875 1020.8125 L -1474.5 1020.8125 C -1482.7843 1020.8125 -1489.5 1014.0968 -1489.5 1005.8125 L -1489.5 351.8125 C -1489.5 343.52823 -1482.7843 336.8125 -1474.5 336.8125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_478">
+          <text transform="translate(-1314.4395 349.6258)" fill="#a9ec9f">
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Tuning</tspan>
+          </text>
+        </g>
+        <g id="Graphic_479">
+          <text transform="translate(-1423.4563 447.9579)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents C</tspan>
+          </text>
+        </g>
+        <g id="Graphic_480">
+          <text transform="translate(-1423.4563 406.51185)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Note Number</tspan>
+          </text>
+        </g>
+        <g id="Group_484">
+          <title>Float</title>
+          <g id="Graphic_486">
+            <ellipse cx="-1454.1706" cy="461.9579" rx="12.0000191748228" ry="11.7353128694958" fill="black"/>
+            <ellipse cx="-1454.1706" cy="461.9579" rx="12.0000191748228" ry="11.7353128694958" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_485">
+            <path d="M -1439.1502 455.3762 L -1432.293 461.9579 L -1439.1502 468.5396 Z" fill="#9df945"/>
+            <path d="M -1439.1502 455.3762 L -1432.293 461.9579 L -1439.1502 468.5396 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_487">
+          <text transform="translate(-1423.4563 494.56904)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents C</tspan>
+            <tspan font-family="Arial" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♯ </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" y="22" xml:space="preserve">/ D</tspan>
+            <tspan font-family="Hiragino Sans" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♭</tspan>
+          </text>
+        </g>
+        <g id="Group_488">
+          <title>Float</title>
+          <g id="Graphic_490">
+            <ellipse cx="-1454.1706" cy="508.58864" rx="12.0000191748228" ry="11.7353128694958" fill="black"/>
+            <ellipse cx="-1454.1706" cy="508.58864" rx="12.0000191748228" ry="11.7353128694958" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_489">
+            <path d="M -1439.1502 502.00694 L -1432.293 508.58864 L -1439.1502 515.17034 Z" fill="#9df945"/>
+            <path d="M -1439.1502 502.00694 L -1432.293 508.58864 L -1439.1502 515.17034 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_491">
+          <text transform="translate(-1423.4563 545.3174)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents D</tspan>
+          </text>
+        </g>
+        <g id="Group_492">
+          <title>Float</title>
+          <g id="Graphic_494">
+            <ellipse cx="-1454.1706" cy="559.3174" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="559.3174" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_493">
+            <path d="M -1439.1502 552.7357 L -1432.293 559.3174 L -1439.1502 565.8991 Z" fill="#9df945"/>
+            <path d="M -1439.1502 552.7357 L -1432.293 559.3174 L -1439.1502 565.8991 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_495">
+          <text transform="translate(-1423.4563 591.9285)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents D</tspan>
+            <tspan font-family="Arial" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♯ </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" y="22" xml:space="preserve">/ E</tspan>
+            <tspan font-family="Hiragino Sans" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♭</tspan>
+          </text>
+        </g>
+        <g id="Group_496">
+          <title>Float</title>
+          <g id="Graphic_498">
+            <ellipse cx="-1454.1706" cy="605.9481" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="605.9481" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_497">
+            <path d="M -1439.1502 599.3664 L -1432.293 605.9481 L -1439.1502 612.5298 Z" fill="#9df945"/>
+            <path d="M -1439.1502 599.3664 L -1432.293 605.9481 L -1439.1502 612.5298 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_499">
+          <text transform="translate(-1423.4563 639.0756)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents E</tspan>
+          </text>
+        </g>
+        <g id="Group_500">
+          <title>Float</title>
+          <g id="Graphic_502">
+            <ellipse cx="-1454.1706" cy="653.0756" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="653.0756" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_501">
+            <path d="M -1439.1502 646.4939 L -1432.293 653.0756 L -1439.1502 659.6573 Z" fill="#9df945"/>
+            <path d="M -1439.1502 646.4939 L -1432.293 653.0756 L -1439.1502 659.6573 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_503">
+          <text transform="translate(-1423.4563 685.7063)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents F</tspan>
+          </text>
+        </g>
+        <g id="Group_504">
+          <title>Float</title>
+          <g id="Graphic_506">
+            <ellipse cx="-1454.1706" cy="699.7063" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="699.7063" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_505">
+            <path d="M -1439.1502 693.1246 L -1432.293 699.7063 L -1439.1502 706.288 Z" fill="#9df945"/>
+            <path d="M -1439.1502 693.1246 L -1432.293 699.7063 L -1439.1502 706.288 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_507">
+          <text transform="translate(-1423.4563 736.4154)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents F</tspan>
+            <tspan font-family="Arial" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♯ </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" y="22" xml:space="preserve">/ G</tspan>
+            <tspan font-family="Hiragino Sans" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♭</tspan>
+          </text>
+        </g>
+        <g id="Group_508">
+          <title>Float</title>
+          <g id="Graphic_510">
+            <ellipse cx="-1454.1706" cy="750.43505" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="750.43505" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_509">
+            <path d="M -1439.1502 743.85335 L -1432.293 750.43505 L -1439.1502 757.01675 Z" fill="#9df945"/>
+            <path d="M -1439.1502 743.85335 L -1432.293 750.43505 L -1439.1502 757.01675 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_511">
+          <text transform="translate(-1423.4563 783.0658)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents G</tspan>
+          </text>
+        </g>
+        <g id="Group_512">
+          <title>Float</title>
+          <g id="Graphic_514">
+            <ellipse cx="-1454.1706" cy="797.0658" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="797.0658" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_513">
+            <path d="M -1439.1502 790.4841 L -1432.293 797.0658 L -1439.1502 803.6475 Z" fill="#9df945"/>
+            <path d="M -1439.1502 790.4841 L -1432.293 797.0658 L -1439.1502 803.6475 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_519">
+          <title>Float</title>
+          <g id="Graphic_521">
+            <ellipse cx="-1454.1706" cy="838.0772" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="838.0772" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_520">
+            <path d="M -1439.1502 831.4955 L -1432.293 838.0772 L -1439.1502 844.6589 Z" fill="#9df945"/>
+            <path d="M -1439.1502 831.4955 L -1432.293 838.0772 L -1439.1502 844.6589 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_522">
+          <title>Float</title>
+          <g id="Graphic_524">
+            <ellipse cx="-1454.1706" cy="884.7079" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="884.7079" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_523">
+            <path d="M -1439.1502 878.1262 L -1432.293 884.7079 L -1439.1502 891.2896 Z" fill="#9df945"/>
+            <path d="M -1439.1502 878.1262 L -1432.293 884.7079 L -1439.1502 891.2896 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_525">
+          <title>Float</title>
+          <g id="Graphic_527">
+            <ellipse cx="-1454.1706" cy="935.4367" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="935.4367" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_526">
+            <path d="M -1439.1502 928.855 L -1432.293 935.4367 L -1439.1502 942.0184 Z" fill="#9df945"/>
+            <path d="M -1439.1502 928.855 L -1432.293 935.4367 L -1439.1502 942.0184 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_528">
+          <title>Float</title>
+          <g id="Graphic_530">
+            <ellipse cx="-1454.1706" cy="982.0674" rx="12.0000191748228" ry="11.7353128694957" fill="black"/>
+            <ellipse cx="-1454.1706" cy="982.0674" rx="12.0000191748228" ry="11.7353128694957" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_529">
+            <path d="M -1439.1502 975.4857 L -1432.293 982.0674 L -1439.1502 988.6491 Z" fill="#9df945"/>
+            <path d="M -1439.1502 975.4857 L -1432.293 982.0674 L -1439.1502 988.6491 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_531">
+          <text transform="translate(-1423.4563 825.6099)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents G</tspan>
+            <tspan font-family="Arial" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♯ </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" y="22" xml:space="preserve">/ A</tspan>
+            <tspan font-family="Hiragino Sans" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♭</tspan>
+          </text>
+        </g>
+        <g id="Graphic_532">
+          <text transform="translate(-1423.4563 872.2602)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents A</tspan>
+          </text>
+        </g>
+        <g id="Graphic_533">
+          <text transform="translate(-1423.4563 922.9694)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents A</tspan>
+            <tspan font-family="Arial" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♯ </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" y="22" xml:space="preserve">/ B</tspan>
+            <tspan font-family="Hiragino Sans" font-size="20" fill="#e8e8e8" y="22" xml:space="preserve">♭</tspan>
+          </text>
+        </g>
+        <g id="Graphic_534">
+          <text transform="translate(-1423.4563 969.6197)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">+/- Cents B</tspan>
+          </text>
+        </g>
+        <g id="Graphic_537">
+          <path d="M -1287.6429 445.1932 L -1246.7857 445.1932 C -1245.1289 445.1932 -1243.7857 446.53636 -1243.7857 448.1932 L -1243.7857 475.72263 C -1243.7857 477.3795 -1245.1289 478.72263 -1246.7857 478.72263 L -1287.6429 478.72263 C -1289.2997 478.72263 -1290.6429 477.3795 -1290.6429 475.72263 L -1290.6429 448.1932 C -1290.6429 446.53636 -1289.2997 445.1932 -1287.6429 445.1932 Z" fill="black"/>
+          <path d="M -1287.6429 445.1932 L -1246.7857 445.1932 C -1245.1289 445.1932 -1243.7857 446.53636 -1243.7857 448.1932 L -1243.7857 475.72263 C -1243.7857 477.3795 -1245.1289 478.72263 -1246.7857 478.72263 L -1287.6429 478.72263 C -1289.2997 478.72263 -1290.6429 477.3795 -1290.6429 475.72263 L -1290.6429 448.1932 C -1290.6429 446.53636 -1289.2997 445.1932 -1287.6429 445.1932 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 447.9579)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_538">
+          <path d="M -1229.8651 494.80434 L -1189.008 494.80434 C -1187.3511 494.80434 -1186.008 496.1475 -1186.008 497.80434 L -1186.008 525.33375 C -1186.008 526.9906 -1187.3511 528.33375 -1189.008 528.33375 L -1229.8651 528.33375 C -1231.522 528.33375 -1232.8651 526.9906 -1232.8651 525.33375 L -1232.8651 497.80434 C -1232.8651 496.1475 -1231.522 494.80434 -1229.8651 494.80434 Z" fill="black"/>
+          <path d="M -1229.8651 494.80434 L -1189.008 494.80434 C -1187.3511 494.80434 -1186.008 496.1475 -1186.008 497.80434 L -1186.008 525.33375 C -1186.008 526.9906 -1187.3511 528.33375 -1189.008 528.33375 L -1229.8651 528.33375 C -1231.522 528.33375 -1232.8651 526.9906 -1232.8651 525.33375 L -1232.8651 497.80434 C -1232.8651 496.1475 -1231.522 494.80434 -1229.8651 494.80434 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1227.8651 497.56905)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_539">
+          <path d="M -1287.6429 542.5527 L -1246.7857 542.5527 C -1245.1289 542.5527 -1243.7857 543.89584 -1243.7857 545.5527 L -1243.7857 573.0821 C -1243.7857 574.73896 -1245.1289 576.0821 -1246.7857 576.0821 L -1287.6429 576.0821 C -1289.2997 576.0821 -1290.6429 574.73896 -1290.6429 573.0821 L -1290.6429 545.5527 C -1290.6429 543.89584 -1289.2997 542.5527 -1287.6429 542.5527 Z" fill="black"/>
+          <path d="M -1287.6429 542.5527 L -1246.7857 542.5527 C -1245.1289 542.5527 -1243.7857 543.89584 -1243.7857 545.5527 L -1243.7857 573.0821 C -1243.7857 574.73896 -1245.1289 576.0821 -1246.7857 576.0821 L -1287.6429 576.0821 C -1289.2997 576.0821 -1290.6429 574.73896 -1290.6429 573.0821 L -1290.6429 545.5527 C -1290.6429 543.89584 -1289.2997 542.5527 -1287.6429 542.5527 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 545.3174)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_540">
+          <path d="M -1229.8651 589.1834 L -1189.008 589.1834 C -1187.3511 589.1834 -1186.008 590.52656 -1186.008 592.1834 L -1186.008 619.7128 C -1186.008 621.3697 -1187.3511 622.7128 -1189.008 622.7128 L -1229.8651 622.7128 C -1231.522 622.7128 -1232.8651 621.3697 -1232.8651 619.7128 L -1232.8651 592.1834 C -1232.8651 590.52656 -1231.522 589.1834 -1229.8651 589.1834 Z" fill="black"/>
+          <path d="M -1229.8651 589.1834 L -1189.008 589.1834 C -1187.3511 589.1834 -1186.008 590.52656 -1186.008 592.1834 L -1186.008 619.7128 C -1186.008 621.3697 -1187.3511 622.7128 -1189.008 622.7128 L -1229.8651 622.7128 C -1231.522 622.7128 -1232.8651 621.3697 -1232.8651 619.7128 L -1232.8651 592.1834 C -1232.8651 590.52656 -1231.522 589.1834 -1229.8651 589.1834 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1227.8651 591.9481)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_541">
+          <path d="M -1287.6429 636.3109 L -1246.7857 636.3109 C -1245.1289 636.3109 -1243.7857 637.654 -1243.7857 639.3109 L -1243.7857 666.8403 C -1243.7857 668.4971 -1245.1289 669.8403 -1246.7857 669.8403 L -1287.6429 669.8403 C -1289.2997 669.8403 -1290.6429 668.4971 -1290.6429 666.8403 L -1290.6429 639.3109 C -1290.6429 637.654 -1289.2997 636.3109 -1287.6429 636.3109 Z" fill="black"/>
+          <path d="M -1287.6429 636.3109 L -1246.7857 636.3109 C -1245.1289 636.3109 -1243.7857 637.654 -1243.7857 639.3109 L -1243.7857 666.8403 C -1243.7857 668.4971 -1245.1289 669.8403 -1246.7857 669.8403 L -1287.6429 669.8403 C -1289.2997 669.8403 -1290.6429 668.4971 -1290.6429 666.8403 L -1290.6429 639.3109 C -1290.6429 637.654 -1289.2997 636.3109 -1287.6429 636.3109 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 639.0756)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_542">
+          <path d="M -1287.6429 682.9416 L -1246.7857 682.9416 C -1245.1289 682.9416 -1243.7857 684.2847 -1243.7857 685.9416 L -1243.7857 713.471 C -1243.7857 715.12785 -1245.1289 716.471 -1246.7857 716.471 L -1287.6429 716.471 C -1289.2997 716.471 -1290.6429 715.12785 -1290.6429 713.471 L -1290.6429 685.9416 C -1290.6429 684.2847 -1289.2997 682.9416 -1287.6429 682.9416 Z" fill="black"/>
+          <path d="M -1287.6429 682.9416 L -1246.7857 682.9416 C -1245.1289 682.9416 -1243.7857 684.2847 -1243.7857 685.9416 L -1243.7857 713.471 C -1243.7857 715.12785 -1245.1289 716.471 -1246.7857 716.471 L -1287.6429 716.471 C -1289.2997 716.471 -1290.6429 715.12785 -1290.6429 713.471 L -1290.6429 685.9416 C -1290.6429 684.2847 -1289.2997 682.9416 -1287.6429 682.9416 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 685.7063)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_543">
+          <path d="M -1229.8651 736.65075 L -1189.008 736.65075 C -1187.3511 736.65075 -1186.008 737.9939 -1186.008 739.65075 L -1186.008 767.1802 C -1186.008 768.837 -1187.3511 770.1802 -1189.008 770.1802 L -1229.8651 770.1802 C -1231.522 770.1802 -1232.8651 768.837 -1232.8651 767.1802 L -1232.8651 739.65075 C -1232.8651 737.9939 -1231.522 736.65075 -1229.8651 736.65075 Z" fill="black"/>
+          <path d="M -1229.8651 736.65075 L -1189.008 736.65075 C -1187.3511 736.65075 -1186.008 737.9939 -1186.008 739.65075 L -1186.008 767.1802 C -1186.008 768.837 -1187.3511 770.1802 -1189.008 770.1802 L -1229.8651 770.1802 C -1231.522 770.1802 -1232.8651 768.837 -1232.8651 767.1802 L -1232.8651 739.65075 C -1232.8651 737.9939 -1231.522 736.65075 -1229.8651 736.65075 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1227.8651 739.41545)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_544">
+          <path d="M -1287.6429 782.4122 L -1246.7857 782.4122 C -1245.1289 782.4122 -1243.7857 783.7553 -1243.7857 785.4122 L -1243.7857 812.9416 C -1243.7857 814.5984 -1245.1289 815.9416 -1246.7857 815.9416 L -1287.6429 815.9416 C -1289.2997 815.9416 -1290.6429 814.5984 -1290.6429 812.9416 L -1290.6429 785.4122 C -1290.6429 783.7553 -1289.2997 782.4122 -1287.6429 782.4122 Z" fill="black"/>
+          <path d="M -1287.6429 782.4122 L -1246.7857 782.4122 C -1245.1289 782.4122 -1243.7857 783.7553 -1243.7857 785.4122 L -1243.7857 812.9416 C -1243.7857 814.5984 -1245.1289 815.9416 -1246.7857 815.9416 L -1287.6429 815.9416 C -1289.2997 815.9416 -1290.6429 814.5984 -1290.6429 812.9416 L -1290.6429 785.4122 C -1290.6429 783.7553 -1289.2997 782.4122 -1287.6429 782.4122 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 785.1769)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_545">
+          <path d="M -1229.8651 825.8452 L -1189.008 825.8452 C -1187.3511 825.8452 -1186.008 827.1883 -1186.008 828.8452 L -1186.008 856.3746 C -1186.008 858.0315 -1187.3511 859.3746 -1189.008 859.3746 L -1229.8651 859.3746 C -1231.522 859.3746 -1232.8651 858.0315 -1232.8651 856.3746 L -1232.8651 828.8452 C -1232.8651 827.1883 -1231.522 825.8452 -1229.8651 825.8452 Z" fill="black"/>
+          <path d="M -1229.8651 825.8452 L -1189.008 825.8452 C -1187.3511 825.8452 -1186.008 827.1883 -1186.008 828.8452 L -1186.008 856.3746 C -1186.008 858.0315 -1187.3511 859.3746 -1189.008 859.3746 L -1229.8651 859.3746 C -1231.522 859.3746 -1232.8651 858.0315 -1232.8651 856.3746 L -1232.8651 828.8452 C -1232.8651 827.1883 -1231.522 825.8452 -1229.8651 825.8452 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1227.8651 828.6099)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_546">
+          <path d="M -1287.6429 869.4955 L -1246.7857 869.4955 C -1245.1289 869.4955 -1243.7857 870.8387 -1243.7857 872.4955 L -1243.7857 900.0249 C -1243.7857 901.6818 -1245.1289 903.0249 -1246.7857 903.0249 L -1287.6429 903.0249 C -1289.2997 903.0249 -1290.6429 901.6818 -1290.6429 900.0249 L -1290.6429 872.4955 C -1290.6429 870.8387 -1289.2997 869.4955 -1287.6429 869.4955 Z" fill="black"/>
+          <path d="M -1287.6429 869.4955 L -1246.7857 869.4955 C -1245.1289 869.4955 -1243.7857 870.8387 -1243.7857 872.4955 L -1243.7857 900.0249 C -1243.7857 901.6818 -1245.1289 903.0249 -1246.7857 903.0249 L -1287.6429 903.0249 C -1289.2997 903.0249 -1290.6429 901.6818 -1290.6429 900.0249 L -1290.6429 872.4955 C -1290.6429 870.8387 -1289.2997 869.4955 -1287.6429 869.4955 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 872.2602)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_547">
+          <path d="M -1229.8651 922.77 L -1189.008 922.77 C -1187.3511 922.77 -1186.008 924.1132 -1186.008 925.77 L -1186.008 953.2994 C -1186.008 954.9563 -1187.3511 956.2994 -1189.008 956.2994 L -1229.8651 956.2994 C -1231.522 956.2994 -1232.8651 954.9563 -1232.8651 953.2994 L -1232.8651 925.77 C -1232.8651 924.1132 -1231.522 922.77 -1229.8651 922.77 Z" fill="black"/>
+          <path d="M -1229.8651 922.77 L -1189.008 922.77 C -1187.3511 922.77 -1186.008 924.1132 -1186.008 925.77 L -1186.008 953.2994 C -1186.008 954.9563 -1187.3511 956.2994 -1189.008 956.2994 L -1229.8651 956.2994 C -1231.522 956.2994 -1232.8651 954.9563 -1232.8651 953.2994 L -1232.8651 925.77 C -1232.8651 924.1132 -1231.522 922.77 -1229.8651 922.77 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1227.8651 925.5347)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_548">
+          <path d="M -1287.6429 965.3027 L -1246.7857 965.3027 C -1245.1289 965.3027 -1243.7857 966.6458 -1243.7857 968.3027 L -1243.7857 995.8321 C -1243.7857 997.489 -1245.1289 998.8321 -1246.7857 998.8321 L -1287.6429 998.8321 C -1289.2997 998.8321 -1290.6429 997.489 -1290.6429 995.8321 L -1290.6429 968.3027 C -1290.6429 966.6458 -1289.2997 965.3027 -1287.6429 965.3027 Z" fill="black"/>
+          <path d="M -1287.6429 965.3027 L -1246.7857 965.3027 C -1245.1289 965.3027 -1243.7857 966.6458 -1243.7857 968.3027 L -1243.7857 995.8321 C -1243.7857 997.489 -1245.1289 998.8321 -1246.7857 998.8321 L -1287.6429 998.8321 C -1289.2997 998.8321 -1290.6429 997.489 -1290.6429 995.8321 L -1290.6429 968.3027 C -1290.6429 966.6458 -1289.2997 965.3027 -1287.6429 965.3027 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(-1285.6429 968.0674)" fill="#bfbebf">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.793806" y="22" xml:space="preserve">0.0</tspan>
+          </text>
+        </g>
+        <g id="Group_549">
+          <title>Float</title>
+          <g id="Graphic_551">
+            <ellipse cx="-1097.4484" cy="420.51185" rx="12.0000191748228" ry="11.7353128694958" fill="black"/>
+            <ellipse cx="-1097.4484" cy="420.51185" rx="12.0000191748228" ry="11.7353128694958" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_550">
+            <path d="M -1082.4279 413.93015 L -1075.5708 420.51185 L -1082.4279 427.09355 Z" fill="#9df945"/>
+            <path d="M -1082.4279 413.93015 L -1075.5708 420.51185 L -1082.4279 427.09355 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Group_555">
+          <title>Int32</title>
+          <g id="Graphic_557">
+            <ellipse cx="-1454.1706" cy="420.51185" rx="12.0000191748228" ry="11.7353128694958" fill="black"/>
+            <ellipse cx="-1454.1706" cy="420.51185" rx="12.0000191748228" ry="11.7353128694958" stroke="#00d199" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <g id="Graphic_556">
+            <path d="M -1439.1502 413.93015 L -1432.293 420.51185 L -1439.1502 427.09355 Z" fill="#00d199"/>
+            <path d="M -1439.1502 413.93015 L -1432.293 420.51185 L -1439.1502 427.09355 Z" stroke="#9df945" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+          </g>
+        </g>
+        <g id="Graphic_558">
+          <text transform="translate(-1233.625 406.51185)" fill="white">
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Frequency</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
