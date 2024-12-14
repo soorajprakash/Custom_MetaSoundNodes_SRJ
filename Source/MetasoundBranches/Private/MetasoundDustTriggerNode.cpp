@@ -128,6 +128,7 @@ namespace Metasound
         // Primary node functionality
         void Execute()
         {
+            OutputTrigger->AdvanceBlock();
             const float* DensityData = InputDensity->GetData();
             int32 NumFrames = InputDensity->Num();
             float InputDensityOffsetValue = *InputDensityOffset;
