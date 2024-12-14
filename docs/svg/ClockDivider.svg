@@ -20,54 +20,54 @@
         </g>
         <g id="Graphic_163">
           <text transform="translate(-2705.918 227.68017)" fill="#a9ec9f">
-            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Clock Divider</tspan>
+            <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Clock Divider</tspan>
           </text>
         </g>
         <g id="Graphic_164">
           <text transform="translate(-2488.2555 283.7899)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">1</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">1</tspan>
           </text>
         </g>
         <g id="Graphic_165">
           <text transform="translate(-2779.6825 283.7899)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
           </text>
         </g>
         <g id="Graphic_172">
           <text transform="translate(-2488.2555 330.61035)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">2</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">2</tspan>
           </text>
         </g>
         <g id="Graphic_176">
           <text transform="translate(-2488.2555 381.5455)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">3</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">3</tspan>
           </text>
         </g>
         <g id="Graphic_180">
           <text transform="translate(-2488.2555 428.36596)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">4</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">4</tspan>
           </text>
         </g>
         <g id="Graphic_184">
           <text transform="translate(-2488.2555 475.68516)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">5</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">5</tspan>
           </text>
         </g>
         <g id="Graphic_188">
           <text transform="translate(-2488.2555 522.5056)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">6</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">6</tspan>
           </text>
         </g>
         <g id="Graphic_192">
           <text transform="translate(-2488.2555 573.4408)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">7</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">7</tspan>
           </text>
         </g>
         <g id="Graphic_196">
           <text transform="translate(-2488.2555 620.2612)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">8</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">8</tspan>
           </text>
         </g>
         <g id="Group_200">
@@ -82,7 +82,7 @@
         </g>
         <g id="Graphic_203">
           <text transform="translate(-2777.8452 330.61036)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reset</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Reset</tspan>
           </text>
         </g>
         <g id="Group_207">

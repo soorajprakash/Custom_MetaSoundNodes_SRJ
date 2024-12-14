@@ -19,19 +19,19 @@
       </g>
       <g id="Graphic_113">
         <text transform="translate(-726.46875 66.875)" fill="#a9ec9f">
-          <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Shift Register</tspan>
+          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Shift Register</tspan>
         </text>
       </g>
       <g id="Graphic_106">
         <text transform="translate(-571.7617 123.125)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 1</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 1</tspan>
         </text>
       </g>
       <g id="Graphic_100">
         <text transform="translate(-800.0352 123.125)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
         </text>
       </g>
       <g id="Group_115">
@@ -58,7 +58,7 @@
       </g>
       <g id="Graphic_130">
         <text transform="translate(-571.7617 170.0625)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 2</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 2</tspan>
         </text>
       </g>
       <g id="Group_131">
@@ -74,7 +74,7 @@
       </g>
       <g id="Graphic_134">
         <text transform="translate(-571.7617 221.125)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 3</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 3</tspan>
         </text>
       </g>
       <g id="Group_135">
@@ -90,7 +90,7 @@
       </g>
       <g id="Graphic_138">
         <text transform="translate(-571.7617 268.0625)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 4</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 4</tspan>
         </text>
       </g>
       <g id="Group_139">
@@ -106,7 +106,7 @@
       </g>
       <g id="Graphic_142">
         <text transform="translate(-571.7617 315.5)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 5</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 5</tspan>
         </text>
       </g>
       <g id="Group_143">
@@ -122,7 +122,7 @@
       </g>
       <g id="Graphic_146">
         <text transform="translate(-571.7617 362.4375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 6</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 6</tspan>
         </text>
       </g>
       <g id="Group_147">
@@ -138,7 +138,7 @@
       </g>
       <g id="Graphic_150">
         <text transform="translate(-571.7617 413.5)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 7</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 7</tspan>
         </text>
       </g>
       <g id="Group_151">
@@ -154,7 +154,7 @@
       </g>
       <g id="Graphic_154">
         <text transform="translate(-571.7617 460.4375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 8</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stage 8</tspan>
         </text>
       </g>
       <g id="Group_155">
@@ -180,7 +180,7 @@
       </g>
       <g id="Graphic_161">
         <text transform="translate(-800.0352 170.0625)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
         </text>
       </g>
     </g>

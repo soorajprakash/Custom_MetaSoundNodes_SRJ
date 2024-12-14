@@ -20,9 +20,9 @@
         </g>
         <g id="Graphic_629">
           <text transform="translate(-2669.1443 59.465726)" fill="#a9ec9f">
-            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Click</tspan>
+            <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Click</tspan>
           </text>
         </g>
         <g id="Group_623">
@@ -38,12 +38,12 @@
         </g>
         <g id="Graphic_622">
           <text transform="translate(-2640.5745 165.98185)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
           </text>
         </g>
         <g id="Graphic_621">
           <text transform="translate(-2782.406 117.53024)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
           </text>
         </g>
         <g id="Group_617">
@@ -59,7 +59,7 @@
         </g>
         <g id="Graphic_616">
           <text transform="translate(-2783.0575 165.98185)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
           </text>
         </g>
         <g id="Graphic_615">
@@ -81,7 +81,7 @@
         </g>
         <g id="Graphic_906">
           <text transform="translate(-2587 112.94355)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">On Trigger</tspan>
+            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">On Trigger</tspan>
           </text>
         </g>
         <g id="Group_903">
