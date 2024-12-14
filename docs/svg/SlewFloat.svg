@@ -19,43 +19,43 @@
       </g>
       <g id="Graphic_352">
         <text transform="translate(-715.1133 1077.375)" fill="#a9ec9f">
-          <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-          <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Slew (float)</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Slew (float)</tspan>
         </text>
       </g>
       <g id="Graphic_356">
         <text transform="translate(-528.60156 1132.25)" fill="white">
-          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
         </text>
       </g>
       <g id="Graphic_357">
         <text transform="translate(-799.375 1132.25)" fill="white">
-          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
         </text>
       </g>
       <g id="Graphic_358">
         <text transform="translate(-799.375 1186.375)" fill="white">
-          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Rise Time</tspan>
         </text>
       </g>
       <g id="Graphic_359">
         <path d="M -683.25 1183.5 L -643.125 1183.5 C -641.46815 1183.5 -640.125 1184.8431 -640.125 1186.5 L -640.125 1214.25 C -640.125 1215.9069 -641.46815 1217.25 -643.125 1217.25 L -683.25 1217.25 C -684.90685 1217.25 -686.25 1215.9069 -686.25 1214.25 L -686.25 1186.5 C -686.25 1184.8431 -684.90685 1183.5 -683.25 1183.5 Z" fill="black"/>
         <path d="M -683.25 1183.5 L -643.125 1183.5 C -641.46815 1183.5 -640.125 1184.8431 -640.125 1186.5 L -640.125 1214.25 C -640.125 1215.9069 -641.46815 1217.25 -643.125 1217.25 L -683.25 1217.25 C -684.90685 1217.25 -686.25 1215.9069 -686.25 1214.25 L -686.25 1186.5 C -686.25 1184.8431 -684.90685 1183.5 -683.25 1183.5 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(-681.25 1186.375)" fill="#bfbebf">
-          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
         </text>
       </g>
       <g id="Graphic_360">
         <text transform="translate(-799.375 1242.5)" fill="white">
-          <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Fall Time</tspan>
         </text>
       </g>
       <g id="Graphic_361">
         <path d="M -683.25 1239.625 L -643.125 1239.625 C -641.46815 1239.625 -640.125 1240.9681 -640.125 1242.625 L -640.125 1270.375 C -640.125 1272.0319 -641.46815 1273.375 -643.125 1273.375 L -683.25 1273.375 C -684.90685 1273.375 -686.25 1272.0319 -686.25 1270.375 L -686.25 1242.625 C -686.25 1240.9681 -684.90685 1239.625 -683.25 1239.625 Z" fill="black"/>
         <path d="M -683.25 1239.625 L -643.125 1239.625 C -641.46815 1239.625 -640.125 1240.9681 -640.125 1242.625 L -640.125 1270.375 C -640.125 1272.0319 -641.46815 1273.375 -643.125 1273.375 L -683.25 1273.375 C -684.90685 1273.375 -686.25 1272.0319 -686.25 1270.375 L -686.25 1242.625 C -686.25 1240.9681 -684.90685 1239.625 -683.25 1239.625 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(-681.25 1242.5)" fill="#bfbebf">
-          <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
+          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">0.0</tspan>
         </text>
       </g>
       <g id="Group_362">
