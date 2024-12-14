@@ -59,8 +59,8 @@ data.forEach(node => {
     </nav>
   <main>
     <h1>${name}</h1>
-    <img src="./svg/${image}" alt="${name}">
     <p>${description}</p>
+    <img src="./svg/${image}" alt="${name}">
     <h2>Inputs</h2>
     <table>
       <thead>
