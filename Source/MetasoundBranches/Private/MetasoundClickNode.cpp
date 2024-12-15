@@ -17,7 +17,7 @@ namespace Metasound
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger input to generate an impulse.");
         METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
         METASOUND_PARAM(OutputOnTrigger, "On Trigger", "Trigger output when the node is triggered.");
-        METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
+        METASOUND_PARAM(OutputImpulse, "Impulse Out", "Generated impulse output.");
     }
 
     // Operator Class - defines the way the node is described, created and executed

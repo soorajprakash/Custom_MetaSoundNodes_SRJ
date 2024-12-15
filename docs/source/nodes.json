@@ -41,7 +41,7 @@
       ],
       "outputs": [
         { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
-        { "name": "Impulse Output", "description": "Generated impulse output.", "type": "Audio" }
+        { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
       ]
     },
     {
