@@ -2,6 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-2391.125 -530.375 433 173" width="433" height="173">
   <defs>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
+ </style>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#181a19"/>
       <stop offset=".9079928" stop-color="#262726"/>
@@ -19,7 +22,7 @@
           <path d="M -2375.625 -529.875 L -1973.625 -529.875 C -1965.3407 -529.875 -1958.625 -523.1593 -1958.625 -514.875 L -1958.625 -372.875 C -1958.625 -364.59073 -1965.3407 -357.875 -1973.625 -357.875 L -2375.625 -357.875 C -2383.9093 -357.875 -2390.625 -364.59073 -2390.625 -372.875 L -2390.625 -514.875 C -2390.625 -523.1593 -2383.9093 -529.875 -2375.625 -529.875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         </g>
         <g id="Graphic_1005">
-          <text transform="translate(-2298 -515.875)" fill="#a9ec9f">
+          <text transform="translate(-2256.914 -515.875)" fill="#a9ec9f">
             <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
             <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
             <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Zero Crossing</tspan>

@@ -18,7 +18,7 @@ const sidebarContent = data.map(d => {
 
 
 data.forEach(node => {
-  const { name, description, image, inputs, outputs } = node;
+  const { name, description, image, inputs, outputs, category } = node;
 
   const inputRows = inputs.map(input => {
     return `
@@ -60,6 +60,7 @@ data.forEach(node => {
   <main>
     <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
     <h2>${name}</h2>
+    <p><strong>Category:</strong> ${category}</p>
     <p>${description}</p>
     <img src="./svg/${image}" alt="${name}">
     <h3>Inputs</h3>
@@ -91,7 +92,7 @@ data.forEach(node => {
     </table>
     <br><br>
     <hr>
-    Charles Matthews 2024
+    <a href="https://github.com/matthewscharles/">Charles Matthews 2024</a>
   </main>
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
 </body>
