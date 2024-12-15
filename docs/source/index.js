@@ -58,10 +58,11 @@ data.forEach(node => {
         </ul>
     </nav>
   <main>
-    <h1>${name}</h1>
+    <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
+    <h2>${name}</h2>
     <p>${description}</p>
     <img src="./svg/${image}" alt="${name}">
-    <h2>Inputs</h2>
+    <h3>Inputs</h3>
     <table>
       <thead>
         <tr>
@@ -75,7 +76,7 @@ data.forEach(node => {
       </tbody>
     </table>
 
-    <h2>Outputs</h2>
+    <h3>Outputs</h3>
     <table>
       <thead>
         <tr>
@@ -88,6 +89,9 @@ data.forEach(node => {
         ${outputRows}
       </tbody>
     </table>
+    <br><br>
+    <hr>
+    Charles Matthews 2024
   </main>
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
 </body>

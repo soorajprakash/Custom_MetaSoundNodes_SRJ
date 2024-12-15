@@ -258,7 +258,7 @@
       "image": "ZeroCrossingTrigger.svg",
       "inputs": [
         { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
-        { "name": "Threshold", "description": "Threshold value to determine zero crossing.", "type": "Float" }
+        { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
       ],
       "outputs": [
         { "name": "Trigger", "description": "Output trigger when zero crossing is detected.", "type": "Trigger" }
