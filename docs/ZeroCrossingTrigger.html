@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Phase Disperser</title>
+  <title>Zero Crossing Trigger</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,9 +32,9 @@
         </ul>
     </nav>
   <main>
-    <h1>Phase Disperser</h1>
-    <p>A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.</p>
-    <img src="./svg/PhaseDisperser.svg" alt="Phase Disperser">
+    <h1>Zero Crossing Trigger</h1>
+    <p>Generates a trigger when the input signal crosses zero.</p>
+    <img src="./svg/ZeroCrossingTrigger.svg" alt="Zero Crossing Trigger">
     <h2>Inputs</h2>
     <table>
       <thead>
@@ -47,16 +47,16 @@
       <tbody>
         
       <tr>
-        <td>In</td>
-        <td>Incoming audio.</td>
+        <td>Signal</td>
+        <td>Input audio signal to monitor for zero crossings.</td>
         <td>Audio</td>
       </tr>
     
 
       <tr>
-        <td>Stages</td>
-        <td>Number of allpass filter stages to apply (1-128).</td>
-        <td>Int32</td>
+        <td>Threshold</td>
+        <td>Threshold value to determine zero crossing.</td>
+        <td>Float</td>
       </tr>
     
       </tbody>
@@ -74,9 +74,9 @@
       <tbody>
         
       <tr>
-        <td>Out</td>
-        <td>Phase-dispersed audio.</td>
-        <td>Audio</td>
+        <td>Trigger</td>
+        <td>Output trigger when zero crossing is detected.</td>
+        <td>Trigger</td>
       </tr>
     
       </tbody>

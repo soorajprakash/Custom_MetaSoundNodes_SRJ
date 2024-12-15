@@ -41,7 +41,7 @@
       ],
       "outputs": [
         { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
-        { "name": "Impulse Output", "description": "Generated impulse output.", "type": "Audio" }
+        { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
       ]
     },
     {
@@ -251,5 +251,17 @@
         "outputs": [
         { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
         ]
+    },
+    {
+      "name": "Zero Crossing Trigger",
+      "description": "Generates a trigger when the input signal crosses zero.",
+      "image": "ZeroCrossingTrigger.svg",
+      "inputs": [
+        { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
+        { "name": "Threshold", "description": "Threshold value to determine zero crossing.", "type": "Float" }
+      ],
+      "outputs": [
+        { "name": "Trigger", "description": "Output trigger when zero crossing is detected.", "type": "Trigger" }
+      ]
     }
 ]
