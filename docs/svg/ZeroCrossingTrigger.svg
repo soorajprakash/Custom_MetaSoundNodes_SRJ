@@ -20,19 +20,19 @@
         </g>
         <g id="Graphic_1005">
           <text transform="translate(-2298 -515.875)" fill="#a9ec9f">
-            <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Zero Crossing Trigger</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Zero Crossing Trigger</tspan>
           </text>
         </g>
         <g id="Graphic_1004">
           <text transform="translate(-2175.0347 -459.625)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Zero Crossing</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Zero Crossing</tspan>
           </text>
         </g>
         <g id="Graphic_1003">
           <text transform="translate(-2325.6558 -459.625)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
           </text>
         </g>
         <g id="Group_1000">
@@ -48,14 +48,14 @@
         </g>
         <g id="Graphic_998">
           <text transform="translate(-2325.6558 -411)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Debounce</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Debounce</tspan>
           </text>
         </g>
         <g id="Graphic_997">
           <path d="M -2206.9688 -416 L -2167.4366 -416 C -2165.7798 -416 -2164.4366 -414.65685 -2164.4366 -413 L -2164.4366 -385.25 C -2164.4366 -383.59315 -2165.7798 -382.25 -2167.4366 -382.25 L -2206.9688 -382.25 C -2208.6256 -382.25 -2209.9688 -383.59315 -2209.9688 -385.25 L -2209.9688 -413 C -2209.9688 -414.65685 -2208.6256 -416 -2206.9688 -416 Z" fill="black"/>
           <path d="M -2206.9688 -416 L -2167.4366 -416 C -2165.7798 -416 -2164.4366 -414.65685 -2164.4366 -413 L -2164.4366 -385.25 C -2164.4366 -383.59315 -2165.7798 -382.25 -2167.4366 -382.25 L -2206.9688 -382.25 C -2208.6256 -382.25 -2209.9688 -383.59315 -2209.9688 -385.25 L -2209.9688 -413 C -2209.9688 -414.65685 -2208.6256 -416 -2206.9688 -416 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           <text transform="translate(-2204.9688 -413.125)" fill="#bfbebf">
-            <tspan font-family="Roboto" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
           </text>
         </g>
         <g id="Group_994">
