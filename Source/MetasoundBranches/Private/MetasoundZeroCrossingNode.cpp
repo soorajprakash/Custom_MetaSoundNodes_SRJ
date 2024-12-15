@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundZeroCrossingTriggerNode.h"
+#include "MetasoundBranches/Public/MetasoundZeroCrossingNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef for data types
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
