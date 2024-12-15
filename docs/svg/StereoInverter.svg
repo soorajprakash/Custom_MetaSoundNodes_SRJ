@@ -19,9 +19,9 @@
       </g>
       <g id="Graphic_710">
         <text transform="translate(-626.8262 -396.625)" fill="#a9ec9f">
-          <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Inverter</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Inverter</tspan>
         </text>
       </g>
       <g id="Group_707">
@@ -37,7 +37,7 @@
       </g>
       <g id="Graphic_702">
         <text transform="translate(-686.5169 -232.5)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert L</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert L</tspan>
         </text>
       </g>
       <g id="Graphic_701">
@@ -57,7 +57,7 @@
       </g>
       <g id="Graphic_697">
         <text transform="translate(-687.1771 -185.5625)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Invert R</tspan>
         </text>
       </g>
       <g id="Graphic_696">
@@ -77,7 +77,7 @@
       </g>
       <g id="Graphic_716">
         <text transform="translate(-686.6636 -134.5)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Swap L / R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Swap L / R</tspan>
         </text>
       </g>
       <g id="Group_733">
@@ -93,12 +93,12 @@
       </g>
       <g id="Graphic_732">
         <text transform="translate(-439.4642 -336)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
         </text>
       </g>
       <g id="Graphic_731">
         <text transform="translate(-686.5169 -336)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
         </text>
       </g>
       <g id="Group_728">
@@ -114,7 +114,7 @@
       </g>
       <g id="Graphic_727">
         <text transform="translate(-686.5169 -282)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
         </text>
       </g>
       <g id="Group_724">
@@ -141,7 +141,7 @@
       </g>
       <g id="Graphic_720">
         <text transform="translate(-439.4642 -287.375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
         </text>
       </g>
     </g>

@@ -19,9 +19,9 @@
       </g>
       <g id="Graphic_437">
         <text transform="translate(218.90625 1167.125)" fill="#a9ec9f">
-          <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Width</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Stereo Width</tspan>
         </text>
       </g>
       <g id="Group_438">
@@ -37,12 +37,12 @@
       </g>
       <g id="Graphic_441">
         <text transform="translate(389.30273 1223.375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out L</tspan>
         </text>
       </g>
       <g id="Graphic_442">
         <text transform="translate(142.25 1223.375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In L</tspan>
         </text>
       </g>
       <g id="Group_443">
@@ -58,7 +58,7 @@
       </g>
       <g id="Graphic_446">
         <text transform="translate(142.25 1277.375)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In R</tspan>
         </text>
       </g>
       <g id="Group_447">
@@ -85,7 +85,7 @@
       </g>
       <g id="Graphic_466">
         <text transform="translate(389.30273 1272)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out R</tspan>
         </text>
       </g>
       <g id="Group_474">
@@ -101,14 +101,14 @@
       </g>
       <g id="Graphic_473">
         <text transform="translate(145.625 1333.625)" fill="white">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Width</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Width</tspan>
         </text>
       </g>
       <g id="Graphic_472">
         <path d="M 217.875 1328.625 L 258 1328.625 C 259.65685 1328.625 261 1329.9681 261 1331.625 L 261 1359.375 C 261 1361.0319 259.65685 1362.375 258 1362.375 L 217.875 1362.375 C 216.21815 1362.375 214.875 1361.0319 214.875 1359.375 L 214.875 1331.625 C 214.875 1329.9681 216.21815 1328.625 217.875 1328.625 Z" fill="black"/>
         <path d="M 217.875 1328.625 L 258 1328.625 C 259.65685 1328.625 261 1329.9681 261 1331.625 L 261 1359.375 C 261 1361.0319 259.65685 1362.375 258 1362.375 L 217.875 1362.375 C 216.21815 1362.375 214.875 1361.0319 214.875 1359.375 L 214.875 1331.625 C 214.875 1329.9681 216.21815 1328.625 217.875 1328.625 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(219.875 1331.5)" fill="#bfbebf">
-          <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">1.0</tspan>
+          <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#bfbebf" x="1.4277344" y="22" xml:space="preserve">1.0</tspan>
         </text>
       </g>
     </g>

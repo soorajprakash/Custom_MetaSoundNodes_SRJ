@@ -20,9 +20,9 @@
         </g>
         <g id="Graphic_48">
           <text transform="translate(-2663.477 710.1543)" fill="#a9ec9f">
-            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Dust</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Dust</tspan>
           </text>
         </g>
         <g id="Group_49">
@@ -49,12 +49,12 @@
         </g>
         <g id="Graphic_55">
           <text transform="translate(-2601.625 765.7099)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Out</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Out</tspan>
           </text>
         </g>
         <g id="Graphic_56">
           <text transform="translate(-2774.531 765.7099)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Enabled</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Enabled</tspan>
           </text>
         </g>
         <g id="Graphic_57">
@@ -77,7 +77,7 @@
         </g>
         <g id="Graphic_71">
           <text transform="translate(-2775.1825 812.0679)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
           </text>
         </g>
         <g id="Graphic_72">
@@ -100,14 +100,14 @@
         </g>
         <g id="Graphic_78">
           <text transform="translate(-2771.1992 862.5)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Density</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Density</tspan>
           </text>
         </g>
         <g id="Graphic_79">
           <path d="M -2678.7685 857.7346 L -2639.2364 857.7346 C -2637.5795 857.7346 -2636.2364 859.0777 -2636.2364 860.7346 L -2636.2364 888.0679 C -2636.2364 889.7248 -2637.5795 891.0679 -2639.2364 891.0679 L -2678.7685 891.0679 C -2680.4254 891.0679 -2681.7685 889.7248 -2681.7685 888.0679 L -2681.7685 860.7346 C -2681.7685 859.0777 -2680.4254 857.7346 -2678.7685 857.7346 Z" fill="black"/>
           <path d="M -2678.7685 857.7346 L -2639.2364 857.7346 C -2637.5795 857.7346 -2636.2364 859.0777 -2636.2364 860.7346 L -2636.2364 888.0679 C -2636.2364 889.7248 -2637.5795 891.0679 -2639.2364 891.0679 L -2678.7685 891.0679 C -2680.4254 891.0679 -2681.7685 889.7248 -2681.7685 888.0679 L -2681.7685 860.7346 C -2681.7685 859.0777 -2680.4254 857.7346 -2678.7685 857.7346 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           <text transform="translate(-2676.7685 860.4012)" fill="#bfbebf">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#bfbebf" x="1.1313019" y="22" xml:space="preserve">0.0</tspan>
           </text>
         </g>
         <g id="Group_80">
@@ -123,7 +123,7 @@
         </g>
         <g id="Graphic_89">
           <text transform="translate(-2771.1992 910.8333)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Modulation</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Modulation</tspan>
           </text>
         </g>
       </g>

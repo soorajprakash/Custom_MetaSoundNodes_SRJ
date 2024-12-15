@@ -20,21 +20,21 @@
         </g>
         <g id="Graphic_582">
           <text transform="translate(-2268.465 200.42283)" fill="#a9ec9f">
-            <tspan font-family="Roboto, Arial, Helvetica" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Phase Disperser</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Phase Disperser</tspan>
           </text>
         </g>
         <g id="Graphic_576">
           <text transform="translate(-2322.3242 304.1341)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stages</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Stages</tspan>
           </text>
         </g>
         <g id="Graphic_575">
           <path d="M -2235.001 299.09807 L -2217.826 299.09807 C -2216.1692 299.09807 -2214.826 300.4412 -2214.826 302.09807 L -2214.826 330.4775 C -2214.826 332.13435 -2216.1692 333.4775 -2217.826 333.4775 L -2235.001 333.4775 C -2236.6578 333.4775 -2238.001 332.13435 -2238.001 330.4775 L -2238.001 302.09807 C -2238.001 300.4412 -2236.6578 299.09807 -2235.001 299.09807 Z" fill="black"/>
           <path d="M -2235.001 299.09807 L -2217.826 299.09807 C -2216.1692 299.09807 -2214.826 300.4412 -2214.826 302.09807 L -2214.826 330.4775 C -2214.826 332.13435 -2216.1692 333.4775 -2217.826 333.4775 L -2235.001 333.4775 C -2236.6578 333.4775 -2238.001 332.13435 -2238.001 330.4775 L -2238.001 302.09807 C -2238.001 300.4412 -2236.6578 299.09807 -2235.001 299.09807 Z" stroke="#d7d5d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           <text transform="translate(-2233.001 302.28778)" fill="#bfbebf">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="#bfbebf" x="0" y="22" xml:space="preserve">0</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#bfbebf" x="0" y="22" xml:space="preserve">0</tspan>
           </text>
         </g>
         <g id="Group_587">
@@ -61,12 +61,12 @@
         </g>
         <g id="Graphic_602">
           <text transform="translate(-2058.5238 256.32122)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Out</tspan>
           </text>
         </g>
         <g id="Graphic_601">
           <text transform="translate(-2325.8168 256.32122)" fill="white">
-            <tspan font-family="Roboto, Arial, Helvetica" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">In</tspan>
           </text>
         </g>
         <g id="Group_598">
