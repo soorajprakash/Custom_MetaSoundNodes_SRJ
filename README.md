@@ -25,7 +25,7 @@ There are currently seventeen nodes available in the *MetaSoundBranches* plugin 
 | [`Stereo Inverter`](https://matthewscharles.github.io/metasound-plugins/StereoInverter.html)               | Spatialization   | Invert and/or swap stereo channels.                                                                                 |
 | [`Stereo Width`](https://matthewscharles.github.io/metasound-plugins/StereoWidth.html)                     | Spatialization   | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | [`Tuning`](https://matthewscharles.github.io/metasound-plugins/Tuning.html)                                 | Tuning           | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
-| [`Zero Crossing`](https://matthewscharles.github.io/metasound-plugins/ZeroCrossing.html)                                 | Zero Crossing           | Detect zero crossings in an input audio signal, with optional debounce.                               |
+| [`Zero Crossing`](https://matthewscharles.github.io/metasound-plugins/ZeroCrossing.html)                                 | Envelopes           | Detect zero crossings in an input audio signal, with optional debounce.                               |
 
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 

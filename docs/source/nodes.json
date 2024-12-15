@@ -1,267 +1,285 @@
 [
-    {
-      "name": "Bool To Audio",
-      "description": "Convert a boolean value to an audio signal, with optional rise and fall times.",
-      "image": "BoolToAudio.svg",
-      "inputs": [
-        { "name": "Value", "description": "Boolean input to convert to audio.", "type": "Bool" },
-        { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
-        { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
-      ],
-      "outputs": [
-        { "name": "Out", "description": "Audio signal.", "type": "Audio" }
-      ]
-    },
-    {
-      "name": "Clock Divider",
-      "description": "Divide a trigger into eight density levels.",
-      "image": "ClockDivider.svg",
-      "inputs": [
-        { "name": "Trigger", "description": "Input trigger to the clock divider.", "type": "Trigger" },
-        { "name": "Reset", "description": "Reset the clock divider.", "type": "Trigger" }
-      ],
-      "outputs": [
-        { "name": "1", "description": "Output trigger for division 1.", "type": "Trigger" },
-        { "name": "2", "description": "Output trigger for division 2.", "type": "Trigger" },
-        { "name": "3", "description": "Output trigger for division 3.", "type": "Trigger" },
-        { "name": "4", "description": "Output trigger for division 4.", "type": "Trigger" },
-        { "name": "5", "description": "Output trigger for division 5.", "type": "Trigger" },
-        { "name": "6", "description": "Output trigger for division 6.", "type": "Trigger" },
-        { "name": "7", "description": "Output trigger for division 7.", "type": "Trigger" },
-        { "name": "8", "description": "Output trigger for division 8.", "type": "Trigger" }
-      ]
-    },
-    {
-      "name": "Click",
-      "description": "Trigger a one-sample impulse (unipolar or alternating polarity per impulse).",
-      "image": "Click.svg",
-      "inputs": [
-        { "name": "Trigger", "description": "Trigger input to generate an impulse.", "type": "Trigger" },
-        { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" }
-      ],
-      "outputs": [
-        { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
-        { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
-      ]
-    },
-    {
-      "name": "Dust",
-      "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
-      "image": "Dust.svg",
-      "inputs": [
-        { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
-        { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" },
-        { "name": "Density", "description": "Probability of impulse generation.", "type": "Float" },
-        { "name": "Modulation", "description": "Density control signal.", "type": "Audio" }
-      ],
-      "outputs": [
-        { "name": "Impulse Output", "description": "Generated impulse output.", "type": "Audio" }
-      ]
-    },
-    {
-      "name": "Edge",
-      "description": "Detects upward and downward changes in an input audio signal, with optional debounce.",
-      "image": "Edge.svg",
-      "inputs": [
-        { "name": "In", "description": "Input audio to monitor for edge detection.", "type": "Audio" },
-        { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
-      ],
-      "outputs": [
-        { "name": "Rise", "description": "Trigger on rise.", "type": "Trigger" },
-        { "name": "Fall", "description": "Trigger on fall.", "type": "Trigger" }
-      ]
-    },
-    {
-      "name": "EDO",
-      "description": "Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440).",
-      "image": "EDO.svg",
-      "inputs": [
-        { "name": "Note Number", "description": "Input MIDI note number (integer).", "type": "Int32" },
-        { "name": "Reference Frequency", "description": "Reference frequency (float).", "type": "Float" },
-        { "name": "Reference MIDI Note", "description": "Reference MIDI note (integer).", "type": "Int32" },
-        { "name": "Divisions", "description": "Number of divisions of the octave (integer).", "type": "Int32" }
-      ],
-      "outputs": [
-        { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
-      ]
-    },
-    {
-      "name": "Phase Disperser",
-      "description": "A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.",
-      "image": "PhaseDisperser.svg",
-      "inputs": [
-        { "name": "In", "description": "Incoming audio.", "type": "Audio" },
-        { "name": "Stages", "description": "Number of allpass filter stages to apply (1-128).", "type": "Int32" }
-      ],
-      "outputs": [
-        { "name": "Out", "description": "Phase-dispersed audio.", "type": "Audio" }
-      ]
-    },
-    {
-      "name": "Sample and Hold",
-      "description": "An alternative sample and hold unit with an audio-rate trigger and threshold control.",
-      "image": "SampleAndHold.svg",
-      "inputs": [
-        { "name": "Signal", "description": "Audio rate signal to be sampled.", "type": "Audio" },
-        { "name": "Trigger", "description": "Audio rate signal that triggers the sample and hold.", "type": "Audio" },
-        { "name": "Threshold", "description": "Float value that determines when the trigger signal is considered 'on'.", "type": "Float" }
-      ],
-      "outputs": [
-        { "name": "Out", "description": "The resulting sampled signal.", "type": "Audio" }
-      ]
-    },
-    {
-      "name": "Shift Register",
-      "description": "An eight-stage shift register for floats.",
-      "image": "ShiftRegister.svg",
-      "inputs": [
-        { "name": "Signal", "description": "Input signal to be shifted.", "type": "Float" },
-        { "name": "Trigger", "description": "Trigger input to shift the register.", "type": "Trigger" }
-      ],
-      "outputs": [
-        { "name": "Stage 1", "description": "Shifted output at stage 1.", "type": "Float" },
-        { "name": "Stage 2", "description": "Shifted output at stage 2.", "type": "Float" },
-        { "name": "Stage 3", "description": "Shifted output at stage 3.", "type": "Float" },
-        { "name": "Stage 4", "description": "Shifted output at stage 4.", "type": "Float" },
-        { "name": "Stage 5", "description": "Shifted output at stage 5.", "type": "Float" },
-        { "name": "Stage 6", "description": "Shifted output at stage 6.", "type": "Float" },
-        { "name": "Stage 7", "description": "Shifted output at stage 7.", "type": "Float" },
-        { "name": "Stage 8", "description": "Shifted output at stage 8.", "type": "Float" }
-      ]
-    },
-    {
-        "name": "Slew (audio)",
-        "description": "A slew limiter to smooth out the rise and fall times of an audio signal.",
-        "image": "SlewAudio.svg",
-        "inputs": [
-        { "name": "In", "description": "Audio signal to smooth.", "type": "Audio" },
-        { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
-        { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
-        ],
-        "outputs": [
-        { "name": "Out", "description": "Slew rate limited output signal.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Slew (float)",
-        "description": "A slew limiter to smooth out the rise and fall times of a float value.",
-        "image": "SlewFloat.svg",
-        "inputs": [
-        { "name": "In", "description": "Float to smooth.", "type": "Float" },
-        { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
-        { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
-        ],
-        "outputs": [
-        { "name": "Out", "description": "Slew rate limited float.", "type": "Float" }
-        ]
-    },
-    {
-        "name": "Stereo Balance",
-        "description": "Adjust the balance of a stereo signal.",
-        "image": "StereoBalance.svg",
-        "inputs": [
-        { "name": "In L", "description": "Left channel.", "type": "Audio" },
-        { "name": "In R", "description": "Right channel.", "type": "Audio" },
-        { "name": "Balance", "description": "Balance control ranging from -1.0 (full left) to 1.0 (full right).", "type": "Float" }
-        ],
-        "outputs": [
-        { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
-        { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Stereo Crossfade",
-        "description": "Crossfade between two stereo signals.",
-        "image": "StereoCrossfade.svg",
-        "inputs": [
-        { "name": "In1 L", "description": "Left channel of first input.", "type": "Audio" },
-        { "name": "In1 R", "description": "Right channel of first input.", "type": "Audio" },
-        { "name": "In2 L", "description": "Left channel of second input.", "type": "Audio" },
-        { "name": "In2 R", "description": "Right channel of second input.", "type": "Audio" },
-        { "name": "Crossfade", "description": "Crossfade between the two inputs (0.0 to 1.0).", "type": "Float" }
-        ],
-        "outputs": [
-        { "name": "Out L", "description": "Left channel of the output signal.", "type": "Audio" },
-        { "name": "Out R", "description": "Right channel of the output signal.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Stereo Gain",
-        "description": "Adjust gain for a stereo signal.",
-        "image": "StereoGain.svg",
-        "inputs": [
-        { "name": "In L", "description": "Left channel.", "type": "Audio" },
-        { "name": "In R", "description": "Right channel.", "type": "Audio" },
-        { "name": "Balance", "description": "Gain control (0.0 to 1.0).", "type": "Float" }
-        ],
-        "outputs": [
-        { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
-        { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Stereo Inverter",
-        "description": "Invert and/or swap stereo channels.",
-        "image": "StereoInverter.svg",
-        "inputs": [
-        { "name": "In L", "description": "Left channel audio input.", "type": "Audio" },
-        { "name": "In R", "description": "Right channel audio input.", "type": "Audio" },
-        { "name": "Invert L", "description": "Invert the polarity of the left channel.", "type": "Bool" },
-        { "name": "Invert R", "description": "Invert the polarity of the right channel.", "type": "Bool" },
-        { "name": "Swap L/R", "description": "Swap the left and right channels.", "type": "Bool" }
-        ],
-        "outputs": [
-        { "name": "Out L", "description": "Left output channel.", "type": "Audio" },
-        { "name": "Out R", "description": "Right output channel.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Stereo Width",
-        "description": "Stereo width adjustment (0-200%), using mid-side processing.",
-        "image": "StereoWidth.svg",
-        "inputs": [
-        { "name": "In L", "description": "Left channel.", "type": "Audio" },
-        { "name": "In R", "description": "Right channel.", "type": "Audio" },
-        { "name": "Width", "description": "Stereo width factor ranging from 0 to 200% (0 - 2).", "type": "Float" }
-        ],
-        "outputs": [
-        { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
-        { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
-        ]
-    },
-    {
-        "name": "Tuning",
-        "description": "Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.",
-        "image": "Tuning.svg",
-        "inputs": [
-        { "name": "Note Number", "description": "Input MIDI note number (integer).", "type": "Int32" },
-        { "name": "+/- Cents C", "description": "Tuning adjustment for note 0 in cents.", "type": "Float" },
-        { "name": "+/- Cents C# / Db", "description": "Tuning adjustment for note 1 in cents.", "type": "Float" },
-        { "name": "+/- Cents D", "description": "Tuning adjustment for note 2 in cents.", "type": "Float" },
-        { "name": "+/- Cents D# / Eb", "description": "Tuning adjustment for note 3 in cents.", "type": "Float" },
-        { "name": "+/- Cents E", "description": "Tuning adjustment for note 4 in cents.", "type": "Float" },
-        { "name": "+/- Cents F", "description": "Tuning adjustment for note 5 in cents.", "type": "Float" },
-        { "name": "+/- Cents F# / Gb", "description": "Tuning adjustment for note 6 in cents.", "type": "Float" },
-        { "name": "+/- Cents G", "description": "Tuning adjustment for note 7 in cents.", "type": "Float" },
-        { "name": "+/- Cents G# / Ab", "description": "Tuning adjustment for note 8 in cents.", "type": "Float" },
-        { "name": "+/- Cents A", "description": "Tuning adjustment for note 9 in cents.", "type": "Float" },
-        { "name": "+/- Cents A# / Bb", "description": "Tuning adjustment for note 10 in cents.", "type": "Float" },
-        { "name": "+/- Cents B", "description": "Tuning adjustment for note 11 in cents.", "type": "Float" }
-        ],
-        "outputs": [
-        { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
-        ]
-    },
-    {
-      "name": "Zero Crossing",
-      "description": "Generates a trigger when the input signal crosses zero.",
-      "image": "ZeroCrossingTrigger.svg",
-      "inputs": [
-        { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
-        { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
-      ],
-      "outputs": [
-        { "name": "Trigger", "description": "Output trigger when zero crossing is detected.", "type": "Trigger" }
-      ]
-    }
+  {
+    "name": "Bool To Audio",
+    "category": "Conversions",
+    "description": "Convert a boolean value to an audio signal, with optional rise and fall times.",
+    "image": "BoolToAudio.svg",
+    "inputs": [
+      { "name": "Value", "description": "Boolean input to convert to audio.", "type": "Bool" },
+      { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
+      { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
+    ],
+    "outputs": [
+      { "name": "Out", "description": "Audio signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Clock Divider",
+    "category": "Triggers",
+    "description": "Divide a trigger into eight density levels.",
+    "image": "ClockDivider.svg",
+    "inputs": [
+      { "name": "Trigger", "description": "Input trigger to the clock divider.", "type": "Trigger" },
+      { "name": "Reset", "description": "Reset the clock divider.", "type": "Trigger" }
+    ],
+    "outputs": [
+      { "name": "1", "description": "Output trigger for division 1.", "type": "Trigger" },
+      { "name": "2", "description": "Output trigger for division 2.", "type": "Trigger" },
+      { "name": "3", "description": "Output trigger for division 3.", "type": "Trigger" },
+      { "name": "4", "description": "Output trigger for division 4.", "type": "Trigger" },
+      { "name": "5", "description": "Output trigger for division 5.", "type": "Trigger" },
+      { "name": "6", "description": "Output trigger for division 6.", "type": "Trigger" },
+      { "name": "7", "description": "Output trigger for division 7.", "type": "Trigger" },
+      { "name": "8", "description": "Output trigger for division 8.", "type": "Trigger" }
+    ]
+  },
+  {
+    "name": "Click",
+    "category": "Generators",
+    "description": "Trigger a one-sample impulse (unipolar or alternating polarity per impulse).",
+    "image": "Click.svg",
+    "inputs": [
+      { "name": "Trigger", "description": "Trigger input to generate an impulse.", "type": "Trigger" },
+      { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" }
+    ],
+    "outputs": [
+      { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
+      { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Dust",
+    "category": "Generators",
+    "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
+    "image": "Dust.svg",
+    "inputs": [
+      { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
+      { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" },
+      { "name": "Density", "description": "Probability of impulse generation.", "type": "Float" },
+      { "name": "Modulation", "description": "Density control signal.", "type": "Audio" }
+    ],
+    "outputs": [
+      { "name": "Impulse Output", "description": "Generated impulse output.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Edge",
+    "category": "Envelopes",
+    "description": "Detects upward and downward changes in an input audio signal, with optional debounce.",
+    "image": "Edge.svg",
+    "inputs": [
+      { "name": "In", "description": "Input audio to monitor for edge detection.", "type": "Audio" },
+      { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
+    ],
+    "outputs": [
+      { "name": "Rise", "description": "Trigger on rise.", "type": "Trigger" },
+      { "name": "Fall", "description": "Trigger on fall.", "type": "Trigger" }
+    ]
+  },
+  {
+    "name": "EDO",
+    "category": "Tuning",
+    "description": "Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440).",
+    "image": "EDO.svg",
+    "inputs": [
+      { "name": "Note Number", "description": "Input MIDI note number (integer).", "type": "Int32" },
+      { "name": "Reference Frequency", "description": "Reference frequency (float).", "type": "Float" },
+      { "name": "Reference MIDI Note", "description": "Reference MIDI note (integer).", "type": "Int32" },
+      { "name": "Divisions", "description": "Number of divisions of the octave (integer).", "type": "Int32" }
+    ],
+    "outputs": [
+      { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
+    ]
+  },
+  {
+    "name": "Phase Disperser",
+    "category": "Filters",
+    "description": "A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.",
+    "image": "PhaseDisperser.svg",
+    "inputs": [
+      { "name": "In", "description": "Incoming audio.", "type": "Audio" },
+      { "name": "Stages", "description": "Number of allpass filter stages to apply (1-128).", "type": "Int32" }
+    ],
+    "outputs": [
+      { "name": "Out", "description": "Phase-dispersed audio.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Sample and Hold",
+    "category": "Filters",
+    "description": "An alternative sample and hold unit with an audio-rate trigger and threshold control.",
+    "image": "SampleAndHold.svg",
+    "inputs": [
+      { "name": "Signal", "description": "Audio rate signal to be sampled.", "type": "Audio" },
+      { "name": "Trigger", "description": "Audio rate signal that triggers the sample and hold.", "type": "Audio" },
+      { "name": "Threshold", "description": "Float value that determines when the trigger signal is considered 'on'.", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Out", "description": "The resulting sampled signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Shift Register",
+    "category": "Modulation",
+    "description": "An eight-stage shift register for floats.",
+    "image": "ShiftRegister.svg",
+    "inputs": [
+      { "name": "Signal", "description": "Input signal to be shifted.", "type": "Float" },
+      { "name": "Trigger", "description": "Trigger input to shift the register.", "type": "Trigger" }
+    ],
+    "outputs": [
+      { "name": "Stage 1", "description": "Shifted output at stage 1.", "type": "Float" },
+      { "name": "Stage 2", "description": "Shifted output at stage 2.", "type": "Float" },
+      { "name": "Stage 3", "description": "Shifted output at stage 3.", "type": "Float" },
+      { "name": "Stage 4", "description": "Shifted output at stage 4.", "type": "Float" },
+      { "name": "Stage 5", "description": "Shifted output at stage 5.", "type": "Float" },
+      { "name": "Stage 6", "description": "Shifted output at stage 6.", "type": "Float" },
+      { "name": "Stage 7", "description": "Shifted output at stage 7.", "type": "Float" },
+      { "name": "Stage 8", "description": "Shifted output at stage 8.", "type": "Float" }
+    ]
+  },
+  {
+    "name": "Slew (audio)",
+    "category": "Filters",
+    "description": "A slew limiter to smooth out the rise and fall times of an audio signal.",
+    "image": "SlewAudio.svg",
+    "inputs": [
+      { "name": "In", "description": "Audio signal to smooth.", "type": "Audio" },
+      { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
+      { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
+    ],
+    "outputs": [
+      { "name": "Out", "description": "Slew rate limited output signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Slew (float)",
+    "category": "Filters",
+    "description": "A slew limiter to smooth out the rise and fall times of a float value.",
+    "image": "SlewFloat.svg",
+    "inputs": [
+      { "name": "In", "description": "Float to smooth.", "type": "Float" },
+      { "name": "Rise Time", "description": "Rise time in seconds.", "type": "Time" },
+      { "name": "Fall Time", "description": "Fall time in seconds.", "type": "Time" }
+    ],
+    "outputs": [
+      { "name": "Out", "description": "Slew rate limited float.", "type": "Float" }
+    ]
+  },
+  {
+    "name": "Stereo Balance",
+    "category": "Spatialization",
+    "description": "Adjust the balance of a stereo signal.",
+    "image": "StereoBalance.svg",
+    "inputs": [
+      { "name": "In L", "description": "Left channel.", "type": "Audio" },
+      { "name": "In R", "description": "Right channel.", "type": "Audio" },
+      { "name": "Balance", "description": "Balance control ranging from -1.0 (full left) to 1.0 (full right).", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
+      { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Stereo Crossfade",
+    "category": "Envelopes",
+    "description": "Crossfade between two stereo signals.",
+    "image": "StereoCrossfade.svg",
+    "inputs": [
+      { "name": "In1 L", "description": "Left channel of first input.", "type": "Audio" },
+      { "name": "In1 R", "description": "Right channel of first input.", "type": "Audio" },
+      { "name": "In2 L", "description": "Left channel of second input.", "type": "Audio" },
+      { "name": "In2 R", "description": "Right channel of second input.", "type": "Audio" },
+      { "name": "Crossfade", "description": "Crossfade between the two inputs (0.0 to 1.0).", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Out L", "description": "Left channel of the output signal.", "type": "Audio" },
+      { "name": "Out R", "description": "Right channel of the output signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Stereo Gain",
+    "category": "Mix",
+    "description": "Adjust gain for a stereo signal.",
+    "image": "StereoGain.svg",
+    "inputs": [
+      { "name": "In L", "description": "Left channel.", "type": "Audio" },
+      { "name": "In R", "description": "Right channel.", "type": "Audio" },
+      { "name": "Balance", "description": "Gain control (0.0 to 1.0).", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
+      { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Stereo Inverter",
+    "category": "Spatialization",
+    "description": "Invert and/or swap stereo channels.",
+    "image": "StereoInverter.svg",
+    "inputs": [
+      { "name": "In L", "description": "Left channel audio input.", "type": "Audio" },
+      { "name": "In R", "description": "Right channel audio input.", "type": "Audio" },
+      { "name": "Invert L", "description": "Invert the polarity of the left channel.", "type": "Bool" },
+      { "name": "Invert R", "description": "Invert the polarity of the right channel.", "type": "Bool" },
+      { "name": "Swap L/R", "description": "Swap the left and right channels.", "type": "Bool" }
+    ],
+    "outputs": [
+      { "name": "Out L", "description": "Left output channel.", "type": "Audio" },
+      { "name": "Out R", "description": "Right output channel.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Stereo Width",
+    "category": "Spatialization",
+    "description": "Stereo width adjustment (0-200%), using mid-side processing.",
+    "image": "StereoWidth.svg",
+    "inputs": [
+      { "name": "In L", "description": "Left channel.", "type": "Audio" },
+      { "name": "In R", "description": "Right channel.", "type": "Audio" },
+      { "name": "Width", "description": "Stereo width factor ranging from 0 to 200% (0 - 2).", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Out L", "description": "Left channel of the adjusted stereo output signal.", "type": "Audio" },
+      { "name": "Out R", "description": "Right channel of the adjusted stereo output signal.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Tuning",
+    "category": "Tuning",
+    "description": "Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.",
+    "image": "Tuning.svg",
+    "inputs": [
+      { "name": "Note Number", "description": "Input MIDI note number (integer).", "type": "Int32" },
+      { "name": "+/- Cents C", "description": "Tuning adjustment for note 0 in cents.", "type": "Float" },
+      { "name": "+/- Cents C# / Db", "description": "Tuning adjustment for note 1 in cents.", "type": "Float" },
+      { "name": "+/- Cents D", "description": "Tuning adjustment for note 2 in cents.", "type": "Float" },
+      { "name": "+/- Cents D# / Eb", "description": "Tuning adjustment for note 3 in cents.", "type": "Float" },
+      { "name": "+/- Cents E", "description": "Tuning adjustment for note 4 in cents.", "type": "Float" },
+      { "name": "+/- Cents F", "description": "Tuning adjustment for note 5 in cents.", "type": "Float" },
+      { "name": "+/- Cents F# / Gb", "description": "Tuning adjustment for note 6 in cents.", "type": "Float" },
+      { "name": "+/- Cents G", "description": "Tuning adjustment for note 7 in cents.", "type": "Float" },
+      { "name": "+/- Cents G# / Ab", "description": "Tuning adjustment for note 8 in cents.", "type": "Float" },
+      { "name": "+/- Cents A", "description": "Tuning adjustment for note 9 in cents.", "type": "Float" },
+      { "name": "+/- Cents A# / Bb", "description": "Tuning adjustment for note 10 in cents.", "type": "Float" },
+      { "name": "+/- Cents B", "description": "Tuning adjustment for note 11 in cents.", "type": "Float" }
+    ],
+    "outputs": [
+      { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
+    ]
+  },
+  {
+    "name": "Zero Crossing",
+    "category": "Envelopes",
+    "description": "Generates a trigger when the input signal crosses zero.",
+    "image": "ZeroCrossingTrigger.svg",
+    "inputs": [
+      { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
+      { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
+    ],
+    "outputs": [
+      { "name": "Trigger", "description": "Output trigger when zero crossing is detected.", "type": "Trigger" }
+    ]
+  }
 ]
