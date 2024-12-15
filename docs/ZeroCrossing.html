@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sample and Hold</title>
+  <title>Zero Crossing</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,9 +32,9 @@
         </ul>
     </nav>
   <main>
-    <h1>Sample and Hold</h1>
-    <p>An alternative sample and hold unit with an audio-rate trigger and threshold control.</p>
-    <img src="./svg/SampleAndHold.svg" alt="Sample and Hold">
+    <h1>Zero Crossing</h1>
+    <p>Generates a trigger when the input signal crosses zero.</p>
+    <img src="./svg/ZeroCrossingTrigger.svg" alt="Zero Crossing">
     <h2>Inputs</h2>
     <table>
       <thead>
@@ -48,21 +48,14 @@
         
       <tr>
         <td>Signal</td>
-        <td>Audio rate signal to be sampled.</td>
-        <td>Audio</td>
-      </tr>
-    
-
-      <tr>
-        <td>Trigger</td>
-        <td>Audio rate signal that triggers the sample and hold.</td>
+        <td>Input audio signal to monitor for zero crossings.</td>
         <td>Audio</td>
       </tr>
     
 
       <tr>
         <td>Threshold</td>
-        <td>Float value that determines when the trigger signal is considered 'on'.</td>
+        <td>Threshold value to determine zero crossing.</td>
         <td>Float</td>
       </tr>
     
@@ -81,9 +74,9 @@
       <tbody>
         
       <tr>
-        <td>Out</td>
-        <td>The resulting sampled signal.</td>
-        <td>Audio</td>
+        <td>Trigger</td>
+        <td>Output trigger when zero crossing is detected.</td>
+        <td>Trigger</td>
       </tr>
     
       </tbody>

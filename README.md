@@ -4,7 +4,7 @@ This repository contains a collection of custom nodes for Unreal Engine's MetaSo
 ![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/Nodes.svg)
 
 ## Branches
-There are currently sixteen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently seventeen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
 
 | Node                                                                  | Category         | Description                                                                                                         |
 |-----------------------------------------------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -25,6 +25,7 @@ There are currently sixteen nodes available in the *MetaSoundBranches* plugin fo
 | [`Stereo Inverter`](https://matthewscharles.github.io/metasound-plugins/StereoInverter.html)               | Spatialization   | Invert and/or swap stereo channels.                                                                                 |
 | [`Stereo Width`](https://matthewscharles.github.io/metasound-plugins/StereoWidth.html)                     | Spatialization   | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | [`Tuning`](https://matthewscharles.github.io/metasound-plugins/Tuning.html)                                 | Tuning           | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
+| [`Zero Crossing`](https://matthewscharles.github.io/metasound-plugins/ZeroCrossing.html)                                 | Zero Crossing           | Detect zero crossings in an input audio signal, with optional debounce.                               |
 
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 
@@ -52,10 +53,9 @@ sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-p
 Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
 
 ## Documentation
-Development notes:
-- [List of nodes and inputs/outputs](./docs/nodes.md)
-- [Development notes](./docs/development_notes.md): information on the first custom node and development process.
-    - [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
+### Development notes
+- [Initial notes](./docs/README.md): information on the first custom node and development process.
+- [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
 
 ---
 
