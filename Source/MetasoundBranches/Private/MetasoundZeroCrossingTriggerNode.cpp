@@ -62,11 +62,11 @@ namespace Metasound
 
                 FNodeClassMetadata Metadata;
 
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Zero Crossing Trigger"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Zero Crossing"), StandardNodes::AudioVariant };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
-                Metadata.DisplayName = METASOUND_LOCTEXT("ZeroCrossingNodeDisplayName", "Zero Crossing Trigger");
-                Metadata.Description = METASOUND_LOCTEXT("ZeroCrossingNodeDesc", "Detects zero crossings in an input audio signal, with optional debounce.");
+                Metadata.DisplayName = METASOUND_LOCTEXT("ZeroCrossingNodeDisplayName", "Zero Crossing");
+                Metadata.Description = METASOUND_LOCTEXT("ZeroCrossingNodeDesc", "Detect zero crossings in an input audio signal, with optional debounce.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();

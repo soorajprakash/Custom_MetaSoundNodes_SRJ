@@ -253,7 +253,7 @@
         ]
     },
     {
-      "name": "Zero Crossing Trigger",
+      "name": "Zero Crossing",
       "description": "Generates a trigger when the input signal crosses zero.",
       "image": "ZeroCrossingTrigger.svg",
       "inputs": [

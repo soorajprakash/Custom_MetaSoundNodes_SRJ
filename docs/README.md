@@ -41,6 +41,7 @@ A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released
 | [`Stereo Inverter`](StereoInverter.html)               | Spatialization   | Invert and/or swap stereo channels.                                                                                 |
 | [`Stereo Width`](StereoWidth.html)                     | Spatialization   | Stereo width adjustment (0-200%), using mid-side processing.                                                        |
 | [`Tuning`](Tuning.html)                                 | Tuning           | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note.                               |
+| [`Zero Crossing`](ZeroCrossing.html)                                 | Zero Crossing           | Detect zero crossings in an input audio signal, with optional debounce.                               |
 
 ---
 
