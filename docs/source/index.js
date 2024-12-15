@@ -115,3 +115,20 @@ data.forEach(node => {
   fs.writeFileSync(filePath, htmlContent, 'utf8');
   console.log(`- ${fileName}`);
 });
+
+const tableHeader = `| Node | Category | Description |
+|------|-----------|-------------|
+`;
+
+const tableRows = data.map(d => {
+  const safeName = d.name.replace(/\s+/g, '');
+  const nodeURL = `https://matthewscharles.github.io/metasound-plugins/${safeName}.html`;
+  const category = d.category || '-';
+  return `| [\`${d.name}\`](${nodeURL}) | ${category} | ${d.description} |`;
+}).join('\n');
+
+const mdContent = tableHeader + tableRows + '\n';
+
+fs.writeFileSync(path.join(outputDir, 'nodes.md'), mdContent, 'utf8');
+console.log('-----');
+console.log('- nodes.md');
