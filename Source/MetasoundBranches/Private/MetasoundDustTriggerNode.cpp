@@ -49,7 +49,7 @@ namespace Metasound
             static const FVertexInterface Interface(
                 FInputVertexInterface(
                     TInputDataVertexModel<bool>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputEnabled), true),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset), 0.0f),
+                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensityOffset), 0.1f),
                     TInputDataVertexModel<FAudioBuffer>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDensity))
                 ),
                 FOutputVertexInterface(
