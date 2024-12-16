@@ -29,4 +29,5 @@
 | 12/09  | - Create JSON file for nodes. |
 | 12/13  | - Generate HTML files for nodes. |
 | 12/14  | - Attempt zero crossing node. |
-| 12/15  | - Merge zero crossing into dev. |
+| 12/15  | - Merge zero crossing into dev.<br>- Refine docs. |
+| 12/16  | - Clean up build script.<br>- Rename Click to Impulse.<br>- Improve consistency of node names and labels. |

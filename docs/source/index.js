@@ -92,6 +92,7 @@ data.forEach(node => {
     </table>
     <br><br>
     <hr>
+    <br><br>
     <a href="https://github.com/matthewscharles/">Charles Matthews 2024</a>
   </main>
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>

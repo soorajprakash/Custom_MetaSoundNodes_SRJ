@@ -6,7 +6,7 @@ A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released
 
 <!-- - [Bool To Audio](BoolToAudio.html)
 - [Clock Divider](ClockDivider.html)
-- [Click](Click.html)
+- [Impulse](Impulse.html)
 - [Dust](Dust.html)
 - [Edge](Edge.html)
 - [EDO](EDO.html)
@@ -26,7 +26,7 @@ A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released
 |-----------------------------------------------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------|
 | [`Bool To Audio`](BoolToAudio.html)                     | Conversions      | Convert a boolean value to an audio signal, with optional rise and fall times.                                      |
 | [`Clock Divider`](ClockDivider.html)                     | Triggers         | Divide a trigger into eight density levels.                                                                         |
-| [`Click`](Click.html)                                   | Generators       | Trigger a one-sample impulse (unipolar or alternating polarity per impulse).                                        |
+| [`Impulse`](Impulse.html)                                   | Generators       | Trigger a one-sample impulse (unipolar or alternating polarity per impulse).                                        |
 | [`Dust`](Dust.html)                                     | Generators       | A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation. |
 | [`Edge`](Edge.html)                                     | Envelopes        | Detect upward and downward changes in an input audio signal, with optional debounce.                                |
 | [`EDO`](EDO.html)                                       | Tuning           | Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440). |

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-2840 696 433 271" width="433" height="271">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-2840 696 433 271" width="433" height="271">
   <defs>
-  <style type="text/css">
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
- </style>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#181a19"/>
       <stop offset=".9079928" stop-color="#262726"/>
@@ -12,20 +9,20 @@
     </linearGradient>
     <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(-2623.5 966.5) rotate(-90) scale(270)"/>
   </defs>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none" stroke="none">
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>Canvas 1</title>
-    <g id="Canvas_1_Layer_1">
-      <title>Layer 1</title>
-      <g id="Group_739">
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Group_1007">
         <g id="Graphic_47">
           <path d="M -2824.5 696.5 L -2422.5 696.5 C -2414.2157 696.5 -2407.5 703.2157 -2407.5 711.5 L -2407.5 951.5 C -2407.5 959.7843 -2414.2157 966.5 -2422.5 966.5 L -2824.5 966.5 C -2832.7843 966.5 -2839.5 959.7843 -2839.5 951.5 L -2839.5 711.5 C -2839.5 703.2157 -2832.7843 696.5 -2824.5 696.5 Z" fill="url(#Obj_Gradient)"/>
           <path d="M -2824.5 696.5 L -2422.5 696.5 C -2414.2157 696.5 -2407.5 703.2157 -2407.5 711.5 L -2407.5 951.5 C -2407.5 959.7843 -2414.2157 966.5 -2422.5 966.5 L -2824.5 966.5 C -2832.7843 966.5 -2839.5 959.7843 -2839.5 951.5 L -2839.5 711.5 C -2839.5 703.2157 -2832.7843 696.5 -2824.5 696.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         </g>
         <g id="Graphic_48">
-          <text transform="translate(-2663.477 710.1543)" fill="#a9ec9f">
+          <text transform="translate(-2706.6147 710.1543)" fill="#a9ec9f">
             <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
             <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Dust</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Dust (Audio)</tspan>
           </text>
         </g>
         <g id="Group_49">

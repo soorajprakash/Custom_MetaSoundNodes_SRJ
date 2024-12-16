@@ -34,24 +34,10 @@
     ]
   },
   {
-    "name": "Click",
-    "category": "Generators",
-    "description": "Trigger a one-sample impulse (unipolar or alternating polarity per impulse).",
-    "image": "Click.svg",
-    "inputs": [
-      { "name": "Trigger", "description": "Trigger input to generate an impulse.", "type": "Trigger" },
-      { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" }
-    ],
-    "outputs": [
-      { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
-      { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
-    ]
-  },
-  {
-    "name": "Dust",
+    "name": "Dust (Audio)",
     "category": "Generators",
     "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
-    "image": "Dust.svg",
+    "image": "DustAudio.svg",
     "inputs": [
       { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
       { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" },
@@ -59,7 +45,22 @@
       { "name": "Modulation", "description": "Density control signal.", "type": "Audio" }
     ],
     "outputs": [
-      { "name": "Impulse Output", "description": "Generated impulse output.", "type": "Audio" }
+      { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
+    ]
+  },
+  {
+    "name": "Dust (Trigger)",
+    "category": "Generators",
+    "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
+    "image": "DustTrigger.svg",
+    "inputs": [
+      { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
+      { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" },
+      { "name": "Density", "description": "Probability of impulse generation.", "type": "Float" },
+      { "name": "Modulation", "description": "Density control signal.", "type": "Audio" }
+    ],
+    "outputs": [
+      { "name": "Trigger Out", "description": "Generated impulse output.", "type": "Trigger" }
     ]
   },
   {
@@ -82,13 +83,27 @@
     "description": "Generate frequencies for tuning systems using equally divided octaves (float) with a MIDI note input. Set a reference frequency and reference MIDI note (defaults to A440).",
     "image": "EDO.svg",
     "inputs": [
-      { "name": "Note Number", "description": "Input MIDI note number (integer).", "type": "Int32" },
-      { "name": "Reference Frequency", "description": "Reference frequency (float).", "type": "Float" },
+      { "name": "Note Number", "description": "Input MIDI note number.", "type": "Int32" },
+      { "name": "Reference Frequency", "description": "Reference frequency.", "type": "Float" },
       { "name": "Reference MIDI Note", "description": "Reference MIDI note (integer).", "type": "Int32" },
       { "name": "Divisions", "description": "Number of divisions of the octave (integer).", "type": "Int32" }
     ],
     "outputs": [
-      { "name": "Frequency", "description": "Output frequency (float).", "type": "Float" }
+      { "name": "Frequency", "description": "Output frequency.", "type": "Float" }
+    ]
+  },
+  {
+    "name": "Impulse",
+    "category": "Generators",
+    "description": "Trigger a one-sample impulse (unipolar or alternating polarity per impulse).",
+    "image": "Impulse.svg",
+    "inputs": [
+      { "name": "Trigger", "description": "Trigger input to generate an impulse.", "type": "Trigger" },
+      { "name": "Bi-Polar", "description": "Toggle between bipolar and unipolar impulse output.", "type": "Bool" }
+    ],
+    "outputs": [
+      { "name": "On Trigger", "description": "Trigger passthrough.", "type": "Trigger" },
+      { "name": "Impulse Out", "description": "Generated impulse output.", "type": "Audio" }
     ]
   },
   {
@@ -105,10 +120,10 @@
     ]
   },
   {
-    "name": "Sample and Hold",
+    "name": "Sample and Hold (Audio Trigger)",
     "category": "Filters",
     "description": "An alternative sample and hold unit with an audio-rate trigger and threshold control.",
-    "image": "SampleAndHold.svg",
+    "image": "SampleAndHoldAudio.svg",
     "inputs": [
       { "name": "Signal", "description": "Audio rate signal to be sampled.", "type": "Audio" },
       { "name": "Trigger", "description": "Audio rate signal that triggers the sample and hold.", "type": "Audio" },
@@ -139,7 +154,7 @@
     ]
   },
   {
-    "name": "Slew (audio)",
+    "name": "Slew (Audio)",
     "category": "Filters",
     "description": "A slew limiter to smooth out the rise and fall times of an audio signal.",
     "image": "SlewAudio.svg",
@@ -153,7 +168,7 @@
     ]
   },
   {
-    "name": "Slew (float)",
+    "name": "Slew (Float)",
     "category": "Filters",
     "description": "A slew limiter to smooth out the rise and fall times of a float value.",
     "image": "SlewFloat.svg",

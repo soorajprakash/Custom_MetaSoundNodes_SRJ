@@ -5,9 +5,9 @@
 
 namespace MetasoundBranches
 {
-    class FMetasoundClickNode : public Metasound::FNode
+    class FMetasoundImpulseNode : public Metasound::FNode
     {
     public:
-        FMetasoundClickNode();
+        FMetasoundImpulseNode();
     };
 }

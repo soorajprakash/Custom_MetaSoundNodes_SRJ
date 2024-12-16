@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Edge</title>
+  <title>Sample and Hold (Audio Trigger)</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -34,10 +34,10 @@
     </nav>
   <main>
     <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
-    <h2>Edge</h2>
-    <p><strong>Category:</strong> Envelopes</p>
-    <p>Detects upward and downward changes in an input audio signal, with optional debounce.</p>
-    <img src="./svg/Edge.svg" alt="Edge">
+    <h2>Sample and Hold (Audio Trigger)</h2>
+    <p><strong>Category:</strong> Filters</p>
+    <p>An alternative sample and hold unit with an audio-rate trigger and threshold control.</p>
+    <img src="./svg/SampleAndHoldAudio.svg" alt="Sample and Hold (Audio Trigger)">
     <h3>Inputs</h3>
     <table>
       <thead>
@@ -50,16 +50,23 @@
       <tbody>
         
       <tr>
-        <td>In</td>
-        <td>Input audio to monitor for edge detection.</td>
+        <td>Signal</td>
+        <td>Audio rate signal to be sampled.</td>
         <td>Audio</td>
       </tr>
     
 
       <tr>
-        <td>Debounce</td>
-        <td>Debounce time in seconds to prevent rapid triggering.</td>
-        <td>Time</td>
+        <td>Trigger</td>
+        <td>Audio rate signal that triggers the sample and hold.</td>
+        <td>Audio</td>
+      </tr>
+    
+
+      <tr>
+        <td>Threshold</td>
+        <td>Float value that determines when the trigger signal is considered 'on'.</td>
+        <td>Float</td>
       </tr>
     
       </tbody>
@@ -77,16 +84,9 @@
       <tbody>
         
       <tr>
-        <td>Rise</td>
-        <td>Trigger on rise.</td>
-        <td>Trigger</td>
-      </tr>
-    
-
-      <tr>
-        <td>Fall</td>
-        <td>Trigger on fall.</td>
-        <td>Trigger</td>
+        <td>Out</td>
+        <td>The resulting sampled signal.</td>
+        <td>Audio</td>
       </tr>
     
       </tbody>
