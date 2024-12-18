@@ -70,7 +70,7 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("EdgeNodeDisplayName", "Edge");
-                Metadata.Description = METASOUND_LOCTEXT("EdgeNodeDesc", "Detects upward and downward changes in an input audio signal, with optional debounce.");
+                Metadata.Description = METASOUND_LOCTEXT("EdgeNodeDesc", "Detect upward and downward changes in an input audio signal, with optional debounce.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();

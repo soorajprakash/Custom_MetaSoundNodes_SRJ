@@ -31,3 +31,4 @@
 | 12/14  | - Attempt zero crossing node. |
 | 12/15  | - Merge zero crossing into dev.<br>- Refine docs. |
 | 12/16  | - Clean up build script.<br>- Rename Click to Impulse.<br>- Improve consistency of node names and labels. |
+| 12/18  | - Merge dev into main, prepare for next release. |
