@@ -33,6 +33,8 @@ Upon installing the plugin, these items will appear in the sub-category `Branche
 
 ## Installation
 
+*Please note that this is an experimental version and the node names are subject to change.  Connections may need to be re-drawn upon upgrading to the next version.*
+
 ### Downloadable binaries
 - Download for Windows and Mac here: [Releases](https://github.com/matthewscharles/metasound-plugins/releases/)
 - Extract the contents of the zip file into the plugins folder of your project or engine as preferred.
