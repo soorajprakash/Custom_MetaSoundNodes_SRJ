@@ -2,6 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-2847.875 44.0625 433 181" width="433" height="181">
   <defs>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
+ </style>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#181a19"/>
       <stop offset=".9079928" stop-color="#262726"/>
@@ -20,9 +23,9 @@
         </g>
         <g id="Graphic_629">
           <text transform="translate(-2669.1443 59.465726)" fill="#a9ec9f">
-            <tspan font-family="Roboto" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
-            <tspan font-family="Roboto" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
-            <tspan font-family="Roboto" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Click</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-weight="bold" font-size="24" fill="#a9ec9f" x="0" y="22" xml:space="preserve">ƒ</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7f7f7f" y="22" xml:space="preserve"> </tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="#7fb276" y="22" xml:space="preserve">Impulse</tspan>
           </text>
         </g>
         <g id="Group_623">
@@ -38,12 +41,12 @@
         </g>
         <g id="Graphic_622">
           <text transform="translate(-2640.5745 165.98185)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Impulse Output</tspan>
           </text>
         </g>
         <g id="Graphic_621">
           <text transform="translate(-2782.406 117.53024)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Trigger</tspan>
           </text>
         </g>
         <g id="Group_617">
@@ -59,7 +62,7 @@
         </g>
         <g id="Graphic_616">
           <text transform="translate(-2783.0575 165.98185)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">Bi-Polar</tspan>
           </text>
         </g>
         <g id="Graphic_615">
@@ -81,7 +84,7 @@
         </g>
         <g id="Graphic_906">
           <text transform="translate(-2587 112.94355)" fill="white">
-            <tspan font-family="Roboto" font-size="24" fill="white" x="0" y="22" xml:space="preserve">On Trigger</tspan>
+            <tspan font-family="Roboto, Arial, sans-serif" font-size="24" fill="white" x="0" y="22" xml:space="preserve">On Trigger</tspan>
           </text>
         </g>
         <g id="Group_903">

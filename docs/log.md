@@ -28,3 +28,6 @@
 | 12/08  | - Add passthrough trigger to click node.<br>- Add first draft of stereo cross router (in branch).<br>- Complete edge node demo, merge with dev to include in next version. <br>- Tidy up documentation and labels according to existing conventions. |
 | 12/09  | - Create JSON file for nodes. |
 | 12/13  | - Generate HTML files for nodes. |
+| 12/14  | - Attempt zero crossing node. |
+| 12/15  | - Merge zero crossing into dev.<br>- Refine docs. |
+| 12/16  | - Clean up build script.<br>- Rename Click to Impulse.<br>- Improve consistency of node names and labels. |

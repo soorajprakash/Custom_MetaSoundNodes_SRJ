@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Edge</title>
+  <title>Zero Crossing</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -34,10 +34,10 @@
     </nav>
   <main>
     <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
-    <h2>Edge</h2>
+    <h2>Zero Crossing</h2>
     <p><strong>Category:</strong> Envelopes</p>
-    <p>Detects upward and downward changes in an input audio signal, with optional debounce.</p>
-    <img src="./svg/Edge.svg" alt="Edge">
+    <p>Generates a trigger when the input signal crosses zero.</p>
+    <img src="./svg/ZeroCrossingTrigger.svg" alt="Zero Crossing">
     <h3>Inputs</h3>
     <table>
       <thead>
@@ -50,8 +50,8 @@
       <tbody>
         
       <tr>
-        <td>In</td>
-        <td>Input audio to monitor for edge detection.</td>
+        <td>Signal</td>
+        <td>Input audio signal to monitor for zero crossings.</td>
         <td>Audio</td>
       </tr>
     
@@ -77,15 +77,8 @@
       <tbody>
         
       <tr>
-        <td>Rise</td>
-        <td>Trigger on rise.</td>
         <td>Trigger</td>
-      </tr>
-    
-
-      <tr>
-        <td>Fall</td>
-        <td>Trigger on fall.</td>
+        <td>Output trigger when zero crossing is detected.</td>
         <td>Trigger</td>
       </tr>
     

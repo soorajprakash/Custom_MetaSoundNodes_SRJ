@@ -18,7 +18,7 @@ const sidebarContent = data.map(d => {
 
 
 data.forEach(node => {
-  const { name, description, image, inputs, outputs } = node;
+  const { name, description, image, inputs, outputs, category } = node;
 
   const inputRows = inputs.map(input => {
     return `
@@ -58,10 +58,12 @@ data.forEach(node => {
         </ul>
     </nav>
   <main>
-    <h1>${name}</h1>
+    <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
+    <h2>${name}</h2>
+    <p><strong>Category:</strong> ${category}</p>
     <p>${description}</p>
     <img src="./svg/${image}" alt="${name}">
-    <h2>Inputs</h2>
+    <h3>Inputs</h3>
     <table>
       <thead>
         <tr>
@@ -75,7 +77,7 @@ data.forEach(node => {
       </tbody>
     </table>
 
-    <h2>Outputs</h2>
+    <h3>Outputs</h3>
     <table>
       <thead>
         <tr>
@@ -88,6 +90,10 @@ data.forEach(node => {
         ${outputRows}
       </tbody>
     </table>
+    <br><br>
+    <hr>
+    <br><br>
+    <a href="https://github.com/matthewscharles/">Charles Matthews 2024</a>
   </main>
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
 </body>
@@ -111,3 +117,20 @@ data.forEach(node => {
   fs.writeFileSync(filePath, htmlContent, 'utf8');
   console.log(`- ${fileName}`);
 });
+
+const tableHeader = `| Node | Category | Description |
+|------|-----------|-------------|
+`;
+
+const tableRows = data.map(d => {
+  const safeName = d.name.replace(/\s+/g, '');
+  const nodeURL = `https://matthewscharles.github.io/metasound-plugins/${safeName}.html`;
+  const category = d.category || '-';
+  return `| [\`${d.name}\`](${nodeURL}) | ${category} | ${d.description} |`;
+}).join('\n');
+
+const mdContent = tableHeader + tableRows + '\n';
+
+fs.writeFileSync(path.join(outputDir, 'nodes.md'), mdContent, 'utf8');
+console.log('-----');
+console.log('- nodes.md');

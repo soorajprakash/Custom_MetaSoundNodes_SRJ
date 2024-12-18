@@ -1,4 +1,4 @@
-#include "MetasoundBranches/Public/MetasoundClickNode.h"
+#include "MetasoundBranches/Public/MetasoundImpulseNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
@@ -7,25 +7,25 @@
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 
 // Required for ensuring the node is supported by all languages in engine. Must be unique per MetaSound.
-#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_ClickNode"
+#define LOCTEXT_NAMESPACE "MetasoundStandardNodes_ImpulseNode"
 
 namespace Metasound
 {
     // Vertex Names - define the node's inputs and outputs here
-    namespace ClickNodeNames
+    namespace ImpulseNodeNames
     {
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger input to generate an impulse.");
         METASOUND_PARAM(InputBiPolar, "Bi-Polar", "Toggle between bipolar and unipolar impulse output.");
         METASOUND_PARAM(OutputOnTrigger, "On Trigger", "Trigger output when the node is triggered.");
-        METASOUND_PARAM(OutputImpulse, "Impulse Output", "Generated impulse output.");
+        METASOUND_PARAM(OutputImpulse, "Impulse Out", "Generated impulse output.");
     }
 
     // Operator Class - defines the way the node is described, created and executed
-    class FClickOperator : public TExecutableOperator<FClickOperator>
+    class FImpulseOperator : public TExecutableOperator<FImpulseOperator>
     {
     public:
         // Constructor
-        FClickOperator(
+        FImpulseOperator(
             const FOperatorSettings& InSettings,
             const FTriggerReadRef& InTrigger,
             const FBoolReadRef& InBiPolar)
@@ -40,7 +40,7 @@ namespace Metasound
         // Helper function for constructing vertex interface
         static const FVertexInterface& DeclareVertexInterface()
         {
-            using namespace ClickNodeNames;
+            using namespace ImpulseNodeNames;
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
@@ -65,11 +65,11 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Click"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Impulse"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("ClickNodeDisplayName", "Click");
-                    Metadata.Description = METASOUND_LOCTEXT("ClickNodeDesc", "Generates a single-sample impulse when triggered.");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("ImpulseNodeDisplayName", "Impulse");
+                    Metadata.Description = METASOUND_LOCTEXT("ImpulseNodeDesc", "Generates a single-sample impulse when triggered.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();
@@ -86,7 +86,7 @@ namespace Metasound
         // Allows MetaSound graph to interact with the node's inputs
         virtual FDataReferenceCollection GetInputs() const override
         {
-            using namespace ClickNodeNames;
+            using namespace ImpulseNodeNames;
             FDataReferenceCollection Inputs;
             Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputTrigger), InputTrigger);
             Inputs.AddDataReadReference(METASOUND_GET_PARAM_NAME(InputBiPolar), InputBiPolar);
@@ -96,7 +96,7 @@ namespace Metasound
         // Allows MetaSound graph to interact with the node's outputs
         virtual FDataReferenceCollection GetOutputs() const override
         {
-            using namespace ClickNodeNames;
+            using namespace ImpulseNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
             
@@ -109,7 +109,7 @@ namespace Metasound
         // Used to instantiate a new runtime instance of the node
         static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
         {
-            using namespace ClickNodeNames;
+            using namespace ImpulseNodeNames;
 
             const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
@@ -117,7 +117,7 @@ namespace Metasound
             TDataReadReference<FTrigger> InputTrigger = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
             TDataReadReference<bool> InputBiPolar = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputBiPolar), InParams.OperatorSettings);
 
-            return MakeUnique<FClickOperator>(
+            return MakeUnique<FImpulseOperator>(
                 InParams.OperatorSettings,
                 InputTrigger,
                 InputBiPolar
@@ -178,17 +178,17 @@ namespace Metasound
     };
 
     // Node Class - Inheriting from FNodeFacade is recommended for nodes that have a static FVertexInterface
-    class FClickNode : public FNodeFacade
+    class FImpulseNode : public FNodeFacade
     {
     public:
-        FClickNode(const FNodeInitData& InitData)
-            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FClickOperator>())
+        FImpulseNode(const FNodeInitData& InitData)
+            : FNodeFacade(InitData.InstanceName, InitData.InstanceID, TFacadeOperatorClass<FImpulseOperator>())
         {
         }
     };
 
     // Register node
-    METASOUND_REGISTER_NODE(FClickNode);
+    METASOUND_REGISTER_NODE(FImpulseNode);
 }
 
 #undef LOCTEXT_NAMESPACE
