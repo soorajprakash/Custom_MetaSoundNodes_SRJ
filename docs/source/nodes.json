@@ -156,7 +156,7 @@
   {
     "name": "Slew (Audio)",
     "category": "Filters",
-    "description": "A slew limiter to smooth out the rise and fall times of an audio signal.",
+    "description": "A slew rate limiter to smooth out the rise and fall times of an audio signal.",
     "image": "SlewAudio.svg",
     "inputs": [
       { "name": "In", "description": "Audio signal to smooth.", "type": "Audio" },
