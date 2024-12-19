@@ -75,7 +75,7 @@ namespace Metasound
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("DustTriggerNodeDisplayName", "Dust (Trigger)");
-                    Metadata.Description = METASOUND_LOCTEXT("DustTriggerNodeDesc", "Generates randomly timed trigger events, with audio-rate modulation.");
+                    Metadata.Description = METASOUND_LOCTEXT("DustTriggerNodeDesc", "Generate randomly timed trigger events, with audio-rate modulation.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                     Metadata.DefaultInterface = DeclareVertexInterface();

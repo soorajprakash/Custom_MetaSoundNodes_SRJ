@@ -36,7 +36,7 @@
   {
     "name": "Dust (Audio)",
     "category": "Generators",
-    "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
+    "description": "Generate randomly timed impulses (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
     "image": "DustAudio.svg",
     "inputs": [
       { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
@@ -51,7 +51,7 @@
   {
     "name": "Dust (Trigger)",
     "category": "Generators",
-    "description": "A randomly timed impulse generator (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
+    "description": "Generate randomly timed impulses (unipolar or alternating polarity per impulse) with density control and audio-rate modulation.",
     "image": "DustTrigger.svg",
     "inputs": [
       { "name": "Enabled", "description": "Enable or disable the dust node.", "type": "Bool" },
@@ -66,7 +66,7 @@
   {
     "name": "Edge",
     "category": "Envelopes",
-    "description": "Detects upward and downward changes in an input audio signal, with optional debounce.",
+    "description": "Detect upward and downward changes in an input audio signal, with optional debounce.",
     "image": "Edge.svg",
     "inputs": [
       { "name": "In", "description": "Input audio to monitor for edge detection.", "type": "Audio" },
@@ -287,7 +287,7 @@
   {
     "name": "Zero Crossing",
     "category": "Envelopes",
-    "description": "Generates a trigger when the input signal crosses zero.",
+    "description": "Detect zero crossings in an input audio signal, with optional debounce.",
     "image": "ZeroCrossingTrigger.svg",
     "inputs": [
       { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
