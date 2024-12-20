@@ -58,7 +58,7 @@ data.forEach(node => {
         </ul>
     </nav>
   <main>
-    <h1><a href="https://matthewscharles.github.io/metasound-plugins/">MetaSound Branches</a></h1>
+    <h1><a href="https://matthewscharles.github.io/metasound-branches/">MetaSound Branches</a></h1>
     <h2>${name}</h2>
     <p><strong>Category:</strong> ${category}</p>
     <p>${description}</p>
@@ -124,7 +124,7 @@ const tableHeader = `| Node | Category | Description |
 
 const tableRows = data.map(d => {
   const safeName = d.name.replace(/\s+/g, '');
-  const nodeURL = `https://matthewscharles.github.io/metasound-plugins/${safeName}.html`;
+  const nodeURL = `https://matthewscharles.github.io/metasound-branches/${safeName}.html`;
   const category = d.category || '-';
   return `| [\`${d.name}\`](${nodeURL}) | ${category} | ${d.description} |`;
 }).join('\n');

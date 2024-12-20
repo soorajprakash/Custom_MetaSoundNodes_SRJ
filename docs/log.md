@@ -14,7 +14,7 @@
 | 11/24  | - Merge width and balance with main. |
 | 11/25  | - Create first draft of a Wave Reader node (sample-by-sample from an audio input). |
 | 11/26  | - Add stereo crossfade node. |
-| 11/27  | - Convert stereo crossfade to equal power, merge with main.<br>- Remove balance node (already available in spatialisation->stereo pan). Code: [e48d011](https://github.com/matthewscharles/metasound-plugins/commit/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d) : [MetasoundBalanceNode.cpp](https://github.com/matthewscharles/metasound-plugins/blob/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d/Source/MetasoundBranches/Private/MetasoundBalanceNode.cpp).<br>- Add bool To audio node.<br>- Create first draft of EDO node.|
+| 11/27  | - Convert stereo crossfade to equal power, merge with main.<br>- Remove balance node (already available in spatialisation->stereo pan). Code: [e48d011](https://github.com/matthewscharles/metasound-branches/commit/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d) : [MetasoundBalanceNode.cpp](https://github.com/matthewscharles/metasound-branches/blob/e48d011755f95b5e6f1e72648e1d3b9dfbc4392d/Source/MetasoundBranches/Private/MetasoundBalanceNode.cpp).<br>- Add bool To audio node.<br>- Create first draft of EDO node.|
 | 11/28  | - Create first draft of tuning node.  Note: I think these two latest nodes will run on the audio thread unless we include a trigger control.  |
 | 11/29  | - Test EDO, switch input from float to integer, merge into main.  |
 | 11/30  | - Create click node, test, merge into main.  |
@@ -24,7 +24,7 @@
 | 12/04  | - Attempt to update code to new API (replace old branch, not much luck yet).<br>-Add categories to readme.<br>-Remove Sample and Hold bank from collection.  |
 | 12/05  | - Modify Slew and Bool To Audio to use time values.<br>- Add float version of slew node.<br>- Add SVGs for documentation.  |
 | 12/06  | - Add stereo inverter node.<br>- Rename width to stereo width.  |
-| 12/07  | - Add stereo gain and restore stereo balance (the metasounds stereo pan node is mono input only).<br>- Test on Windows/Mac, upload next release for testing ([0.1.1](https://github.com/matthewscharles/metasound-plugins/releases/tag/v0.1.1-alpha)).<br>- Move toward separate dev branch now that there are releases available to download. |
+| 12/07  | - Add stereo gain and restore stereo balance (the metasounds stereo pan node is mono input only).<br>- Test on Windows/Mac, upload next release for testing ([0.1.1](https://github.com/matthewscharles/metasound-branches/releases/tag/v0.1.1-alpha)).<br>- Move toward separate dev branch now that there are releases available to download. |
 | 12/08  | - Add passthrough trigger to click node.<br>- Add first draft of stereo cross router (in branch).<br>- Complete edge node demo, merge with dev to include in next version. <br>- Tidy up documentation and labels according to existing conventions. |
 | 12/09  | - Create JSON file for nodes. |
 | 12/13  | - Generate HTML files for nodes. |
