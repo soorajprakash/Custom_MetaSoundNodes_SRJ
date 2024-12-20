@@ -1,3 +1,5 @@
+// Copyright Charles Matthews. All Rights Reserved.
+
 #pragma once
 
 #include "Metasound.h"

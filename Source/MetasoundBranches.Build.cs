@@ -1,3 +1,5 @@
+// Copyright Charles Matthews. All Rights Reserved.
+
 using UnrealBuildTool;
 
 public class MetasoundBranches : ModuleRules

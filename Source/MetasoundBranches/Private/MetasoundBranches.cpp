@@ -1,3 +1,5 @@
+// Copyright Charles Matthews. All Rights Reserved.
+
 #include "MetasoundBranches/Public/MetasoundBranches.h"
 #include "MetasoundFrontendRegistries.h"
 #include "Modules/ModuleManager.h"

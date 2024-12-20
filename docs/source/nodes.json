@@ -120,20 +120,6 @@
     ]
   },
   {
-    "name": "Sample and Hold (Audio Trigger)",
-    "category": "Filters",
-    "description": "An alternative sample and hold unit with an audio-rate trigger and threshold control.",
-    "image": "SampleAndHoldAudio.svg",
-    "inputs": [
-      { "name": "Signal", "description": "Audio rate signal to be sampled.", "type": "Audio" },
-      { "name": "Trigger", "description": "Audio rate signal that triggers the sample and hold.", "type": "Audio" },
-      { "name": "Threshold", "description": "Float value that determines when the trigger signal is considered 'on'.", "type": "Float" }
-    ],
-    "outputs": [
-      { "name": "Out", "description": "The resulting sampled signal.", "type": "Audio" }
-    ]
-  },
-  {
     "name": "Shift Register",
     "category": "Modulation",
     "description": "An eight-stage shift register for floats.",
