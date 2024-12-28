@@ -40,7 +40,6 @@ data.forEach(node => {
     `;
   }).join('\n');
 
-  
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,3 +133,8 @@ const mdContent = tableHeader + tableRows + '\n';
 fs.writeFileSync(path.join(outputDir, 'nodes.md'), mdContent, 'utf8');
 console.log('-----');
 console.log('- nodes.md');
+
+data.forEach(node => {
+  const { name, description, image, inputs, outputs, category } = node;
+  console.log(`<img src="${image}" alt="${name}">`);
+})
