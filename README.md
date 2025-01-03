@@ -4,7 +4,7 @@ This repository contains a collection of custom nodes for Unreal Engine's MetaSo
 ![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/Nodes.svg)
 
 ## Branches
-There are currently seventeen nodes available in the *MetaSoundBranches* plugin for testing, with several more in development:
+There are currently seventeen nodes available in the *MetaSound Branches* plugin for testing, with several more in development:
 
 | Node | Category | Description |
 |------|-----------|-------------|
