@@ -112,7 +112,7 @@ namespace Metasound
         {
             using namespace WidthNodeNames;
 
-            const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FAudioBuffer> InputLeftSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputLeftSignal), InParams.OperatorSettings);

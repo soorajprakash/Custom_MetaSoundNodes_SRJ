@@ -107,7 +107,7 @@ namespace Metasound
         {
             using namespace ZeroCrossingNames;
 
-            const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(

@@ -139,7 +139,7 @@ namespace Metasound
         {
             using namespace ShiftRegisterNodeNames;
 
-            const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<float> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);

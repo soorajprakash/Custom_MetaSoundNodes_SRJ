@@ -122,7 +122,7 @@ namespace Metasound
         {
             using namespace CrossfadeStereoNodeNames;
 
-            const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FAudioBuffer> InputLeftSignal1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputLeftSignal1), InParams.OperatorSettings);
