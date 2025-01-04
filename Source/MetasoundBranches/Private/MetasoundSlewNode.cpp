@@ -19,7 +19,7 @@ namespace Metasound
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
-        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited output signal.");
+        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited signal.");
     }
 
     // Operator Class - defines the way the node is described, created, and executed

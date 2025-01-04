@@ -15,12 +15,12 @@ namespace Metasound
 {
     namespace BalanceNodeNames
     {
-        METASOUND_PARAM(InputLeftSignal, "In L", "Left channel of the stereo input signal.");
-        METASOUND_PARAM(InputRightSignal, "In R", "Right channel of the stereo input signal.");
+        METASOUND_PARAM(InputLeftSignal, "In L", "Left channel audio input.");
+        METASOUND_PARAM(InputRightSignal, "In R", "Right channel audio input.");
         METASOUND_PARAM(InputBalance, "Balance", "Balance control ranging from -1.0 (full left) to 1.0 (full right).");
 
-        METASOUND_PARAM(OutputLeftSignal, "Out L", "Left channel of the adjusted stereo output signal.");
-        METASOUND_PARAM(OutputRightSignal, "Out R", "Right channel of the adjusted stereo output signal.");
+        METASOUND_PARAM(OutputLeftSignal, "Out L", "Left output channel.");
+        METASOUND_PARAM(OutputRightSignal, "Out R", "Right output channel.");
     }
 
     class FBalanceOperator : public TExecutableOperator<FBalanceOperator>

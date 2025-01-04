@@ -15,11 +15,11 @@ namespace Metasound
     // Vertex Names - define the node's inputs and outputs here
     namespace SlewFloatNodeNames
     {
-        METASOUND_PARAM(InputSignal, "In", "Float to smooth.");
+        METASOUND_PARAM(InputSignal, "In", "Value to smooth.");
         METASOUND_PARAM(InputRiseTime, "Rise Time", "Rise time in seconds.");
         METASOUND_PARAM(InputFallTime, "Fall Time", "Fall time in seconds.");
 
-        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited  float.");
+        METASOUND_PARAM(OutputSignal, "Out", "Slew rate limited float.");
     }
 
     // Operator Class - defines the way the node is described, created, and executed

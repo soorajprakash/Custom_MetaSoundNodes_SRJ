@@ -15,8 +15,8 @@ namespace Metasound
 {
     namespace ZeroCrossingNames
     {
-        METASOUND_PARAM(InputSignal, "In",          "Input audio to monitor for zero crossings.");
-        METASOUND_PARAM(InputDebounce, "Debounce",  "Debounce time in seconds to prevent rapid triggering.");
+        METASOUND_PARAM(InputSignal, "In", "Input audio to monitor for zero crossings.");
+        METASOUND_PARAM(InputDebounce, "Debounce", "Debounce time in seconds to prevent rapid triggering.");
         METASOUND_PARAM(OutputTriggerZeroCrossing, "Zero Crossing", "Trigger on zero crossing.");
     }
 

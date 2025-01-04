@@ -27,7 +27,7 @@ namespace Metasound
         METASOUND_PARAM(InputTuningCents9, "+/- Cents A", "Tuning adjustment for note 9 in cents.");
         METASOUND_PARAM(InputTuningCents10, "+/- Cents A♯ / B♭", "Tuning adjustment for note 10 in cents.");
         METASOUND_PARAM(InputTuningCents11, "+/- Cents B", "Tuning adjustment for note 11 in cents.");
-        METASOUND_PARAM(OutputFrequency, "Frequency", "Output frequency (float).");
+        METASOUND_PARAM(OutputFrequency, "Frequency", "Output frequency.");
     }
 
     class FTuningNodeOperator : public TExecutableOperator<FTuningNodeOperator>
