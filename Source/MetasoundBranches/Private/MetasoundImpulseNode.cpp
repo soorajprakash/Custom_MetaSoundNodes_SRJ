@@ -108,29 +108,10 @@ namespace Metasound
             return OutputDataReferences;
         }
 
-        // Used to instantiate a new runtime instance of the node
-        // static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
-        // {
-        //     using namespace ImpulseNodeNames;
-
-        //     const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
-        //     const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
-
-        //     TDataReadReference<FTrigger> InputTrigger = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
-        //     TDataReadReference<bool> InputBiPolar = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputBiPolar), InParams.OperatorSettings);
-
-        //     return MakeUnique<FImpulseOperator>(
-        //         InParams.OperatorSettings,
-        //         InputTrigger,
-        //         InputBiPolar
-        //     );
-        // }
-
           static TUniquePtr<IOperator> CreateOperator(const FBuildOperatorParams& InParams, FBuildResults& OutErrors)
         {
             using namespace ImpulseNodeNames;
 
-            // const Metasound::FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
             const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
