@@ -135,8 +135,8 @@ namespace Metasound
             const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FTrigger> InputTrigger = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
-            TDataReadReference<FTrigger> InputReset = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputReset), InParams.OperatorSettings);
+            TDataReadReference<FTrigger> InputTrigger = InputData.GetOrCreateDefaultDataReadReference<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
+            TDataReadReference<FTrigger> InputReset = InputData.GetOrCreateDefaultDataReadReference<FTrigger>(METASOUND_GET_PARAM_NAME(InputReset), InParams.OperatorSettings);
 
             return MakeUnique<FClockDividerOperator>(
                 InParams.OperatorSettings,

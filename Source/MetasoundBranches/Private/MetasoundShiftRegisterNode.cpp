@@ -143,7 +143,7 @@ namespace Metasound
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<float> InputSignal = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
-            TDataReadReference<FTrigger> InputTrigger = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
+            TDataReadReference<FTrigger> InputTrigger = InputData.GetOrCreateDefaultDataReadReference<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);
 
             return MakeUnique<FShiftRegisterOperator>(
                 InParams.OperatorSettings,
