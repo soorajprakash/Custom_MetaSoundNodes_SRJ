@@ -108,17 +108,17 @@ namespace Metasound
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<bool> InputBool = InputData.GetOrCreateDefaultDataReadReference<bool>(
-                                METASOUND_GET_PARAM_NAME(InputBool),
+                METASOUND_GET_PARAM_NAME(InputBool),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputRiseTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                                METASOUND_GET_PARAM_NAME(InputRiseTime),
+                METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputFallTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                                METASOUND_GET_PARAM_NAME(InputFallTime),
+                METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
             );
 

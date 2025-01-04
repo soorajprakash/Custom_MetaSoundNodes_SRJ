@@ -119,17 +119,17 @@ namespace Metasound
 
             // Retrieve input references or use default values
             TDataReadReference<FAudioBuffer> InputSignal = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(
-                                METASOUND_GET_PARAM_NAME(InputSignal),
+                METASOUND_GET_PARAM_NAME(InputSignal),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputRiseTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                                METASOUND_GET_PARAM_NAME(InputRiseTime),
+                METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputFallTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                                METASOUND_GET_PARAM_NAME(InputFallTime),
+                METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
             );
 
