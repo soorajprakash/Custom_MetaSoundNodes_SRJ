@@ -135,7 +135,7 @@ namespace Metasound
             return OutputDataReferences;
         }
 
-        static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
+        static TUniquePtr<IOperator> CreateOperator(const FBuildOperatorParams& InParams, FBuildResults& OutErrors)
         {
             using namespace ShiftRegisterNodeNames;
 

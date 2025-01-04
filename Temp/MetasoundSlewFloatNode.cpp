@@ -110,7 +110,7 @@ namespace Metasound
         }
 
         // Operator Factory Method
-        static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
+        static TUniquePtr<IOperator> CreateOperator(const FBuildOperatorParams& InParams, FBuildResults& OutErrors)
         {
             using namespace SlewFloatNodeNames;
 
@@ -119,20 +119,17 @@ namespace Metasound
 
             // Retrieve input references or use default values
             TDataReadReference<float> InputSignal = InputData.GetOrCreateDefaultDataReadReference<float>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputSignal),
+                                METASOUND_GET_PARAM_NAME(InputSignal),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputRiseTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputRiseTime),
+                                METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputFallTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputFallTime),
+                                METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
             );
 

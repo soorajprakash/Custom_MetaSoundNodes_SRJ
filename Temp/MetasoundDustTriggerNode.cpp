@@ -113,7 +113,7 @@ namespace Metasound
         }
 
         // Used to instantiate a new runtime instance of the node
-        static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
+        static TUniquePtr<IOperator> CreateOperator(const FBuildOperatorParams& InParams, FBuildResults& OutErrors)
         {
             using namespace DustTriggerNodeNames;
 

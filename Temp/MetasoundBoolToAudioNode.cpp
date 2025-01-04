@@ -100,7 +100,7 @@ namespace Metasound
             return OutputDataReferences;
         }
 
-        static TUniquePtr<IOperator> CreateOperator(const FCreateOperatorParams& InParams, FBuildErrorArray& OutErrors)
+        static TUniquePtr<IOperator> CreateOperator(const FBuildOperatorParams& InParams, FBuildResults& OutErrors)
         {
             using namespace BoolToAudioNodeNames;
 
@@ -108,20 +108,17 @@ namespace Metasound
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<bool> InputBool = InputData.GetOrCreateDefaultDataReadReference<bool>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputBool),
+                                METASOUND_GET_PARAM_NAME(InputBool),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputRiseTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputRiseTime),
+                                METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
             TDataReadReference<FTime> InputFallTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
-                InputInterface,
-                METASOUND_GET_PARAM_NAME(InputFallTime),
+                                METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings
             );
 
