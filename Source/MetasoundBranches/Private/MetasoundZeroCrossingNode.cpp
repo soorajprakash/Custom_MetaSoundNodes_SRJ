@@ -107,14 +107,14 @@ namespace Metasound
         {
             using namespace ZeroCrossingNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
-                InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(
+                METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
 
-            TDataReadReference<FTime> InputDebounce = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
-                InputInterface, METASOUND_GET_PARAM_NAME(InputDebounce), InParams.OperatorSettings);
+            TDataReadReference<FTime> InputDebounce = InputData.GetOrCreateDefaultDataReadReference<FTime>(
+                METASOUND_GET_PARAM_NAME(InputDebounce), InParams.OperatorSettings);
 
             float SampleRate = InParams.OperatorSettings.GetSampleRate();
 

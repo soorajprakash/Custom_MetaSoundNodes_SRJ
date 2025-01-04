@@ -132,7 +132,7 @@ namespace Metasound
         {
             using namespace ClockDividerNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             TDataReadReference<FTrigger> InputTrigger = InputCollection.GetDataReadReferenceOrConstruct<FTrigger>(METASOUND_GET_PARAM_NAME(InputTrigger), InParams.OperatorSettings);

@@ -106,14 +106,14 @@ namespace Metasound
         {
             using namespace PhaseDisperserNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
-                InputInterface, METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputSignal = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(
+                METASOUND_GET_PARAM_NAME(InputSignal), InParams.OperatorSettings);
 
-            TDataReadReference<int32> NumFiltersRef = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(
-                InputInterface, METASOUND_GET_PARAM_NAME(NumFilters), InParams.OperatorSettings);
+            TDataReadReference<int32> NumFiltersRef = InputData.GetOrCreateDefaultDataReadReference<int32>(
+                METASOUND_GET_PARAM_NAME(NumFilters), InParams.OperatorSettings);
 
             int32 ClampedNumFilters = FMath::Clamp(*NumFiltersRef, 1, MaxAllowedFilters);
           

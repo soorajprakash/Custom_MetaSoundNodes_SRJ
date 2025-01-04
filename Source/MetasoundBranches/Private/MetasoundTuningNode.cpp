@@ -157,23 +157,23 @@ namespace Metasound
         {
             using namespace TuningNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<int32> MIDINoteNumber = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputMIDINoteNumber), InParams.OperatorSettings);
+            TDataReadReference<int32> MIDINoteNumber = InputData.GetOrCreateDefaultDataReadReference<int32>(METASOUND_GET_PARAM_NAME(InputMIDINoteNumber), InParams.OperatorSettings);
 
-            TDataReadReference<float> TuningCents0 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents0), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents1), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents2 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents2), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents3 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents3), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents4 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents4), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents5 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents5), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents6 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents6), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents7 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents7), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents8 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents8), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents9 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents9), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents10 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents10), InParams.OperatorSettings);
-            TDataReadReference<float> TuningCents11 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputTuningCents11), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents0 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents0), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents1 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents1), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents2 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents2), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents3 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents3), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents4 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents4), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents5 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents5), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents6 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents6), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents7 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents7), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents8 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents8), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents9 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents9), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents10 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents10), InParams.OperatorSettings);
+            TDataReadReference<float> TuningCents11 = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputTuningCents11), InParams.OperatorSettings);
 
             return MakeUnique<FTuningNodeOperator>(
                 InParams.OperatorSettings,

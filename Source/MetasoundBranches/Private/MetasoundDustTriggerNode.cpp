@@ -117,12 +117,12 @@ namespace Metasound
         {
             using namespace DustTriggerNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputDensity = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensity), InParams.OperatorSettings);
-            TDataReadReference<float> InputDensityOffset = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
-            TDataReadReference<bool> InputEnabled = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<bool>(InputInterface, METASOUND_GET_PARAM_NAME(InputEnabled), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputDensity = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(METASOUND_GET_PARAM_NAME(InputDensity), InParams.OperatorSettings);
+            TDataReadReference<float> InputDensityOffset = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputDensityOffset), InParams.OperatorSettings);
+            TDataReadReference<bool> InputEnabled = InputData.GetOrCreateDefaultDataReadReference<bool>(METASOUND_GET_PARAM_NAME(InputEnabled), InParams.OperatorSettings);
 
             return MakeUnique<FDustTriggerOperator>(InParams.OperatorSettings, InputDensity, InputDensityOffset, InputEnabled);
         }

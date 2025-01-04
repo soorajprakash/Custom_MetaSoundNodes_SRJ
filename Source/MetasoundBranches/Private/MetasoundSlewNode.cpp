@@ -114,23 +114,23 @@ namespace Metasound
         {
             using namespace SlewNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
             // Retrieve input references or use default values
-            TDataReadReference<FAudioBuffer> InputSignal = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(
+            TDataReadReference<FAudioBuffer> InputSignal = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputSignal),
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<FTime> InputRiseTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
+            TDataReadReference<FTime> InputRiseTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputRiseTime),
                 InParams.OperatorSettings
             );
 
-            TDataReadReference<FTime> InputFallTime = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FTime>(
+            TDataReadReference<FTime> InputFallTime = InputData.GetOrCreateDefaultDataReadReference<FTime>(
                 InputInterface,
                 METASOUND_GET_PARAM_NAME(InputFallTime),
                 InParams.OperatorSettings

@@ -112,13 +112,13 @@ namespace Metasound
         {
             using namespace EdoNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<int32> NoteNumber = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputNoteNumber), InParams.OperatorSettings);
-            TDataReadReference<float> ReferenceFrequency = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputReferenceFrequency), InParams.OperatorSettings);
-            TDataReadReference<int32> ReferenceMIDINote = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputReferenceMIDINote), InParams.OperatorSettings);
-            TDataReadReference<int32> Divisions = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<int32>(InputInterface, METASOUND_GET_PARAM_NAME(InputDivisions), InParams.OperatorSettings);
+            TDataReadReference<int32> NoteNumber = InputData.GetOrCreateDefaultDataReadReference<int32>(METASOUND_GET_PARAM_NAME(InputNoteNumber), InParams.OperatorSettings);
+            TDataReadReference<float> ReferenceFrequency = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputReferenceFrequency), InParams.OperatorSettings);
+            TDataReadReference<int32> ReferenceMIDINote = InputData.GetOrCreateDefaultDataReadReference<int32>(METASOUND_GET_PARAM_NAME(InputReferenceMIDINote), InParams.OperatorSettings);
+            TDataReadReference<int32> Divisions = InputData.GetOrCreateDefaultDataReadReference<int32>(METASOUND_GET_PARAM_NAME(InputDivisions), InParams.OperatorSettings);
 
             return MakeUnique<FEdoNodeOperator>(
                 InParams.OperatorSettings,

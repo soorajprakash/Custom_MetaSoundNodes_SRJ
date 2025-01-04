@@ -122,14 +122,14 @@ namespace Metasound
         {
             using namespace CrossfadeStereoNodeNames;
 
-            const FDataReferenceCollection& InputCollection = InParams.InputDataReferences;
+            const FInputVertexInterfaceData& InputData = InParams.InputData;
             const Metasound::FInputVertexInterface& InputInterface = DeclareVertexInterface().GetInputInterface();
 
-            TDataReadReference<FAudioBuffer> InputLeftSignal1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputLeftSignal1), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputRightSignal1 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputRightSignal1), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputLeftSignal2 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputLeftSignal2), InParams.OperatorSettings);
-            TDataReadReference<FAudioBuffer> InputRightSignal2 = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<FAudioBuffer>(InputInterface, METASOUND_GET_PARAM_NAME(InputRightSignal2), InParams.OperatorSettings);
-            TDataReadReference<float> InputCrossfade = InputCollection.GetDataReadReferenceOrConstructWithVertexDefault<float>(InputInterface, METASOUND_GET_PARAM_NAME(InputCrossfade), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputLeftSignal1 = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(METASOUND_GET_PARAM_NAME(InputLeftSignal1), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputRightSignal1 = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(METASOUND_GET_PARAM_NAME(InputRightSignal1), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputLeftSignal2 = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(METASOUND_GET_PARAM_NAME(InputLeftSignal2), InParams.OperatorSettings);
+            TDataReadReference<FAudioBuffer> InputRightSignal2 = InputData.GetOrCreateDefaultDataReadReference<FAudioBuffer>(METASOUND_GET_PARAM_NAME(InputRightSignal2), InParams.OperatorSettings);
+            TDataReadReference<float> InputCrossfade = InputData.GetOrCreateDefaultDataReadReference<float>(METASOUND_GET_PARAM_NAME(InputCrossfade), InParams.OperatorSettings);
 
             return MakeUnique<FCrossfadeStereoOperator>(InParams.OperatorSettings, InputLeftSignal1, InputRightSignal1, InputLeftSignal2, InputRightSignal2, InputCrossfade);
         }
