@@ -32,5 +32,5 @@
 | 12/15  | - Merge zero crossing into dev.<br>- Refine docs. |
 | 12/16  | - Clean up build script.<br>- Rename Click to Impulse.<br>- Improve consistency of node names and labels. |
 | 12/18  | - Merge dev into main, prepare for next release. |
-| 01/03  | - Fix API errors. |
-| 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify more warnings for API on Windows, replace DataVertexModel with DataVertex across the board. |
+| 01/03  | - Fix API er |
+| 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify more warnings for API on Windows, replace DataVertexModel with DataVertex to remove final warnings. |
