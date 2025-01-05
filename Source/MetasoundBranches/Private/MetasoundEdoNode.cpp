@@ -44,13 +44,13 @@ namespace Metasound
 
             static const FVertexInterface Interface(
                 FInputVertexInterface(
-                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputNoteNumber)),
-                    TInputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceFrequency), 440.0f),
-                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceMIDINote), 69),
-                    TInputDataVertexModel<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDivisions), 12)
+                    TInputDataVertex<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputNoteNumber)),
+                    TInputDataVertex<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceFrequency), 440.0f),
+                    TInputDataVertex<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputReferenceMIDINote), 69),
+                    TInputDataVertex<int32>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputDivisions), 12)
                 ),
                 FOutputVertexInterface(
-                    TOutputDataVertexModel<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputFrequency))
+                    TOutputDataVertex<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputFrequency))
                 )
             );
 

@@ -25,7 +25,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add a new `METASOUND_PARAM` to the vertex names in the node's namespace
 - [ ] Add a reference to the input buffer to operator parameters (constructor)
 - [ ] Initialise a corresponding variable
-- [ ] Add the new input (`TInputDataVertexModel`) to `DeclareVertexInterface`[^1].
+- [ ] Add the new input (`TInputDataVertex`) to `DeclareVertexInterface`[^1].
 - [ ] Add DataReference to GetInputs
 - [ ] Add GetDataReadReferenceOrConstructWithVertexDefault to CreateOperator
 - [ ] Add the input as an argument to `MakeUnique<*node*Operator>`
