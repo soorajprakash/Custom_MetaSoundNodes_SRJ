@@ -32,3 +32,5 @@
 | 12/15  | - Merge zero crossing into dev.<br>- Refine docs. |
 | 12/16  | - Clean up build script.<br>- Rename Click to Impulse.<br>- Improve consistency of node names and labels. |
 | 12/18  | - Merge dev into main, prepare for next release. |
+| 01/03  | - Fix API warnings ([information](https://github.com/matthewscharles/metasound-branches/issues/1#issuecomment-2569965131)). |
+| 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify remaining warnings for API on Windows, replace DataVertexModel with DataVertex. |

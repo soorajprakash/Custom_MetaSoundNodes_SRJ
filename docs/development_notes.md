@@ -1,5 +1,6 @@
 # Documentation
-This document uses the sample and hold node to illustrate some of the development process.
+This document uses the sample and hold (audio trigger) node to illustrate some of the development process.
+This was the first node I created for the project, but is not currently part of the collection.
 
 ## Sample and Hold (audio trigger)
 
