@@ -1,7 +1,7 @@
 # MetaSound-Plugins 
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, to be released as the *Branches* plugin.
 
-![Screenshot of a selection of custom nodes in Metasound, as listed in the table below.](./docs/svg/Nodes.svg)
+![Screenshot of a selection of custom nodes in Metasound.](./docs/svg/Nodes.svg)
 
 ## Branches
 There are currently seventeen nodes available in the *MetaSound Branches* plugin for testing, with several more in development:
@@ -26,7 +26,6 @@ There are currently seventeen nodes available in the *MetaSound Branches* plugin
 | [`Stereo Width`](https://matthewscharles.github.io/metasound-branches/StereoWidth.html) | Spatialization | Stereo width adjustment (0-200%), using mid-side processing. |
 | [`Tuning`](https://matthewscharles.github.io/metasound-branches/Tuning.html) | Tuning | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note. |
 | [`Zero Crossing`](https://matthewscharles.github.io/metasound-branches/ZeroCrossing.html) | Envelopes | Generates a trigger when the input signal crosses zero. |
-
 
 Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 
