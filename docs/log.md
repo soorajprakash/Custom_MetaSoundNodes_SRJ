@@ -34,3 +34,4 @@
 | 12/18  | - Merge dev into main, prepare for next release. |
 | 01/03  | - Fix API warnings ([information](https://github.com/matthewscharles/metasound-branches/issues/1#issuecomment-2569965131)). |
 | 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify remaining warnings for API on Windows, replace DataVertexModel with DataVertex. |
+| 01/08  | - Upload next release for testing ([0.1.2](https://github.com/matthewscharles/metasound-branches/releases/tag/v0.1.2-alpha)). |
