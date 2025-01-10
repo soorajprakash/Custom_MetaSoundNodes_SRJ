@@ -9,17 +9,12 @@
 
 void FMetasoundBranchesModule::StartupModule()
 {
-    // Initialization
-    // UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module started..."));
     using namespace Metasound;
-
 	FMetasoundFrontendRegistryContainer::Get()->RegisterPendingNodes();
 }
 
 void FMetasoundBranchesModule::ShutdownModule()
 {
-    // Cleanup
-    // UE_LOG(LogTemp, Log, TEXT("MetasoundBranches module shutting down..."));
 }
 
 #undef LOCTEXT_NAMESPACE
