@@ -1,4 +1,4 @@
-A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released as the *Branches* plugin.
+A collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
 ![Screenshot of a selection of custom nodes in Metasound](svg/Nodes.svg)
 
@@ -28,4 +28,4 @@ A collection of custom nodes for Unreal Engine's MetaSounds, soon to be released
 
 ---
 
-[Charles Matthews 2024](https://github.com/matthewscharles/)
+[Charles Matthews 2025](https://github.com/matthewscharles/)

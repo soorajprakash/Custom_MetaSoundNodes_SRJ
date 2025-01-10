@@ -1,10 +1,10 @@
-# MetaSound-Plugins 
-This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, to be released as the *Branches* plugin.
+# MetaSound-Branches 
+This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
 ![Screenshot of a selection of custom nodes in Metasound.](./docs/svg/Nodes.svg)
 
-## Branches
-There are currently seventeen nodes available in the *MetaSound Branches* plugin for testing, with several more in development:
+## Nodes
+There are currently eighteen nodes available in the *MetaSound Branches* plugin for testing, with several more in development:
 
 | Node | Category | Description |
 |------|-----------|-------------|
@@ -55,6 +55,7 @@ sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-b
 Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
 
 ## Documentation
+- [MetaSound Branches manual](https://matthewscharles.github.io/metasound-branches/): currently a list of nodes with inlets and outlets; examples coming soon.
 ### Development notes
 - [Initial notes](./docs/README.md): information on the first custom node and development process.
 - [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
@@ -64,4 +65,5 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 ## Links
 - [MetaSounds Reference Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-reference-guide-in-unreal-engine)
 - [MetaSounds Tutorial videos](https://dev.epicgames.com/community/learning/recommended-community-tutorial/Kw7l/unreal-engine-metasounds) (Matt Spendlove)
+- [Writing a Pitch Shift MetaSound Node](https://dev.epicgames.com/community/learning/tutorials/KJWk/writing-a-pitch-shift-metasound-node) (Aaron McLeran)
 - [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) (Anna Lantz)
