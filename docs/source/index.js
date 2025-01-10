@@ -10,12 +10,12 @@ if (!fs.existsSync(outputDir)) {
 
 const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 
-const sidebarContent = data.map(d => {
+const sidebarContent = data.map((d, i) => {
     const safeName = d.name.replace(/\s+/g, '');
     const nodeFileName = `${safeName}.html`;
-    return `<li><a href="${nodeFileName}">${d.name}</a></li>`;
+    const space = i > 0 ? '            ' : '';
+    return `${space}<li><a href="${nodeFileName}">${d.name}</a></li>`;
 }).join('\n');
-
 
 data.forEach(node => {
   const { name, description, image, inputs, outputs, category } = node;
@@ -92,7 +92,7 @@ data.forEach(node => {
     <br><br>
     <hr>
     <br><br>
-    <a href="https://github.com/matthewscharles/">Charles Matthews 2024</a>
+    <a href="https://github.com/matthewscharles/">Charles Matthews 2025</a>
   </main>
   <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
 </body>
@@ -134,7 +134,7 @@ fs.writeFileSync(path.join(outputDir, 'nodes.md'), mdContent, 'utf8');
 console.log('-----');
 console.log('- nodes.md');
 
-data.forEach(node => {
-  const { name, description, image, inputs, outputs, category } = node;
-  console.log(`<img src="${image}" alt="${name}">`);
-})
+// data.forEach(node => {
+//   const { name, description, image, inputs, outputs, category } = node;
+//   console.log(`<img src="${image}" alt="${name}">`);
+// })
