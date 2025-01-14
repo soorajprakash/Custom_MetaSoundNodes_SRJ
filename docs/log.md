@@ -36,3 +36,4 @@
 | 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify remaining warnings for API on Windows, replace DataVertexModel with DataVertex. |
 | 01/08  | - Upload next release for testing ([0.1.2](https://github.com/matthewscharles/metasound-branches/releases/tag/v0.1.2-alpha)). |
 | 01/10  | - Update examples. |
+| 01/14  | - Complete examples, minor updates to docs. |

@@ -57,8 +57,8 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 ## Documentation
 - [MetaSound Branches manual](https://matthewscharles.github.io/metasound-branches/): currently a list of nodes with inlets and outlets; examples coming soon.
 ### Development notes
-- [Initial notes](./docs/README.md): information on the first custom node and development process.
-- [Quick reference](./docs/quick_reference.md): some development notes for creating and troubleshooting custom nodes. 
+- [Initial notes](./docs/development_notes.md): information on the first custom node and development process (now a little out of date).
+- [Quick reference](./docs/quick_reference.md): some of my notes for creating and troubleshooting custom nodes. 
 
 ---
 

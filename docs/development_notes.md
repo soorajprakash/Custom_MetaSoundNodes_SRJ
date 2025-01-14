@@ -1,6 +1,6 @@
 # Documentation
 This document uses the sample and hold (audio trigger) node to illustrate some of the development process.
-This was the first node I created for the project, but is not currently part of the collection.
+This was the first node I created for the project, but is not currently part of the collection for download.
 
 ## Sample and Hold (audio trigger)
 
@@ -108,7 +108,7 @@ To process the signal, we therefore need to loop through these frames during eac
 `SignalData` and `TriggerData` point to arrays of floats, as returned by `FAudioBufferReadRef`.
 
 #### Misc Notes
-Some supplementary notes on implementing the sample and hold node in Pure Data can be found [here](./Pd_implementations/SaH_Pd.md).
+Some supplementary notes on implementing the sample and hold node in Pure Data can be found [here](./Pd_implementations/SaH_Pd.md) for comparison.
 
 I'm attempting to follow [Epic's coding standards](https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine?application_version=5.4) to the best of my understanding, for example:
 - use PascalCase throughout
