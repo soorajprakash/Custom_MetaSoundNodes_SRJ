@@ -18,7 +18,7 @@ namespace Metasound
         METASOUND_PARAM(InputSignal, "In", "Incoming audio.");
         METASOUND_PARAM(OutputSignal, "Out", "Phase-dispersed audio.");
 
-        METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (1-128).");
+        METASOUND_PARAM(NumFilters, "Stages", "Number of allpass filter stages to apply (maximum 128).");
     }
 
     class FPhaseDisperserOperator : public TExecutableOperator<FPhaseDisperserOperator>
@@ -67,7 +67,7 @@ namespace Metasound
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDisperserNodeDisplayName", "Phase Disperser");
-                Metadata.Description = METASOUND_LOCTEXT("PhaseDisperserNodeDesc", "Applies phase dispersion through a chain of allpass filters.");
+                Metadata.Description = METASOUND_LOCTEXT("PhaseDisperserNodeDesc", "A chain of allpass filters acting as a phase disperser to soften transients.");
                 Metadata.Author = "Charles Matthews";
                 Metadata.PromptIfMissing = PluginNodeMissingPrompt;
                 Metadata.DefaultInterface = DeclareVertexInterface();

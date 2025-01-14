@@ -70,7 +70,7 @@
     "image": "Edge.svg",
     "inputs": [
       { "name": "In", "description": "Input audio to monitor for edge detection.", "type": "Audio" },
-      { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
+      { "name": "Debounce", "description": "Debounce time in seconds.", "type": "Time" }
     ],
     "outputs": [
       { "name": "Rise", "description": "Trigger on rise.", "type": "Trigger" },
@@ -109,11 +109,11 @@
   {
     "name": "Phase Disperser",
     "category": "Filters",
-    "description": "A chain of allpass filters to soften transients and add that classic laser/slinky-style effect.",
+    "description": "A chain of allpass filters acting as a phase disperser to soften transients.",
     "image": "PhaseDisperser.svg",
     "inputs": [
       { "name": "In", "description": "Incoming audio.", "type": "Audio" },
-      { "name": "Stages", "description": "Number of allpass filter stages to apply (1-128).", "type": "Int32" }
+      { "name": "Stages", "description": "Number of allpass filter stages to apply (maximum 128).", "type": "Int32" }
     ],
     "outputs": [
       { "name": "Out", "description": "Phase-dispersed audio.", "type": "Audio" }
@@ -277,10 +277,10 @@
     "image": "ZeroCrossingTrigger.svg",
     "inputs": [
       { "name": "Signal", "description": "Input audio signal to monitor for zero crossings.", "type": "Audio" },
-      { "name": "Debounce", "description": "Debounce time in seconds to prevent rapid triggering.", "type": "Time" }
+      { "name": "Debounce", "description": "Debounce time in seconds.", "type": "Time" }
     ],
     "outputs": [
-      { "name": "Trigger", "description": "Output trigger when zero crossing is detected.", "type": "Trigger" }
+      { "name": "Trigger", "description": "Trigger on zero crossing.", "type": "Trigger" }
     ]
   }
 ]
