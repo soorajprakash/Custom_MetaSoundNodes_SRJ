@@ -55,7 +55,9 @@ sudo ./RunUAT.sh BuildPlugin -plugin="<path to your project>/Plugins/metasound-b
 Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/learning/tutorials/qz93/unreal-engine-building-plugins) for more information.
 
 ## Documentation
-- [MetaSound Branches manual](https://matthewscharles.github.io/metasound-branches/): currently a list of nodes with inlets and outlets; examples coming soon.
+- [MetaSound Branches manual](https://matthewscharles.github.io/metasound-branches/): currently a list of nodes with inlets and outlets, with more coming soon.
+- [Examples](https://github.com/matthewscharles/MetaSound-Examples): work in progress -- UAsset files available for download without any written explanation.
+- [Demonstration Video](https://www.youtube.com/watch?v=HgudP5fzDWM): demo patch and examples.
 ### Development notes
 - [Initial notes](./docs/development_notes.md): information on the first custom node and development process (now a little out of date).
 - [Quick reference](./docs/quick_reference.md): some of my notes for creating and troubleshooting custom nodes. 
