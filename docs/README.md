@@ -1,8 +1,8 @@
 A collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
-![Screenshot of a selection of custom nodes in Metasound](svg/Nodes.svg)
-
 # Nodes
+
+![Screenshot of a selection of custom nodes in Metasound](svg/Nodes.svg)
 
 | Node | Category | Description |
 |------|-----------|-------------|
