@@ -56,7 +56,7 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 
 ## Documentation
 - [MetaSound Branches manual](https://matthewscharles.github.io/metasound-branches/): currently a list of nodes with inlets and outlets, with more coming soon.
-- [Examples](https://github.com/matthewscharles/MetaSound-Examples): work in progress -- UAsset files available for download without any written explanation.
+- [Examples](https://github.com/matthewscharles/MetaSound-Examples): work in progress -- a selection of UAsset files available for download without any written explanation.
 - [Demonstration Video](https://www.youtube.com/watch?v=HgudP5fzDWM): demo patch and examples.
 ### Development notes
 - [Initial notes](./docs/development_notes.md): information on the first custom node and development process (now a little out of date).
@@ -66,6 +66,7 @@ Please see [Epic Games: Building Plugins](https://dev.epicgames.com/community/le
 
 ## Links
 - [MetaSounds Reference Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-reference-guide-in-unreal-engine)
+- [Understanding MetaSounds: A Technical Guide For New Designers](https://www.youtube.com/watch?v=zS422olBeG0) (Dan Reynolds)
 - [MetaSounds Tutorial videos](https://dev.epicgames.com/community/learning/recommended-community-tutorial/Kw7l/unreal-engine-metasounds) (Matt Spendlove)
-- [Writing a Pitch Shift MetaSound Node](https://dev.epicgames.com/community/learning/tutorials/KJWk/writing-a-pitch-shift-metasound-node) (Aaron McLeran)
 - [Creating MetaSound Nodes in C++ Quickstart](https://dev.epicgames.com/community/learning/tutorials/ry7p/unreal-engine-creating-metasound-nodes-in-c-quickstart) (Anna Lantz)
+- [Writing a Pitch Shift MetaSound Node](https://dev.epicgames.com/community/learning/tutorials/KJWk/writing-a-pitch-shift-metasound-node) (Aaron McLeran)
