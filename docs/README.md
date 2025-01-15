@@ -1,6 +1,6 @@
 A collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
- {% raw %} {% include youtube.html id="HgudP5fzDWM" %} {% endraw %} {% include youtube.html id="HgudP5fzDWM" %}
+{% include youtube.html id="HgudP5fzDWM" %} {% endraw %} {% include youtube.html id="HgudP5fzDWM" %}
 
 # Nodes
 
