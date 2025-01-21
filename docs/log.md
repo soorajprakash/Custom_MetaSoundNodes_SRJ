@@ -35,11 +35,7 @@
 | 01/03  | - Fix API warnings ([information](https://github.com/matthewscharles/metasound-branches/issues/1#issuecomment-2569965131)). |
 | 01/04  | - Tidy up, test new version Mac/Windows.<br>- Identify remaining warnings for API on Windows, replace DataVertexModel with DataVertex. |
 | 01/08  | - Upload next release for testing ([0.1.2](https://github.com/matthewscharles/metasound-branches/releases/tag/v0.1.2-alpha)). |
-<<<<<<< Updated upstream
-| 01/10  | - Update examples. |
-=======
 | 01/10  | - Update examples. |
 | 01/14  | - Complete examples, minor updates to docs. |
 | 01/15  | - Add first version of [demo video](https://www.youtube.com/watch?v=HgudP5fzDWM). |
 | 01/21  | - Update documentation.<br>- Add trigger output to Shift Register. |
->>>>>>> Stashed changes
