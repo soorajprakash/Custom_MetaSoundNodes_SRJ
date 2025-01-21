@@ -31,7 +31,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add the input as an argument to `MakeUnique<*node*Operator>`
 - [ ] Add private variable for the input
 
-### Add a trigger
+### Add a trigger input
 - [ ] Add a pre-trigger lambda function
 - [ ] Add an on-trigger lambda function
 
@@ -51,6 +51,11 @@ InputTrigger->ExecuteBlock(
 )
 ```
 
+### Add a trigger output
+- [ ] Advance block
+```C++
+OutputTrigger->AdvanceBlock();
+```
 ### Verify namespaces
 Check that the correct namespace (as defined alongside the vertex names) is used in the following locations:
 - [ ] `DeclareVertexInterface`
