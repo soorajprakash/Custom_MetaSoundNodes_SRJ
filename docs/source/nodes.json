@@ -129,6 +129,7 @@
       { "name": "Trigger", "description": "Trigger input to shift the register.", "type": "Trigger" }
     ],
     "outputs": [
+      { "name": "On Trigger", "description": "Output trigger following the shift" },
       { "name": "Stage 1", "description": "Shifted output at stage 1.", "type": "Float" },
       { "name": "Stage 2", "description": "Shifted output at stage 2.", "type": "Float" },
       { "name": "Stage 3", "description": "Shifted output at stage 3.", "type": "Float" },
