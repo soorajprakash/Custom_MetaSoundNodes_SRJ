@@ -71,8 +71,8 @@ int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 
 ## Update existing nodes to new API
 
-This can generally be handled by a global find and replace:
----
+- This can generally be handled by a global find and replace:
+
 1)
 ```C++
 const FDataReferenceCollection& InputCollection = InParams.InputDataReferences; 
