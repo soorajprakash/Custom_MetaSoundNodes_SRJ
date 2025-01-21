@@ -69,7 +69,40 @@ Check that the correct namespace (as defined alongside the vertex names) is used
 int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 ```
 
+## Update existing nodes to new API
+
+This can generally be handled by a global find and replace:
 ---
+1)
+```C++
+const FDataReferenceCollection& InputCollection = InParams.InputDataReferences; 
+````
+
+to
+```C++
+const FInputVertexInterfaceData& InputData = InParams.InputData;
+```
+---
+2)
+```C++
+InputCollection.GetDataReadReferenceOrConstruct
+```
+to
+```C++
+InputCollection.GetDataReadReferenceOrConstructWithVertexDefault
+```
+---
+
+3)
+```C++
+DataVertexModel
+```
+to
+```
+DataVertex
+```
+---
+See the post by SynthNudibranch [here](https://forums.unrealengine.com/t/tutorial-creating-metasound-nodes-in-c-quickstart/559789).
 
 ## References
 
