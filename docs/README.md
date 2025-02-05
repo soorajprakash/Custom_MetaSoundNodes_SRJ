@@ -1,6 +1,8 @@
 A collection of custom nodes for Unreal Engine's MetaSounds, available as the *Branches* plugin for Windows and Mac.
 
-To download, go to [https://github.com/matthewscharles/metasound-branches/](github.com/matthewscharles/metasound-branches/).
+To download a version for testing, please visit [https://github.com/matthewscharles/metasound-branches/](https://github.com/matthewscharles/metasound-branches/).
+
+> [Demonstration video](https://www.youtube.com/watch?v=HgudP5fzDWM)
 
 # Nodes
 
