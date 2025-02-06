@@ -2,7 +2,7 @@ A collection of custom nodes for Unreal Engine's MetaSounds, available as the *B
 
 To download the latest version for testing, please visit [https://github.com/matthewscharles/metasound-branches/](https://github.com/matthewscharles/metasound-branches/).
 
-> [Demonstration video](https://www.youtube.com/watch?v=HgudP5fzDWM)
+> [Video of example patches](https://www.youtube.com/watch?v=HgudP5fzDWM)
 
 # Nodes
 
