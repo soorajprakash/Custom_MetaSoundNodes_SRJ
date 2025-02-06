@@ -1,4 +1,4 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundSlewFloatNode.h"
 #include "MetasoundExecutableOperator.h"

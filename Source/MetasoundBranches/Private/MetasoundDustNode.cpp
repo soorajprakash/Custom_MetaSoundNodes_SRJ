@@ -1,4 +1,4 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundDustNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
@@ -75,10 +75,10 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Dust"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Dust (Audio)"), StandardNodes::AudioVariant };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
-                    Metadata.DisplayName = METASOUND_LOCTEXT("DustNodeDisplayName", "Dust");
+                    Metadata.DisplayName = METASOUND_LOCTEXT("DustNodeDisplayName", "Dust (Audio)");
                     Metadata.Description = METASOUND_LOCTEXT("DustNodeDesc", "Generate randomly timed impulses with audio-rate modulation.");
                     Metadata.Author = "Charles Matthews";
                     Metadata.PromptIfMissing = PluginNodeMissingPrompt;

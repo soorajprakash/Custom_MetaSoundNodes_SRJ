@@ -1,4 +1,4 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundShiftRegisterNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
