@@ -1,10 +1,18 @@
 # MetaSound-Branches 
 This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
-![Screenshot of a selection of custom nodes in Metasound.](./docs/svg/Nodes.svg)
+## Getting started
+This plugin works within the existing MetaSound system. For an introduction, please see the official [MetaSounds Reference Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-reference-guide-in-unreal-engine).
+
+Once installed, create a new MetaSound Source and right-click in the editor to add a new node class.  A new `Branches` category will appear under `Functions`.
+![Screenshot of a context menu showing the Branches category underneath Functions in Unreal Engine Metasounds](./docs/start.png)
 
 ## Nodes
-There are currently eighteen nodes available in the *MetaSound Branches* plugin for testing, with several more in development:
+The custom nodes consist of utilities to handle triggers, sequencing and tuning, as well as a selection of tools for simple stereo processing.
+
+![Screenshot of a selection of custom nodes in Metasound.](./docs/svg/Nodes.svg)
+
+There are currently eighteen nodes available in the *MetaSound Branches* plugin, with several more in development.  Click on each node name below for a summary including inputs and outputs.
 
 | Node | Category | Description |
 |------|-----------|-------------|
@@ -26,8 +34,6 @@ There are currently eighteen nodes available in the *MetaSound Branches* plugin 
 | [`Stereo Width`](https://matthewscharles.github.io/metasound-branches/StereoWidth.html) | Spatialization | Stereo width adjustment (0-200%), using mid-side processing. |
 | [`Tuning`](https://matthewscharles.github.io/metasound-branches/Tuning.html) | Tuning | Quantize a float value to a custom 12-note tuning, with adjustment in cents per-note. |
 | [`Zero Crossing`](https://matthewscharles.github.io/metasound-branches/ZeroCrossing.html) | Envelopes | Detect zero crossings in an input audio signal, with optional debounce. |
-
-Upon installing the plugin, these items will appear in the sub-category `Branches` within the Metasound `Functions` category.
 
 ## Installation
 
