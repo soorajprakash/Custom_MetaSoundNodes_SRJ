@@ -39,6 +39,10 @@ There are currently eighteen nodes available in the *MetaSound Branches* plugin,
 
 *Please note that this is an experimental version and the node names are subject to change.  Connections may need to be re-drawn upon upgrading to the next version.*
 
+### Installation from Fab
+
+- This plugin is currently under review, and an official link will be available soon.
+
 ### Downloadable binaries
 - Download for Windows and Mac here: [Releases](https://github.com/matthewscharles/metasound-branches/releases/)
 - Extract the contents of the zip file into the plugins folder of your project or engine as preferred.
