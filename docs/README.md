@@ -10,7 +10,7 @@ To download the latest version for testing, please visit [https://github.com/mat
 
 This plugin works within the existing MetaSound system. For an introduction, please see the official [MetaSounds Reference Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-reference-guide-in-unreal-engine).
 
-Once installed, create a new MetaSound Source and right-click in the editor to add a new node class.  A new `Branches` category will appear under `Functions`.
+Once installed, create a new MetaSound Source and right-click in the editor to add a new node class.  A new `Branches` category will appear under `Functions`.  Click on the node name to add it to the graph.
 ![Screenshot of a context menu showing the Branches category underneath Functions in Unreal Engine Metasounds](./start.png)
 
 ## Examples
