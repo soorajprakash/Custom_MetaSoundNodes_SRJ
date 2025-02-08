@@ -3,9 +3,11 @@ A collection of custom nodes for Unreal Engine's MetaSounds, available as the *B
 To download the latest version for testing, please visit [https://github.com/matthewscharles/metasound-branches/](https://github.com/matthewscharles/metasound-branches/).
 
 # Branches Plugin
-This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, downloadable as the *Branches* plugin for Windows and Mac.
 
 ## Getting started
+
+> [Video: getting started](https://www.youtube.com/playlist?list=PLyaaHTyXd8jFk4KFjPJTPzIwHcse9_xeC)
+
 This plugin works within the existing MetaSound system. For an introduction, please see the official [MetaSounds Reference Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-reference-guide-in-unreal-engine).
 
 Once installed, create a new MetaSound Source and right-click in the editor to add a new node class.  A new `Branches` category will appear under `Functions`.
@@ -14,7 +16,7 @@ Once installed, create a new MetaSound Source and right-click in the editor to a
 ## Examples
 
 Examples showing the nodes in musical contexts are available on YouTube and through a sample project on the forthcoming Fab listing:
-> [Video of example patches](https://www.youtube.com/watch?v=HgudP5fzDWM)
+> [Video: example patches](https://www.youtube.com/watch?v=HgudP5fzDWM)
 
 To explore the sample project, load the MetaSound Sources in the `Content/Audio/MetaSound-Examples` folder and press play to listen.  
 
