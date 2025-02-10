@@ -7,15 +7,6 @@
 
 #define LOCTEXT_NAMESPACE "FMetasoundBranchesModule"
 
-namespace Metasound
-{
-    namespace StandardNodes
-    {
-        const FName Namespace = "UE";
-        const FName AudioVariant = "Audio";
-    }
-}
-
 void FMetasoundBranchesModule::StartupModule()
 {
     using namespace Metasound;
