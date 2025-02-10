@@ -101,7 +101,7 @@ namespace Metasound
 
                 FNodeClassMetadata Metadata;
 
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Tuning"), TEXT("Float") };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Tuning"), TEXT("Float") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("TuningNodeDisplayName", "Tuning");

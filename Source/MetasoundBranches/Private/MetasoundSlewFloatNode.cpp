@@ -67,7 +67,7 @@ namespace Metasound
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
             {
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew (Float)"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Slew (Float)"), TEXT("Float") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("SlewFloatDisplayName", "Slew (Float)");

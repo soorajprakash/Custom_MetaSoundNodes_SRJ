@@ -89,7 +89,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Shift Register"), TEXT("Float") };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Shift Register"), TEXT("Float") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ShiftRegisterNodeDisplayName", "Shift Register");

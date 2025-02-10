@@ -68,7 +68,7 @@ namespace Metasound
 
                 FNodeClassMetadata Metadata;
 
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Edge"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Edge"), TEXT("Trigger") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("EdgeNodeDisplayName", "Edge");

@@ -66,7 +66,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
     
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Balance"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Stereo Balance"), TEXT("Audio") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("StereoGainNodeDisplayName", "Stereo Balance");

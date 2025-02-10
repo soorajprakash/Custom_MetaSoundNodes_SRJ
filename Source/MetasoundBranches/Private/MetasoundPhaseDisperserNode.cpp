@@ -63,7 +63,7 @@ namespace Metasound
                 FVertexInterface NodeInterface = DeclareVertexInterface();
 
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("PhaseDisperser"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("PhaseDisperser"), TEXT("Audio") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDisperserNodeDisplayName", "Phase Disperser");

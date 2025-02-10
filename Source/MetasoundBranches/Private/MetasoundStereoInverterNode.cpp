@@ -72,7 +72,7 @@ namespace Metasound
                 FVertexInterface NodeInterface = DeclareVertexInterface();
 
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Inverter"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Stereo Inverter"), TEXT("Audio") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("StereoInverterNodeDisplayName", "Stereo Inverter");

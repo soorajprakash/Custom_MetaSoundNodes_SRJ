@@ -67,7 +67,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Impulse"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Impulse"), TEXT("Audio") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ImpulseNodeDisplayName", "Impulse");

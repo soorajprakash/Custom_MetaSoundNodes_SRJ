@@ -80,7 +80,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Clock Divider"), TEXT("Trigger") };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Clock Divider"), TEXT("Trigger") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ClockDividerNodeDisplayName", "Clock Divider");

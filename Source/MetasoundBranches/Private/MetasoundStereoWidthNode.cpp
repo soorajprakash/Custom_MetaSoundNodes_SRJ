@@ -65,7 +65,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Width"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Stereo Width"), TEXT("Audio") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("WidthNodeDisplayName", "Stereo Width");

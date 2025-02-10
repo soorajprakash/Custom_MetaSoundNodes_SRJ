@@ -71,7 +71,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Dust (Trigger)"), StandardNodes::AudioVariant };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Dust (Trigger)"), TEXT("Trigger") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("DustTriggerNodeDisplayName", "Dust (Trigger)");

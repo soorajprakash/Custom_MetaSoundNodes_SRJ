@@ -65,7 +65,7 @@ namespace Metasound
 
                 FNodeClassMetadata Metadata;
 
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("EDO"), TEXT("Float") };
+                Metadata.ClassName = { TEXT("UE"), TEXT("EDO"), TEXT("Float") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("EdoNodeDisplayName", "EDO");
