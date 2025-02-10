@@ -4,7 +4,6 @@
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef for data types
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
-#include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 #include "MetasoundTrigger.h"                // For FTriggerWriteRef and FTrigger
