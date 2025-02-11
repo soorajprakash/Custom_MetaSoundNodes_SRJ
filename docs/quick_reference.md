@@ -69,7 +69,7 @@ Check that the correct namespace (as defined alongside the vertex names) is used
 int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 ```
 
-## Update existing nodes to new API
+## Update nodes from tutorials for the new API
 
 - This can generally be handled by a global find and replace:
 
