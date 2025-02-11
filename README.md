@@ -1,5 +1,5 @@
 # MetaSound-Branches 
-This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, now available as the *Branches* plugin.
+This repository contains a collection of custom nodes for Unreal Engine's MetaSounds, now available for Windows and Mac as the *Branches* plugin.
 > [MetaSound Branches on Fab.com](https://www.fab.com/listings/68a9df1a-6576-4edb-a61d-c4ca4894572b)
 
 ## Getting started
