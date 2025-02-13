@@ -31,7 +31,7 @@ Items in *italics* must use the namespace described in the vertex names.
 - [ ] Add the input as an argument to `MakeUnique<*node*Operator>`
 - [ ] Add private variable for the input
 
-### Add a trigger
+### Add a trigger input
 - [ ] Add a pre-trigger lambda function
 - [ ] Add an on-trigger lambda function
 
@@ -51,6 +51,11 @@ InputTrigger->ExecuteBlock(
 )
 ```
 
+### Add a trigger output
+- [ ] Advance block
+```C++
+OutputTrigger->AdvanceBlock();
+```
 ### Verify namespaces
 Check that the correct namespace (as defined alongside the vertex names) is used in the following locations:
 - [ ] `DeclareVertexInterface`
@@ -64,7 +69,40 @@ Check that the correct namespace (as defined alongside the vertex names) is used
 int32 SampleRate = InParams.OperatorSettings.GetSampleRate();
 ```
 
+## Update nodes from tutorials for the new API
+
+- This can generally be handled by a global find and replace:
+
+1)
+```C++
+const FDataReferenceCollection& InputCollection = InParams.InputDataReferences; 
+````
+
+to
+```C++
+const FInputVertexInterfaceData& InputData = InParams.InputData;
+```
 ---
+2)
+```C++
+InputCollection.GetDataReadReferenceOrConstruct
+```
+to
+```C++
+InputCollection.GetDataReadReferenceOrConstructWithVertexDefault
+```
+---
+
+3)
+```C++
+DataVertexModel
+```
+to
+```
+DataVertex
+```
+---
+See the post by SynthNudibranch [here](https://forums.unrealengine.com/t/tutorial-creating-metasound-nodes-in-c-quickstart/559789).
 
 ## References
 

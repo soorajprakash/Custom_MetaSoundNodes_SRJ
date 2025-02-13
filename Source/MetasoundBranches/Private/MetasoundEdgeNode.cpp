@@ -15,7 +15,7 @@ namespace Metasound
     namespace EdgeNames
     {
         METASOUND_PARAM(InputSignal, "In", "Input audio to monitor for edge detection.");
-        METASOUND_PARAM(InputDebounce, "Debounce", "Debounce time in seconds to prevent rapid triggering.");
+        METASOUND_PARAM(InputDebounce, "Debounce", "Debounce time in seconds.");
 
         METASOUND_PARAM(OutputTriggerRise, "Rise", "Trigger on rise.");
         METASOUND_PARAM(OutputTriggerFall, "Fall", "Trigger on fall.");
