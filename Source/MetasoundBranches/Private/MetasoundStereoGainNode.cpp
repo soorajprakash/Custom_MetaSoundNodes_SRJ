@@ -1,10 +1,9 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundStereoGainNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
-#include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 
@@ -64,7 +63,7 @@ namespace Metasound
                 FVertexInterface NodeInterface = DeclareVertexInterface();
 
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Stereo Gain"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Stereo Gain"), TEXT("Audio") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("StereoGainNodeDisplayName", "Stereo Gain");

@@ -1,10 +1,9 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundPhaseDisperserNode.h"
 #include "MetasoundExecutableOperator.h"
 #include "MetasoundPrimitives.h"
 #include "MetasoundNodeRegistrationMacro.h"
-#include "MetasoundStandardNodesNames.h"
 #include "MetasoundFacade.h"
 #include "MetasoundParamHelper.h"
 #include "Math/UnrealMathUtility.h"
@@ -63,7 +62,7 @@ namespace Metasound
                 FVertexInterface NodeInterface = DeclareVertexInterface();
 
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("PhaseDisperser"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("PhaseDisperser"), TEXT("Audio") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("PhaseDisperserNodeDisplayName", "Phase Disperser");

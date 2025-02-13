@@ -1,10 +1,9 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundShiftRegisterNode.h"
 #include "MetasoundExecutableOperator.h"     // TExecutableOperator class
 #include "MetasoundPrimitives.h"             // ReadRef and WriteRef descriptions for bool, int32, float, and string
 #include "MetasoundNodeRegistrationMacro.h"  // METASOUND_LOCTEXT and METASOUND_REGISTER_NODE macros
-#include "MetasoundStandardNodesNames.h"     // StandardNodes namespace
 #include "MetasoundFacade.h"                 // FNodeFacade class, eliminates the need for a fair amount of boilerplate code
 #include "MetasoundParamHelper.h"            // METASOUND_PARAM and METASOUND_GET_PARAM family of macros
 
@@ -16,7 +15,7 @@ namespace Metasound
     {
         METASOUND_PARAM(InputSignal, "In", "Input float to the shift register.");
         METASOUND_PARAM(InputTrigger, "Trigger", "Trigger.");
-
+        METASOUND_PARAM(OutputTrigger, "On Trigger", "Output trigger following the shift.");
         METASOUND_PARAM(OutputSignal1, "Stage 1", "Shifted output at stage 1.");
         METASOUND_PARAM(OutputSignal2, "Stage 2", "Shifted output at stage 2.");
         METASOUND_PARAM(OutputSignal3, "Stage 3", "Shifted output at stage 3.");
@@ -36,6 +35,7 @@ namespace Metasound
             const FTriggerReadRef& InInputTrigger)
             : InputSignal(InInputSignal)
             , InputTrigger(InInputTrigger)
+            , OutputTrigger(FTriggerWriteRef::CreateNew(InSettings))
             , OutputSignal1(FFloatWriteRef::CreateNew(0.0f))
             , OutputSignal2(FFloatWriteRef::CreateNew(0.0f))
             , OutputSignal3(FFloatWriteRef::CreateNew(0.0f))
@@ -65,6 +65,7 @@ namespace Metasound
                     TInputDataVertex<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(InputTrigger))
                 ),
                 FOutputVertexInterface(
+                    TOutputDataVertex<FTrigger>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputTrigger)),
                     TOutputDataVertex<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal1)),
                     TOutputDataVertex<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal2)),
                     TOutputDataVertex<float>(METASOUND_GET_PARAM_NAME_AND_METADATA(OutputSignal3)),
@@ -87,7 +88,7 @@ namespace Metasound
 
                     FNodeClassMetadata Metadata;
 
-                    Metadata.ClassName = { StandardNodes::Namespace, TEXT("Shift Register"), TEXT("Float") };
+                    Metadata.ClassName = { TEXT("UE"), TEXT("Shift Register"), TEXT("Float") };
                     Metadata.MajorVersion = 1;
                     Metadata.MinorVersion = 0;
                     Metadata.DisplayName = METASOUND_LOCTEXT("ShiftRegisterNodeDisplayName", "Shift Register");
@@ -122,7 +123,8 @@ namespace Metasound
             using namespace ShiftRegisterNodeNames;
 
             FDataReferenceCollection OutputDataReferences;
-
+            
+            OutputDataReferences.AddDataWriteReference(METASOUND_GET_PARAM_NAME(OutputTrigger), OutputTrigger);
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputSignal1), OutputSignal1);
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputSignal2), OutputSignal2);
             OutputDataReferences.AddDataReadReference(METASOUND_GET_PARAM_NAME(OutputSignal3), OutputSignal3);
@@ -154,6 +156,8 @@ namespace Metasound
 
         void Execute()
         {
+            OutputTrigger->AdvanceBlock();
+            
             InputTrigger->ExecuteBlock(
                 // Pre-trigger lambda (called before any triggers in the block)
                 [](int32 StartFrame, int32 EndFrame)
@@ -172,6 +176,9 @@ namespace Metasound
                     ShiftedValue3 = ShiftedValue2;
                     ShiftedValue2 = ShiftedValue1;
                     ShiftedValue1 = *InputSignal;
+                    
+                    // Trigger after the shift
+                    OutputTrigger->TriggerFrame(StartFrame); 
                 }
             );
 
@@ -189,7 +196,8 @@ namespace Metasound
     private:
         FFloatReadRef InputSignal;
         FTriggerReadRef InputTrigger;
-
+        
+        FTriggerWriteRef OutputTrigger;
         FFloatWriteRef OutputSignal1;
         FFloatWriteRef OutputSignal2;
         FFloatWriteRef OutputSignal3;

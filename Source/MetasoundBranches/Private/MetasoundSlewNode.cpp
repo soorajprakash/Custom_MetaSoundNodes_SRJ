@@ -1,10 +1,9 @@
-// Copyright Charles Matthews. All Rights Reserved.
+// Copyright 2025 Charles Matthews. All Rights Reserved.
 
 #include "MetasoundBranches/Public/MetasoundSlewNode.h"
 #include "MetasoundExecutableOperator.h"
 #include "MetasoundPrimitives.h"
 #include "MetasoundNodeRegistrationMacro.h"
-#include "MetasoundStandardNodesNames.h"
 #include "MetasoundFacade.h"
 #include "MetasoundParamHelper.h"
 
@@ -67,7 +66,7 @@ namespace Metasound
             auto CreateNodeClassMetadata = []() -> FNodeClassMetadata
             {
                 FNodeClassMetadata Metadata;
-                Metadata.ClassName = { StandardNodes::Namespace, TEXT("Slew (Audio)"), StandardNodes::AudioVariant };
+                Metadata.ClassName = { TEXT("UE"), TEXT("Slew (Audio)"), TEXT("Audio") };
                 Metadata.MajorVersion = 1;
                 Metadata.MinorVersion = 0;
                 Metadata.DisplayName = METASOUND_LOCTEXT("SlewDisplayName", "Slew (Audio)");
